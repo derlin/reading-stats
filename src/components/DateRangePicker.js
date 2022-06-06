@@ -27,7 +27,6 @@ class DatePicker extends Component {
     }
     
     render() {
-      console.log('@@@@', boundaries)
     const selectionRange = {
       startDate: this.props.dateRange.from ?? new Date("2021-05-01"),
       endDate: this.props.dateRange.to ?? new Date(),

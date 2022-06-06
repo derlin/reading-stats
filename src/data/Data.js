@@ -31,8 +31,27 @@ const df_tasks = books
       ],
     });
   })
-  .rename({ task_Group: 'task' })
+  .rename({ task_Group: "task" })
   .resetIndex();
+
+const df_months = books
+  .addColumn(
+    "month",
+    books["date"].apply((x) => x.substr(0, 7))
+  )
+  .groupby(["month"])
+  .apply((row) => {
+    let minutes = row["minutes"];
+    return new dfd.DataFrame({
+      minutes: [minutes.sum()],
+      hours: ['Σ=' + Math.ceil(minutes.sum() / 60) + 'h'],
+      details: [ `sum: ${minutes.sum()}<br>mean: ${minutes.mean()}<br>min: ${minutes.min()}<br>max: ${minutes.max()}`, ],
+    });
+  })
+  .rename({ month_Group: "month" })
+  .resetIndex();
+
+console.log("constants loaded")
 
 function _filterDataByDate(df, column, from_date, to_date) {
   if (from_date)
@@ -55,7 +74,6 @@ export class DateRange {
     this.to = to;
     this.from_str = dateToString(from);
     this.to_str = dateToString(to);
-    console.log(this.from_str, this.to_str);
   }
 }
 
@@ -73,6 +91,12 @@ export class Data {
       dateRange.from_str,
       dateRange.to_str
     );
+    this.df_months = _filterDataByDate(
+      df_months,
+      'month',
+      dateRange.from_str.substr(0, 7),
+      dateRange.to_str.substr(0, 7),
+    )
   }
 }
 
