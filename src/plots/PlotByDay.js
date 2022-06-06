@@ -1,14 +1,16 @@
 import * as dfd from "danfojs";
 import Plot from "react-plotly.js";
-import { df_byday, df_tasks } from "../data/df";
 
 const colors = ["LightSalmon", "beige"];
 
 
-function PlotByDay() {
+function PlotByDay(props) {
   let current_color = true
   const shapes = []
   const annotations = []
+
+  const df_tasks = props.data.df_tasks;
+  const df_byday = props.data.df_byday;
 
   dfd.toJSON(df_tasks).forEach((x) => {
     
