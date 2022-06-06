@@ -30,7 +30,7 @@ function PlotByDay(props) {
       },
     });
 
-    const task = x["task_Group"];
+    const task = x["task"];
     annotations.push({
       text: task.length < 30 ? task : task.substring(0, 30) + "...",
       textangle: -90,
@@ -50,8 +50,8 @@ function PlotByDay(props) {
     <Plot
       data={[
         {
-          x: df_byday["date_Group"].values,
-          y: df_byday["minutes_sum"].values,
+          x: df_byday["date"].values,
+          y: df_byday["minutes"].values,
           type: "line",
           mode: "lines",
           text: df_byday["tasks"].values,
