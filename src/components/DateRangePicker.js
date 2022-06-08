@@ -5,20 +5,28 @@ import {boundaries} from '../data/Data'
 
 const staticRanges = createStaticRanges([
     {
-      label: 'Last Year',
+        label: 'All',
+        range: () => ({
+          startDate: boundaries.dateMin,
+          endDate: boundaries.dateMax,
+        }),
+    },
+    {
+      label: 'Current Year',
       range: () => ({
-        startDate: new Date('2021-01-01'),
-        endDate: new Date('2022-01-01'),
+        startDate: new Date(`${boundaries.dateMax.getFullYear()}-01-01`),
+        endDate: new Date(`${boundaries.dateMax.getFullYear()}-12-31`),
       }),
     },
     {
-      label: 'Last 6 Months',
+      label: 'Last 6 Months', // TODO
       range: () => ({
         startDate: new Date('2021-06-04'),
         endDate: new Date('2022-01-01'),
       }),
     },
   ]);
+
 
 class DatePicker extends Component {
 

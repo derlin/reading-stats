@@ -1,5 +1,15 @@
 import * as dfd from "danfojs";
 
+const WEEKDAYS = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
+
 const books = new dfd.DataFrame(require("./all.json"));
 
 const df_byday = books
@@ -44,14 +54,45 @@ const df_months = books
     let minutes = row["minutes"];
     return new dfd.DataFrame({
       minutes: [minutes.sum()],
-      hours: ['Σ=' + Math.ceil(minutes.sum() / 60) + 'h'],
-      details: [ `sum: ${minutes.sum()}<br>mean: ${minutes.mean()}<br>min: ${minutes.min()}<br>max: ${minutes.max()}`, ],
+      hours: ["Σ=" + Math.ceil(minutes.sum() / 60) + "h"],
+      details: [
+        `sum: ${minutes.sum()}<br>` +
+        `mean: ${minutes.mean().toFixed(2)}<br>` +
+        `median: ${minutes.median()}<br>` +
+        `min: ${minutes.min()}<br>` +
+        `max: ${minutes.max()}`,
+      ],
     });
   })
   .rename({ month_Group: "month" })
   .resetIndex();
 
-console.log("constants loaded")
+function df_weekdays(books) {
+  return books
+    .addColumn(
+      "weekday",
+      books["date"].dt.dayOfWeek().apply((n) => WEEKDAYS[n])
+    )
+    .groupby(["weekday"])
+    .apply((row) => {
+      let minutes = row["minutes"];
+      return new dfd.DataFrame({
+        minutes: [minutes.sum()],
+        text: [Math.ceil(minutes.mean()) + "m ± " + Math.ceil(minutes.std())],
+        details: [
+          `sum: ${minutes.sum()}<br>` +
+            `mean: ${minutes.mean().toFixed(2)}<br>` +
+            `median: ${minutes.median()}<br>` +
+            `min: ${minutes.min()}<br>` +
+            `max: ${minutes.max()}`,
+        ],
+      });
+    })
+    .rename({ weekday_Group: "weekday" })
+    .resetIndex();
+}
+
+console.log("constants loaded");
 
 function _filterDataByDate(df, column, from_date, to_date) {
   if (from_date)
@@ -93,10 +134,18 @@ export class Data {
     );
     this.df_months = _filterDataByDate(
       df_months,
-      'month',
+      "month",
       dateRange.from_str.substr(0, 7),
-      dateRange.to_str.substr(0, 7),
-    )
+      dateRange.to_str.substr(0, 7)
+    );
+    this.df_weekdays = df_weekdays(
+      _filterDataByDate(
+        books,
+        "date",
+        dateRange.from_str.substr(0, 7),
+        dateRange.to_str.substr(0, 7)
+      )
+    );
   }
 }
 

@@ -4,6 +4,7 @@ import "react-date-range/dist/theme/default.css";
 
 import PlotByDay from "./plots/PlotByDay";
 import PlotByMonth from "./plots/PlotByMonth";
+import PlotByWeekday from "./plots/PlotByWeekday";
 import { DateRange, Data } from "./data/Data";
 import DatePicker from "./components/DateRangePicker";
 import React from "react";
@@ -31,8 +32,9 @@ class App extends React.Component {
     return (
       <div>
         <DatePicker dateRange={dateRange} handleSelect={this.handleSelect} />
-        <PlotByDay data={data} lala={this.state.dateStart} />
+        <PlotByDay data={data} />
         <PlotByMonth data={data} />
+        <PlotByWeekday data={data} />
       </div>
     );
   }

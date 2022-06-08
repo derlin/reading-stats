@@ -55,6 +55,7 @@ function PlotByDay(props) {
           type: "line",
           mode: "lines",
           text: df_byday["tasks"].values,
+          line: {color: "#da492f"},
         },
       ]}
       style={{ width: "100%", height: "100%" }}
@@ -62,6 +63,7 @@ function PlotByDay(props) {
         title: "Reading per day",
         shapes: shapes,
         annotations: annotations,
+        yaxis: {title: "minutes"},
       }}
       useResizeHandler={true}
     />
