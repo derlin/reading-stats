@@ -1,0 +1,12 @@
+@media  (max-width: 600px) {
+
+    #picker .rdrDefinedRangesWrapper {
+        display: none;
+    }
+
+    #picker { 
+        /* center on mobile */
+        display: flex;
+        justify-content: center;
+    }
+}
