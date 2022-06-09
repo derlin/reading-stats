@@ -14,7 +14,7 @@ function PlotByMonth(props) {
           text: df['hours'].values,
         },
       ]}
-      style={{ width: '100%', height: '100%' }}
+      style={{ width: '100%', height: '100%' , maxWidth: '1000px' }}
       layout={{
         title: 'Reading per month',
         xaxis: { type: 'category' }, // show all dates

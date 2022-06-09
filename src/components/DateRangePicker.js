@@ -1,6 +1,7 @@
 import { DateRangePicker, createStaticRanges } from 'react-date-range';
 import { Component } from 'react';
 import { boundaries } from '../data/Data';
+import { add, set, sub } from 'date-fns';
 
 const staticRanges = createStaticRanges([
   {
@@ -13,18 +14,20 @@ const staticRanges = createStaticRanges([
   {
     label: 'Current Year',
     range: () => ({
-      startDate: new Date(`${boundaries.dateMax.getFullYear()}-01-01`),
-      endDate: new Date(`${boundaries.dateMax.getFullYear()}-12-31`),
+      startDate: set(boundaries.dateMax, { month: 0, day: 1 }),
+      endDate: boundaries.dateMax,
     }),
   },
   {
     label: 'Last 6 Months', // TODO
     range: () => ({
-      startDate: new Date(),
-      endDate: new Date().add(-1).months(),
+      startDate: sub(new Date(), { months: 6}),
+      endDate: new Date(),
     }),
   },
 ]);
+
+staticRanges.forEach(e => console.log(e.range()))
 
 class DatePicker extends Component {
   constructor(props) {
