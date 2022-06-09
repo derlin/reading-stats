@@ -1,36 +1,36 @@
-import * as dfd from "danfojs";
+import * as dfd from 'danfojs';
 
 const WEEKDAYS = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday",
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday',
 ];
 
-const books = new dfd.DataFrame(require("./all.json"));
+const books = new dfd.DataFrame(require('./all.json'));
 
 const df_byday = books
-  .groupby(["date"])
-  .apply((row) => {
+  .groupby(['date'])
+  .apply(row => {
     return new dfd.DataFrame({
-      minutes_sum: [row["minutes"].sum()],
-      tasks: [row["task"].unique().values.join(", ")],
+      minutes_sum: [row['minutes'].sum()],
+      tasks: [row['task'].unique().values.join(', ')],
     });
   })
-  .rename({ date_Group: "date", minutes_sum: "minutes" })
+  .rename({ date_Group: 'date', minutes_sum: 'minutes' })
   .resetIndex();
 
 const df_tasks = books
-  .iloc({ rows: books["task_done"] })
-  .groupby(["task"])
-  .apply((row) => {
-    let dates = row["date"].values;
+  .iloc({ rows: books['task_done'] })
+  .groupby(['task'])
+  .apply(row => {
+    let dates = row['date'].values;
 
     return new dfd.DataFrame({
-      minutes: [row["minutes"].sum()],
+      minutes: [row['minutes'].sum()],
       day_start: [dates.at(0)],
       day_end: [dates.at(-1)],
       days: [
@@ -41,44 +41,44 @@ const df_tasks = books
       ],
     });
   })
-  .rename({ task_Group: "task" })
+  .rename({ task_Group: 'task' })
   .resetIndex();
 
 const df_months = books
   .addColumn(
-    "month",
-    books["date"].apply((x) => x.substr(0, 7))
+    'month',
+    books['date'].apply(x => x.substr(0, 7))
   )
-  .groupby(["month"])
-  .apply((row) => {
-    let minutes = row["minutes"];
+  .groupby(['month'])
+  .apply(row => {
+    let minutes = row['minutes'];
     return new dfd.DataFrame({
       minutes: [minutes.sum()],
-      hours: ["Σ=" + Math.ceil(minutes.sum() / 60) + "h"],
+      hours: ['Σ=' + Math.ceil(minutes.sum() / 60) + 'h'],
       details: [
         `sum: ${minutes.sum()}<br>` +
-        `mean: ${minutes.mean().toFixed(2)}<br>` +
-        `median: ${minutes.median()}<br>` +
-        `min: ${minutes.min()}<br>` +
-        `max: ${minutes.max()}`,
+          `mean: ${minutes.mean().toFixed(2)}<br>` +
+          `median: ${minutes.median()}<br>` +
+          `min: ${minutes.min()}<br>` +
+          `max: ${minutes.max()}`,
       ],
     });
   })
-  .rename({ month_Group: "month" })
+  .rename({ month_Group: 'month' })
   .resetIndex();
 
 function df_weekdays(books) {
   return books
     .addColumn(
-      "weekday",
-      books["date"].dt.dayOfWeek().apply((n) => WEEKDAYS[n])
+      'weekday',
+      books['date'].dt.dayOfWeek().apply(n => WEEKDAYS[n])
     )
-    .groupby(["weekday"])
-    .apply((row) => {
-      let minutes = row["minutes"];
+    .groupby(['weekday'])
+    .apply(row => {
+      let minutes = row['minutes'];
       return new dfd.DataFrame({
         minutes: [minutes.sum()],
-        text: [Math.ceil(minutes.mean()) + "m ± " + Math.ceil(minutes.std())],
+        text: [Math.ceil(minutes.mean()) + 'm ± ' + Math.ceil(minutes.std())],
         details: [
           `sum: ${minutes.sum()}<br>` +
             `mean: ${minutes.mean().toFixed(2)}<br>` +
@@ -88,24 +88,22 @@ function df_weekdays(books) {
         ],
       });
     })
-    .rename({ weekday_Group: "weekday" })
+    .rename({ weekday_Group: 'weekday' })
     .resetIndex();
 }
 
-console.log("constants loaded");
+console.log('constants loaded');
 
 function _filterDataByDate(df, column, from_date, to_date) {
   if (from_date)
-    df = df
-      .iloc({ rows: df[column].apply((x) => x >= from_date) })
-      .resetIndex();
+    df = df.iloc({ rows: df[column].apply(x => x >= from_date) }).resetIndex();
   if (to_date)
-    df = df.iloc({ rows: df[column].apply((x) => x < to_date) }).resetIndex();
+    df = df.iloc({ rows: df[column].apply(x => x < to_date) }).resetIndex();
   return df;
 }
 
 function dateToString(date) {
-  if (date) return date.toISOString().split("T")[0];
+  if (date) return date.toISOString().split('T')[0];
   return null;
 }
 
@@ -122,26 +120,26 @@ export class Data {
   constructor(dateRange) {
     this.df_byday = _filterDataByDate(
       df_byday,
-      "date",
+      'date',
       dateRange.from_str,
       dateRange.to_str
     );
     this.df_tasks = _filterDataByDate(
       df_tasks,
-      "day_start",
+      'day_start',
       dateRange.from_str,
       dateRange.to_str
     );
     this.df_months = _filterDataByDate(
       df_months,
-      "month",
+      'month',
       dateRange.from_str.substr(0, 7),
       dateRange.to_str.substr(0, 7)
     );
     this.df_weekdays = df_weekdays(
       _filterDataByDate(
         books,
-        "date",
+        'date',
         dateRange.from_str.substr(0, 7),
         dateRange.to_str.substr(0, 7)
       )
@@ -150,6 +148,6 @@ export class Data {
 }
 
 export let boundaries = {
-  dateMin: new Date(books["date"].values.at(0)),
-  dateMax: new Date(books["date"].values.at(-1)),
+  dateMin: new Date(books['date'].values.at(0)),
+  dateMax: new Date(books['date'].values.at(-1)),
 };
