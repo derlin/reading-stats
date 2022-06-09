@@ -1,7 +1,6 @@
 import { DateRangePicker, createStaticRanges } from "react-date-range";
 import { Component } from "react";
-import {boundaries} from '../data/Data'
-
+import {boundaries} from '../data/Data';
 
 const staticRanges = createStaticRanges([
     {
@@ -21,8 +20,8 @@ const staticRanges = createStaticRanges([
     {
       label: 'Last 6 Months', // TODO
       range: () => ({
-        startDate: new Date('2021-06-04'),
-        endDate: new Date('2022-01-01'),
+        startDate: new Date(),
+        endDate: new Date().add(-1).months(),
       }),
     },
   ]);
