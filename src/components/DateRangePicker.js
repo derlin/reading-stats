@@ -2,6 +2,9 @@ import { DateRangePicker, createStaticRanges } from 'react-date-range';
 import { Component } from 'react';
 import { boundaries } from '../data/Data';
 import { set, sub } from 'date-fns';
+
+import 'react-date-range/dist/styles.css';
+import 'react-date-range/dist/theme/default.css';
 import './DateRangePicker.css';
 
 const staticRanges = createStaticRanges([

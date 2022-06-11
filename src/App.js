@@ -1,12 +1,11 @@
 import './App.css';
-import 'react-date-range/dist/styles.css';
-import 'react-date-range/dist/theme/default.css';
 
 import PlotByDay from './plots/PlotByDay';
 import PlotByMonth from './plots/PlotByMonth';
 import PlotByWeekday from './plots/PlotByWeekday';
 import { DateRange, Data, boundaries } from './data/Data';
 import DatePicker from './components/DateRangePicker';
+import { set } from 'date-fns';
 import React from 'react';
 
 class App extends React.Component {
@@ -18,6 +17,10 @@ class App extends React.Component {
     };
 
     this.handleSelect = this.handleSelect.bind(this);
+  }
+
+  stripTime(dt) {
+    return set(dt, { hours: 0, minutes: 0, seconds: 0, milliseconds: 0 });
   }
 
   handleSelect(event) {
@@ -32,11 +35,15 @@ class App extends React.Component {
     console.log('### render root');
     const dateRange = new DateRange(this.state.dateStart, this.state.dateEnd);
     const data = new Data(dateRange);
+
     return (
       <div>
         <DatePicker dateRange={dateRange} handleSelect={this.handleSelect} />
+        <h2>Reading per day</h2>
         <PlotByDay data={data} />
+        <h2>Reading per month</h2>
         <PlotByMonth data={data} />
+        <h2>Reading per weekday</h2>
         <PlotByWeekday data={data} />
       </div>
     );

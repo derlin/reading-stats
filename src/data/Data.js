@@ -1,4 +1,5 @@
 import * as dfd from 'danfojs';
+import { set, add } from 'date-fns';
 
 const WEEKDAYS = [
   'Monday',
@@ -68,10 +69,21 @@ const df_months = books
   .resetIndex();
 
 function df_weekdays(books) {
+  // avoid Dtype "undefined" not supported. dtype must be one of "float32,int32,string,boolean,undefined"
+  // thrown by column.dt.apply on empty dfs
+  if (books.shape[0] == 0)
+    return new dfd.DataFrame({
+      weekday: [0],
+      minutes: [0],
+      text: [''],
+      details: [''],
+    });
   return books
     .addColumn(
       'weekday',
-      books['date'].dt.dayOfWeek().apply(n => WEEKDAYS[n])
+      books.shape[0] == 0
+        ? []
+        : books['date'].dt.dayOfWeek().apply(n => WEEKDAYS[n])
     )
     .groupby(['weekday'])
     .apply(row => {
@@ -98,7 +110,8 @@ function _filterDataByDate(df, column, from_date, to_date) {
   if (from_date)
     df = df.iloc({ rows: df[column].apply(x => x >= from_date) }).resetIndex();
   if (to_date)
-    df = df.iloc({ rows: df[column].apply(x => x < to_date) }).resetIndex();
+    df = df.iloc({ rows: df[column].apply(x => x <= to_date) }).resetIndex();
+
   return df;
 }
 
@@ -109,10 +122,14 @@ function dateToString(date) {
 
 export class DateRange {
   constructor(from, to) {
-    this.from = from;
-    this.to = to;
+    this.from = DateRange.stripTime(from);
+    this.to = DateRange.stripTime(to);
     this.from_str = dateToString(from);
     this.to_str = dateToString(to);
+  }
+
+  static stripTime(dt) {
+    return set(dt, { hours: 0, minutes: 0, seconds: 0, milliseconds: 0 });
   }
 }
 
@@ -124,6 +141,11 @@ export class Data {
       dateRange.from_str,
       dateRange.to_str
     );
+    this.length = this.df_byday.shape[0];
+    this.isEmpty = this.length === 0;
+
+    if (this.isEmpty) return;
+
     this.df_tasks = _filterDataByDate(
       df_tasks,
       'day_start',
@@ -137,12 +159,7 @@ export class Data {
       dateRange.to_str.substr(0, 7)
     );
     this.df_weekdays = df_weekdays(
-      _filterDataByDate(
-        books,
-        'date',
-        dateRange.from_str.substr(0, 7),
-        dateRange.to_str.substr(0, 7)
-      )
+      _filterDataByDate(books, 'date', dateRange.from_str, dateRange.to_str)
     );
   }
 }

@@ -1,9 +1,13 @@
 import * as dfd from 'danfojs';
 import Plot from 'react-plotly.js';
+import { noDataLayout } from './common';
 
 const colors = ['LightSalmon', 'beige'];
+const id = 'plot_day';
 
 function PlotByDay(props) {
+  if (props.data.isEmpty) return <Plot divId={id} layout={noDataLayout()} />;
+
   let current_color = true;
   const shapes = [];
   const annotations = [];
@@ -45,6 +49,7 @@ function PlotByDay(props) {
 
   return (
     <Plot
+      divId={id}
       data={[
         {
           x: df_byday['date'].values,
@@ -55,11 +60,11 @@ function PlotByDay(props) {
           line: { color: '#da492f' },
         },
       ]}
-      style={{ width: '100%', height: '100%' }}
+      style={{ width: '100%', height: '600px' }}
       layout={{
-        title: 'Reading per day',
         shapes: shapes,
         annotations: annotations,
+        xaxis: { rangeslider: { visible: true } },
         yaxis: { title: 'minutes' },
       }}
       useResizeHandler={true}

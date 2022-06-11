@@ -1,10 +1,17 @@
 import Plot from 'react-plotly.js';
+import { noDataLayout } from './common';
+
+const style = { margin: 'auto', maxWidth: '900px' };
+const id = 'plot_weekday';
 
 function PlotByWeekday(props) {
+  if (props.data.isEmpty)
+    return <Plot divId={id} style={style} layout={noDataLayout()} />;
   const df = props.data.df_weekdays;
 
   return (
     <Plot
+      divId={id}
       data={[
         {
           type: 'bar',
@@ -15,13 +22,13 @@ function PlotByWeekday(props) {
           marker: { color: '#279658' },
         },
       ]}
-      style={{ width: '100%', height: '100%' }}
+      style={style}
       layout={{
-        title: 'Reading per weekday',
         xaxis: { type: 'category' }, // show all dates
         yaxis: { title: 'minutes' },
+        autosize: true, // this + useResizeHandler makes it responsive
       }}
-      useResizeHandler={true}
+      useResizeHandler={false}
     />
   );
 }
