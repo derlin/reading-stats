@@ -5,8 +5,8 @@ import { noDataLayout } from './common';
 const colors = ['LightSalmon', 'beige'];
 const id = 'plot_day';
 
-function PlotByDay(props) {
-  if (props.data.isEmpty) return <Plot divId={id} layout={noDataLayout()} />;
+export default function PlotByDay(props) {
+  if (props.data.isEmpty()) return <Plot divId={id} layout={noDataLayout()} />;
 
   let current_color = true;
   const shapes = [];
@@ -52,15 +52,15 @@ function PlotByDay(props) {
       divId={id}
       data={[
         {
-          x: df_byday['date'].values,
-          y: df_byday['minutes'].values,
+          x: df_byday.get('date'),
+          y: df_byday.get('minutes'),
           type: 'line',
           mode: 'lines',
-          text: df_byday['tasks'].values,
+          text: df_byday.get('tasks'),
           line: { color: '#da492f' },
         },
       ]}
-      style={{ width: '100%', height: '600px' }}
+      style={{ width: '100%', height: '700px' }}
       layout={{
         shapes: shapes,
         annotations: annotations,
@@ -71,5 +71,3 @@ function PlotByDay(props) {
     />
   );
 }
-
-export default PlotByDay;

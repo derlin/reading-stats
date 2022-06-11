@@ -4,9 +4,10 @@ import { noDataLayout } from './common';
 const style = { margin: 'auto' };
 const id = 'plot_month';
 
-function PlotByMonth(props) {
-  if (props.data.isEmpty)
+export default function PlotByMonth(props) {
+  if (props.data.isEmpty())
     return <Plot divId={id} style={style} layout={noDataLayout()} />;
+
   const df = props.data.df_months;
 
   return (
@@ -16,10 +17,10 @@ function PlotByMonth(props) {
       data={[
         {
           type: 'bar',
-          x: df['month'].values,
-          y: df['minutes'].values,
-          hovertext: df['details'].values,
-          text: df['hours'].values,
+          x: df.get('month'),
+          y: df.get('minutes'),
+          hovertext: df.get('details'),
+          text: df.get('hours'),
         },
       ]}
       style={style}
@@ -32,5 +33,3 @@ function PlotByMonth(props) {
     />
   );
 }
-
-export default PlotByMonth;

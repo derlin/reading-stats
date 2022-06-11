@@ -1,5 +1,5 @@
 import * as dfd from 'danfojs';
-import { set, add } from 'date-fns';
+import { set } from 'date-fns';
 
 const WEEKDAYS = [
   'Monday',
@@ -11,7 +11,29 @@ const WEEKDAYS = [
   'Sunday',
 ];
 
+// Add some nice prototypes to all dataframes
+Object.defineProperties(dfd.NDframe.prototype, {
+  // this dirty trick is to avoid the following error when working with empty dataframes:
+  //   DtypeError: Dtype "undefined" not supported. dtype must be one of "float32,int32,string,boolean,undefined"
+  // If we always use .get('column') in the plots, we should be fine
+  get: {
+    value: function (column) {
+      return this.shape[0] === 0 ? [] : this[column].values;
+    },
+  },
+  // this is just a helper
+  isEmpty: {
+    value: function () {
+      return this.shape[0] === 0;
+    },
+  },
+});
+
+// -----------------------
+
 const books = new dfd.DataFrame(require('./all.json'));
+
+// -- reading per days (minutes and tasks)
 
 const df_byday = books
   .groupby(['date'])
@@ -23,6 +45,8 @@ const df_byday = books
   })
   .rename({ date_Group: 'date', minutes_sum: 'minutes' })
   .resetIndex();
+
+// -- books read (title, minutes, date start/end)
 
 const df_tasks = books
   .iloc({ rows: books['task_done'] })
@@ -44,6 +68,8 @@ const df_tasks = books
   })
   .rename({ task_Group: 'task' })
   .resetIndex();
+
+// -- monthly statistics
 
 const df_months = books
   .addColumn(
@@ -68,22 +94,18 @@ const df_months = books
   .rename({ month_Group: 'month' })
   .resetIndex();
 
+// -- weekdays statistics
+
 function df_weekdays(books) {
   // avoid Dtype "undefined" not supported. dtype must be one of "float32,int32,string,boolean,undefined"
   // thrown by column.dt.apply on empty dfs
-  if (books.shape[0] == 0)
-    return new dfd.DataFrame({
-      weekday: [0],
-      minutes: [0],
-      text: [''],
-      details: [''],
-    });
+  // !! IMPORTANT !! callers must use .get() to get columns without errors
+  if (books.isEmpty()) return new dfd.DataFrame();
+
   return books
     .addColumn(
       'weekday',
-      books.shape[0] == 0
-        ? []
-        : books['date'].dt.dayOfWeek().apply(n => WEEKDAYS[n])
+      books['date'].dt.dayOfWeek().apply(n => WEEKDAYS[n])
     )
     .groupby(['weekday'])
     .apply(row => {
@@ -106,6 +128,8 @@ function df_weekdays(books) {
 
 console.log('constants loaded');
 
+// ----------------- utilities
+
 function _filterDataByDate(df, column, from_date, to_date) {
   if (from_date)
     df = df.iloc({ rows: df[column].apply(x => x >= from_date) }).resetIndex();
@@ -120,6 +144,8 @@ function dateToString(date) {
   return null;
 }
 
+// ----------------- DateRange helper
+
 export class DateRange {
   constructor(from, to) {
     this.from = DateRange.stripTime(from);
@@ -133,6 +159,8 @@ export class DateRange {
   }
 }
 
+// ----------------- Data encapsulation
+
 export class Data {
   constructor(dateRange) {
     this.df_byday = _filterDataByDate(
@@ -141,10 +169,11 @@ export class Data {
       dateRange.from_str,
       dateRange.to_str
     );
-    this.length = this.df_byday.shape[0];
-    this.isEmpty = this.length === 0;
 
-    if (this.isEmpty) return;
+    this.isEmpty = () => {
+      console.log('asdf', this.df_byday.shape);
+      return this.df_byday.isEmpty();
+    };
 
     this.df_tasks = _filterDataByDate(
       df_tasks,
@@ -152,12 +181,14 @@ export class Data {
       dateRange.from_str,
       dateRange.to_str
     );
+
     this.df_months = _filterDataByDate(
       df_months,
       'month',
       dateRange.from_str.substr(0, 7),
       dateRange.to_str.substr(0, 7)
     );
+
     this.df_weekdays = df_weekdays(
       _filterDataByDate(books, 'date', dateRange.from_str, dateRange.to_str)
     );

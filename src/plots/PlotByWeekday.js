@@ -4,9 +4,10 @@ import { noDataLayout } from './common';
 const style = { margin: 'auto', maxWidth: '900px' };
 const id = 'plot_weekday';
 
-function PlotByWeekday(props) {
-  if (props.data.isEmpty)
+export default function PlotByWeekday(props) {
+  if (props.data.isEmpty())
     return <Plot divId={id} style={style} layout={noDataLayout()} />;
+
   const df = props.data.df_weekdays;
 
   return (
@@ -15,10 +16,10 @@ function PlotByWeekday(props) {
       data={[
         {
           type: 'bar',
-          x: df['weekday'].values,
-          y: df['minutes'].values,
-          hovertext: df['details'].values,
-          text: df['text'].values,
+          x: df.get('weekday'),
+          y: df.get('minutes'),
+          hovertext: df.get('details'),
+          text: df.get('text'),
           marker: { color: '#279658' },
         },
       ]}
@@ -32,5 +33,3 @@ function PlotByWeekday(props) {
     />
   );
 }
-
-export default PlotByWeekday;
