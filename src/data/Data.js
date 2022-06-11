@@ -32,6 +32,7 @@ Object.defineProperties(dfd.NDframe.prototype, {
 // -----------------------
 
 const books = new dfd.DataFrame(require('./all.json'));
+export const meta = require('./meta.json');
 
 // -- reading per days (minutes and tasks)
 

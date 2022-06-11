@@ -7,6 +7,7 @@ import { DateRange, Data, boundaries } from './data/Data';
 import DatePicker from './components/DateRangePicker';
 import { set } from 'date-fns';
 import React from 'react';
+import BookTable from './components/BookTable';
 
 class App extends React.Component {
   constructor(props) {
@@ -45,6 +46,8 @@ class App extends React.Component {
         <PlotByMonth data={data} />
         <h2>Reading per weekday</h2>
         <PlotByWeekday data={data} />
+        <h2>Books read</h2>
+        <BookTable data={data} />
       </div>
     );
   }
