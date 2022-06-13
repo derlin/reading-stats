@@ -31,13 +31,9 @@ const staticRanges = createStaticRanges([
   },
 ]);
 
-staticRanges.forEach(e => console.log(e.range()));
+//staticRanges.forEach(e => console.log(e.range()));
 
 class DatePicker extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const selectionRange = {
       startDate: this.props.dateRange.from ?? new Date('2021-05-01'),

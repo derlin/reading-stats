@@ -11,7 +11,7 @@ function formatDuration(minutes) {
 
 function grlink(task, goodreadsId) {
     if(goodreadsId) {
-        return <a href={`https://www.goodreads.com/book/show/${goodreadsId}`} target='_blank'>{task}</a>
+        return <a href={`https://www.goodreads.com/book/show/${goodreadsId}`} target='_blank' rel='noopener'>{task}</a>
     }
     return task
 }
@@ -33,7 +33,7 @@ export default function BookTable(props) {
         {dfd.toJSON(df).map(row => {
           const m = meta[row['task']] ?? {};
           return (
-            <tr>
+            <tr key={row['task']}>
               <td>{grlink(row['task'], m?.GoodreadsID)}</td>
               <td>{formatDuration(row['minutes'])}</td>
               <td>{row.day_start}</td>

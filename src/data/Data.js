@@ -172,7 +172,6 @@ export class Data {
     );
 
     this.isEmpty = () => {
-      console.log('asdf', this.df_byday.shape);
       return this.df_byday.isEmpty();
     };
 
