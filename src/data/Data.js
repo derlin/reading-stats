@@ -1,15 +1,7 @@
 import * as dfd from 'danfojs';
 import { set } from 'date-fns';
 
-const WEEKDAYS = [
-  'Monday',
-  'Tuesday',
-  'Wednesday',
-  'Thursday',
-  'Friday',
-  'Saturday',
-  'Sunday',
-];
+const WEEKDAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 // Add some nice prototypes to all dataframes
 Object.defineProperties(dfd.NDframe.prototype, {
@@ -32,7 +24,7 @@ Object.defineProperties(dfd.NDframe.prototype, {
 // -----------------------
 
 const books = new dfd.DataFrame(require('./all.json'));
-export const meta = require('./meta.json');
+const meta = require('./meta.json');
 
 // -- reading per days (minutes and tasks)
 
@@ -53,18 +45,19 @@ const df_tasks = books
   .iloc({ rows: books['task_done'] })
   .groupby(['task'])
   .apply(row => {
-    let dates = row['date'].values;
+    const dates = row['date'].values;
+    const m = meta[row['task'].values[0]] ?? {};
+    console.log(row, m);
 
     return new dfd.DataFrame({
       minutes: [row['minutes'].sum()],
       day_start: [dates.at(0)],
       day_end: [dates.at(-1)],
       days: [
-        Math.ceil(
-          Math.abs(new Date(dates.at(-1)) - new Date(dates.at(0))) /
-            (24 * 60 * 60 * 1000)
-        ),
+        Math.ceil(Math.abs(new Date(dates.at(-1)) - new Date(dates.at(0))) / (24 * 60 * 60 * 1000)),
       ],
+      pages: [m?.pages],
+      grId: [m?.GoodreadsID],
     });
   })
   .rename({ task_Group: 'task' })
@@ -132,10 +125,8 @@ console.log('constants loaded');
 // ----------------- utilities
 
 function _filterDataByDate(df, column, from_date, to_date) {
-  if (from_date)
-    df = df.iloc({ rows: df[column].apply(x => x >= from_date) }).resetIndex();
-  if (to_date)
-    df = df.iloc({ rows: df[column].apply(x => x <= to_date) }).resetIndex();
+  if (from_date) df = df.iloc({ rows: df[column].apply(x => x >= from_date) }).resetIndex();
+  if (to_date) df = df.iloc({ rows: df[column].apply(x => x <= to_date) }).resetIndex();
 
   return df;
 }
@@ -164,23 +155,13 @@ export class DateRange {
 
 export class Data {
   constructor(dateRange) {
-    this.df_byday = _filterDataByDate(
-      df_byday,
-      'date',
-      dateRange.from_str,
-      dateRange.to_str
-    );
+    this.df_byday = _filterDataByDate(df_byday, 'date', dateRange.from_str, dateRange.to_str);
 
     this.isEmpty = () => {
       return this.df_byday.isEmpty();
     };
 
-    this.df_tasks = _filterDataByDate(
-      df_tasks,
-      'day_start',
-      dateRange.from_str,
-      dateRange.to_str
-    );
+    this.df_tasks = _filterDataByDate(df_tasks, 'day_start', dateRange.from_str, dateRange.to_str);
 
     this.df_months = _filterDataByDate(
       df_months,

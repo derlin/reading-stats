@@ -1,0 +1,57 @@
+/* -- basic styles */
+
+.bookTable {
+  margin: 10px auto;
+  border-spacing: 0;
+  overflow-x: auto;
+  text-align: left;
+}
+
+.td,
+.th {
+  border-bottom: 0.1rem solid #e1e1e1;
+  padding: 0.8rem;
+}
+
+.tr:hover {
+    background: #efefef;
+}
+
+/* -- sort arrows */
+
+.th:after {
+  content: "▾";
+  display: inline-block;
+  width: 1em;
+  text-align: center;
+  padding-left: 2pt;
+  transition: all 0.3s;
+  transform-origin: center;
+  transform: rotate(0);
+  color: #dfdfdf;
+}
+
+.th.sorted::after {
+  color: black;
+}
+
+.th.sorted.up::after {
+  transform: rotate(-180deg) translate(-2px, -3px);
+}
+
+
+/* -- hide rows on mobile */
+
+@media (max-width: 600px) {
+  .bookTable {
+    display: table;
+    overflow-x: initial;
+  }
+
+  .th:nth-of-type(4),
+  .th:nth-of-type(5),
+  .td:nth-of-type(4),
+  .td:nth-of-type(5) {
+    display: none;
+  }
+}

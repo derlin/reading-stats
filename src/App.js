@@ -39,6 +39,7 @@ class App extends React.Component {
 
     return (
       <div>
+        <button>lala</button>
         <DatePicker dateRange={dateRange} handleSelect={this.handleSelect} />
         <h2>Reading per day</h2>
         <PlotByDay data={data} />

@@ -5,8 +5,7 @@ const style = { margin: 'auto' };
 const id = 'plot_month';
 
 export default function PlotByMonth(props) {
-  if (props.data.isEmpty())
-    return <Plot divId={id} style={style} layout={noDataLayout()} />;
+  if (props.data.isEmpty()) return <Plot divId={id} style={style} layout={noDataLayout()} />;
 
   const df = props.data.df_months;
 

@@ -5,8 +5,7 @@ const style = { margin: 'auto', maxWidth: '900px' };
 const id = 'plot_weekday';
 
 export default function PlotByWeekday(props) {
-  if (props.data.isEmpty())
-    return <Plot divId={id} style={style} layout={noDataLayout()} />;
+  if (props.data.isEmpty()) return <Plot divId={id} style={style} layout={noDataLayout()} />;
 
   const df = props.data.df_weekdays;
 
