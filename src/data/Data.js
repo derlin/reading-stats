@@ -178,4 +178,5 @@ export class Data {
 export let boundaries = {
   dateMin: new Date(books['date'].values.at(0)),
   dateMax: new Date(books['date'].values.at(-1)),
+  years: books['date'].dt.year().unique().values,
 };

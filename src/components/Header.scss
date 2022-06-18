@@ -1,0 +1,52 @@
+#top-row {
+  .picker {
+    position: absolute;
+    z-index: 1000;
+    padding: 10px;
+    background-color: aliceblue;
+  }
+
+  #header {
+    position: fixed;
+    width: 100%;
+    background-color: aliceblue;
+    top: 0;
+    padding: 10px;
+    z-index: 999;
+
+    & > div {
+      display: inline-block;
+      padding: 3px 8px;
+    }
+
+    .current {
+      margin-right: 2.5em;
+
+      .icon {
+        padding: 0px 3px;
+        width: 2em;
+        display: inline-block;
+        text-align: center;
+        color: #aaa;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #top-row {
+    .picker .rdrDefinedRangesWrapper {
+      display: none;
+    }
+
+    .picker {
+      /* center on mobile */
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn {
+      float: none;
+    }
+  }
+}

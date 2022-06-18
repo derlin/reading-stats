@@ -4,7 +4,7 @@ import PlotByDay from './plots/PlotByDay';
 import PlotByMonth from './plots/PlotByMonth';
 import PlotByWeekday from './plots/PlotByWeekday';
 import { DateRange, Data, boundaries } from './data/Data';
-import DatePicker from './components/DateRangePicker';
+import Header from './components/Header';
 import { set } from 'date-fns';
 import React from 'react';
 import BookTable from './components/BookTable';
@@ -40,7 +40,7 @@ class App extends React.Component {
 
     return (
       <div>
-        <DatePicker dateRange={dateRange} handleSelect={this.handleSelect} />
+        <Header dateRange={dateRange} handleSelect={this.handleSelect} />
         <h2>Reading per day</h2>
         <PlotByDay data={data} />
         <h2>Reading per month</h2>

@@ -37,8 +37,7 @@ export default class BookTable extends React.Component {
 
   render() {
     let df = this.props.data.df_tasks;
-    if(df.isEmpty())
-      return '<div>No data</div>'
+    if (df.isEmpty()) return '<div>No data</div>';
 
     if (this.state.sortBy) {
       df = df.sortValues(this.state.sortBy, {
