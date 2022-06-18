@@ -20,23 +20,25 @@
 /* -- sort arrows */
 
 .th:after {
-  content: "▾";
+  content: '⭥';
   display: inline-block;
   width: 1em;
   text-align: center;
   padding-left: 2pt;
   transition: all 0.3s;
-  transform-origin: center;
-  transform: rotate(0);
-  color: #dfdfdf;
+  color: #AFAFAF;
 }
 
 .th.sorted::after {
-  color: black;
+  color: #282bf1;
 }
 
 .th.sorted.up::after {
-  transform: rotate(-180deg) translate(-2px, -3px);
+  content: '↑';
+}
+
+.th.sorted.down::after {
+  content: '↓';
 }
 
 

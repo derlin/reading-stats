@@ -37,6 +37,9 @@ export default class BookTable extends React.Component {
 
   render() {
     let df = this.props.data.df_tasks;
+    if(df.isEmpty())
+      return '<div>No data</div>'
+
     if (this.state.sortBy) {
       df = df.sortValues(this.state.sortBy, {
         ascending: this.state.sortAscending,
@@ -79,13 +82,13 @@ export default class BookTable extends React.Component {
 
   getHeaderClass(column) {
     if (this.state.sortBy === column) {
-      return  `${styles.th} ${styles.sorted}` + (this.state.sortAscending ? '' : ` ${styles.up}`);
+      const arrowClass = this.state.sortAscending ? styles.down : styles.up;
+      return [styles.th, styles.sorted, arrowClass].join(' ');
     }
     return styles.th;
   }
 
   sortBy(column) {
-    console.log('sort by called ', column, this.state);
     if (this.state.sortBy === column) {
       this.setState({ sortAscending: !this.state.sortAscending });
     } else {

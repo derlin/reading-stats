@@ -47,7 +47,6 @@ const df_tasks = books
   .apply(row => {
     const dates = row['date'].values;
     const m = meta[row['task'].values[0]] ?? {};
-    console.log(row, m);
 
     return new dfd.DataFrame({
       minutes: [row['minutes'].sum()],

@@ -8,6 +8,7 @@ import DatePicker from './components/DateRangePicker';
 import { set } from 'date-fns';
 import React from 'react';
 import BookTable from './components/BookTable';
+import DateRangePickerr from './components/DateRangePickerr';
 
 class App extends React.Component {
   constructor(props) {
@@ -26,8 +27,8 @@ class App extends React.Component {
 
   handleSelect(event) {
     this.setState({
-      dateStart: event.selection.startDate,
-      dateEnd: event.selection.endDate,
+      dateStart: event.from,
+      dateEnd: event.to,
     });
     console.log('handle select', event);
   }
@@ -39,7 +40,6 @@ class App extends React.Component {
 
     return (
       <div>
-        <button>lala</button>
         <DatePicker dateRange={dateRange} handleSelect={this.handleSelect} />
         <h2>Reading per day</h2>
         <PlotByDay data={data} />

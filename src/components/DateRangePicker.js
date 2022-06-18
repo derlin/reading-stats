@@ -1,11 +1,13 @@
 import { DateRangePicker, createStaticRanges } from 'react-date-range';
 import { Component } from 'react';
 import { boundaries } from '../data/Data';
-import { set, sub } from 'date-fns';
+import { set, sub, format } from 'date-fns';
 
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import './DateRangePicker.css';
+
+const DATE_FORMAT = 'yyyy-MM-dd';
 
 const staticRanges = createStaticRanges([
   {
@@ -25,35 +27,61 @@ const staticRanges = createStaticRanges([
   {
     label: 'Last 6 Months', // TODO
     range: () => ({
-      startDate: sub(new Date(), { months: 6 }),
-      endDate: new Date(),
+      startDate: sub(boundaries.dateMax, { months: 6 }),
+      endDate: boundaries.dateMax,
     }),
   },
 ]);
 
 //staticRanges.forEach(e => console.log(e.range()));
 
-class DatePicker extends Component {
-  render() {
-    const selectionRange = {
-      startDate: this.props.dateRange.from ?? new Date('2021-05-01'),
-      endDate: this.props.dateRange.to ?? new Date(),
-      key: 'selection',
+export default class DatePicker extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      opened: false,
     };
+
+    this.selectDates = this.selectDates.bind(this);
+    this.togglePicker = this.togglePicker.bind(this);
+  }
+
+  render() {
+    const start = this.props.dateRange.from ?? boundaries.dateMin;
+    const end = this.props.dateRange.to ?? boundaries.dateMax;
+
     return (
-      <div id="picker">
-        <DateRangePicker
-          ranges={[selectionRange]}
-          onChange={this.props.handleSelect}
-          minDate={boundaries.dateMin}
-          maxDate={boundaries.dateMax}
-          staticRanges={staticRanges}
-          editableDateInputs={true}
-          dateDisplayFormat={'yyyy-MM-dd'}
-        />
+      <div>
+        <div id='header'>
+          {staticRanges.map((range) => 
+          <div onClick={() => this.selectDates({selection: range.range()})}>{range.label}</div>
+          )}
+          <div onClick={this.togglePicker}>
+            {format(start, DATE_FORMAT)} - {format(end, DATE_FORMAT)}
+          </div>
+        </div>
+        <div style={{height: '30px'}}></div>
+        {this.state.opened &&  
+        <div id="picker">
+          <DateRangePicker
+            ranges={[{ startDate: start, endDate: end, key: 'selection' }]}
+            onChange={this.selectDates}
+            minDate={boundaries.dateMin}
+            maxDate={boundaries.dateMax}
+            staticRanges={staticRanges}
+            editableDateInputs={true}
+            dateDisplayFormat={DATE_FORMAT}
+          />
+        </div> }
       </div>
     );
   }
-}
 
-export default DatePicker;
+  selectDates(event) {
+    this.props.handleSelect({from: event.selection.startDate, to: event.selection.endDate})
+  }
+
+  togglePicker() {
+    this.setState({ opened: !this.state.opened });
+  }
+}
