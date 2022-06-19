@@ -46,10 +46,10 @@ export default class BookTable extends React.Component {
     }
 
     const headers = {
-      task: 'book',
-      minutes: 'duration',
-      day_start: 'start date',
-      pages: 'pages',
+      task: 'Book',
+      minutes: 'Duration',
+      day_start: 'Start Date',
+      pages: 'Pages',
     };
 
     return (

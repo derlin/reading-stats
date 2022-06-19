@@ -1,15 +1,23 @@
+@mixin font {
+  font-family: 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+$border: 2px solid black;
+$height: 50px;
+
 #top-row {
-  .picker {
-    position: absolute;
-    z-index: 1000;
-    padding: 10px;
-    background-color: aliceblue;
-  }
+  height: $height; /* add margin */
+  @include font;
 
   #header {
     position: fixed;
     width: 100%;
-    background-color: aliceblue;
+    /*
+    background-color: white;
+    border-bottom: 2px solid black;
+    */
     top: 0;
     padding: 10px;
     z-index: 999;
@@ -27,7 +35,50 @@
         width: 2em;
         display: inline-block;
         text-align: center;
-        color: #aaa;
+      }
+    }
+
+    .span,
+    .btn {
+      /* span for the date picker */
+      font-family: 'Trebuchet MS', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+    }
+
+    .btn,
+    input {
+      border: $border;
+    }
+
+    .btn {
+      cursor: pointer;
+      padding: 4px 5px;
+      margin-left: 10px;
+      background: white;
+
+      &:active {
+        background: black;
+        color: white;
+      }
+    }
+
+    .picker {
+      position: absolute;
+      z-index: 1000;
+  
+      .rdrDateRangeWrapper {
+        margin-top: 10px;
+        border: $border;
+  
+        .rdrDateDisplayItemActive {
+          border: none;
+  
+          input {
+            @include font;
+            color: black;
+          }
+        }
       }
     }
   }
@@ -35,18 +86,33 @@
 
 @media (max-width: 600px) {
   #top-row {
-    .picker .rdrDefinedRangesWrapper {
-      display: none;
-    }
+    height: auto;
 
-    .picker {
-      /* center on mobile */
-      display: flex;
-      justify-content: center;
-    }
+    #header {
+      text-align: center;
+      position: relative;
+      background-color: transparent;
 
-    .btn {
-      float: none;
+      .btn {
+        margin-top: $height;
+        float: none;
+      }
+
+      .current {
+        position: fixed;
+        /*background-color: #efefef;*/
+        display: block;
+        padding: 10px;
+        width: 100%;
+        top: 0;
+      }
+
+      .picker {
+        /* center on mobile */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
     }
   }
 }

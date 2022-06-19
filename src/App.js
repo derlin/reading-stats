@@ -8,7 +8,6 @@ import Header from './components/Header';
 import { set } from 'date-fns';
 import React from 'react';
 import BookTable from './components/BookTable';
-import DateRangePickerr from './components/DateRangePickerr';
 
 class App extends React.Component {
   constructor(props) {

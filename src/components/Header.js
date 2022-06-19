@@ -1,4 +1,4 @@
-import { DateRangePicker, createStaticRanges } from 'react-date-range';
+import { DateRange, createStaticRanges } from 'react-date-range';
 import { Component } from 'react';
 import { boundaries } from '../data/Data';
 import { set, sub, format } from 'date-fns';
@@ -9,18 +9,12 @@ import './Header.scss';
 
 const DATE_FORMAT = 'yyyy-MM-dd';
 
+/* This respects the format of DateRangePicker */
 const staticRanges = createStaticRanges([
   {
     label: 'All',
     range: () => ({
       startDate: boundaries.dateMin,
-      endDate: boundaries.dateMax,
-    }),
-  },
-  {
-    label: 'Current Year',
-    range: () => ({
-      startDate: set(boundaries.dateMax, { month: 0, day: 1 }),
       endDate: boundaries.dateMax,
     }),
   },
@@ -31,10 +25,20 @@ const staticRanges = createStaticRanges([
       endDate: boundaries.dateMax,
     }),
   },
-  ...boundaries.years.map(year => ({
-    label: year,
-    range: () => ({ startDate: new Date(`${year}-01-01`), endDate: new Date(`${year}-12-31`) }),
-  })),
+  {
+    label: 'This Year',
+    range: () => ({
+      startDate: set(boundaries.dateMax, { month: 0, day: 1 }),
+      endDate: boundaries.dateMax,
+    }),
+  },
+  ...boundaries.years
+    .reverse()
+    .slice(1)
+    .map(year => ({
+      label: year,
+      range: () => ({ startDate: new Date(`${year}-01-01`), endDate: new Date(`${year}-12-31`) }),
+    })),
 ]);
 
 //staticRanges.forEach(e => console.log(e.range()));
@@ -51,45 +55,53 @@ export default class Header extends Component {
   }
 
   render() {
+    return (
+      <div id="top-row">
+        <div id="header">
+          {this.renderDatePicker('current')}
+          {this.renderPresets()}
+        </div>
+      </div>
+    );
+  }
+
+  renderDatePicker(className) {
     const start = this.props.dateRange.from ?? boundaries.dateMin;
     const end = this.props.dateRange.to ?? boundaries.dateMax;
 
     return (
-      <div id="top-row">
-        <div id="header">
-          <div className="current">
-            <span onClick={this.togglePicker}>
-              {format(start, DATE_FORMAT)} → {format(end, DATE_FORMAT)}
-              <span className="icon">{this.state.opened ? ' ✕' : ' ✎'}</span>
-            </span>
+      <div className={className}>
+        <span className='btn' onClick={this.togglePicker}>
+          {format(start, DATE_FORMAT)} → {format(end, DATE_FORMAT)}
+          <span className="icon">{this.state.opened ? ' ✕' : ' ✎'}</span>
+        </span>
 
-            <div className="picker">
-              {this.state.opened && (
-                <DateRangePicker
-                  ranges={[{ startDate: start, endDate: end, key: 'selection' }]}
-                  onChange={this.selectDates}
-                  minDate={boundaries.dateMin}
-                  maxDate={boundaries.dateMax}
-                  staticRanges={staticRanges}
-                  editableDateInputs={true}
-                  dateDisplayFormat={DATE_FORMAT}
-                />
-              )}
-            </div>
-          </div>
-          {staticRanges.map(range => (
-            <div
-              key={range.label}
-              className="btn"
-              onClick={() => this.selectDates({ selection: range.range() })}
-            >
-              {range.label}
-            </div>
-          ))}
+        <div className="picker">
+          {this.state.opened && (
+            <DateRange
+              ranges={[{ startDate: start, endDate: end, key: 'selection' }]}
+              onChange={this.selectDates}
+              minDate={boundaries.dateMin}
+              maxDate={boundaries.dateMax}
+              editableDateInputs={true}
+              dateDisplayFormat={DATE_FORMAT}
+            />
+          )}
         </div>
-        <div style={{ height: '50px' }}></div>
       </div>
     );
+  }
+
+  renderPresets() {
+    return staticRanges.map(range => (
+      <div
+        key={range.label}
+        className="btn"
+        onClick={() => this.selectDates({ selection: range.range() })}
+      >
+        {range.label}
+      </div>
+    ));
   }
 
   selectDates(event) {
