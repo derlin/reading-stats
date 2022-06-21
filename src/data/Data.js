@@ -42,7 +42,7 @@ const df_byday = books
 // -- books read (title, minutes, date start/end)
 
 const df_tasks = books
-  .iloc({ rows: books['task_done'] })
+  .iloc({ rows: books['task_done'] }) // the placeholder task '' is not "done"
   .groupby(['task'])
   .apply(row => {
     const dates = row['date'].values;

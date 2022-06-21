@@ -8,6 +8,7 @@ import Header from './components/Header';
 import { set } from 'date-fns';
 import React from 'react';
 import BookTable from './components/BookTable';
+import GlobalStats from './components/GlobalStats';
 
 class App extends React.Component {
   constructor(props) {
@@ -40,6 +41,7 @@ class App extends React.Component {
     return (
       <div>
         <Header dateRange={dateRange} handleSelect={this.handleSelect} />
+        <GlobalStats dateRange={dateRange} data={data} />
         <h2>Reading per day</h2>
         <PlotByDay data={data} />
         <h2>Reading per month</h2>
