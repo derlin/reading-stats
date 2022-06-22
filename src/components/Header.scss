@@ -3,28 +3,14 @@
 $height: 50px;
 
 #top-row {
-  height: $height; /* add margin */
   @include titleFont;
 
   #header {
     position: fixed;
-    width: 100%;
-    /*
-    background-color: white;
-    border-bottom: 2px solid black;
-    */
-    top: 0;
     padding: 10px;
     z-index: 999;
 
-    & > div {
-      display: inline-block;
-      padding: 3px 8px;
-    }
-
     .current {
-      margin-right: 2.5em;
-
       .icon {
         padding: 0px 3px;
         width: 2em;
@@ -33,12 +19,13 @@ $height: 50px;
       }
     }
 
+    .current,
     .span,
     .btn {
       /* span for the date picker */
-      font-family: 'Trebuchet MS', sans-serif;
-      text-transform: uppercase;
-      letter-spacing: -1px;
+      @include titleFont;
+      display: inline-block;
+      padding: 3px 8px;
     }
 
     .btn,
@@ -48,27 +35,32 @@ $height: 50px;
 
     .btn {
       cursor: pointer;
-      padding: 4px 5px;
       margin-left: 10px;
       background: white;
+      font-size: 1em; /* button have a different one */
 
-      &:active {
+      &:hover,
+      &.focus {
+        /* TODO: the focus is a trick that doesn't work when clicking on some other input. Do it in code */
         background: black;
         color: white;
+      }
+      &:active {
+        box-shadow: 0 2px 3px 0 rgb(35 57 66 / 61%);
       }
     }
 
     .picker {
       position: absolute;
       z-index: 1000;
-  
+
       .rdrDateRangeWrapper {
         margin-top: 10px;
         border: $border;
-  
+
         .rdrDateDisplayItemActive {
           border: none;
-  
+
           input {
             @include titleFont;
             color: black;
@@ -79,27 +71,40 @@ $height: 50px;
   }
 }
 
+@include large-screen {
+  #top-row {
+    height: $height; /* add margin */
+
+    #header {
+      position: fixed;
+      top: 0;
+
+      .current {
+        margin-right: 2.5em;
+      }
+    }
+  }
+}
+
 @include small-screen {
   #top-row {
-    height: auto;
 
     #header {
       text-align: center;
       position: relative;
-      background-color: transparent;
+      padding-top: $height; /* add margin */
 
       .btn {
-        margin-top: $height;
-        float: none;
+        margin-bottom: 10pt;
       }
 
       .current {
         position: fixed;
-        /*background-color: #efefef;*/
-        display: block;
         padding: 10px;
         width: 100%;
         top: 0;
+        left: 0;
+        right: 0;
       }
 
       .picker {

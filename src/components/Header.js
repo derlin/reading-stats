@@ -50,6 +50,7 @@ export default class Header extends Component {
     super(props);
     this.state = {
       opened: false,
+      selectedBtn: '',
     };
 
     this.selectDates = this.selectDates.bind(this);
@@ -96,18 +97,19 @@ export default class Header extends Component {
 
   renderPresets() {
     return staticRanges.map(range => (
-      <div
+      <button
         key={range.label}
-        className="btn"
-        onClick={() => this.selectDates({ selection: range.range() })}
+        className={ "btn " + (this.state.selectedBtn === range.label ? "focus" : "")}
+        onClick={() => this.selectDates({ selection: range.range() }, range.label)}
       >
         {range.label}
-      </div>
+      </button>
     ));
   }
 
-  selectDates(event) {
+  selectDates(event, selectedBtn) {
     this.props.handleSelect({ from: event.selection.startDate, to: event.selection.endDate });
+    this.setState({selectedBtn: selectedBtn ?? ''})
   }
 
   togglePicker() {
