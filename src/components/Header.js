@@ -1,7 +1,7 @@
 import { DateRange, createStaticRanges } from 'react-date-range';
 import { Component } from 'react';
 import { boundaries } from '../data/Data';
-import { set, sub, format } from 'date-fns';
+import { set, add, sub, format, max } from 'date-fns';
 
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
@@ -19,9 +19,10 @@ const staticRanges = createStaticRanges([
     }),
   },
   {
-    label: 'Last 6 Months', // TODO
+    label: 'Last 6 Months',
     range: () => ({
-      startDate: sub(boundaries.dateMax, { months: 6 }),
+      // add one day, since the limits are inclusive (we have the full first and last days)
+      startDate: add(sub(boundaries.dateMax, { months: 6 }), {days: 1}),
       endDate: boundaries.dateMax,
     }),
   },
@@ -37,11 +38,12 @@ const staticRanges = createStaticRanges([
     .slice(1)
     .map(year => ({
       label: year,
-      range: () => ({ startDate: new Date(`${year}-01-01`), endDate: new Date(`${year}-12-31`) }),
+      range: () => ({
+        startDate: max([boundaries.dateMin, new Date(`${year}-01-01`)]),
+        endDate: new Date(`${year}-12-31`),
+      }),
     })),
 ]);
-
-//staticRanges.forEach(e => console.log(e.range()));
 
 export default class Header extends Component {
   constructor(props) {
@@ -71,7 +73,7 @@ export default class Header extends Component {
 
     return (
       <div className={className}>
-        <span className='btn' onClick={this.togglePicker}>
+        <span className="btn" onClick={this.togglePicker}>
           {format(start, DATE_FORMAT)} → {format(end, DATE_FORMAT)}
           <span className="icon">{this.state.opened ? ' ✕' : ' ✎'}</span>
         </span>

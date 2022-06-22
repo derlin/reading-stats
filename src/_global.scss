@@ -1,0 +1,27 @@
+$max-width: 1000px;
+$small-screen: 600px;
+
+$code-color: #e91e63;
+$link-color: #1f77b4;
+$link-color-hover: #1d5a86;
+$link-color-visited: #8D3399;
+
+@mixin titleFont {
+  font-family: 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+$border: 2px solid black;
+
+@mixin small-screen {
+    @media (max-width: #{$small-screen}) {
+        @content;
+    }
+}
+
+@mixin large-screen {
+    @media (min-width: #{$small-screen}) {
+        @content;
+    }
+}

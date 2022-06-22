@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 
 import PlotByDay from './plots/PlotByDay';
 import PlotByMonth from './plots/PlotByMonth';
@@ -27,20 +27,21 @@ class App extends React.Component {
 
   handleSelect(event) {
     this.setState({
-      dateStart: event.from,
-      dateEnd: event.to,
-    });
-    console.log('handle select', event);
+      dateStart: this.stripTime(event.from),
+      dateEnd: this.stripTime(event.to),
+    }, () => console.log("new state", this.state));
   }
 
   render() {
     console.log('### render root');
     const dateRange = new DateRange(this.state.dateStart, this.state.dateEnd);
+    window.dr = dateRange;
     const data = new Data(dateRange);
 
     return (
       <div>
         <Header dateRange={dateRange} handleSelect={this.handleSelect} />
+        <h2>Overview</h2>
         <GlobalStats dateRange={dateRange} data={data} />
         <h2>Reading per day</h2>
         <PlotByDay data={data} />

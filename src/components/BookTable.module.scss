@@ -1,0 +1,75 @@
+@import '../_global.scss';
+
+$row-separator-color: #e1e1e1;
+$hover-color: #efefef;
+
+$sort-icon-disabled: '⭥';
+$sort-icon-up: '↑';
+$sort-icon-down: '↓';
+
+$sort-icon-color-disabled: #AFAFAF;
+$sort-icon-color-active: #282bf1;
+
+/* -- basic styles */
+
+.bookTable {
+  margin: 10px auto;
+  padding: 5px 10px;
+  border-spacing: 0;
+  overflow-x: auto;
+  text-align: left;
+}
+
+.td,
+.th {
+  border-bottom: 0.1rem solid $row-separator-color;
+  padding: 0.8rem;
+}
+
+.th {
+  @include titleFont;
+  cursor: pointer;
+}
+
+.tr:hover {
+    background: $hover-color;
+}
+
+/* -- sort arrows */
+
+.th:after {
+  content: $sort-icon-disabled;
+  display: inline-block;
+  width: 1em;
+  text-align: center;
+  padding-left: 2pt;
+  transition: all 0.3s;
+  color: $sort-icon-color-disabled;
+}
+
+.th.sorted::after {
+  color: $sort-icon-color-active;
+}
+
+.th.sorted.up::after {
+  content: $sort-icon-up;
+}
+
+.th.sorted.down::after {
+  content: $sort-icon-down;
+}
+
+
+/* -- hide rows on mobile */
+
+@include small-screen {
+  .bookTable {
+    display: table;
+    overflow-x: initial;
+  }
+
+  .th:nth-of-type(3),
+  .td:nth-of-type(3) {
+    display: none;
+  }
+}

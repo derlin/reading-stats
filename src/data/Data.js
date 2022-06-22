@@ -1,5 +1,5 @@
 import * as dfd from 'danfojs';
-import { set } from 'date-fns';
+import { set, format } from 'date-fns';
 
 const WEEKDAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
@@ -130,23 +130,22 @@ function _filterDataByDate(df, column, from_date, to_date) {
   return df;
 }
 
-function dateToString(date) {
-  if (date) return date.toISOString().split('T')[0];
-  return null;
-}
-
 // ----------------- DateRange helper
 
 export class DateRange {
   constructor(from, to) {
     this.from = DateRange.stripTime(from);
     this.to = DateRange.stripTime(to);
-    this.from_str = dateToString(from);
-    this.to_str = dateToString(to);
+    this.from_str = DateRange.dtString(from);
+    this.to_str = DateRange.dtString(to);
   }
 
   static stripTime(dt) {
     return set(dt, { hours: 0, minutes: 0, seconds: 0, milliseconds: 0 });
+  }
+
+  static dtString(dt) {
+    return format(dt, 'yyyy-MM-dd');
   }
 }
 

@@ -1,0 +1,57 @@
+@import '_global.scss';
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  color: $link-color-hover;
+}
+a:visited {
+  color: $link-color-visited;
+}
+
+h2,
+h3,
+h4,
+p,
+table,
+#plot_month {
+  max-width: $max-width;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @include titleFont;
+  letter-spacing: -3px; /* override from titleFont */
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-size: 2.5em;
+  border-bottom: $border;
+}
+
+h2 {
+  font-size: 2em;
+  border-bottom: $border;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 10pt;
+  padding: 0 20pt;
+  line-height: 1.5rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: $code-color;
+}

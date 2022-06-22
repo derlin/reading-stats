@@ -1,15 +1,10 @@
-@mixin font {
-  font-family: 'Trebuchet MS', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-}
+@import '../_global.scss';
 
-$border: 2px solid black;
 $height: 50px;
 
 #top-row {
   height: $height; /* add margin */
-  @include font;
+  @include titleFont;
 
   #header {
     position: fixed;
@@ -75,7 +70,7 @@ $height: 50px;
           border: none;
   
           input {
-            @include font;
+            @include titleFont;
             color: black;
           }
         }
@@ -84,7 +79,7 @@ $height: 50px;
   }
 }
 
-@media (max-width: 600px) {
+@include small-screen {
   #top-row {
     height: auto;
 

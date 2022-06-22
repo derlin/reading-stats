@@ -1,4 +1,4 @@
-import styles from './BookTable.module.css';
+import styles from './BookTable.module.scss';
 
 import React from 'react';
 import * as dfd from 'danfojs';
@@ -47,7 +47,7 @@ export default class BookTable extends React.Component {
 
     const headers = {
       task: 'Book',
-      minutes: 'Duration',
+      minutes: 'Hours',
       day_start: 'Start Date',
       pages: 'Pages',
     };
