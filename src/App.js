@@ -22,10 +22,13 @@ class App extends React.Component {
   }
 
   handleSelect(event) {
-    this.setState({
-      dateStart: event.from,
-      dateEnd: event.to,
-    }, () => console.log("new state", this.state));
+    this.setState(
+      {
+        dateStart: event.from,
+        dateEnd: event.to,
+      },
+      () => console.log('new state', this.state)
+    );
   }
 
   render() {
