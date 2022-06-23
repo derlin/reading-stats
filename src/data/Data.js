@@ -133,11 +133,11 @@ function _filterDataByDate(df, column, from_date, to_date) {
 // ----------------- DateRange helper
 
 export class DateRange {
-  constructor(from, to) {
-    this.from = DateRange.stripTime(from);
-    this.to = DateRange.stripTime(to);
-    this.from_str = DateRange.dtString(from);
-    this.to_str = DateRange.dtString(to);
+  constructor(start, end) {
+    this.start = DateRange.stripTime(start);
+    this.end = DateRange.stripTime(end);
+    this.start_str = DateRange.dtString(this.start);
+    this.end_str = DateRange.dtString(this.end);
   }
 
   static stripTime(dt) {
@@ -153,29 +153,29 @@ export class DateRange {
 
 export class Data {
   constructor(dateRange) {
-    this.df_byday = _filterDataByDate(df_byday, 'date', dateRange.from_str, dateRange.to_str);
+    this.df_byday = _filterDataByDate(df_byday, 'date', dateRange.start_str, dateRange.end_str);
 
     this.isEmpty = () => {
       return this.df_byday.isEmpty();
     };
 
-    this.df_tasks = _filterDataByDate(df_tasks, 'day_start', dateRange.from_str, dateRange.to_str);
+    this.df_tasks = _filterDataByDate(df_tasks, 'day_start', dateRange.start_str, dateRange.end_str);
 
     this.df_months = _filterDataByDate(
       df_months,
       'month',
-      dateRange.from_str.substr(0, 7),
-      dateRange.to_str.substr(0, 7)
+      dateRange.start_str.substr(0, 7),
+      dateRange.end_str.substr(0, 7)
     );
 
     this.df_weekdays = df_weekdays(
-      _filterDataByDate(books, 'date', dateRange.from_str, dateRange.to_str)
+      _filterDataByDate(books, 'date', dateRange.start_str, dateRange.end_str)
     );
   }
 }
 
 export let boundaries = {
-  dateMin: new Date(books['date'].values.at(0)),
-  dateMax: new Date(books['date'].values.at(-1)),
+  minDate: new Date(books['date'].values.at(0)),
+  maxDate: new Date(books['date'].values.at(-1)),
   years: books['date'].dt.year().unique().values,
 };

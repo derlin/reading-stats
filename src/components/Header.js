@@ -13,26 +13,26 @@ const DATE_FORMAT = 'yyyy-MM-dd';
 const staticRanges = [
   {
     label: 'All',
-    start: boundaries.dateMin,
-    end: boundaries.dateMax,
+    start: boundaries.minDate,
+    end: boundaries.maxDate,
   },
   {
     label: 'Last 6 Months',
     // add one day, since the limits are inclusive (we have the full first and last days)
-    start: add(sub(boundaries.dateMax, { months: 6 }), { days: 1 }),
-    end: boundaries.dateMax,
+    start: add(sub(boundaries.maxDate, { months: 6 }), { days: 1 }),
+    end: boundaries.maxDate,
   },
   {
     label: 'This Year',
-    start: set(boundaries.dateMax, { month: 0, day: 1 }),
-    end: boundaries.dateMax,
+    start: set(boundaries.maxDate, { month: 0, day: 1 }),
+    end: boundaries.maxDate,
   },
   ...boundaries.years
     .reverse()
     .slice(1)
     .map(year => ({
       label: year,
-      start: max([boundaries.dateMin, new Date(`${year}-01-01`)]),
+      start: max([boundaries.minDate, new Date(`${year}-01-01`)]),
       end: new Date(`${year}-12-31`),
     })),
 ];
@@ -66,17 +66,17 @@ export default class Header extends Component {
     return (
       <div className={className}>
         <span className="btn" onClick={this.togglePicker}>
-          {dr.from_str} → {dr.to_str}
+          {dr.start_str} → {dr.end_str}
           <span className="icon">{this.state.opened ? ' ✕' : ' ✎'}</span>
         </span>
 
         <div className="picker">
           {this.state.opened && (
             <DateRange
-              ranges={[{ startDate: dr.from, endDate: dr.to, key: 'selection' }]}
+              ranges={[{ startDate: dr.start, endDate: dr.end, key: 'selection' }]}
               onChange={e => this.selectDates(e.selection.startDate, e.selection.endDate)}
-              minDate={boundaries.dateMin}
-              maxDate={boundaries.dateMax}
+              minDate={boundaries.minDate}
+              maxDate={boundaries.maxDate}
               editableDateInputs={true}
               retainEndDateOnFirstSelection={true}
               dateDisplayFormat={DATE_FORMAT}
@@ -105,16 +105,15 @@ export default class Header extends Component {
     return staticRanges
       .filter(
         range =>
-          format(range.start, DATE_FORMAT) == dr.from_str &&
-          format(range.end, DATE_FORMAT) == dr.to_str
+          format(range.start, DATE_FORMAT) == dr.start_str &&
+          format(range.end, DATE_FORMAT) == dr.end_str
       )
       .map(range => range.label)?.[0];
   }
 
-  selectDates(from, to) {
-    // TODO: watch https://github.com/hypeserver/react-date-range/pull/539
-    // For now, min+maxDate are not checked on manual input in date-range-picker...
-    this.props.handleSelect({ from, to });
+  selectDates(startDate, endDate) {
+    
+    this.props.selectDates({ startDate, endDate });
   }
 
   togglePicker() {

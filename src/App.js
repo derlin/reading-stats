@@ -14,18 +14,19 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      dateStart: boundaries.dateMin,
-      dateEnd: boundaries.dateMax,
+      startDate: boundaries.minDate,
+      endDate: boundaries.maxDate,
     };
 
-    this.handleSelect = this.handleSelect.bind(this);
+    this.selectDates = this.selectDates.bind(this);
   }
 
-  handleSelect(event) {
+  selectDates(event) {
+    console.log('event', event);
     this.setState(
       {
-        dateStart: event.from,
-        dateEnd: event.to,
+        startDate: event.startDate,
+        endDate: event.endDate,
       },
       () => console.log('new state', this.state)
     );
@@ -33,13 +34,13 @@ class App extends React.Component {
 
   render() {
     console.log('### render root');
-    const dateRange = new DateRange(this.state.dateStart, this.state.dateEnd);
+    const dateRange = new DateRange(this.state.startDate, this.state.endDate);
     window.dr = dateRange;
     const data = new Data(dateRange);
 
     return (
       <div>
-        <Header dateRange={dateRange} handleSelect={this.handleSelect} />
+        <Header dateRange={dateRange} selectDates={this.selectDates} />
         <h2>Overview</h2>
         <GlobalStats dateRange={dateRange} data={data} />
         <h2>Reading per day</h2>

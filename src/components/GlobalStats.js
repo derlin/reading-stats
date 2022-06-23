@@ -12,8 +12,8 @@ export default class Header extends Component {
 
     const minutes_serie = data.df_byday['minutes'];
 
-    const date_from = this.props.dateRange.from;
-    const date_to = this.props.dateRange.to;
+    const date_from = this.props.dateRange.start;
+    const date_to = this.props.dateRange.end;
     const days = this.duration(date_from, add(date_to, { days: 1 })); // TODO: range is not correct (1 year)
 
     const total_minutes = minutes_serie.sum();
