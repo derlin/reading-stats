@@ -1,6 +1,9 @@
 $max-width: 1000px;
 $small-screen: 600px;
 
+$background: white;
+$textDark: black;
+
 $code-color: #e91e63;
 $link-color: #1f77b4;
 $link-color-hover: #1d5a86;
@@ -12,7 +15,7 @@ $link-color-visited: #8D3399;
   letter-spacing: -1px;
 }
 
-$border: 2px solid black;
+$border: 2px solid $textDark;
 
 @mixin small-screen {
     @media (max-width: #{$small-screen}) {

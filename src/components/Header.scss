@@ -36,14 +36,14 @@ $height: 50px;
     .btn {
       cursor: pointer;
       margin-left: 10px;
-      background: white;
+      background: $background;
       font-size: 1em; /* button have a different one */
 
       &:hover,
       &.focus {
         /* TODO: the focus is a trick that doesn't work when clicking on some other input. Do it in code */
-        background: black;
-        color: white;
+        background: $textDark;
+        color: $background;
       }
       &:active {
         box-shadow: 0 2px 3px 0 rgb(35 57 66 / 61%);
@@ -63,7 +63,7 @@ $height: 50px;
 
           input {
             @include titleFont;
-            color: black;
+            color: $textDark;
           }
         }
       }

@@ -1,12 +1,12 @@
 import './App.scss';
 
+import React from 'react';
+
+import { DateRange, Data, boundaries } from './data/Data';
+import Header from './components/Header';
 import PlotByDay from './plots/PlotByDay';
 import PlotByMonth from './plots/PlotByMonth';
 import PlotByWeekday from './plots/PlotByWeekday';
-import { DateRange, Data, boundaries } from './data/Data';
-import Header from './components/Header';
-import { set } from 'date-fns';
-import React from 'react';
 import BookTable from './components/BookTable';
 import GlobalStats from './components/GlobalStats';
 
@@ -21,14 +21,10 @@ class App extends React.Component {
     this.handleSelect = this.handleSelect.bind(this);
   }
 
-  stripTime(dt) {
-    return set(dt, { hours: 0, minutes: 0, seconds: 0, milliseconds: 0 });
-  }
-
   handleSelect(event) {
     this.setState({
-      dateStart: this.stripTime(event.from),
-      dateEnd: this.stripTime(event.to),
+      dateStart: event.from,
+      dateEnd: event.to,
     }, () => console.log("new state", this.state));
   }
 
