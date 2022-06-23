@@ -159,7 +159,12 @@ export class Data {
       return this.df_byday.isEmpty();
     };
 
-    this.df_tasks = _filterDataByDate(df_tasks, 'day_start', dateRange.start_str, dateRange.end_str);
+    this.df_tasks = _filterDataByDate(
+      df_tasks,
+      'day_start',
+      dateRange.start_str,
+      dateRange.end_str
+    );
 
     this.df_months = _filterDataByDate(
       df_months,

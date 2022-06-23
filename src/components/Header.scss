@@ -11,6 +11,11 @@ $height: 50px;
   z-index: 999;
 }
 
+@mixin focused-btn {
+  color: $background;
+  background: $textDark;
+}
+
 #top-row {
   @include titleFont;
 
@@ -54,12 +59,16 @@ $height: 50px;
       background: $background;
       font-size: 1em; /* button have a different one */
 
-      &:hover,
       &.focus {
-        /* TODO: the focus is a trick that doesn't work when clicking on some other input. Do it in code */
-        background: $textDark;
-        color: $background;
+        @include focused-btn;
       }
+
+      @media (hover: hover) {
+        &:hover {
+          @include focused-btn;
+        }
+      }
+
       &:active {
         box-shadow: 0 2px 3px 0 rgb(35 57 66 / 61%);
       }

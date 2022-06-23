@@ -99,9 +99,9 @@ export default class Header extends Component {
       >
         {range.label}
       </span>
-    ))
+    ));
     // insert some sep for the layout flex (where to break)
-    ranges.splice(sepAt, 0, <span className='sep'></span>);
+    ranges.splice(sepAt, 0, <span className="sep" key={'sep'}></span>);
     return ranges;
   }
 
@@ -109,14 +109,13 @@ export default class Header extends Component {
     return staticRanges
       .filter(
         range =>
-          format(range.start, DATE_FORMAT) == dr.start_str &&
-          format(range.end, DATE_FORMAT) == dr.end_str
+          format(range.start, DATE_FORMAT) === dr.start_str &&
+          format(range.end, DATE_FORMAT) === dr.end_str
       )
       .map(range => range.label)?.[0];
   }
 
   selectDates(startDate, endDate) {
-    
     this.props.selectDates({ startDate, endDate });
   }
 
