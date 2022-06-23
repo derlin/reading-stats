@@ -1,5 +1,6 @@
 $max-width: 1000px;
-$small-screen: 600px;
+$small-screen: 700px;
+$extra-small-screen: 400px;
 
 $background: white;
 $textDark: black;
@@ -16,6 +17,13 @@ $link-color-visited: #8D3399;
 }
 
 $border: 2px solid $textDark;
+
+
+@mixin extra-small-screen {
+    @media (max-width: #{$extra-small-screen}) {
+        @content;
+    }
+}
 
 @mixin small-screen {
     @media (max-width: #{$small-screen}) {

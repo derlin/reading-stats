@@ -2,15 +2,28 @@
 
 $height: 50px;
 
+@mixin fixed-centered {
+  position: fixed;
+  top: 10pt;
+  width: calc(100vw - 20pt);
+  left: 10pt;
+  right: 10pt;
+  z-index: 999;
+}
+
 #top-row {
   @include titleFont;
 
   #header {
-    position: fixed;
-    padding: 10px;
-    z-index: 999;
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    gap: 7px 10px;
 
-    .current {
+    .date {
+      margin-right: 10pt;
+
       .icon {
         padding: 0px 3px;
         width: 2em;
@@ -19,12 +32,11 @@ $height: 50px;
       }
     }
 
-    .current,
+    .date,
     .span,
     .btn {
       /* span for the date picker */
       @include titleFont;
-      display: inline-block;
       padding: 3px 8px;
     }
 
@@ -33,9 +45,12 @@ $height: 50px;
       border: $border;
     }
 
+    .sep {
+      display: none;
+    }
+
     .btn {
       cursor: pointer;
-      margin-left: 10px;
       background: $background;
       font-size: 1em; /* button have a different one */
 
@@ -76,35 +91,21 @@ $height: 50px;
     height: $height; /* add margin */
 
     #header {
-      position: fixed;
-      top: 0;
-
-      .current {
-        margin-right: 2.5em;
-      }
+      @include fixed-centered;
     }
   }
 }
 
 @include small-screen {
   #top-row {
+    margin-top: 50px;
 
     #header {
-      text-align: center;
-      position: relative;
-      padding-top: $height; /* add margin */
+      justify-content: center;
 
-      .btn {
-        margin-bottom: 10pt;
-      }
-
-      .current {
-        position: fixed;
-        padding: 10px;
-        width: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
+      .date {
+        text-align: center;
+        @include fixed-centered;
       }
 
       .picker {
@@ -112,6 +113,18 @@ $height: 50px;
         display: flex;
         justify-content: center;
         width: 100%;
+      }
+    }
+  }
+}
+
+@include extra-small-screen {
+  #top-row {
+    #header {
+      .sep {
+        display: inherit;
+        flex-basis: 100%;
+        height: 0;
       }
     }
   }

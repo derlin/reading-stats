@@ -9,6 +9,7 @@ import './Header.scss';
 
 const DATE_FORMAT = 'yyyy-MM-dd';
 
+const sepAt = 3;
 /* This respects the format of DateRangePicker */
 const staticRanges = [
   {
@@ -53,7 +54,7 @@ export default class Header extends Component {
     return (
       <div id="top-row">
         <div id="header">
-          {this.renderDatePicker('current')}
+          {this.renderDatePicker('date')}
           {this.renderPresets()}
         </div>
       </div>
@@ -90,7 +91,7 @@ export default class Header extends Component {
   renderPresets() {
     const selectedLabel = this.getSelectedRangeLabel(this.props.dateRange);
 
-    return staticRanges.map(range => (
+    const ranges = staticRanges.map(range => (
       <span
         key={range.label}
         className={'btn ' + (selectedLabel === range.label ? 'focus' : '')}
@@ -98,7 +99,10 @@ export default class Header extends Component {
       >
         {range.label}
       </span>
-    ));
+    ))
+    // insert some sep for the layout flex (where to break)
+    ranges.splice(sepAt, 0, <span className='sep'></span>);
+    return ranges;
   }
 
   getSelectedRangeLabel(dr) {
