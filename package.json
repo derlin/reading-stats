@@ -1,6 +1,7 @@
 {
   "name": "reading-stats-app",
   "version": "0.1.0",
+  "homepage": "https://derlin.github.io/reading-stats",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -17,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts --max_old_space_size=4096 build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "pretty": "prettier --write './**/*.{js,jsx,json}'"
