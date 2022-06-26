@@ -1,5 +1,5 @@
 import Plot from 'react-plotly.js';
-import { noDataLayout } from './common';
+import { noDataLayout, defaultMargins } from './common';
 
 const style = { margin: 'auto' };
 const id = 'plot_month';
@@ -20,6 +20,7 @@ export default function PlotByMonth(props) {
           y: df.get('minutes'),
           hovertext: df.get('details'),
           text: df.get('hours'),
+          //marker: { color: '#7562e5' }, // #6567ff
         },
       ]}
       style={style}
@@ -27,6 +28,7 @@ export default function PlotByMonth(props) {
         xaxis: { type: 'category' }, // show all dates
         yaxis: { title: 'minutes' },
         autosize: true, // this + useResizeHandler makes it responsive
+        margin: defaultMargins,
       }}
       useResizeHandler={true}
     />

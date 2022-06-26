@@ -1,5 +1,5 @@
 import Plot from 'react-plotly.js';
-import { noDataLayout } from './common';
+import { defaultMargins, noDataLayout } from './common';
 
 const style = { margin: 'auto', maxWidth: '900px' };
 const id = 'plot_weekday';
@@ -19,7 +19,7 @@ export default function PlotByWeekday(props) {
           y: df.get('minutes'),
           hovertext: df.get('details'),
           text: df.get('text'),
-          marker: { color: '#279658' },
+          marker: { color: '#0eab70' }, // #4bc68b
         },
       ]}
       style={style}
@@ -27,6 +27,7 @@ export default function PlotByWeekday(props) {
         xaxis: { type: 'category' }, // show all dates
         yaxis: { title: 'minutes' },
         autosize: true, // this + useResizeHandler makes it responsive
+        margin: defaultMargins,
       }}
       useResizeHandler={true}
     />

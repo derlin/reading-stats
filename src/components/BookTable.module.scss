@@ -3,7 +3,7 @@
 $row-separator-color: #e1e1e1;
 $hover-color: #efefef;
 
-$sort-icon-disabled: '⭥';
+$sort-icon-disabled: '↕';
 $sort-icon-up: '↑';
 $sort-icon-down: '↓';
 
@@ -29,6 +29,7 @@ $sort-icon-color-active: #282bf1;
 .th {
   @include titleFont;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .tr:hover {
@@ -43,7 +44,6 @@ $sort-icon-color-active: #282bf1;
   width: 1em;
   text-align: center;
   padding-left: 2pt;
-  transition: all 0.3s;
   color: $sort-icon-color-disabled;
 }
 
@@ -57,6 +57,14 @@ $sort-icon-color-active: #282bf1;
 
 .th.sorted.down::after {
   content: $sort-icon-down;
+}
+
+.mono {
+  font-family: $mono-font;
+}
+
+.right {
+  text-align: right;
 }
 
 

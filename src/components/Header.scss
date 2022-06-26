@@ -20,7 +20,7 @@ $height: 50px;
   @include titleFont;
 
   #header {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: start;

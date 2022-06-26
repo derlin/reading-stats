@@ -68,9 +68,11 @@ export default class BookTable extends React.Component {
             return (
               <tr key={row.task} className={styles.tr}>
                 <td className={styles.td}>{grlink(row.task, row.grId)}</td>
-                <td className={styles.td}>{formatDuration(row.minutes)}</td>
+                <td className={`${styles.td} ${styles.mono} ${styles.right}`}>
+                  {formatDuration(row.minutes)}
+                </td>
                 <td className={styles.td}>{row.day_start}</td>
-                <td className={styles.td}>{row.pages ?? '?'}</td>
+                <td className={`${styles.td} ${styles.mono}`}>{row.pages ?? '?'}</td>
               </tr>
             );
           })}

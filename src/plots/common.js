@@ -1,3 +1,10 @@
+export const defaultMargins = {
+  t: 30,
+  l: 50,
+  b: 50,
+  r: 50,
+}
+
 export function noDataLayout() {
   const axisParams = {
     visible: true,
