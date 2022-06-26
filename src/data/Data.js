@@ -130,6 +130,22 @@ function _filterDataByDate(df, column, from_date, to_date) {
   return df;
 }
 
+export function taskWithMaybeLink(task) {
+  const goodreadsId = meta[task]?.GoodreadsID;
+  if (goodreadsId) {
+    return (
+      <a
+        href={`https://www.goodreads.com/book/show/${goodreadsId}`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {task}
+      </a>
+    );
+  }
+  return task;
+}
+
 // ----------------- DateRange helper
 
 export class DateRange {

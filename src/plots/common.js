@@ -3,7 +3,7 @@ export const defaultMargins = {
   l: 50,
   b: 50,
   r: 50,
-}
+};
 
 export function noDataLayout() {
   const axisParams = {

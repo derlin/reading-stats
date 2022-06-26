@@ -10,7 +10,14 @@ $mono-font: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 $code-color: #e91e63;
 $link-color: #1f77b4;
 $link-color-hover: #1d5a86;
-$link-color-visited: #8D3399;
+$link-color-visited: #8d3399;
+
+:export {
+  /* available to js */
+  //smallScreen: $small-screen;
+}
+
+/*  -- mixins -- */
 
 @mixin titleFont {
   font-family: 'Trebuchet MS', sans-serif;
@@ -20,21 +27,20 @@ $link-color-visited: #8D3399;
 
 $border: 2px solid $textDark;
 
-
 @mixin extra-small-screen {
-    @media (max-width: #{$extra-small-screen}) {
-        @content;
-    }
+  @media (max-width: #{$extra-small-screen}) {
+    @content;
+  }
 }
 
 @mixin small-screen {
-    @media (max-width: #{$small-screen}) {
-        @content;
-    }
+  @media (max-width: #{$small-screen}) {
+    @content;
+  }
 }
 
 @mixin large-screen {
-    @media (min-width: #{$small-screen}) {
-        @content;
-    }
+  @media (min-width: #{$small-screen}) {
+    @content;
+  }
 }

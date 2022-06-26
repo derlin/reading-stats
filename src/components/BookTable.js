@@ -3,25 +3,12 @@ import styles from './BookTable.module.scss';
 import React from 'react';
 import * as dfd from 'danfojs';
 
+import { taskWithMaybeLink } from '../data/Data';
+
 function formatDuration(minutes) {
   const h = Math.ceil(minutes / 60);
   const m = minutes % 60;
   return `${h}:${m < 10 ? '0' + m : m}`;
-}
-
-function grlink(task, goodreadsId) {
-  if (goodreadsId) {
-    return (
-      <a
-        href={`https://www.goodreads.com/book/show/${goodreadsId}`}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {task}
-      </a>
-    );
-  }
-  return task;
 }
 
 export default class BookTable extends React.Component {
@@ -67,7 +54,7 @@ export default class BookTable extends React.Component {
           {dfd.toJSON(df).map(row => {
             return (
               <tr key={row.task} className={styles.tr}>
-                <td className={styles.td}>{grlink(row.task, row.grId)}</td>
+                <td className={styles.td}>{taskWithMaybeLink(row.task, row.grId)}</td>
                 <td className={`${styles.td} ${styles.mono} ${styles.right}`}>
                   {formatDuration(row.minutes)}
                 </td>

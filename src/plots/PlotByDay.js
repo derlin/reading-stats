@@ -2,6 +2,8 @@ import * as dfd from 'danfojs';
 import React from 'react';
 import Plot from 'react-plotly.js';
 import { noDataLayout, defaultMargins } from './common';
+import { taskWithMaybeLink } from '../data/Data';
+import { format, formatDuration, intervalToDuration } from 'date-fns';
 
 const colors = ['LightSalmon', 'beige'];
 const id = 'plot_day';
@@ -9,28 +11,69 @@ const id = 'plot_day';
 export default class PlotByDay extends React.Component {
   constructor(props) {
     super(props);
+    this.state = { text: null };
     this.onPointClicked = this.onPointClicked.bind(this);
   }
 
   render() {
     if (this.props.data.isEmpty()) return <Plot divId={id} layout={noDataLayout()} />;
 
-    let current_color = true;
-    const shapes = [];
-    const annotations = [];
-
     const df_tasks = this.props.data.df_tasks;
     const df_byday = this.props.data.df_byday;
 
-    dfd.toJSON(df_tasks).forEach(x => {
+    const [shapes, annotations] = this.computeAnnotations(df_tasks);
+
+    return (
+      <div>
+        <p id="byday_details">
+          {this.state.text ?? (
+            <>
+              <i>Click a point to see details</i>
+            </>
+          )}
+        </p>
+        <Plot
+          divId={id}
+          data={[
+            {
+              x: df_byday.get('date'),
+              y: df_byday.get('minutes'),
+              type: 'line',
+              mode: 'lines',
+              text: df_byday.get('tasks'),
+              line: { color: '#da492f' },
+            },
+          ]}
+          style={{ width: '100%', height: '700px' }}
+          layout={{
+            shapes: shapes,
+            annotations: annotations,
+            xaxis: { rangeslider: { visible: false } },
+            yaxis: { title: 'minutes' },
+            margin: { ...defaultMargins, t: 50 },
+          }}
+          onClick={this.onPointClicked}
+          useResizeHandler={true}
+        />
+      </div>
+    );
+  }
+
+  computeAnnotations(df_tasks) {
+    let current_color = true;
+    let shapes = [];
+    let annotations = [];
+
+    dfd.toJSON(df_tasks).forEach(row => {
+      const task = row['task'];
       current_color = !current_color;
       shapes.push({
         type: 'rect',
         xref: 'x',
         yref: 'paper',
-        x0: x['day_start'],
+        x0: row['day_start'],
+        x1: row['day_end'],
         y0: 0,
-        x1: x['day_end'],
         y1: 1,
         fillcolor: colors[+current_color],
         opacity: 0.2,
@@ -39,13 +82,11 @@ export default class PlotByDay extends React.Component {
         },
       });
 
-      const task = x['task'];
       annotations.push({
         text: task.length < 30 ? task : task.substring(0, 30) + '...',
         textangle: -90,
-        x: x['day_start'],
+        x: row['day_start'],
         xanchor: 'left',
-        //y: 400,
         // with ref=paper, y=0 mean bottom, y=1 means top of the plot
         y: 1,
         yref: 'paper',
@@ -54,34 +95,26 @@ export default class PlotByDay extends React.Component {
       });
     });
 
-    return (
-      <Plot
-        divId={id}
-        data={[
-          {
-            x: df_byday.get('date'),
-            y: df_byday.get('minutes'),
-            type: 'line',
-            mode: 'lines',
-            text: df_byday.get('tasks'),
-            line: { color: '#da492f' },
-          },
-        ]}
-        style={{ width: '100%', height: '700px' }}
-        layout={{
-          shapes: shapes,
-          annotations: annotations,
-          xaxis: { rangeslider: { visible: true } },
-          yaxis: { title: 'minutes' },
-          margin: {...defaultMargins, t: 50},
-        }}
-        onClick={this.onPointClicked}
-        useResizeHandler={true}
-      />
-    );
+    return [shapes, annotations];
   }
 
   onPointClicked(e) {
-    console.log(e.points[0].text);
+    const point = e.points[0];
+
+    const date = format(new Date(point.x), 'PPP (EEEE)');
+    const duration = formatDuration(intervalToDuration({ start: 0, end: point.y * 60 * 1000 }));
+    const tasks = point.text.split(', ').map((task, index) => (
+      <>
+        {index ? ', ' : ''}
+        {taskWithMaybeLink(task)}
+      </>
+    ));
+
+    const text = (
+      <>
+        On {date}, I read {duration} of {tasks}
+      </>
+    );
+    this.setState({ text: text });
   }
 }
