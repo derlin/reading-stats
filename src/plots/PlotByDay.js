@@ -11,8 +11,9 @@ const id = 'plot_day';
 export default class PlotByDay extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { text: null };
+    this.state = { text: null, showAnnot: true };
     this.onPointClicked = this.onPointClicked.bind(this);
+    this.toggleAnnot = this.toggleAnnot.bind(this);
   }
 
   render() {
@@ -21,7 +22,9 @@ export default class PlotByDay extends React.Component {
     const df_tasks = this.props.data.df_tasks;
     const df_byday = this.props.data.df_byday;
 
-    const [shapes, annotations] = this.computeAnnotations(df_tasks);
+    const [shapes, annotations] = this.state.showAnnot
+      ? this.computeAnnotations(df_tasks)
+      : [[], []];
 
     return (
       <div>
@@ -32,6 +35,9 @@ export default class PlotByDay extends React.Component {
             </>
           )}
         </p>
+        <span onClick={this.toggleAnnot} className={'plot-btn'}>
+          {this.state.showAnnot ? 'hide annotations' : 'show annotations'}
+        </span>
         <Plot
           divId={id}
           data={[
@@ -96,6 +102,10 @@ export default class PlotByDay extends React.Component {
     });
 
     return [shapes, annotations];
+  }
+
+  toggleAnnot() {
+    this.setState({ showAnnot: !this.state.showAnnot });
   }
 
   onPointClicked(e) {

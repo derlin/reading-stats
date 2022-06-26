@@ -2,7 +2,6 @@ import { Component } from 'react';
 import { add, format, formatDuration, intervalToDuration } from 'date-fns';
 
 export default class Header extends Component {
-
   render() {
     const data = this.props.data;
     if (data.isEmpty()) return <p>Nothing to show here.</p>;

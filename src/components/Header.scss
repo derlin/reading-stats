@@ -11,11 +11,6 @@ $height: 50px;
   z-index: 999;
 }
 
-@mixin focused-btn {
-  color: $background;
-  background: $textDark;
-}
-
 #top-row {
   @include titleFont;
 
@@ -24,10 +19,12 @@ $height: 50px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    align-items: center;
     gap: 7px 10px;
 
     .date {
       margin-right: 10pt;
+      padding: $button-pad;
 
       .icon {
         padding: 0px 3px;
@@ -37,46 +34,22 @@ $height: 50px;
       }
     }
 
-    .date,
-    .span,
-    .btn {
-      /* span for the date picker */
-      @include titleFont;
-      padding: 3px 8px;
-    }
-
-    .btn,
-    input {
-      border: $border;
-    }
-
     .sep {
       display: none;
-    }
-
-    .btn {
-      cursor: pointer;
-      background: $background;
-      font-size: 1em; /* button have a different one */
-
-      &.focus {
-        @include focused-btn;
-      }
-
-      @media (hover: hover) {
-        &:hover {
-          @include focused-btn;
-        }
-      }
-
-      &:active {
-        box-shadow: 0 2px 3px 0 rgb(35 57 66 / 61%);
-      }
     }
 
     .picker {
       position: absolute;
       z-index: 1000;
+
+      .span {
+        @include titleFont;
+        padding: 3px 8px;
+      }
+
+      input {
+        border: $border;
+      }
 
       .rdrDateRangeWrapper {
         margin-top: 10px;

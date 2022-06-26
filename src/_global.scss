@@ -5,12 +5,15 @@ $extra-small-screen: 400px;
 $background: white;
 $textDark: black;
 
-$mono-font: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+$title-font-family: 'Trebuchet MS', sans-serif;
+$mono-font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 
 $code-color: #e91e63;
 $link-color: #1f77b4;
 $link-color-hover: #1d5a86;
 $link-color-visited: #8d3399;
+
+$button-pad: 3px 8px;
 
 :export {
   /* available to js */
@@ -20,7 +23,7 @@ $link-color-visited: #8d3399;
 /*  -- mixins -- */
 
 @mixin titleFont {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: $title-font-family;
   text-transform: uppercase;
   letter-spacing: -1px;
 }
