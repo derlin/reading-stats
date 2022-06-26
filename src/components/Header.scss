@@ -23,7 +23,7 @@ $height: 50px;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 7px 10px;
 
     .date {

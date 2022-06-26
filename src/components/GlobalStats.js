@@ -2,9 +2,6 @@ import { Component } from 'react';
 import { add, format, formatDuration, intervalToDuration } from 'date-fns';
 
 export default class Header extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     const data = this.props.data;
