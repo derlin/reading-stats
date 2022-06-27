@@ -1,0 +1,48 @@
+{
+  "name": "reading-stats-app",
+  "version": "0.1.0",
+  "homepage": "https://derlin.github.io/reading-stats",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "danfojs": "^1.1.1",
+    "plotly.js": "^2.12.1",
+    "react": "^18.1.0",
+    "react-date-range": "^1.4.0",
+    "react-dom": "^18.1.0",
+    "react-plotly.js": "^2.5.1",
+    "react-scripts": "5.0.1",
+    "sass": "^1.53.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts --max_old_space_size=4096 build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "pretty": "prettier --write './**/*.{js,jsx,json}'"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  }
+}

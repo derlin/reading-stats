@@ -1,0 +1,106 @@
+@import '_global.scss';
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  color: $link-color-hover;
+}
+a:visited {
+  color: $link-color-visited;
+}
+
+h2,
+h3,
+h4,
+p,
+table,
+#plot_month {
+  max-width: $max-width;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @include titleFont;
+  letter-spacing: -3px; /* override from titleFont */
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-size: 2.5em;
+  border-bottom: $border;
+}
+
+h2 {
+  font-size: 2em;
+  border-bottom: $border;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 10pt;
+  padding: 0 20pt;
+  line-height: 1.5rem;
+}
+
+code {
+  font-family: $mono-font-family;
+  color: $code-color;
+}
+
+@mixin focused-btn {
+  color: $background;
+  background: $textDark;
+}
+
+.btn {
+  @include titleFont;
+  cursor: pointer;
+  padding: 3px 8px;
+  background: $background;
+  border: $border;
+  font-size: 1em; /* button have a different one */
+
+  &.focus {
+    @include focused-btn;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      @include focused-btn;
+    }
+  }
+
+  &:active {
+    box-shadow: 0 2px 3px 0 rgb(35 57 66 / 61%);
+  }
+}
+
+// --- plot by day
+
+.plot-btn {
+  font-family: $title-font-family;
+  text-transform: uppercase;
+  position: relative;
+  bottom: -22px;
+  z-index: 100;
+  font-size: 0.7em;
+  color: #777;
+  cursor: pointer;
+  margin-left: 10pt;
+
+  @media (hover: hover) {
+    &:active,
+    &:hover {
+      color: black;
+    }
+  }
+}

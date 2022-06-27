@@ -1,0 +1,113 @@
+@import '../_global.scss';
+
+$height: 50px;
+
+@mixin fixed-centered {
+  position: fixed;
+  top: 10pt;
+  width: calc(100vw - 20pt);
+  left: 10pt;
+  right: 10pt;
+  z-index: 999;
+}
+
+#top-row {
+  @include titleFont;
+
+  #header {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px 10px;
+
+    .date {
+      margin-right: 10pt;
+      padding: $button-pad;
+
+      .icon {
+        padding: 0px 3px;
+        width: 2em;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+
+    .sep {
+      display: none;
+    }
+
+    .picker {
+      position: absolute;
+      z-index: 1000;
+
+      .span {
+        @include titleFont;
+        padding: 3px 8px;
+      }
+
+      input {
+        border: $border;
+      }
+
+      .rdrDateRangeWrapper {
+        margin-top: 10px;
+        border: $border;
+
+        .rdrDateDisplayItemActive {
+          border: none;
+
+          input {
+            @include titleFont;
+            color: $textDark;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include large-screen {
+  #top-row {
+    height: $height; /* add margin */
+
+    #header {
+      @include fixed-centered;
+    }
+  }
+}
+
+@include small-screen {
+  #top-row {
+    margin-top: 50px;
+
+    #header {
+      justify-content: center;
+
+      .date {
+        text-align: center;
+        @include fixed-centered;
+      }
+
+      .picker {
+        /* center on mobile */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include extra-small-screen {
+  #top-row {
+    #header {
+      .sep {
+        display: inherit;
+        flex-basis: 100%;
+        height: 0;
+      }
+    }
+  }
+}
