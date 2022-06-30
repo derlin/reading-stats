@@ -1,4 +1,4 @@
-import styles from './BookTable.module.scss';
+import './BookTable.scss';
 
 import React from 'react';
 import * as dfd from 'danfojs';
@@ -32,48 +32,51 @@ export default class BookTable extends React.Component {
       });
     }
 
-    const headers = {
-      task: 'Book',
-      minutes: 'Hours',
-      day_start: 'Start Date',
-      pages: 'Pages',
-    };
+    const headers = [
+      { name: 'Books', col: 'task' },
+      { name: 'Hours', col: 'minutes' },
+      { name: 'Start Date', col: 'day_start' },
+      { name: 'Pages', col: 'pages' },
+    ];
 
     return (
-      <table className={styles.bookTable}>
-        <thead>
-          <tr>
-            {Object.keys(headers).map(key => (
-              <th key={key} className={this.getHeaderClass(key)} onClick={() => this.sortBy(key)}>
-                {headers[key]}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {dfd.toJSON(df).map(row => {
-            return (
-              <tr key={row.task} className={styles.tr}>
-                <td className={styles.td}>{taskWithMaybeLink(row.task, row.grId)}</td>
-                <td className={`${styles.td} ${styles.mono} ${styles.right}`}>
-                  {formatDuration(row.minutes)}
-                </td>
-                <td className={styles.td}>{row.day_start}</td>
-                <td className={`${styles.td} ${styles.mono}`}>{row.pages ?? '?'}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+      <div className="bookTable">
+        <p className={this.getSortClass('day_start')} onClick={() => this.sortBy('day_start')}>
+          ⏰ {/* handle to sort by read date (only on mobile) */}
+        </p>
+        <table>
+          <thead>
+            <tr>
+              {headers.map(({ name, col, key = col }) => (
+                <th key={key} className={this.getSortClass(col)} onClick={() => this.sortBy(col)}>
+                  {name}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {dfd.toJSON(df).map(row => {
+              return (
+                <tr key={row.task}>
+                  <td>{taskWithMaybeLink(row.task, row.grId)}</td>
+                  <td className="mono right">{formatDuration(row.minutes)}</td>
+                  <td>{row.day_start}</td>
+                  <td className="mono">{row.pages ?? '?'}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     );
   }
 
-  getHeaderClass(column) {
+  getSortClass(column) {
+    let classes = 'sortHandle';
     if (this.state.sortBy === column) {
-      const arrowClass = this.state.sortAscending ? styles.down : styles.up;
-      return [styles.th, styles.sorted, arrowClass].join(' ');
+      classes += ' sorted ' + (this.state.sortAscending ? 'down' : 'up');
     }
-    return styles.th;
+    return classes;
   }
 
   sortBy(column) {
