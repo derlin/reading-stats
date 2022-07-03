@@ -1,6 +1,7 @@
 import * as dfd from 'danfojs';
 import React from 'react';
 import Plot from 'react-plotly.js';
+import Plotly from 'plotly.js/dist/plotly'
 import { noDataLayout, defaultMargins } from './common';
 import { taskWithMaybeLink } from '../data/Data';
 import { format, formatDuration, intervalToDuration } from 'date-fns';
@@ -14,10 +15,18 @@ const defaultDetailsText = `<i>Click a point to see details</i>`;
 export default class PlotByDay extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { showAnnot: true };
+    
+    // show info on click
     this.detailsRef = null; // reference to the details div
+    this.setDetailsText = this.setDetailsText.bind(this);
     this.onPointClicked = this.onPointClicked.bind(this);
+    
+    // toggle plot annotations and shapes
+    this.fakeState = { shapes: [], annotations: [], visible: false };
+    this.toggleAnnotBtnRef = null;
     this.toggleAnnot = this.toggleAnnot.bind(this);
+    this.updateToggleAnnotBtnText = this.updateToggleAnnotBtnText.bind(this);
+
   }
 
   render() {
@@ -26,9 +35,9 @@ export default class PlotByDay extends React.Component {
     const df_tasks = this.props.data.df_tasks;
     const df_byday = this.props.data.df_byday;
 
-    const [shapes, annotations] = this.state.showAnnot
-      ? this.computeAnnotations(df_tasks)
-      : [[], []];
+    const [shapes, annotations] = this.computeAnnotations(df_tasks);
+
+    this.fakeState = { shapes, annotations, visible: true };
 
     return (
       <div>
@@ -36,11 +45,18 @@ export default class PlotByDay extends React.Component {
           id="byday_details"
           ref={elt => {
             this.detailsRef = elt;
-            this.setDetails(); // reset to default (setting default here doesn't work on re-render)
+            this.setDetailsText(); // reset to default (setting default here doesn't work on re-render)
           }}
         ></p>
-        <span onClick={this.toggleAnnot} className={'plot-btn'}>
-          {this.state.showAnnot ? 'hide annotations' : 'show annotations'}
+        <span
+          onClick={this.toggleAnnot}
+          className={'plot-btn'}
+          ref={elt => {
+            this.toggleAnnotBtnRef = elt;
+            this.updateToggleAnnotBtnText();
+          }}
+        >
+          Toggle Annotations
         </span>
         <Plot
           divId={id}
@@ -54,7 +70,7 @@ export default class PlotByDay extends React.Component {
               line: { color: '#da492f' },
             },
           ]}
-          style={{ width: '100%', height: '700px' }}
+          style={{ width: '100%' }}
           layout={{
             shapes: shapes,
             annotations: annotations,
@@ -109,11 +125,22 @@ export default class PlotByDay extends React.Component {
   }
 
   toggleAnnot() {
-    this.setState({ showAnnot: !this.state.showAnnot });
+    const { shapes, annotations, visible } = this.fakeState;
+    // use plotly directly to avoid triggering a re-render (and thus lose zoom/pan etc.)
+    // note that this can be done using updatebuttons, but their style is meh
+    Plotly.relayout(id, { shapes: visible ? [] : shapes, annotations: visible ? [] : annotations });
+    this.fakeState.visible = !visible;
+    this.updateToggleAnnotBtnText();
+  }
+
+  updateToggleAnnotBtnText() {
+    if (this.toggleAnnotBtnRef)
+      this.toggleAnnotBtnRef.innerHTML = this.fakeState.visible ? 'Hide Annotations' : 'Show Annotations';
   }
 
   onPointClicked(e) {
     const point = e.points[0];
+    console.log('point clicked', point);
 
     const date = format(new Date(point.x), 'PPP (EEEE)');
     const duration = formatDuration(intervalToDuration({ start: 0, end: point.y * 60 * 1000 }));
@@ -123,10 +150,10 @@ export default class PlotByDay extends React.Component {
       .join(', ');
 
     const text = `On ${date}, I read ${duration} of ${tasks}`;
-    this.setDetails(text);
+    this.setDetailsText(text);
   }
 
-  setDetails(text) {
+  setDetailsText(text) {
     // do NOT use a state here, since if we call render again,
     // the plot state will be lost (zoom, etc will be reset)
     if (this.detailsRef) this.detailsRef.innerHTML = text ?? defaultDetailsText;
