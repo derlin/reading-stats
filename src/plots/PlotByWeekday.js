@@ -1,7 +1,7 @@
 import Plot from 'react-plotly.js';
 import { defaultMargins, noDataLayout } from './common';
 
-const style = { margin: 'auto', maxWidth: '900px' };
+const style = { margin: 'auto', maxWidth: '700px' };
 const id = 'plot_weekday';
 
 export default function PlotByWeekday(props) {

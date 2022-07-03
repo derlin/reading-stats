@@ -5,6 +5,7 @@ import { noDataLayout, defaultMargins } from './common';
 import { taskWithMaybeLink } from '../data/Data';
 import { format, formatDuration, intervalToDuration } from 'date-fns';
 import { renderToString } from 'react-dom/server';
+import variables from '../_global.scss';
 
 const colors = ['LightSalmon', 'beige'];
 const id = 'plot_day';
@@ -14,10 +15,8 @@ const defaultDetailsText = `<i>Click a point to see details</i>`;
 export default class PlotByDay extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { showAnnot: true };
     this.detailsRef = null; // reference to the details div
     this.onPointClicked = this.onPointClicked.bind(this);
-    this.toggleAnnot = this.toggleAnnot.bind(this);
   }
 
   render() {
@@ -26,9 +25,33 @@ export default class PlotByDay extends React.Component {
     const df_tasks = this.props.data.df_tasks;
     const df_byday = this.props.data.df_byday;
 
-    const [shapes, annotations] = this.state.showAnnot
-      ? this.computeAnnotations(df_tasks)
-      : [[], []];
+    const [shapes, annotations] = this.computeAnnotations(df_tasks);
+
+    const menus = [
+      {
+        type: 'buttons', // not dropdown
+        direction: 'left',
+        buttons: [
+          {
+            args: [{ shapes: shapes, annotations: annotations }],
+            args2: [{ shapes: [], annotations: [] }],
+            method: 'relayout',
+            label: 'SHOW ANNOTATIONS',
+          },
+        ],
+        // style
+        font: { family: variables.titleFont, color: variables.textColor, size: 10 },
+        bgcolor: variables.bgcolor,
+        bordercolor: variables.textColor,
+        borderwidth: 2,
+        pad: {t: 15, b: 10},
+        // position
+        xanchor: 'left',
+        x: 0,
+        yanchor: 'bottom',
+        y: 1.0,
+      },
+    ];
 
     return (
       <div>
@@ -39,9 +62,6 @@ export default class PlotByDay extends React.Component {
             this.setDetails(); // reset to default (setting default here doesn't work on re-render)
           }}
         ></p>
-        <span onClick={this.toggleAnnot} className={'plot-btn'}>
-          {this.state.showAnnot ? 'hide annotations' : 'show annotations'}
-        </span>
         <Plot
           divId={id}
           data={[
@@ -54,16 +74,18 @@ export default class PlotByDay extends React.Component {
               line: { color: '#da492f' },
             },
           ]}
-          style={{ width: '100%', height: '700px' }}
+          style={{ width: '100%' }} // use height: '600px' to make it bigger
           layout={{
             shapes: shapes,
             annotations: annotations,
             xaxis: { rangeslider: { visible: false } },
             yaxis: { title: 'minutes', fixedrange: true },
             margin: { ...defaultMargins, t: 50 },
+            updatemenus: menus,
           }}
           onClick={this.onPointClicked}
           useResizeHandler={true}
+          debug={true}
         />
       </div>
     );
@@ -106,10 +128,6 @@ export default class PlotByDay extends React.Component {
     });
 
     return [shapes, annotations];
-  }
-
-  toggleAnnot() {
-    this.setState({ showAnnot: !this.state.showAnnot });
   }
 
   onPointClicked(e) {

@@ -83,24 +83,3 @@ code {
     box-shadow: 0 2px 3px 0 rgb(35 57 66 / 61%);
   }
 }
-
-// --- plot by day
-
-.plot-btn {
-  font-family: $title-font-family;
-  text-transform: uppercase;
-  position: relative;
-  bottom: -22px;
-  z-index: 100;
-  font-size: 0.7em;
-  color: #777;
-  cursor: pointer;
-  margin-left: 10pt;
-
-  @media (hover: hover) {
-    &:active,
-    &:hover {
-      color: black;
-    }
-  }
-}
