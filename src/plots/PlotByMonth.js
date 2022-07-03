@@ -26,7 +26,7 @@ export default function PlotByMonth(props) {
       style={style}
       layout={{
         xaxis: { type: 'category' }, // show all dates
-        yaxis: { title: 'minutes' },
+        yaxis: { title: 'minutes', fixedrange: true },
         autosize: true, // this + useResizeHandler makes it responsive
         margin: defaultMargins,
       }}

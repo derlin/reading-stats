@@ -28,6 +28,7 @@ export default function PlotByWeekday(props) {
         yaxis: { title: 'minutes' },
         autosize: true, // this + useResizeHandler makes it responsive
         margin: defaultMargins,
+        dragmode: false,
       }}
       useResizeHandler={true}
     />

@@ -4,14 +4,18 @@ import Plot from 'react-plotly.js';
 import { noDataLayout, defaultMargins } from './common';
 import { taskWithMaybeLink } from '../data/Data';
 import { format, formatDuration, intervalToDuration } from 'date-fns';
+import { renderToString } from 'react-dom/server';
 
 const colors = ['LightSalmon', 'beige'];
 const id = 'plot_day';
 
+const defaultDetailsText = `<i>Click a point to see details</i>`;
+
 export default class PlotByDay extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { text: null, showAnnot: true };
+    this.state = { showAnnot: true };
+    this.detailsRef = null; // reference to the details div
     this.onPointClicked = this.onPointClicked.bind(this);
     this.toggleAnnot = this.toggleAnnot.bind(this);
   }
@@ -28,13 +32,13 @@ export default class PlotByDay extends React.Component {
 
     return (
       <div>
-        <p id="byday_details">
-          {this.state.text ?? (
-            <>
-              <i>Click a point to see details</i>
-            </>
-          )}
-        </p>
+        <p
+          id="byday_details"
+          ref={elt => {
+            this.detailsRef = elt;
+            this.setDetails(); // reset to default (setting default here doesn't work on re-render)
+          }}
+        ></p>
         <span onClick={this.toggleAnnot} className={'plot-btn'}>
           {this.state.showAnnot ? 'hide annotations' : 'show annotations'}
         </span>
@@ -55,7 +59,7 @@ export default class PlotByDay extends React.Component {
             shapes: shapes,
             annotations: annotations,
             xaxis: { rangeslider: { visible: false } },
-            yaxis: { title: 'minutes' },
+            yaxis: { title: 'minutes', fixedrange: true },
             margin: { ...defaultMargins, t: 50 },
           }}
           onClick={this.onPointClicked}
@@ -113,18 +117,18 @@ export default class PlotByDay extends React.Component {
 
     const date = format(new Date(point.x), 'PPP (EEEE)');
     const duration = formatDuration(intervalToDuration({ start: 0, end: point.y * 60 * 1000 }));
-    const tasks = point.text.split(', ').map((task, index) => (
-      <>
-        {index ? ', ' : ''}
-        {taskWithMaybeLink(task)}
-      </>
-    ));
+    const tasks = point.text
+      .split(', ')
+      .map(task => renderToString(taskWithMaybeLink(task)))
+      .join(', ');
 
-    const text = (
-      <>
-        On {date}, I read {duration} of {tasks}
-      </>
-    );
-    this.setState({ text: text });
+    const text = `On ${date}, I read ${duration} of ${tasks}`;
+    this.setDetails(text);
+  }
+
+  setDetails(text) {
+    // do NOT use a state here, since if we call render again,
+    // the plot state will be lost (zoom, etc will be reset)
+    if (this.detailsRef) this.detailsRef.innerHTML = text ?? defaultDetailsText;
   }
 }
