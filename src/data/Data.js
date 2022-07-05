@@ -95,11 +95,8 @@ function df_weekdays(books) {
   // !! IMPORTANT !! callers must use .get() to get columns without errors
   if (books.isEmpty()) return new dfd.DataFrame();
 
-  return books
-    .addColumn(
-      'weekday',
-      books['date'].dt.dayOfWeek().apply(n => WEEKDAYS[n])
-    )
+  const df_weekdays = books
+    .addColumn('weekday', books['date'].dt.dayOfWeek())
     .groupby(['weekday'])
     .apply(row => {
       let minutes = row['minutes'];
@@ -115,8 +112,12 @@ function df_weekdays(books) {
         ],
       });
     })
-    .rename({ weekday_Group: 'weekday' })
+    .sortValues('weekday_Group')
     .resetIndex();
+
+  // can't find a way to do this inplace...
+  const weekdayText = df_weekdays['weekday_Group'].apply(n => WEEKDAYS[n]);
+  return df_weekdays.addColumn('weekday', weekdayText);
 }
 
 console.log('constants loaded');
