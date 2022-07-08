@@ -1,9 +1,8 @@
-import './BookTable.scss';
-
 import React from 'react';
 import * as dfd from 'danfojs';
 
 import { taskWithMaybeLink } from '../data/Data';
+import './BookTable.scss';
 
 function formatDuration(minutes) {
   const h = Math.ceil(minutes / 60);
@@ -24,7 +23,7 @@ export default class BookTable extends React.Component {
 
   render() {
     let df = this.props.data.df_tasks;
-    if (df.isEmpty()) return '<div>No data</div>';
+    if (df.isEmpty()) return <p>No book finished in this interval</p>;
 
     if (this.state.sortBy) {
       df = df.sortValues(this.state.sortBy, {
@@ -36,6 +35,7 @@ export default class BookTable extends React.Component {
       { name: 'Books', col: 'task' },
       { name: 'Hours', col: 'minutes' },
       { name: 'Start Date', col: 'day_start' },
+      { name: 'Days', col: 'days' },
       { name: 'Pages', col: 'pages' },
     ];
 
@@ -61,6 +61,7 @@ export default class BookTable extends React.Component {
                   <td>{taskWithMaybeLink(row.task, row.grId)}</td>
                   <td className="mono right">{formatDuration(row.minutes)}</td>
                   <td>{row.day_start}</td>
+                  <td>{row.days}</td>
                   <td className="mono">{row.pages ?? '?'}</td>
                 </tr>
               );

@@ -1,5 +1,3 @@
-import './App.scss';
-
 import React from 'react';
 
 import { DateRange, Data, boundaries } from './data/Data';
@@ -9,6 +7,7 @@ import PlotByMonth from './plots/PlotByMonth';
 import PlotByWeekday from './plots/PlotByWeekday';
 import BookTable from './components/BookTable';
 import GlobalStats from './components/GlobalStats';
+import './App.scss';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,7 +21,6 @@ class App extends React.Component {
   }
 
   selectDates(event) {
-    console.log('event', event);
     this.setState(
       {
         startDate: event.startDate,
@@ -42,9 +40,9 @@ class App extends React.Component {
       <div>
         <Header dateRange={dateRange} selectDates={this.selectDates} />
         <h2>Overview</h2>
-        <GlobalStats dateRange={dateRange} data={data} />
+        <GlobalStats data={data} dateRange={dateRange} />
         <h2>Reading per day</h2>
-        <PlotByDay data={data} />
+        <PlotByDay data={data} dateRange={dateRange} />
         <h2>Reading per month</h2>
         <PlotByMonth data={data} />
         <h2>Reading per weekday</h2>

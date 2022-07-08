@@ -1,52 +1,44 @@
-import { Component } from 'react';
 import { add, format, formatDuration, intervalToDuration } from 'date-fns';
 
-export default class Header extends Component {
-  render() {
-    const data = this.props.data;
-    if (data.isEmpty()) return <p>Nothing to show here.</p>;
+const GlobalStats = ({ data, dateRange }) => {
+  //if (data.isEmpty()) return <p>Nothing to show here.</p>; TODO
 
-    const minutes_serie = data.df_byday['minutes'];
+  // functions
+  const fni = n => <code>{n.toLocaleString('en').replaceAll(',', "'")}</code>;
+  const fnd = date => <i>{format(date, 'PPPP')}</i>;
+  const duration = (start, end) => formatDuration(intervalToDuration({ start: start, end: end }));
 
-    const date_from = this.props.dateRange.start;
-    const date_to = this.props.dateRange.end;
-    const days = this.duration(date_from, add(date_to, { days: 1 })); // TODO: range is not correct (1 year)
+  // compute all values used in render
+  const minutes_serie = data.df_byday['minutes'];
 
-    const total_minutes = minutes_serie.sum();
-    const total_books = data.df_tasks.shape[0];
-    const total_duration = this.duration(0, total_minutes * 60 * 1000);
-    const total_pages = data.df_tasks.pages.sum();
+  const date_from = dateRange.start;
+  const date_to = dateRange.end;
+  const days = duration(date_from, add(date_to, { days: 1 })); // TODO: range is not correct (1 year)
 
-    const days_missed = minutes_serie.apply(n => +(n === 0)).sum();
-    const days_sub = minutes_serie.apply(n => +(n > 0 && n < 10)).sum();
+  const total_minutes = minutes_serie.sum();
+  const total_books = data.df_tasks.shape[0];
+  const total_duration = duration(0, total_minutes * 60 * 1000);
+  const total_pages = data.df_tasks.pages.sum();
 
-    return (
-      <div>
-        <p>
-          From {this.fnd(date_from)} to {this.fnd(date_to)} ({days}), I finished{' '}
-          {this.fni(total_books)} books.
-        </p>
-        <p>
-          I read about {this.fni(total_pages)} pages in {this.fni(total_minutes)} minutes, which is
-          equivalent to <b>{total_duration}</b> non-stop reading.
-        </p>
-        <p>
-          I missed {this.fni(days_missed)} days (no reading at all), and read less than ten minutes{' '}
-          {this.fni(days_sub)} times.
-        </p>
-      </div>
-    );
-  }
+  const days_missed = minutes_serie.apply(n => +(n === 0)).sum();
+  const days_sub = minutes_serie.apply(n => +(n > 0 && n < 10)).sum();
 
-  fni(n) {
-    return <code>{n.toLocaleString('en').replaceAll(',', "'")}</code>;
-  }
+  return (
+    <div>
+      <p>
+        From {fnd(date_from)} to {fnd(date_to)} ({days}), I finished {fni(total_books)} books.
+      </p>
+      <p>
+        I read {total_pages > 0 ? <span>about {fni(total_pages)} pages in </span> : <span></span>}
+        {fni(total_minutes)} minutes, which is equivalent to <b>{total_duration}</b> non-stop
+        reading.
+      </p>
+      <p>
+        I missed {fni(days_missed)} days (no reading at all), and read less than ten minutes{' '}
+        {fni(days_sub)} times.
+      </p>
+    </div>
+  );
+};
 
-  fnd(date) {
-    return <i>{format(date, 'PPPP')}</i>;
-  }
-
-  duration(start, end) {
-    return formatDuration(intervalToDuration({ start: start, end: end }));
-  }
-}
+export default GlobalStats;

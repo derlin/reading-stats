@@ -8,15 +8,20 @@ Object.defineProperties(dfd.NDframe.prototype, {
   // this dirty trick is to avoid the following error when working with empty dataframes:
   //   DtypeError: Dtype "undefined" not supported. dtype must be one of "float32,int32,string,boolean,undefined"
   // If we always use .get('column') in the plots, we should be fine
+  // NOTE: do not use lambdas, as "this" becomes undefined (??)
   get: {
     value: function (column) {
       return this.shape[0] === 0 ? [] : this[column].values;
     },
   },
-  // this is just a helper
   isEmpty: {
     value: function () {
       return this.shape[0] === 0;
+    },
+  },
+  size: {
+    value: function () {
+      return this.shape[0];
     },
   },
 });

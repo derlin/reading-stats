@@ -1,11 +1,13 @@
-import * as dfd from 'danfojs';
 import React from 'react';
 import Plot from 'react-plotly.js';
-import Plotly from 'plotly.js/dist/plotly'
-import { noDataLayout, defaultMargins } from './common';
-import { taskWithMaybeLink } from '../data/Data';
-import { format, formatDuration, intervalToDuration } from 'date-fns';
+import Plotly from 'plotly.js/dist/plotly';
 import { renderToString } from 'react-dom/server';
+import { format, formatDuration, intervalToDuration } from 'date-fns';
+import * as dfd from 'danfojs';
+
+import { defaultMargins } from './common';
+import { taskWithMaybeLink } from '../data/Data';
+import PlotEmpty from './PlotyEmpty';
 
 const colors = ['LightSalmon', 'beige'];
 const id = 'plot_day';
@@ -15,27 +17,27 @@ const defaultDetailsText = `<i>Click a point to see details</i>`;
 export default class PlotByDay extends React.Component {
   constructor(props) {
     super(props);
-    
+
     // show info on click
     this.detailsRef = null; // reference to the details div
     this.setDetailsText = this.setDetailsText.bind(this);
     this.onPointClicked = this.onPointClicked.bind(this);
-    
+
     // toggle plot annotations and shapes
     this.fakeState = { shapes: [], annotations: [], visible: false };
     this.toggleAnnotBtnRef = null;
     this.toggleAnnot = this.toggleAnnot.bind(this);
     this.updateToggleAnnotBtnText = this.updateToggleAnnotBtnText.bind(this);
-
   }
 
   render() {
-    if (this.props.data.isEmpty()) return <Plot divId={id} layout={noDataLayout()} />;
-
     const df_tasks = this.props.data.df_tasks;
     const df_byday = this.props.data.df_byday;
+    const dr = this.props.dateRange;
 
-    const [shapes, annotations] = this.computeAnnotations(df_tasks);
+    if (df_byday.size() < 2) return <PlotEmpty id={id} />;
+
+    const [shapes, annotations] = this.computeAnnotations(df_tasks, dr);
 
     this.fakeState = { shapes, annotations, visible: true };
 
@@ -85,20 +87,24 @@ export default class PlotByDay extends React.Component {
     );
   }
 
-  computeAnnotations(df_tasks) {
+  computeAnnotations(df_tasks, dateRange) {
     let current_color = true;
     let shapes = [];
     let annotations = [];
 
     dfd.toJSON(df_tasks).forEach(row => {
       const task = row['task'];
+      // to avoid having shapes bigger than the points displayed
+      const dayStart = [row['day_start'], dateRange.start_str].sort()[1];
+      const dayEnd = [row['day_end'], dateRange.end_str].sort()[0];
+
       current_color = !current_color;
       shapes.push({
         type: 'rect',
         xref: 'x',
         yref: 'paper',
-        x0: row['day_start'],
-        x1: row['day_end'],
+        x0: dayStart,
+        x1: dayEnd,
         y0: 0,
         y1: 1,
         fillcolor: colors[+current_color],
@@ -111,7 +117,7 @@ export default class PlotByDay extends React.Component {
       annotations.push({
         text: task.length < 30 ? task : task.substring(0, 30) + '...',
         textangle: -90,
-        x: row['day_start'],
+        x: dayStart,
         xanchor: 'left',
         // with ref=paper, y=0 mean bottom, y=1 means top of the plot
         y: 1,
@@ -135,7 +141,9 @@ export default class PlotByDay extends React.Component {
 
   updateToggleAnnotBtnText() {
     if (this.toggleAnnotBtnRef)
-      this.toggleAnnotBtnRef.innerHTML = this.fakeState.visible ? 'Hide Annotations' : 'Show Annotations';
+      this.toggleAnnotBtnRef.innerHTML = this.fakeState.visible
+        ? 'Hide Annotations'
+        : 'Show Annotations';
   }
 
   onPointClicked(e) {

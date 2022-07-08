@@ -1,13 +1,14 @@
 import Plot from 'react-plotly.js';
-import { noDataLayout, defaultMargins } from './common';
 
-const style = { margin: 'auto' };
+import { defaultMargins } from './common';
+import PlotEmpty from './PlotyEmpty';
+
 const id = 'plot_month';
 
-export default function PlotByMonth(props) {
-  if (props.data.isEmpty()) return <Plot divId={id} style={style} layout={noDataLayout()} />;
+export default function PlotByMonth({ data }) {
+  if (data.isEmpty()) return <PlotEmpty divId={id} />; // shouldn't happen, but you never know
 
-  const df = props.data.df_months;
+  const df = data.df_months;
 
   return (
     <Plot
@@ -23,7 +24,7 @@ export default function PlotByMonth(props) {
           //marker: { color: '#7562e5' }, // #6567ff
         },
       ]}
-      style={style}
+      style={{}} // remove defaults
       layout={{
         xaxis: { type: 'category' }, // show all dates
         yaxis: { title: 'minutes', fixedrange: true },

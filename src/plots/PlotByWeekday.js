@@ -1,13 +1,15 @@
 import Plot from 'react-plotly.js';
-import { defaultMargins, noDataLayout } from './common';
 
-const style = { margin: 'auto', maxWidth: '900px' };
+import { defaultMargins } from './common';
+import PlotEmpty from './PlotyEmpty';
+
+const style = { maxWidth: '700px' };
 const id = 'plot_weekday';
 
-export default function PlotByWeekday(props) {
-  if (props.data.isEmpty()) return <Plot divId={id} style={style} layout={noDataLayout()} />;
+export default function PlotByWeekday({ data }) {
+  if (data.isEmpty()) return <PlotEmpty divId={id} style={style} />; // shouldn't happen, but you never know
 
-  const df = props.data.df_weekdays;
+  const df = data.df_weekdays;
 
   return (
     <Plot
