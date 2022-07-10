@@ -52,12 +52,15 @@ export default class Header extends Component {
 
   render() {
     return (
-      <div id="top-row">
-        <div id="header">
-          {this.renderDatePicker('date')}
-          {this.renderPresets()}
+      <>
+        <div id="top-row">
+          <div id="header">
+            {this.renderDatePicker('date')}
+            {this.renderPresets()}
+          </div>
         </div>
-      </div>
+        {this.state.opened && <div className="backdrop" onClick={this.togglePicker}></div>}
+      </>
     );
   }
 
