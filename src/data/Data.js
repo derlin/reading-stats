@@ -101,7 +101,7 @@ function df_weekdays(books) {
   if (books.isEmpty()) return new dfd.DataFrame();
 
   const df_weekdays = books
-    .addColumn('weekday', books['date'].dt.dayOfWeek())
+    .addColumn('weekday', books['date'].dt.dayOfWeek().apply(x => (x + 6) % 7)) // 0 is Sunday
     .groupby(['weekday'])
     .apply(row => {
       let minutes = row['minutes'];
