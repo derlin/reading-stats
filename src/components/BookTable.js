@@ -1,7 +1,7 @@
 import React from 'react';
 import * as dfd from 'danfojs';
 
-import { taskWithMaybeLink } from '../data/Data';
+import { isTaskFinished, taskWithMaybeLink } from '../data/Data';
 import './BookTable.scss';
 
 function formatDuration(minutes) {
@@ -57,7 +57,10 @@ export default class BookTable extends React.Component {
           <tbody>
             {dfd.toJSON(df).map(row => {
               return (
-                <tr key={row.task}>
+                <tr
+                  key={row.task}
+                  className={isTaskFinished(row.task, this.props.dateRange) ? '' : 'partial'}
+                >
                   <td>{taskWithMaybeLink(row.task, row.grId)}</td>
                   <td className="mono right">{formatDuration(row.minutes)}</td>
                   <td>{row.day_start}</td>

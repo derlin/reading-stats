@@ -48,7 +48,7 @@ class App extends React.Component {
         <h2>Reading per weekday</h2>
         <PlotByWeekday data={data} />
         <h2>Books read</h2>
-        <BookTable data={data} />
+        <BookTable data={data} dateRange={dateRange} />
       </div>
     );
   }

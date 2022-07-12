@@ -38,6 +38,10 @@ $sort-icon-color-active: #282bf1;
     background: $hover-color;
   }
 
+  tr.partial {
+    opacity: 0.5;
+  }
+
   /* -- sort arrows */
 
   .sortHandle:after {

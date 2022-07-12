@@ -65,7 +65,7 @@ const df_tasks = books
     });
   })
   .rename({ task_Group: 'task' })
-  .resetIndex();
+  .setIndex({ column: 'task' });
 
 // -- monthly statistics
 
@@ -101,7 +101,10 @@ function df_weekdays(books) {
   if (books.isEmpty()) return new dfd.DataFrame();
 
   const df_weekdays = books
-    .addColumn('weekday', books['date'].dt.dayOfWeek().apply(x => (x + 6) % 7)) // 0 is Sunday
+    .addColumn(
+      'weekday',
+      books['date'].dt.dayOfWeek().apply(x => (x + 6) % 7)
+    ) // 0 is Sunday
     .groupby(['weekday'])
     .apply(row => {
       let minutes = row['minutes'];
@@ -127,14 +130,23 @@ function df_weekdays(books) {
 
 console.log('constants loaded');
 
-// ----------------- utilities
+// ----------------- private utilities
 
 function _filterDataByDate(df, column, from_date, to_date) {
-  if (from_date) df = df.iloc({ rows: df[column].apply(x => x >= from_date) }).resetIndex();
-  if (to_date) df = df.iloc({ rows: df[column].apply(x => x <= to_date) }).resetIndex();
+  if (from_date) df = df.loc({ rows: df[column].apply(x => x >= from_date) });
+  if (to_date) df = df.loc({ rows: df[column].apply(x => x <= to_date) });
 
   return df;
 }
+
+function _filterDataByDateRange(df, start_column, end_column, from_date, to_date) {
+  if (from_date) df = df.loc({ rows: df[end_column].apply(x => x >= from_date) });
+  if (to_date) df = df.loc({ rows: df[start_column].apply(x => x <= to_date) });
+
+  return df;
+}
+
+// ----------------- exported utilities
 
 export function taskWithMaybeLink(task) {
   const goodreadsId = meta[task]?.GoodreadsID;
@@ -150,6 +162,13 @@ export function taskWithMaybeLink(task) {
     );
   }
   return task;
+}
+
+export function isTaskFinished(task, dateRange) {
+  return (
+    df_tasks.at(task, 'day_start') >= dateRange.start_str &&
+    df_tasks.at(task, 'day_end') <= dateRange.end_str
+  );
 }
 
 // ----------------- DateRange helper
@@ -181,9 +200,10 @@ export class Data {
       return this.df_byday.isEmpty();
     };
 
-    this.df_tasks = _filterDataByDate(
+    this.df_tasks = _filterDataByDateRange(
       df_tasks,
       'day_start',
+      'day_end',
       dateRange.start_str,
       dateRange.end_str
     );

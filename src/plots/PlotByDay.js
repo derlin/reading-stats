@@ -6,10 +6,11 @@ import { format, formatDuration, intervalToDuration } from 'date-fns';
 import * as dfd from 'danfojs';
 
 import { defaultMargins } from './common';
-import { taskWithMaybeLink } from '../data/Data';
+import { taskWithMaybeLink, isTaskFinished } from '../data/Data';
 import PlotEmpty from './PlotyEmpty';
 
-const colors = ['LightSalmon', 'beige'];
+const colors = ['#ffebe2', '#fdfdf7']; // LightSalmon at 0.2 opacity, beige at 0.2 opacity
+const unfinishedColor = '#FFFFFFAA'; // should not be full opaque, as it is drawn above the trace
 const id = 'plot_day';
 
 const defaultDetailsText = `<i>Click a point to see details</i>`;
@@ -97,6 +98,7 @@ export default class PlotByDay extends React.Component {
       // to avoid having shapes bigger than the points displayed
       const dayStart = [row['day_start'], dateRange.start_str].sort()[1];
       const dayEnd = [row['day_end'], dateRange.end_str].sort()[0];
+      const finished = isTaskFinished(task, dateRange);
 
       current_color = !current_color;
       shapes.push({
@@ -107,8 +109,8 @@ export default class PlotByDay extends React.Component {
         x1: dayEnd,
         y0: 0,
         y1: 1,
-        fillcolor: colors[+current_color],
-        opacity: 0.2,
+        fillcolor: finished ? colors[+current_color] : unfinishedColor,
+        layer: finished ? 'below' : 'above',
         line: {
           width: 0,
         },
