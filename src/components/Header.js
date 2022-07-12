@@ -25,7 +25,7 @@ const staticRanges = [
   },
   {
     label: 'This Year',
-    start: set(boundaries.maxDate, { month: 0, day: 1 }),
+    start: set(boundaries.maxDate, { month: 0, date: 1 }),
     end: boundaries.maxDate,
   },
   ...boundaries.years
