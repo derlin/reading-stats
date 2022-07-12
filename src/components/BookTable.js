@@ -25,7 +25,12 @@ export default class BookTable extends React.Component {
     let df = this.props.data.df_tasks;
     if (df.isEmpty()) return <p>No book finished in this interval</p>;
 
-    if (this.state.sortBy) {
+    window.df = df;
+    if (this.state.sortBy && df.size() > 1) {
+      // NO IDEA why, but danfo-js crashes with IndexError: Specified index (...) not found
+      //    at _loc (indexing.js:202:1)
+      //    at DataFrame.sortValues (frame.js:1773:1)
+      // if we try to sort a dataframe with only one row (gosh, danfo-js is full of bugs)
       df = df.sortValues(this.state.sortBy, {
         ascending: this.state.sortAscending,
       });
