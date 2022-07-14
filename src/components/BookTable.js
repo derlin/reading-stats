@@ -1,7 +1,7 @@
 import React from 'react';
 import * as dfd from 'danfojs';
 
-import { isTaskFinished, taskWithMaybeLink } from '../data/Data';
+import { isTaskFinished, taskWithMaybeLink, UNKNOWN_PAGE } from '../data/Data';
 import './BookTable.scss';
 
 function formatDuration(minutes) {
@@ -25,7 +25,6 @@ export default class BookTable extends React.Component {
     let df = this.props.data.df_tasks;
     if (df.isEmpty()) return <p>No book finished in this interval</p>;
 
-    window.df = df;
     if (this.state.sortBy && df.size() > 1) {
       // NO IDEA why, but danfo-js crashes with IndexError: Specified index (...) not found
       //    at _loc (indexing.js:202:1)
@@ -70,7 +69,7 @@ export default class BookTable extends React.Component {
                   <td className="mono right">{formatDuration(row.minutes)}</td>
                   <td>{row.day_start}</td>
                   <td>{row.days}</td>
-                  <td className="mono">{row.pages ?? '?'}</td>
+                  <td className="mono">{row.pages === UNKNOWN_PAGE ? '?' : row.pages}</td>
                 </tr>
               );
             })}

@@ -2,6 +2,7 @@ import * as dfd from 'danfojs';
 import { set, format } from 'date-fns';
 
 const WEEKDAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+export const UNKNOWN_PAGE = -1;
 
 // Add some nice prototypes to all dataframes
 Object.defineProperties(dfd.NDframe.prototype, {
@@ -60,7 +61,7 @@ const df_tasks = books
       days: [
         Math.ceil(Math.abs(new Date(dates.at(-1)) - new Date(dates.at(0))) / (24 * 60 * 60 * 1000)),
       ],
-      pages: [m?.pages],
+      pages: [m?.pages ?? UNKNOWN_PAGE],
       grId: [m?.GoodreadsID],
     });
   })
