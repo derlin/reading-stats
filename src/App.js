@@ -8,6 +8,7 @@ import PlotByWeekday from './plots/PlotByWeekday';
 import BookTable from './components/BookTable';
 import GlobalStats from './components/GlobalStats';
 import './App.scss';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 class App extends React.Component {
   constructor(props) {
@@ -49,6 +50,7 @@ class App extends React.Component {
         <PlotByWeekday data={data} />
         <h2>Books read</h2>
         <BookTable data={data} dateRange={dateRange} />
+        <ScrollToTopButton />
       </div>
     );
   }
