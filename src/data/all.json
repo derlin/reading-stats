@@ -10662,5 +10662,277 @@
     "time_start": "21:40:36",
     "time_end": "22:34:38",
     "minutes": 54.0
+  },
+  {
+    "date": "2022-07-14",
+    "task": "Uncle Petros and Goldbach's conjecture",
+    "task_done": true,
+    "time_start": "21:41:33",
+    "time_end": "22:30:04",
+    "minutes": 49.0
+  },
+  {
+    "date": "2022-07-15",
+    "task": "Uncle Petros and Goldbach's conjecture",
+    "task_done": true,
+    "time_start": "11:30:47",
+    "time_end": "11:57:00",
+    "minutes": 26.0
+  },
+  {
+    "date": "2022-07-15",
+    "task": "Uncle Petros and Goldbach's conjecture",
+    "task_done": true,
+    "time_start": "13:06:04",
+    "time_end": "13:30:22",
+    "minutes": 24.0
+  },
+  {
+    "date": "2022-07-15",
+    "task": "Uncle Petros and Goldbach's conjecture",
+    "task_done": true,
+    "time_start": "17:48:05",
+    "time_end": "18:11:02",
+    "minutes": 23.0
+  },
+  {
+    "date": "2022-07-15",
+    "task": "Uncle Petros and Goldbach's conjecture",
+    "task_done": true,
+    "time_start": "18:17:52",
+    "time_end": "18:35:43",
+    "minutes": 18.0
+  },
+  {
+    "date": "2022-07-15",
+    "task": "Uncle Petros and Goldbach's conjecture",
+    "task_done": true,
+    "time_start": "22:00:40",
+    "time_end": "22:58:36",
+    "minutes": 58.0
+  },
+  {
+    "date": "2022-07-16",
+    "task": "Uncle Petros and Goldbach's conjecture",
+    "task_done": true,
+    "time_start": "08:56:18",
+    "time_end": "09:06:28",
+    "minutes": 10.0
+  },
+  {
+    "date": "2022-07-16",
+    "task": "Uncle Petros and Goldbach's conjecture",
+    "task_done": true,
+    "time_start": "09:19:14",
+    "time_end": "09:34:39",
+    "minutes": 15.0
+  },
+  {
+    "date": "2022-07-16",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "09:50:25",
+    "time_end": "10:03:57",
+    "minutes": 14.0
+  },
+  {
+    "date": "2022-07-16",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "10:29:53",
+    "time_end": "11:22:56",
+    "minutes": 53.0
+  },
+  {
+    "date": "2022-07-16",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "11:44:52",
+    "time_end": "12:06:06",
+    "minutes": 21.0
+  },
+  {
+    "date": "2022-07-16",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "13:14:36",
+    "time_end": "13:30:56",
+    "minutes": 16.0
+  },
+  {
+    "date": "2022-07-16",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "13:52:50",
+    "time_end": "14:12:52",
+    "minutes": 20.0
+  },
+  {
+    "date": "2022-07-16",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "14:34:32",
+    "time_end": "14:50:16",
+    "minutes": 16.0
+  },
+  {
+    "date": "2022-07-16",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "21:35:29",
+    "time_end": "22:09:58",
+    "minutes": 34.0
+  },
+  {
+    "date": "2022-07-17",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "15:37:35",
+    "time_end": "15:45:03",
+    "minutes": 7.0
+  },
+  {
+    "date": "2022-07-17",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "17:10:33",
+    "time_end": "17:32:51",
+    "minutes": 22.0
+  },
+  {
+    "date": "2022-07-17",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "17:33:15",
+    "time_end": "17:33:21",
+    "minutes": 0.0
+  },
+  {
+    "date": "2022-07-17",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "22:04:05",
+    "time_end": "22:48:30",
+    "minutes": 44.0
+  },
+  {
+    "date": "2022-07-18",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "17:30:50",
+    "time_end": "17:51:40",
+    "minutes": 21.0
+  },
+  {
+    "date": "2022-07-18",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "21:01:58",
+    "time_end": "21:15:35",
+    "minutes": 14.0
+  },
+  {
+    "date": "2022-07-19",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "15:37:29",
+    "time_end": "15:53:51",
+    "minutes": 16.0
+  },
+  {
+    "date": "2022-07-19",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "17:47:03",
+    "time_end": "17:57:13",
+    "minutes": 10.0
+  },
+  {
+    "date": "2022-07-19",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "18:23:40",
+    "time_end": "18:51:33",
+    "minutes": 28.0
+  },
+  {
+    "date": "2022-07-20",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "18:34:00",
+    "time_end": "19:03:52",
+    "minutes": 30.0
+  },
+  {
+    "date": "2022-07-21",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "18:25:40",
+    "time_end": "18:54:07",
+    "minutes": 28.0
+  },
+  {
+    "date": "2022-07-22",
+    "task": "Labyrinthes",
+    "task_done": true,
+    "time_start": "18:08:37",
+    "time_end": "18:31:29",
+    "minutes": 23.0
+  },
+  {
+    "date": "2022-07-23",
+    "task": "The plot ",
+    "task_done": true,
+    "time_start": "08:27:59",
+    "time_end": "08:36:08",
+    "minutes": 8.0
+  },
+  {
+    "date": "2022-07-23",
+    "task": "The plot ",
+    "task_done": true,
+    "time_start": "08:57:49",
+    "time_end": "10:33:41",
+    "minutes": 96.0
+  },
+  {
+    "date": "2022-07-23",
+    "task": "The plot ",
+    "task_done": true,
+    "time_start": "11:00:41",
+    "time_end": "12:18:03",
+    "minutes": 77.0
+  },
+  {
+    "date": "2022-07-23",
+    "task": "The plot ",
+    "task_done": true,
+    "time_start": "12:57:35",
+    "time_end": "14:36:54",
+    "minutes": 99.0
+  },
+  {
+    "date": "2022-07-23",
+    "task": "The plot ",
+    "task_done": true,
+    "time_start": "14:47:26",
+    "time_end": "14:56:51",
+    "minutes": 9.0
+  },
+  {
+    "date": "2022-07-23",
+    "task": "The plot ",
+    "task_done": true,
+    "time_start": "15:10:47",
+    "time_end": "15:25:07",
+    "minutes": 14.0
+  },
+  {
+    "date": "2022-07-23",
+    "task": "The plot ",
+    "task_done": true,
+    "time_start": "18:58:52",
+    "time_end": "19:09:34",
+    "minutes": 11.0
   }
 ]
