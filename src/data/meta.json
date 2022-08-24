@@ -555,5 +555,33 @@
     "GoodreadsID": "56777157",
     "pages": 113,
     "pubDate": "2021-02-11"
+  },
+  "Widowland": {
+    "GoodreadsID": "59655274",
+    "ISBN": "9781728248448",
+    "pages": 432,
+    "pubDate": "2021-06-10"
+  },
+  "The bell jar": {
+    "GoodreadsID": "6514",
+    "pages": 294,
+    "pubDate": "1963-01-01"
+  },
+  "Le miroir de Cassandre": {
+    "GoodreadsID": "6912491",
+    "ISBN": "9782226194022",
+    "pages": 792,
+    "pubDate": "2000-01-01"
+  },
+  "Florida": {
+    "GoodreadsID": "57288083",
+    "pages": 256,
+    "pubDate": "2021-03-04"
+  },
+  "Le pingouin": {
+    "GoodreadsID": "122032",
+    "ISBN": "9782020477819",
+    "pages": 274,
+    "pubDate": "1996-06-01"
   }
 }
