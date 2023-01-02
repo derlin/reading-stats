@@ -29,7 +29,7 @@ export default function PlotByMonth({ data }) {
         xaxis: { type: 'category' }, // show all dates
         yaxis: { title: 'minutes', fixedrange: true },
         autosize: true, // this + useResizeHandler makes it responsive
-        margin: defaultMargins,
+        margin: { ...defaultMargins, ...{ b: 80 } }, // the x labels may be vertical
       }}
       useResizeHandler={true}
     />

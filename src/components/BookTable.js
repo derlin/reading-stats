@@ -15,7 +15,7 @@ export default class BookTable extends React.Component {
     super(props);
     this.state = {
       sortBy: 'day_start',
-      sortAscending: true,
+      sortAscending: false,
     };
 
     this.sortBy = this.sortBy.bind(this);
