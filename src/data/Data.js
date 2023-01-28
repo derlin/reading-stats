@@ -2,7 +2,7 @@ import * as dfd from 'danfojs';
 import { set, format } from 'date-fns';
 
 const WEEKDAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-export const UNKNOWN_PAGE = -1;
+export const UNKNOWN_PAGE = 0;
 
 // Add some nice prototypes to all dataframes
 Object.defineProperties(dfd.NDframe.prototype, {
