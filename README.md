@@ -2,14 +2,29 @@
 
 ⮕ The App is available at ✨ https://derlin.github.io/reading-stats/ ✨
 
+
+**Table of Contents**
+
+<!-- TOC start -->
+- [Context](#context)
+- [Running the App](#running-the-app)
+  * [Start a development server](#start-a-development-server)
+  * [Build the App](#build-the-app)
+- [Continuous Deployment](#continuous-deployment)
+- [About the code](#about-the-code)
+- [I need you!](#i-need-you)
+<!-- TOC end -->
+
 ## Context
 
 In May 2020, I made a commitment to read for at least 10 minutes every day, and this challenge has had a big impact on my life.
 I have gained self-worth and perspective, I sleep better, and I feel overall happier and more productive.
 
---- 
+---
 
-If you want to know more, I describe my journey here:
+<div align=center>
+
+**If you want to know more, I describe my journey here:**
 
 ⮕ On my blog: ✨✨✨ [I challenged myself to read every day, and it changed my life 📚](
 https://blog.derlin.ch/i-challenged-myself-to-read-every-day-and-it-changed-my-life) ✨✨✨
@@ -17,7 +32,10 @@ https://blog.derlin.ch/i-challenged-myself-to-read-every-day-and-it-changed-my-l
 ⮕ On dev.to: ✨ [I challenged myself to read every day, and it changed my life 📚](
 https://dev.to/derlin/i-challenged-myself-to-read-every-day-and-it-changed-my-life-2oef) ✨
 
+</div>
+
 ---
+
 
 One of the most important piece when trying to forge new habits is **Monitoring your progress**:
 being able to prove your achievements (or to be reminded of your failures 😉) is the best way to stay motivated.
@@ -26,9 +44,9 @@ May it be a full-featured habit tracker app or simply an X mark on a calendar, a
 This is why I track my reading habits thoroughly using different tools:
 
 1. I start a timer every time I read using the [Boosted](https://www.boostedproductivity.com) app (one book = one task).
-  Knowing that a clock is ticking helps me focus on the reading, and ignore distractions
+   Knowing that a clock is ticking helps me focus on the reading, and ignore distractions
 2. I keep a list of books read (along with some notes) using a custom-made Android app called MyBooks,
-  which saves the data as a JSON file in DropBox (I wouldn't remember half of the books I read without it 😆)
+   which saves the data as a JSON file in DropBox (I wouldn't remember half of the books I read without it 😆)
 3. I maintain two lists on [GoodReads](https://www.goodreads.com/user/show/101290348-lucy): *want-to-read* and *read*
 4. I publish all my stats online: https://derlin.github.io/reading-stats/.
 
@@ -61,14 +79,15 @@ The App is hosted on GitHub Pages, and automatically redeployed on every new pus
 ## About the code
 
 The code is a React App that heavily uses [Danfo.js](https://danfo.jsdata.org) to manipulate data in the form of DataFrames.
-Danfo.js is currently the best alternative to the excellent Python Pandas library. 
+Danfo.js is currently the best alternative to the excellent Python Pandas library.
+The plots are created using [Plotly](https://plotly.com/javascript/).
 
 I am using pure Javascript instead of Typescript mostly because of Danfo.js: I couldn't find good type maps.
 
 The most interesting folder is `src/data`:
 
 1. `all.json` contains one entry for each interval of time I read. It is a nearly exact mapping of the CSV file I export from
-   the [Boosted](https://www.boostedproductivity.com) app (just a tiny bit of filtering and cleanup). 
+   the [Boosted](https://www.boostedproductivity.com) app (just a tiny bit of filtering and cleanup).
 2. `meta.json` contains the metadata about all the books I read. They are extracted from GoodReads using [goodreads-metadata-fetcher](
    https://github.com/derlin/goodreads-metadata-fetcher), yet another library I developed. The JSON format matches the one I use in
    my Android App ["MyBooks"](https://github.com/derlin/mybooks-android).
