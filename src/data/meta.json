@@ -111,7 +111,9 @@
   },
   "The 8 list": {
     "GoodreadsID": "63041442",
-    "ISBN": "9782918541776"
+    "ISBN": "9782918541776",
+    "pages": 223,
+    "pubDate": "2022-10-06"
   },
   "Kiss kiss": {
     "GoodreadsID": "44521",
@@ -445,6 +447,29 @@
     "ISBN": "9782330064228",
     "pages": 592,
     "pubDate": "2013-06-04"
+  },
+  "The measure": {
+    "GoodreadsID": "58884736",
+    "ISBN": "9780063204201",
+    "pages": 368,
+    "pubDate": "2022-06-28"
+  },
+  "Who is Maud Dixon? ": {
+    "GoodreadsID": "52320705",
+    "pages": 324,
+    "pubDate": "2021-03-01"
+  },
+  "Remarkably bright creatures": {
+    "GoodreadsID": "58733693",
+    "ISBN": "9780063204157",
+    "pages": 368,
+    "pubDate": "2022-05-03"
+  },
+  "Present tense machine": {
+    "GoodreadsID": "57693680",
+    "ISBN": "9780374237172",
+    "pages": 176,
+    "pubDate": "2018-10-22"
   },
   "Lessons in chemistry ": {
     "GoodreadsID": "58065033",
