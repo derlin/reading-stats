@@ -15718,5 +15718,509 @@
     "time_start": "11:27:04",
     "time_end": "12:03:32",
     "minutes": 36.0
+  },
+  {
+    "date": "2023-04-04",
+    "task": "",
+    "task_done": false,
+    "time_start": "",
+    "time_end": "",
+    "minutes": 0.0
+  },
+  {
+    "date": "2023-04-05",
+    "task": "The marriage act",
+    "task_done": true,
+    "time_start": "11:00:37",
+    "time_end": "11:39:20",
+    "minutes": 39.0
+  },
+  {
+    "date": "2023-04-05",
+    "task": "The marriage act",
+    "task_done": true,
+    "time_start": "13:23:10",
+    "time_end": "15:01:10",
+    "minutes": 98.0
+  },
+  {
+    "date": "2023-04-05",
+    "task": "The marriage act",
+    "task_done": true,
+    "time_start": "15:31:33",
+    "time_end": "17:00:48",
+    "minutes": 89.0
+  },
+  {
+    "date": "2023-04-06",
+    "task": "The marriage act",
+    "task_done": true,
+    "time_start": "09:24:59",
+    "time_end": "09:40:41",
+    "minutes": 16.0
+  },
+  {
+    "date": "2023-04-06",
+    "task": "The marriage act",
+    "task_done": true,
+    "time_start": "19:13:51",
+    "time_end": "19:22:30",
+    "minutes": 9.0
+  },
+  {
+    "date": "2023-04-07",
+    "task": "The marriage act",
+    "task_done": true,
+    "time_start": "11:18:16",
+    "time_end": "11:32:58",
+    "minutes": 15.0
+  },
+  {
+    "date": "2023-04-07",
+    "task": "The marriage act",
+    "task_done": true,
+    "time_start": "17:48:54",
+    "time_end": "18:17:38",
+    "minutes": 29.0
+  },
+  {
+    "date": "2023-04-07",
+    "task": "The marriage act",
+    "task_done": true,
+    "time_start": "18:33:33",
+    "time_end": "18:57:26",
+    "minutes": 24.0
+  },
+  {
+    "date": "2023-04-07",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "22:29:52",
+    "time_end": "22:43:16",
+    "minutes": 13.0
+  },
+  {
+    "date": "2023-04-07",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "23:01:05",
+    "time_end": "23:19:03",
+    "minutes": 18.0
+  },
+  {
+    "date": "2023-04-08",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "11:15:35",
+    "time_end": "11:43:53",
+    "minutes": 28.0
+  },
+  {
+    "date": "2023-04-08",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "16:55:57",
+    "time_end": "17:27:58",
+    "minutes": 32.0
+  },
+  {
+    "date": "2023-04-08",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "18:32:37",
+    "time_end": "18:50:49",
+    "minutes": 18.0
+  },
+  {
+    "date": "2023-04-09",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "14:56:23",
+    "time_end": "16:53:16",
+    "minutes": 117.0
+  },
+  {
+    "date": "2023-04-09",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "21:52:32",
+    "time_end": "22:16:08",
+    "minutes": 24.0
+  },
+  {
+    "date": "2023-04-10",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "11:19:30",
+    "time_end": "13:25:29",
+    "minutes": 126.0
+  },
+  {
+    "date": "2023-04-10",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "14:06:47",
+    "time_end": "14:24:43",
+    "minutes": 18.0
+  },
+  {
+    "date": "2023-04-10",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "16:03:52",
+    "time_end": "16:50:51",
+    "minutes": 47.0
+  },
+  {
+    "date": "2023-04-11",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "09:05:56",
+    "time_end": "09:14:35",
+    "minutes": 9.0
+  },
+  {
+    "date": "2023-04-11",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "13:25:40",
+    "time_end": "14:06:12",
+    "minutes": 41.0
+  },
+  {
+    "date": "2023-04-11",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "22:29:09",
+    "time_end": "23:21:30",
+    "minutes": 52.0
+  },
+  {
+    "date": "2023-04-12",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "11:31:42",
+    "time_end": "11:52:51",
+    "minutes": 21.0
+  },
+  {
+    "date": "2023-04-12",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "13:41:24",
+    "time_end": "13:55:39",
+    "minutes": 14.0
+  },
+  {
+    "date": "2023-04-12",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "22:17:43",
+    "time_end": "22:30:41",
+    "minutes": 13.0
+  },
+  {
+    "date": "2023-04-13",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "22:28:01",
+    "time_end": "22:38:49",
+    "minutes": 11.0
+  },
+  {
+    "date": "2023-04-14",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "17:26:59",
+    "time_end": "18:42:24",
+    "minutes": 75.0
+  },
+  {
+    "date": "2023-04-15",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "17:33:47",
+    "time_end": "17:44:40",
+    "minutes": 11.0
+  },
+  {
+    "date": "2023-04-16",
+    "task": "The analyst",
+    "task_done": true,
+    "time_start": "17:19:11",
+    "time_end": "17:39:10",
+    "minutes": 20.0
+  },
+  {
+    "date": "2023-04-16",
+    "task": "Samoura\u00ef",
+    "task_done": true,
+    "time_start": "17:46:50",
+    "time_end": "18:31:37",
+    "minutes": 45.0
+  },
+  {
+    "date": "2023-04-16",
+    "task": "Samoura\u00ef",
+    "task_done": true,
+    "time_start": "22:14:09",
+    "time_end": "22:19:01",
+    "minutes": 5.0
+  },
+  {
+    "date": "2023-04-17",
+    "task": "Samoura\u00ef",
+    "task_done": true,
+    "time_start": "13:29:00",
+    "time_end": "13:58:33",
+    "minutes": 30.0
+  },
+  {
+    "date": "2023-04-17",
+    "task": "Samoura\u00ef",
+    "task_done": true,
+    "time_start": "18:06:10",
+    "time_end": "18:12:07",
+    "minutes": 6.0
+  },
+  {
+    "date": "2023-04-17",
+    "task": "Samoura\u00ef",
+    "task_done": true,
+    "time_start": "21:50:39",
+    "time_end": "22:22:27",
+    "minutes": 32.0
+  },
+  {
+    "date": "2023-04-18",
+    "task": "Samoura\u00ef",
+    "task_done": true,
+    "time_start": "15:06:27",
+    "time_end": "15:44:04",
+    "minutes": 38.0
+  },
+  {
+    "date": "2023-04-18",
+    "task": "Samoura\u00ef",
+    "task_done": true,
+    "time_start": "17:19:36",
+    "time_end": "17:52:09",
+    "minutes": 33.0
+  },
+  {
+    "date": "2023-04-18",
+    "task": "Samoura\u00ef",
+    "task_done": true,
+    "time_start": "22:14:32",
+    "time_end": "22:21:24",
+    "minutes": 7.0
+  },
+  {
+    "date": "2023-04-18",
+    "task": "If cats disappeared from the world",
+    "task_done": true,
+    "time_start": "22:28:15",
+    "time_end": "23:14:53",
+    "minutes": 47.0
+  },
+  {
+    "date": "2023-04-19",
+    "task": "If cats disappeared from the world",
+    "task_done": true,
+    "time_start": "13:28:36",
+    "time_end": "13:46:43",
+    "minutes": 18.0
+  },
+  {
+    "date": "2023-04-19",
+    "task": "If cats disappeared from the world",
+    "task_done": true,
+    "time_start": "14:14:48",
+    "time_end": "14:51:01",
+    "minutes": 36.0
+  },
+  {
+    "date": "2023-04-19",
+    "task": "If cats disappeared from the world",
+    "task_done": true,
+    "time_start": "18:36:22",
+    "time_end": "18:45:04",
+    "minutes": 9.0
+  },
+  {
+    "date": "2023-04-19",
+    "task": "If cats disappeared from the world",
+    "task_done": true,
+    "time_start": "21:58:51",
+    "time_end": "22:08:45",
+    "minutes": 10.0
+  },
+  {
+    "date": "2023-04-20",
+    "task": "If cats disappeared from the world",
+    "task_done": true,
+    "time_start": "16:35:22",
+    "time_end": "17:10:56",
+    "minutes": 36.0
+  },
+  {
+    "date": "2023-04-20",
+    "task": "If cats disappeared from the world",
+    "task_done": true,
+    "time_start": "22:46:14",
+    "time_end": "22:58:45",
+    "minutes": 13.0
+  },
+  {
+    "date": "2023-04-20",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "23:00:19",
+    "time_end": "23:37:54",
+    "minutes": 38.0
+  },
+  {
+    "date": "2023-04-21",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "10:02:07",
+    "time_end": "11:03:35",
+    "minutes": 61.0
+  },
+  {
+    "date": "2023-04-22",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "12:16:20",
+    "time_end": "12:28:45",
+    "minutes": 12.0
+  },
+  {
+    "date": "2023-04-22",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "18:28:53",
+    "time_end": "19:31:18",
+    "minutes": 62.0
+  },
+  {
+    "date": "2023-04-23",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "17:17:03",
+    "time_end": "18:28:16",
+    "minutes": 71.0
+  },
+  {
+    "date": "2023-04-23",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "21:53:33",
+    "time_end": "22:05:35",
+    "minutes": 12.0
+  },
+  {
+    "date": "2023-04-24",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "21:32:55",
+    "time_end": "22:05:14",
+    "minutes": 32.0
+  },
+  {
+    "date": "2023-04-25",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "19:59:29",
+    "time_end": "20:15:59",
+    "minutes": 16.0
+  },
+  {
+    "date": "2023-04-25",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "21:37:25",
+    "time_end": "22:36:00",
+    "minutes": 59.0
+  },
+  {
+    "date": "2023-04-26",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "21:33:33",
+    "time_end": "22:29:15",
+    "minutes": 56.0
+  },
+  {
+    "date": "2023-04-27",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "22:01:32",
+    "time_end": "22:22:58",
+    "minutes": 21.0
+  },
+  {
+    "date": "2023-04-28",
+    "task": "",
+    "task_done": false,
+    "time_start": "",
+    "time_end": "",
+    "minutes": 0.0
+  },
+  {
+    "date": "2023-04-29",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "14:37:09",
+    "time_end": "14:49:56",
+    "minutes": 13.0
+  },
+  {
+    "date": "2023-04-29",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "14:55:27",
+    "time_end": "15:03:30",
+    "minutes": 8.0
+  },
+  {
+    "date": "2023-04-29",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "17:19:21",
+    "time_end": "17:28:02",
+    "minutes": 9.0
+  },
+  {
+    "date": "2023-04-29",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "21:50:47",
+    "time_end": "21:58:39",
+    "minutes": 8.0
+  },
+  {
+    "date": "2023-04-30",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "11:00:25",
+    "time_end": "11:19:54",
+    "minutes": 19.0
+  },
+  {
+    "date": "2023-04-30",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "14:28:55",
+    "time_end": "14:54:48",
+    "minutes": 26.0
+  },
+  {
+    "date": "2023-04-30",
+    "task": "The rabbit hutch",
+    "task_done": true,
+    "time_start": "22:01:22",
+    "time_end": "22:11:19",
+    "minutes": 10.0
   }
 ]
