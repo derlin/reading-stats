@@ -16790,5 +16790,581 @@
     "time_start": "21:51:01",
     "time_end": "22:40:17",
     "minutes": 49.0
+  },
+  {
+    "date": "2023-06-09",
+    "task": "A ladder to the sky",
+    "task_done": true,
+    "time_start": "17:37:12",
+    "time_end": "18:45:06",
+    "minutes": 68.0
+  },
+  {
+    "date": "2023-06-10",
+    "task": "A ladder to the sky",
+    "task_done": true,
+    "time_start": "11:41:54",
+    "time_end": "11:48:45",
+    "minutes": 7.0
+  },
+  {
+    "date": "2023-06-10",
+    "task": "A ladder to the sky",
+    "task_done": true,
+    "time_start": "16:06:00",
+    "time_end": "16:20:08",
+    "minutes": 14.0
+  },
+  {
+    "date": "2023-06-10",
+    "task": "A ladder to the sky",
+    "task_done": true,
+    "time_start": "17:08:53",
+    "time_end": "17:48:49",
+    "minutes": 40.0
+  },
+  {
+    "date": "2023-06-11",
+    "task": "A ladder to the sky",
+    "task_done": true,
+    "time_start": "18:16:28",
+    "time_end": "19:29:46",
+    "minutes": 73.0
+  },
+  {
+    "date": "2023-06-11",
+    "task": "A ladder to the sky",
+    "task_done": true,
+    "time_start": "21:50:06",
+    "time_end": "22:30:59",
+    "minutes": 41.0
+  },
+  {
+    "date": "2023-06-12",
+    "task": "A ladder to the sky",
+    "task_done": true,
+    "time_start": "21:33:32",
+    "time_end": "22:24:08",
+    "minutes": 51.0
+  },
+  {
+    "date": "2023-06-13",
+    "task": "A ladder to the sky",
+    "task_done": true,
+    "time_start": "14:04:01",
+    "time_end": "14:35:25",
+    "minutes": 31.0
+  },
+  {
+    "date": "2023-06-13",
+    "task": "A ladder to the sky",
+    "task_done": true,
+    "time_start": "17:42:04",
+    "time_end": "17:52:17",
+    "minutes": 10.0
+  },
+  {
+    "date": "2023-06-13",
+    "task": "A ladder to the sky",
+    "task_done": true,
+    "time_start": "21:46:33",
+    "time_end": "22:31:45",
+    "minutes": 45.0
+  },
+  {
+    "date": "2023-06-14",
+    "task": "Sharp objects",
+    "task_done": true,
+    "time_start": "18:47:10",
+    "time_end": "19:11:10",
+    "minutes": 24.0
+  },
+  {
+    "date": "2023-06-14",
+    "task": "Sharp objects",
+    "task_done": true,
+    "time_start": "21:53:48",
+    "time_end": "22:42:59",
+    "minutes": 49.0
+  },
+  {
+    "date": "2023-06-15",
+    "task": "Sharp objects",
+    "task_done": true,
+    "time_start": "21:51:03",
+    "time_end": "22:01:34",
+    "minutes": 11.0
+  },
+  {
+    "date": "2023-06-16",
+    "task": "Sharp objects",
+    "task_done": true,
+    "time_start": "17:30:07",
+    "time_end": "18:45:15",
+    "minutes": 75.0
+  },
+  {
+    "date": "2023-06-17",
+    "task": "Sharp objects",
+    "task_done": true,
+    "time_start": "13:43:35",
+    "time_end": "13:51:57",
+    "minutes": 8.0
+  },
+  {
+    "date": "2023-06-17",
+    "task": "Sharp objects",
+    "task_done": true,
+    "time_start": "14:12:26",
+    "time_end": "15:02:45",
+    "minutes": 50.0
+  },
+  {
+    "date": "2023-06-17",
+    "task": "Sharp objects",
+    "task_done": true,
+    "time_start": "17:00:25",
+    "time_end": "17:16:06",
+    "minutes": 16.0
+  },
+  {
+    "date": "2023-06-18",
+    "task": "Sharp objects",
+    "task_done": true,
+    "time_start": "17:17:03",
+    "time_end": "18:28:32",
+    "minutes": 71.0
+  },
+  {
+    "date": "2023-06-18",
+    "task": "Sharp objects",
+    "task_done": true,
+    "time_start": "21:54:54",
+    "time_end": "22:19:29",
+    "minutes": 25.0
+  },
+  {
+    "date": "2023-06-19",
+    "task": "Sharp objects",
+    "task_done": true,
+    "time_start": "21:49:55",
+    "time_end": "22:44:10",
+    "minutes": 54.0
+  },
+  {
+    "date": "2023-06-19",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "22:57:49",
+    "time_end": "23:12:54",
+    "minutes": 15.0
+  },
+  {
+    "date": "2023-06-20",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "18:54:11",
+    "time_end": "19:23:03",
+    "minutes": 29.0
+  },
+  {
+    "date": "2023-06-20",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "21:46:12",
+    "time_end": "22:28:27",
+    "minutes": 42.0
+  },
+  {
+    "date": "2023-06-21",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "16:46:31",
+    "time_end": "17:14:26",
+    "minutes": 28.0
+  },
+  {
+    "date": "2023-06-21",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "19:58:07",
+    "time_end": "20:12:38",
+    "minutes": 15.0
+  },
+  {
+    "date": "2023-06-21",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "21:49:58",
+    "time_end": "22:31:38",
+    "minutes": 42.0
+  },
+  {
+    "date": "2023-06-22",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "21:35:44",
+    "time_end": "22:44:43",
+    "minutes": 69.0
+  },
+  {
+    "date": "2023-06-23",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "17:27:09",
+    "time_end": "18:09:32",
+    "minutes": 42.0
+  },
+  {
+    "date": "2023-06-24",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "14:38:34",
+    "time_end": "15:35:55",
+    "minutes": 57.0
+  },
+  {
+    "date": "2023-06-24",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "21:34:33",
+    "time_end": "21:52:15",
+    "minutes": 18.0
+  },
+  {
+    "date": "2023-06-25",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "15:00:42",
+    "time_end": "15:16:44",
+    "minutes": 16.0
+  },
+  {
+    "date": "2023-06-25",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "17:19:44",
+    "time_end": "17:54:34",
+    "minutes": 35.0
+  },
+  {
+    "date": "2023-06-25",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "21:41:51",
+    "time_end": "22:58:53",
+    "minutes": 77.0
+  },
+  {
+    "date": "2023-06-26",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "18:03:37",
+    "time_end": "18:14:32",
+    "minutes": 11.0
+  },
+  {
+    "date": "2023-06-26",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "21:38:14",
+    "time_end": "22:03:03",
+    "minutes": 25.0
+  },
+  {
+    "date": "2023-06-27",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "18:34:13",
+    "time_end": "18:48:22",
+    "minutes": 14.0
+  },
+  {
+    "date": "2023-06-27",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "22:31:49",
+    "time_end": "23:07:28",
+    "minutes": 36.0
+  },
+  {
+    "date": "2023-06-28",
+    "task": "The echo chamber",
+    "task_done": true,
+    "time_start": "21:49:36",
+    "time_end": "22:38:39",
+    "minutes": 49.0
+  },
+  {
+    "date": "2023-06-29",
+    "task": "Factotum",
+    "task_done": true,
+    "time_start": "21:47:58",
+    "time_end": "22:42:16",
+    "minutes": 54.0
+  },
+  {
+    "date": "2023-06-30",
+    "task": "",
+    "task_done": false,
+    "time_start": "",
+    "time_end": "",
+    "minutes": 0.0
+  },
+  {
+    "date": "2023-07-01",
+    "task": "Factotum",
+    "task_done": true,
+    "time_start": "10:31:59",
+    "time_end": "10:43:22",
+    "minutes": 11.0
+  },
+  {
+    "date": "2023-07-01",
+    "task": "Factotum",
+    "task_done": true,
+    "time_start": "14:00:31",
+    "time_end": "14:09:13",
+    "minutes": 9.0
+  },
+  {
+    "date": "2023-07-01",
+    "task": "Factotum",
+    "task_done": true,
+    "time_start": "17:26:17",
+    "time_end": "17:34:24",
+    "minutes": 8.0
+  },
+  {
+    "date": "2023-07-01",
+    "task": "Factotum",
+    "task_done": true,
+    "time_start": "21:43:57",
+    "time_end": "21:56:42",
+    "minutes": 13.0
+  },
+  {
+    "date": "2023-07-02",
+    "task": "Factotum",
+    "task_done": true,
+    "time_start": "11:15:16",
+    "time_end": "11:26:50",
+    "minutes": 12.0
+  },
+  {
+    "date": "2023-07-02",
+    "task": "Factotum",
+    "task_done": true,
+    "time_start": "17:43:51",
+    "time_end": "17:59:24",
+    "minutes": 16.0
+  },
+  {
+    "date": "2023-07-02",
+    "task": "Factotum",
+    "task_done": true,
+    "time_start": "20:23:43",
+    "time_end": "20:42:06",
+    "minutes": 18.0
+  },
+  {
+    "date": "2023-07-02",
+    "task": "Factotum",
+    "task_done": true,
+    "time_start": "22:01:24",
+    "time_end": "22:16:41",
+    "minutes": 15.0
+  },
+  {
+    "date": "2023-07-03",
+    "task": "Factotum",
+    "task_done": true,
+    "time_start": "18:05:14",
+    "time_end": "18:15:01",
+    "minutes": 10.0
+  },
+  {
+    "date": "2023-07-03",
+    "task": "Factotum",
+    "task_done": true,
+    "time_start": "21:34:40",
+    "time_end": "22:07:19",
+    "minutes": 33.0
+  },
+  {
+    "date": "2023-07-03",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "22:11:44",
+    "time_end": "22:34:35",
+    "minutes": 23.0
+  },
+  {
+    "date": "2023-07-04",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "19:02:04",
+    "time_end": "19:18:06",
+    "minutes": 16.0
+  },
+  {
+    "date": "2023-07-04",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "21:43:34",
+    "time_end": "22:28:43",
+    "minutes": 45.0
+  },
+  {
+    "date": "2023-07-05",
+    "task": "",
+    "task_done": false,
+    "time_start": "17:52:06",
+    "time_end": "18:04:20",
+    "minutes": 12.0
+  },
+  {
+    "date": "2023-07-06",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "15:51:56",
+    "time_end": "16:14:45",
+    "minutes": 23.0
+  },
+  {
+    "date": "2023-07-06",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "21:50:49",
+    "time_end": "22:22:38",
+    "minutes": 32.0
+  },
+  {
+    "date": "2023-07-07",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "18:15:26",
+    "time_end": "18:26:08",
+    "minutes": 11.0
+  },
+  {
+    "date": "2023-07-08",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "17:09:55",
+    "time_end": "17:20:22",
+    "minutes": 10.0
+  },
+  {
+    "date": "2023-07-09",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "13:12:49",
+    "time_end": "13:55:49",
+    "minutes": 43.0
+  },
+  {
+    "date": "2023-07-09",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "14:56:35",
+    "time_end": "15:04:12",
+    "minutes": 8.0
+  },
+  {
+    "date": "2023-07-09",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "21:51:26",
+    "time_end": "22:36:09",
+    "minutes": 45.0
+  },
+  {
+    "date": "2023-07-10",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "21:36:58",
+    "time_end": "22:17:31",
+    "minutes": 41.0
+  },
+  {
+    "date": "2023-07-11",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "17:31:07",
+    "time_end": "17:33:16",
+    "minutes": 2.0
+  },
+  {
+    "date": "2023-07-11",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "18:04:02",
+    "time_end": "18:40:14",
+    "minutes": 36.0
+  },
+  {
+    "date": "2023-07-12",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "22:56:47",
+    "time_end": "23:15:07",
+    "minutes": 18.0
+  },
+  {
+    "date": "2023-07-13",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "21:49:33",
+    "time_end": "21:57:45",
+    "minutes": 8.0
+  },
+  {
+    "date": "2023-07-13",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "22:11:06",
+    "time_end": "22:26:09",
+    "minutes": 15.0
+  },
+  {
+    "date": "2023-07-13",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "22:36:31",
+    "time_end": "23:03:03",
+    "minutes": 27.0
+  },
+  {
+    "date": "2023-07-14",
+    "task": "Strange Sally Diamond",
+    "task_done": true,
+    "time_start": "18:03:47",
+    "time_end": "18:23:51",
+    "minutes": 20.0
+  },
+  {
+    "date": "2023-07-14",
+    "task": "Red roulette",
+    "task_done": false,
+    "time_start": "18:27:44",
+    "time_end": "18:31:35",
+    "minutes": 4.0
+  },
+  {
+    "date": "2023-07-15",
+    "task": "Red roulette",
+    "task_done": false,
+    "time_start": "10:41:47",
+    "time_end": "10:51:31",
+    "minutes": 10.0
+  },
+  {
+    "date": "2023-07-15",
+    "task": "Red roulette",
+    "task_done": false,
+    "time_start": "18:05:20",
+    "time_end": "18:26:53",
+    "minutes": 22.0
   }
 ]

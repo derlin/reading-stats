@@ -667,6 +667,12 @@
     "pages": 259,
     "pubDate": "2022-04-05"
   },
+  "A ladder to the sky": {
+    "GoodreadsID": "40400269",
+    "ISBN": "9781984823014",
+    "pages": 362,
+    "pubDate": "2018-08-09"
+  },
   "The analyst": {
     "GoodreadsID": "67931",
     "ISBN": "9780552150217",
@@ -805,5 +811,29 @@
     "GoodreadsID": "56777157",
     "pages": 113,
     "pubDate": "2021-02-11"
+  },
+  "Sharp objects": {
+    "GoodreadsID": "18045891",
+    "ISBN": "9780307341556",
+    "pages": 254,
+    "pubDate": "2006-09-26"
+  },
+  "The echo chamber": {
+    "GoodreadsID": "57638052",
+    "ISBN": "9780857526212",
+    "pages": 432,
+    "pubDate": "2021-08-05"
+  },
+  "Factotum": {
+    "GoodreadsID": "497199",
+    "ISBN": "9780876852637",
+    "pages": 208,
+    "pubDate": "1975-01-01"
+  },
+  "Strange Sally Diamond": {
+    "GoodreadsID": "62322008",
+    "ISBN": "9781844885961",
+    "pages": 384,
+    "pubDate": "2023-03-03"
   }
 }
