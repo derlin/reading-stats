@@ -17366,5 +17366,549 @@
     "time_start": "18:05:20",
     "time_end": "18:26:53",
     "minutes": 22.0
+  },
+  {
+    "date": "2023-07-16",
+    "task": "Red roulette",
+    "task_done": true,
+    "time_start": "16:17:54",
+    "time_end": "17:28:04",
+    "minutes": 70.0
+  },
+  {
+    "date": "2023-07-16",
+    "task": "Red roulette",
+    "task_done": true,
+    "time_start": "21:56:59",
+    "time_end": "22:20:11",
+    "minutes": 23.0
+  },
+  {
+    "date": "2023-07-17",
+    "task": "Red roulette",
+    "task_done": true,
+    "time_start": "21:31:07",
+    "time_end": "22:14:18",
+    "minutes": 43.0
+  },
+  {
+    "date": "2023-07-18",
+    "task": "Red roulette",
+    "task_done": true,
+    "time_start": "21:36:53",
+    "time_end": "22:18:21",
+    "minutes": 41.0
+  },
+  {
+    "date": "2023-07-19",
+    "task": "Red roulette",
+    "task_done": true,
+    "time_start": "17:40:51",
+    "time_end": "17:59:42",
+    "minutes": 19.0
+  },
+  {
+    "date": "2023-07-20",
+    "task": "Red roulette",
+    "task_done": true,
+    "time_start": "21:44:07",
+    "time_end": "22:50:04",
+    "minutes": 66.0
+  },
+  {
+    "date": "2023-07-21",
+    "task": "Red roulette",
+    "task_done": true,
+    "time_start": "17:36:20",
+    "time_end": "18:41:57",
+    "minutes": 66.0
+  },
+  {
+    "date": "2023-07-22",
+    "task": "Red roulette",
+    "task_done": true,
+    "time_start": "12:05:51",
+    "time_end": "12:21:44",
+    "minutes": 16.0
+  },
+  {
+    "date": "2023-07-22",
+    "task": "Red roulette",
+    "task_done": true,
+    "time_start": "17:38:32",
+    "time_end": "17:55:04",
+    "minutes": 17.0
+  },
+  {
+    "date": "2023-07-23",
+    "task": "Red roulette",
+    "task_done": true,
+    "time_start": "16:43:24",
+    "time_end": "17:13:00",
+    "minutes": 30.0
+  },
+  {
+    "date": "2023-07-23",
+    "task": "Station eleven",
+    "task_done": true,
+    "time_start": "17:32:35",
+    "time_end": "17:43:11",
+    "minutes": 11.0
+  },
+  {
+    "date": "2023-07-23",
+    "task": "Station eleven",
+    "task_done": true,
+    "time_start": "22:04:16",
+    "time_end": "23:03:26",
+    "minutes": 59.0
+  },
+  {
+    "date": "2023-07-24",
+    "task": "Station eleven",
+    "task_done": true,
+    "time_start": "21:44:28",
+    "time_end": "22:19:27",
+    "minutes": 35.0
+  },
+  {
+    "date": "2023-07-25",
+    "task": "Station eleven",
+    "task_done": true,
+    "time_start": "21:30:35",
+    "time_end": "22:35:03",
+    "minutes": 64.0
+  },
+  {
+    "date": "2023-07-26",
+    "task": "Station eleven",
+    "task_done": true,
+    "time_start": "17:45:49",
+    "time_end": "17:58:21",
+    "minutes": 13.0
+  },
+  {
+    "date": "2023-07-27",
+    "task": "Station eleven",
+    "task_done": true,
+    "time_start": "21:53:54",
+    "time_end": "22:36:45",
+    "minutes": 43.0
+  },
+  {
+    "date": "2023-07-28",
+    "task": "",
+    "task_done": false,
+    "time_start": "",
+    "time_end": "",
+    "minutes": 0.0
+  },
+  {
+    "date": "2023-07-29",
+    "task": "Station eleven",
+    "task_done": true,
+    "time_start": "17:07:55",
+    "time_end": "18:01:38",
+    "minutes": 54.0
+  },
+  {
+    "date": "2023-07-30",
+    "task": "Station eleven",
+    "task_done": true,
+    "time_start": "17:40:50",
+    "time_end": "18:13:17",
+    "minutes": 32.0
+  },
+  {
+    "date": "2023-07-30",
+    "task": "Station eleven",
+    "task_done": true,
+    "time_start": "21:52:31",
+    "time_end": "22:58:01",
+    "minutes": 66.0
+  },
+  {
+    "date": "2023-07-31",
+    "task": "Station eleven",
+    "task_done": true,
+    "time_start": "22:15:39",
+    "time_end": "22:33:14",
+    "minutes": 18.0
+  },
+  {
+    "date": "2023-08-01",
+    "task": "Station eleven",
+    "task_done": true,
+    "time_start": "10:04:11",
+    "time_end": "11:12:47",
+    "minutes": 69.0
+  },
+  {
+    "date": "2023-08-01",
+    "task": "Station eleven",
+    "task_done": true,
+    "time_start": "15:23:00",
+    "time_end": "15:35:17",
+    "minutes": 12.0
+  },
+  {
+    "date": "2023-08-01",
+    "task": "Station eleven",
+    "task_done": true,
+    "time_start": "15:41:48",
+    "time_end": "15:54:53",
+    "minutes": 13.0
+  },
+  {
+    "date": "2023-08-02",
+    "task": "I who have never known men",
+    "task_done": true,
+    "time_start": "12:37:32",
+    "time_end": "12:43:05",
+    "minutes": 6.0
+  },
+  {
+    "date": "2023-08-02",
+    "task": "I who have never known men",
+    "task_done": true,
+    "time_start": "14:15:24",
+    "time_end": "15:28:04",
+    "minutes": 73.0
+  },
+  {
+    "date": "2023-08-02",
+    "task": "I who have never known men",
+    "task_done": true,
+    "time_start": "21:42:42",
+    "time_end": "21:50:46",
+    "minutes": 8.0
+  },
+  {
+    "date": "2023-08-03",
+    "task": "I who have never known men",
+    "task_done": true,
+    "time_start": "21:28:36",
+    "time_end": "21:43:41",
+    "minutes": 15.0
+  },
+  {
+    "date": "2023-08-03",
+    "task": "I who have never known men",
+    "task_done": true,
+    "time_start": "21:56:36",
+    "time_end": "22:30:59",
+    "minutes": 34.0
+  },
+  {
+    "date": "2023-08-04",
+    "task": "I who have never known men",
+    "task_done": true,
+    "time_start": "16:59:11",
+    "time_end": "18:04:44",
+    "minutes": 66.0
+  },
+  {
+    "date": "2023-08-04",
+    "task": "I who have never known men",
+    "task_done": true,
+    "time_start": "18:59:36",
+    "time_end": "19:11:29",
+    "minutes": 12.0
+  },
+  {
+    "date": "2023-08-05",
+    "task": "Big swiss",
+    "task_done": true,
+    "time_start": "11:41:34",
+    "time_end": "11:51:14",
+    "minutes": 10.0
+  },
+  {
+    "date": "2023-08-05",
+    "task": "Big swiss",
+    "task_done": true,
+    "time_start": "12:04:18",
+    "time_end": "12:24:41",
+    "minutes": 20.0
+  },
+  {
+    "date": "2023-08-05",
+    "task": "Big swiss",
+    "task_done": true,
+    "time_start": "17:34:00",
+    "time_end": "17:53:55",
+    "minutes": 20.0
+  },
+  {
+    "date": "2023-08-05",
+    "task": "Big swiss",
+    "task_done": true,
+    "time_start": "18:02:16",
+    "time_end": "18:16:11",
+    "minutes": 14.0
+  },
+  {
+    "date": "2023-08-06",
+    "task": "Big swiss",
+    "task_done": true,
+    "time_start": "13:58:43",
+    "time_end": "14:21:49",
+    "minutes": 23.0
+  },
+  {
+    "date": "2023-08-06",
+    "task": "Big swiss",
+    "task_done": true,
+    "time_start": "17:16:39",
+    "time_end": "18:29:49",
+    "minutes": 73.0
+  },
+  {
+    "date": "2023-08-06",
+    "task": "Big swiss",
+    "task_done": true,
+    "time_start": "21:51:06",
+    "time_end": "22:55:35",
+    "minutes": 64.0
+  },
+  {
+    "date": "2023-08-07",
+    "task": "Big swiss",
+    "task_done": true,
+    "time_start": "21:41:19",
+    "time_end": "22:21:55",
+    "minutes": 41.0
+  },
+  {
+    "date": "2023-08-08",
+    "task": "Big swiss",
+    "task_done": true,
+    "time_start": "14:21:04",
+    "time_end": "14:49:49",
+    "minutes": 29.0
+  },
+  {
+    "date": "2023-08-08",
+    "task": "Big swiss",
+    "task_done": true,
+    "time_start": "21:35:15",
+    "time_end": "22:45:42",
+    "minutes": 70.0
+  },
+  {
+    "date": "2023-08-09",
+    "task": "Big swiss",
+    "task_done": true,
+    "time_start": "21:42:20",
+    "time_end": "22:17:32",
+    "minutes": 35.0
+  },
+  {
+    "date": "2023-08-10",
+    "task": "Big swiss",
+    "task_done": true,
+    "time_start": "21:52:43",
+    "time_end": "22:46:36",
+    "minutes": 54.0
+  },
+  {
+    "date": "2023-08-11",
+    "task": "Big swiss",
+    "task_done": true,
+    "time_start": "17:26:36",
+    "time_end": "17:49:51",
+    "minutes": 23.0
+  },
+  {
+    "date": "2023-08-11",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "18:12:17",
+    "time_end": "18:30:59",
+    "minutes": 19.0
+  },
+  {
+    "date": "2023-08-11",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "22:05:03",
+    "time_end": "22:16:59",
+    "minutes": 12.0
+  },
+  {
+    "date": "2023-08-11",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "23:00:35",
+    "time_end": "23:12:52",
+    "minutes": 12.0
+  },
+  {
+    "date": "2023-08-12",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "13:42:47",
+    "time_end": "13:52:24",
+    "minutes": 10.0
+  },
+  {
+    "date": "2023-08-12",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "17:00:40",
+    "time_end": "17:16:38",
+    "minutes": 16.0
+  },
+  {
+    "date": "2023-08-12",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "20:09:30",
+    "time_end": "20:15:17",
+    "minutes": 6.0
+  },
+  {
+    "date": "2023-08-13",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "10:44:17",
+    "time_end": "11:26:39",
+    "minutes": 42.0
+  },
+  {
+    "date": "2023-08-13",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "17:16:51",
+    "time_end": "18:27:20",
+    "minutes": 70.0
+  },
+  {
+    "date": "2023-08-13",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "21:48:39",
+    "time_end": "22:33:18",
+    "minutes": 45.0
+  },
+  {
+    "date": "2023-08-14",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "21:36:01",
+    "time_end": "22:37:23",
+    "minutes": 61.0
+  },
+  {
+    "date": "2023-08-15",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "18:42:38",
+    "time_end": "19:10:23",
+    "minutes": 28.0
+  },
+  {
+    "date": "2023-08-15",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "21:46:58",
+    "time_end": "22:50:18",
+    "minutes": 63.0
+  },
+  {
+    "date": "2023-08-16",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "17:27:47",
+    "time_end": "17:44:00",
+    "minutes": 16.0
+  },
+  {
+    "date": "2023-08-17",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "15:48:26",
+    "time_end": "16:18:45",
+    "minutes": 30.0
+  },
+  {
+    "date": "2023-08-17",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "21:44:04",
+    "time_end": "22:16:01",
+    "minutes": 32.0
+  },
+  {
+    "date": "2023-08-18",
+    "task": "",
+    "task_done": false,
+    "time_start": "",
+    "time_end": "",
+    "minutes": 0.0
+  },
+  {
+    "date": "2023-08-19",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "10:57:32",
+    "time_end": "11:24:03",
+    "minutes": 27.0
+  },
+  {
+    "date": "2023-08-19",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "16:01:57",
+    "time_end": "16:28:20",
+    "minutes": 26.0
+  },
+  {
+    "date": "2023-08-20",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "14:30:48",
+    "time_end": "14:36:23",
+    "minutes": 6.0
+  },
+  {
+    "date": "2023-08-20",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "14:52:52",
+    "time_end": "15:22:33",
+    "minutes": 30.0
+  },
+  {
+    "date": "2023-08-20",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "15:35:44",
+    "time_end": "16:09:29",
+    "minutes": 34.0
+  },
+  {
+    "date": "2023-08-20",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "21:41:49",
+    "time_end": "22:54:36",
+    "minutes": 73.0
+  },
+  {
+    "date": "2023-08-21",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "13:42:16",
+    "time_end": "14:01:31",
+    "minutes": 19.0
+  },
+  {
+    "date": "2023-08-21",
+    "task": "The sparrow",
+    "task_done": false,
+    "time_start": "22:11:10",
+    "time_end": "22:55:05",
+    "minutes": 44.0
   }
 ]

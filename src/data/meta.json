@@ -547,6 +547,30 @@
     "pages": 144,
     "pubDate": "2017-05-02"
   },
+  "Red roulette": {
+    "GoodreadsID": "57846996",
+    "ISBN": "9781398510",
+    "pages": 310,
+    "pubDate": "2021-09-07"
+  },
+  "Station eleven": {
+    "GoodreadsID": "20170404",
+    "ISBN": "9780385353",
+    "pages": 333,
+    "pubDate": "2014-09-09"
+  },
+  "I who have never known men": {
+    "GoodreadsID": "11996",
+    "ISBN": "9780380731",
+    "pages": 208,
+    "pubDate": "1995-01-01"
+  },
+  "Big swiss": {
+    "GoodreadsID": "60701439",
+    "ISBN": "9781982153",
+    "pages": 336,
+    "pubDate": "2023-02-07"
+  },
   "Les feux de Cibola": {
     "GoodreadsID": "18656030",
     "ISBN": "9782330079031",
@@ -835,11 +859,5 @@
     "ISBN": "9781844885961",
     "pages": 384,
     "pubDate": "2023-03-03"
-  },
-  "Red roulette": {
-    "GoodreadsID": "57846996",
-    "ISBN": "9781398510",
-    "pages": 310,
-    "pubDate": "2021-09-07"
   }
 }
