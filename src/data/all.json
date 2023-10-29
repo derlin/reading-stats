@@ -18481,122 +18481,506 @@
   },
   {
     "date": "2023-09-23",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "23:25:15",
     "time_end": "23:35:31",
     "minutes": 10.0
   },
   {
     "date": "2023-09-24",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "09:13:44",
     "time_end": "09:21:34",
     "minutes": 8.0
   },
   {
     "date": "2023-09-24",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "12:04:21",
     "time_end": "12:32:05",
     "minutes": 28.0
   },
   {
     "date": "2023-09-24",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "13:42:13",
     "time_end": "13:57:09",
     "minutes": 15.0
   },
   {
     "date": "2023-09-24",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "14:41:35",
     "time_end": "14:46:48",
     "minutes": 5.0
   },
   {
     "date": "2023-09-24",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "21:22:25",
     "time_end": "22:22:02",
     "minutes": 60.0
   },
   {
     "date": "2023-09-25",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "17:54:13",
     "time_end": "18:07:44",
     "minutes": 14.0
   },
   {
     "date": "2023-09-25",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "21:32:56",
     "time_end": "22:16:31",
     "minutes": 44.0
   },
   {
     "date": "2023-09-26",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "21:36:58",
     "time_end": "22:41:12",
     "minutes": 64.0
   },
   {
     "date": "2023-09-27",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "21:32:52",
     "time_end": "22:01:06",
     "minutes": 28.0
   },
   {
     "date": "2023-09-28",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "22:14:37",
     "time_end": "22:30:02",
     "minutes": 15.0
   },
   {
     "date": "2023-09-29",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "17:52:13",
     "time_end": "18:07:42",
     "minutes": 15.0
   },
   {
     "date": "2023-09-29",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "18:08:29",
     "time_end": "18:11:01",
     "minutes": 3.0
   },
   {
     "date": "2023-09-29",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "22:15:50",
     "time_end": "23:53:11",
     "minutes": 97.0
   },
   {
     "date": "2023-09-30",
-    "task": "Tomorrow and tomorrow and tomorrow",
-    "task_done": false,
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
     "time_start": "13:41:01",
     "time_end": "13:51:10",
     "minutes": 10.0
+  },
+  {
+    "date": "2023-10-01",
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
+    "time_start": "21:35:15",
+    "time_end": "22:20:47",
+    "minutes": 46.0
+  },
+  {
+    "date": "2023-10-02",
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
+    "time_start": "21:41:24",
+    "time_end": "22:59:16",
+    "minutes": 78.0
+  },
+  {
+    "date": "2023-10-03",
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
+    "time_start": "21:32:10",
+    "time_end": "22:25:01",
+    "minutes": 53.0
+  },
+  {
+    "date": "2023-10-04",
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
+    "time_start": "15:50:27",
+    "time_end": "16:16:23",
+    "minutes": 26.0
+  },
+  {
+    "date": "2023-10-04",
+    "task": "Tomorrow, And Tomorrow, And Tomorrow",
+    "task_done": true,
+    "time_start": "21:28:29",
+    "time_end": "22:14:49",
+    "minutes": 46.0
+  },
+  {
+    "date": "2023-10-05",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "17:10:35",
+    "time_end": "17:16:51",
+    "minutes": 6.0
+  },
+  {
+    "date": "2023-10-05",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "17:35:29",
+    "time_end": "17:37:31",
+    "minutes": 2.0
+  },
+  {
+    "date": "2023-10-05",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "21:42:42",
+    "time_end": "21:50:25",
+    "minutes": 8.0
+  },
+  {
+    "date": "2023-10-06",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "18:10:00",
+    "time_end": "18:31:14",
+    "minutes": 21.0
+  },
+  {
+    "date": "2023-10-06",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "18:41:22",
+    "time_end": "19:00:11",
+    "minutes": 19.0
+  },
+  {
+    "date": "2023-10-07",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "19:36:23",
+    "time_end": "19:52:21",
+    "minutes": 16.0
+  },
+  {
+    "date": "2023-10-07",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "22:52:37",
+    "time_end": "23:40:26",
+    "minutes": 48.0
+  },
+  {
+    "date": "2023-10-08",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "11:39:33",
+    "time_end": "12:10:54",
+    "minutes": 31.0
+  },
+  {
+    "date": "2023-10-08",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "13:13:28",
+    "time_end": "14:15:11",
+    "minutes": 62.0
+  },
+  {
+    "date": "2023-10-08",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "21:19:27",
+    "time_end": "22:27:02",
+    "minutes": 68.0
+  },
+  {
+    "date": "2023-10-09",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "14:43:36",
+    "time_end": "15:08:51",
+    "minutes": 25.0
+  },
+  {
+    "date": "2023-10-09",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "16:40:43",
+    "time_end": "16:46:06",
+    "minutes": 5.0
+  },
+  {
+    "date": "2023-10-09",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "21:52:30",
+    "time_end": "22:37:45",
+    "minutes": 45.0
+  },
+  {
+    "date": "2023-10-10",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "21:35:34",
+    "time_end": "22:10:25",
+    "minutes": 35.0
+  },
+  {
+    "date": "2023-10-11",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "21:37:32",
+    "time_end": "22:49:40",
+    "minutes": 72.0
+  },
+  {
+    "date": "2023-10-12",
+    "task": "The violin conspiracy",
+    "task_done": true,
+    "time_start": "21:33:45",
+    "time_end": "21:55:46",
+    "minutes": 22.0
+  },
+  {
+    "date": "2023-10-12",
+    "task": "The boy in the striped pyjamas",
+    "task_done": true,
+    "time_start": "22:03:01",
+    "time_end": "22:22:19",
+    "minutes": 19.0
+  },
+  {
+    "date": "2023-10-13",
+    "task": "The boy in the striped pyjamas",
+    "task_done": true,
+    "time_start": "22:51:58",
+    "time_end": "23:13:44",
+    "minutes": 22.0
+  },
+  {
+    "date": "2023-10-14",
+    "task": "The boy in the striped pyjamas",
+    "task_done": true,
+    "time_start": "19:26:20",
+    "time_end": "19:42:28",
+    "minutes": 16.0
+  },
+  {
+    "date": "2023-10-15",
+    "task": "The boy in the striped pyjamas",
+    "task_done": true,
+    "time_start": "17:00:31",
+    "time_end": "17:21:51",
+    "minutes": 21.0
+  },
+  {
+    "date": "2023-10-15",
+    "task": "The boy in the striped pyjamas",
+    "task_done": true,
+    "time_start": "19:57:52",
+    "time_end": "20:28:37",
+    "minutes": 31.0
+  },
+  {
+    "date": "2023-10-15",
+    "task": "The boy in the striped pyjamas",
+    "task_done": true,
+    "time_start": "21:43:55",
+    "time_end": "22:43:36",
+    "minutes": 60.0
+  },
+  {
+    "date": "2023-10-16",
+    "task": "The boy in the striped pyjamas",
+    "task_done": true,
+    "time_start": "21:37:31",
+    "time_end": "22:19:53",
+    "minutes": 42.0
+  },
+  {
+    "date": "2023-10-17",
+    "task": "The boy in the striped pyjamas",
+    "task_done": true,
+    "time_start": "21:43:28",
+    "time_end": "21:53:42",
+    "minutes": 10.0
+  },
+  {
+    "date": "2023-10-17",
+    "task": "Le r\u00e9pondeur",
+    "task_done": true,
+    "time_start": "22:02:18",
+    "time_end": "22:50:37",
+    "minutes": 48.0
+  },
+  {
+    "date": "2023-10-18",
+    "task": "Le r\u00e9pondeur",
+    "task_done": true,
+    "time_start": "21:34:15",
+    "time_end": "22:36:52",
+    "minutes": 63.0
+  },
+  {
+    "date": "2023-10-19",
+    "task": "Le r\u00e9pondeur",
+    "task_done": true,
+    "time_start": "21:40:47",
+    "time_end": "22:07:29",
+    "minutes": 27.0
+  },
+  {
+    "date": "2023-10-20",
+    "task": "Le r\u00e9pondeur",
+    "task_done": true,
+    "time_start": "16:04:24",
+    "time_end": "16:26:10",
+    "minutes": 22.0
+  },
+  {
+    "date": "2023-10-20",
+    "task": "Le r\u00e9pondeur",
+    "task_done": true,
+    "time_start": "22:43:11",
+    "time_end": "23:20:31",
+    "minutes": 37.0
+  },
+  {
+    "date": "2023-10-21",
+    "task": "Le r\u00e9pondeur",
+    "task_done": true,
+    "time_start": "13:05:00",
+    "time_end": "14:00:44",
+    "minutes": 56.0
+  },
+  {
+    "date": "2023-10-21",
+    "task": "Le r\u00e9pondeur",
+    "task_done": true,
+    "time_start": "18:34:08",
+    "time_end": "18:42:22",
+    "minutes": 8.0
+  },
+  {
+    "date": "2023-10-21",
+    "task": "Puzzle",
+    "task_done": true,
+    "time_start": "19:41:21",
+    "time_end": "20:32:19",
+    "minutes": 51.0
+  },
+  {
+    "date": "2023-10-22",
+    "task": "Puzzle",
+    "task_done": true,
+    "time_start": "19:55:21",
+    "time_end": "20:17:57",
+    "minutes": 23.0
+  },
+  {
+    "date": "2023-10-22",
+    "task": "Puzzle",
+    "task_done": true,
+    "time_start": "21:44:35",
+    "time_end": "22:35:46",
+    "minutes": 51.0
+  },
+  {
+    "date": "2023-10-23",
+    "task": "Puzzle",
+    "task_done": true,
+    "time_start": "21:38:17",
+    "time_end": "22:26:39",
+    "minutes": 48.0
+  },
+  {
+    "date": "2023-10-24",
+    "task": "Puzzle",
+    "task_done": true,
+    "time_start": "21:30:51",
+    "time_end": "21:36:08",
+    "minutes": 5.0
+  },
+  {
+    "date": "2023-10-24",
+    "task": "Puzzle",
+    "task_done": true,
+    "time_start": "21:44:25",
+    "time_end": "22:28:16",
+    "minutes": 44.0
+  },
+  {
+    "date": "2023-10-25",
+    "task": "Puzzle",
+    "task_done": true,
+    "time_start": "21:29:05",
+    "time_end": "22:14:37",
+    "minutes": 46.0
+  },
+  {
+    "date": "2023-10-26",
+    "task": "Puzzle",
+    "task_done": true,
+    "time_start": "21:27:52",
+    "time_end": "22:44:15",
+    "minutes": 76.0
+  },
+  {
+    "date": "2023-10-27",
+    "task": "Puzzle",
+    "task_done": true,
+    "time_start": "16:25:54",
+    "time_end": "16:53:44",
+    "minutes": 28.0
+  },
+  {
+    "date": "2023-10-28",
+    "task": "Puzzle",
+    "task_done": true,
+    "time_start": "12:10:39",
+    "time_end": "12:26:31",
+    "minutes": 16.0
+  },
+  {
+    "date": "2023-10-28",
+    "task": "Puzzle",
+    "task_done": true,
+    "time_start": "13:37:02",
+    "time_end": "14:26:14",
+    "minutes": 49.0
+  },
+  {
+    "date": "2023-10-28",
+    "task": "Puzzle",
+    "task_done": true,
+    "time_start": "19:14:03",
+    "time_end": "19:58:08",
+    "minutes": 44.0
   }
 ]

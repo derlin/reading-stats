@@ -1,4 +1,34 @@
 {
+  "Tomorrow, And Tomorrow, And Tomorrow": {
+    "GoodreadsID": "58784475",
+    "ISBN": "9780593321",
+    "pages": 401,
+    "pubDate": "2022-07-05"
+  },
+  "The violin conspiracy": {
+    "GoodreadsID": "58386733",
+    "ISBN": "9780593315",
+    "pages": 345,
+    "pubDate": "2022-02-01"
+  },
+  "The boy in the striped pyjamas": {
+    "GoodreadsID": "1754278",
+    "ISBN": "9780198326",
+    "pages": 216,
+    "pubDate": "2006-01-01"
+  },
+  "Le r\u00e9pondeur": {
+    "GoodreadsID": "54545872",
+    "ISBN": "9782374911",
+    "pages": 260,
+    "pubDate": "2020-01-01"
+  },
+  "Puzzle": {
+    "GoodreadsID": "33228454",
+    "ISBN": "9782359105",
+    "pages": 216,
+    "pubDate": "2016-01-01"
+  },
   "The scarecrow": {
     "GoodreadsID": "4527502",
     "pages": 423,
@@ -92,12 +122,6 @@
     "ISBN": "9782070359",
     "pages": 144,
     "pubDate": "1800-01-01"
-  },
-  "Tomorrow and tomorrow and tomorrow": {
-    "GoodreadsID": "58784475",
-    "ISBN": "9780593321",
-    "pages": 401,
-    "pubDate": "2022-07-05"
   },
   "The Invisible Life of Addie LaRue": {
     "GoodreadsID": "50623864",
