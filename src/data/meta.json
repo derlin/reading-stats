@@ -550,6 +550,12 @@
     "pages": 256,
     "pubDate": "2021-02-16"
   },
+  "Ocean's Echo": {
+    "GoodreadsID": "59808117",
+    "ISBN": "9781250758",
+    "pages": 464,
+    "pubDate": "2022-11-01"
+  },
   "The measure": {
     "GoodreadsID": "58884736",
     "ISBN": "9780063204201",
@@ -920,6 +926,36 @@
     "ISBN": "9780345453747",
     "pages": 815,
     "pubDate": "1996-01-17"
+  },
+  "Contact": {
+    "GoodreadsID": "1191620",
+    "ISBN": "9780671434",
+    "pages": 432,
+    "pubDate": "1985-01-01"
+  },
+  "Eleanor Oliphant is completely fine": {
+    "GoodreadsID": "35900387",
+    "ISBN": "9780008172",
+    "pages": 390,
+    "pubDate": "2017-05-09"
+  },
+  "Douze chiens pour No\u00ebl": {
+    "GoodreadsID": "59836515",
+    "ISBN": "9782298176",
+    "pages": 358,
+    "pubDate": "2020-09-29"
+  },
+  "Starter villain": {
+    "GoodreadsID": "61885029",
+    "ISBN": "9780765389",
+    "pages": 264,
+    "pubDate": "2023-09-19"
+  },
+  "Chain-gang all-stars": {
+    "GoodreadsID": "61190770",
+    "ISBN": "9780593317",
+    "pages": 367,
+    "pubDate": "2023-05-02"
   },
   "Dare to know": {
     "GoodreadsID": "57068380",
