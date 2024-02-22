@@ -20698,7 +20698,7 @@
   {
     "date": "2024-01-25",
     "task": "Cleopatra and Frankenstein",
-    "task_done": false,
+    "task_done": true,
     "time_start": "18:12:16",
     "time_end": "18:24:55",
     "minutes": 13.0
@@ -20706,7 +20706,7 @@
   {
     "date": "2024-01-25",
     "task": "Cleopatra and Frankenstein",
-    "task_done": false,
+    "task_done": true,
     "time_start": "22:13:33",
     "time_end": "22:39:53",
     "minutes": 26.0
@@ -20714,9 +20714,465 @@
   {
     "date": "2024-01-26",
     "task": "Cleopatra and Frankenstein",
-    "task_done": false,
+    "task_done": true,
     "time_start": "22:52:15",
     "time_end": "23:59:59",
     "minutes": 68.0
+  },
+  {
+    "date": "2024-01-27",
+    "task": "Cleopatra and Frankenstein",
+    "task_done": true,
+    "time_start": "00:00:00",
+    "time_end": "00:00:01",
+    "minutes": 0.0
+  },
+  {
+    "date": "2024-01-27",
+    "task": "Cleopatra and Frankenstein",
+    "task_done": true,
+    "time_start": "13:33:30",
+    "time_end": "14:36:10",
+    "minutes": 63.0
+  },
+  {
+    "date": "2024-01-27",
+    "task": "Cleopatra and Frankenstein",
+    "task_done": true,
+    "time_start": "23:30:33",
+    "time_end": "23:45:23",
+    "minutes": 15.0
+  },
+  {
+    "date": "2024-01-28",
+    "task": "Cleopatra and Frankenstein",
+    "task_done": true,
+    "time_start": "14:43:56",
+    "time_end": "15:05:55",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-01-28",
+    "task": "Cleopatra and Frankenstein",
+    "task_done": true,
+    "time_start": "19:51:51",
+    "time_end": "20:09:22",
+    "minutes": 18.0
+  },
+  {
+    "date": "2024-01-28",
+    "task": "Cleopatra and Frankenstein",
+    "task_done": true,
+    "time_start": "21:39:04",
+    "time_end": "22:00:20",
+    "minutes": 21.0
+  },
+  {
+    "date": "2024-01-29",
+    "task": "Cleopatra and Frankenstein",
+    "task_done": true,
+    "time_start": "21:15:21",
+    "time_end": "21:59:35",
+    "minutes": 44.0
+  },
+  {
+    "date": "2024-01-30",
+    "task": "Cleopatra and Frankenstein",
+    "task_done": true,
+    "time_start": "21:17:42",
+    "time_end": "22:23:25",
+    "minutes": 66.0
+  },
+  {
+    "date": "2024-01-31",
+    "task": "Cleopatra and Frankenstein",
+    "task_done": true,
+    "time_start": "21:11:29",
+    "time_end": "22:04:30",
+    "minutes": 53.0
+  },
+  {
+    "date": "2024-02-01",
+    "task": "Cleopatra and Frankenstein",
+    "task_done": true,
+    "time_start": "16:30:23",
+    "time_end": "17:23:42",
+    "minutes": 53.0
+  },
+  {
+    "date": "2024-02-01",
+    "task": "Cleopatra and Frankenstein",
+    "task_done": true,
+    "time_start": "22:15:31",
+    "time_end": "22:28:15",
+    "minutes": 13.0
+  },
+  {
+    "date": "2024-02-02",
+    "task": "Cleopatra and Frankenstein",
+    "task_done": true,
+    "time_start": "19:20:41",
+    "time_end": "20:03:46",
+    "minutes": 43.0
+  },
+  {
+    "date": "2024-02-02",
+    "task": "Cleopatra and Frankenstein",
+    "task_done": true,
+    "time_start": "23:33:22",
+    "time_end": "23:49:06",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-02-03",
+    "task": "Cleopatra and Frankenstein",
+    "task_done": true,
+    "time_start": "13:51:10",
+    "time_end": "14:16:11",
+    "minutes": 25.0
+  },
+  {
+    "date": "2024-02-03",
+    "task": "The Kangaroo chronicles",
+    "task_done": true,
+    "time_start": "14:28:46",
+    "time_end": "14:57:23",
+    "minutes": 29.0
+  },
+  {
+    "date": "2024-02-03",
+    "task": "The Kangaroo chronicles",
+    "task_done": true,
+    "time_start": "23:47:40",
+    "time_end": "23:59:59",
+    "minutes": 12.0
+  },
+  {
+    "date": "2024-02-04",
+    "task": "The Kangaroo chronicles",
+    "task_done": true,
+    "time_start": "00:00:00",
+    "time_end": "00:02:32",
+    "minutes": 3.0
+  },
+  {
+    "date": "2024-02-04",
+    "task": "The Kangaroo chronicles",
+    "task_done": true,
+    "time_start": "13:40:04",
+    "time_end": "14:15:35",
+    "minutes": 36.0
+  },
+  {
+    "date": "2024-02-04",
+    "task": "The Kangaroo chronicles",
+    "task_done": true,
+    "time_start": "21:42:29",
+    "time_end": "22:13:14",
+    "minutes": 31.0
+  },
+  {
+    "date": "2024-02-05",
+    "task": "The Kangaroo chronicles",
+    "task_done": true,
+    "time_start": "21:09:12",
+    "time_end": "21:58:02",
+    "minutes": 49.0
+  },
+  {
+    "date": "2024-02-06",
+    "task": "The Kangaroo chronicles",
+    "task_done": true,
+    "time_start": "15:13:12",
+    "time_end": "15:29:14",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-02-06",
+    "task": "The Kangaroo chronicles",
+    "task_done": true,
+    "time_start": "19:49:39",
+    "time_end": "19:56:33",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-02-06",
+    "task": "The Kangaroo chronicles",
+    "task_done": true,
+    "time_start": "21:47:02",
+    "time_end": "22:07:12",
+    "minutes": 20.0
+  },
+  {
+    "date": "2024-02-07",
+    "task": "The Kangaroo chronicles",
+    "task_done": true,
+    "time_start": "21:08:25",
+    "time_end": "21:49:19",
+    "minutes": 41.0
+  },
+  {
+    "date": "2024-02-07",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "21:52:53",
+    "time_end": "22:04:08",
+    "minutes": 11.0
+  },
+  {
+    "date": "2024-02-08",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "18:23:52",
+    "time_end": "18:42:54",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-02-08",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "21:41:59",
+    "time_end": "22:05:29",
+    "minutes": 24.0
+  },
+  {
+    "date": "2024-02-09",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "17:02:58",
+    "time_end": "17:44:39",
+    "minutes": 42.0
+  },
+  {
+    "date": "2024-02-09",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "23:09:31",
+    "time_end": "23:23:02",
+    "minutes": 14.0
+  },
+  {
+    "date": "2024-02-10",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "09:33:20",
+    "time_end": "10:00:22",
+    "minutes": 27.0
+  },
+  {
+    "date": "2024-02-10",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "14:15:43",
+    "time_end": "15:03:57",
+    "minutes": 48.0
+  },
+  {
+    "date": "2024-02-10",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "20:06:56",
+    "time_end": "20:23:25",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-02-10",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "23:02:29",
+    "time_end": "23:39:45",
+    "minutes": 37.0
+  },
+  {
+    "date": "2024-02-11",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "17:22:51",
+    "time_end": "18:43:37",
+    "minutes": 81.0
+  },
+  {
+    "date": "2024-02-11",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "21:50:08",
+    "time_end": "22:32:31",
+    "minutes": 42.0
+  },
+  {
+    "date": "2024-02-12",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "21:06:26",
+    "time_end": "22:32:45",
+    "minutes": 86.0
+  },
+  {
+    "date": "2024-02-13",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "19:35:48",
+    "time_end": "20:13:36",
+    "minutes": 38.0
+  },
+  {
+    "date": "2024-02-13",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "21:38:13",
+    "time_end": "21:57:57",
+    "minutes": 20.0
+  },
+  {
+    "date": "2024-02-13",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "22:04:55",
+    "time_end": "22:11:35",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-02-14",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "21:19:32",
+    "time_end": "22:11:33",
+    "minutes": 52.0
+  },
+  {
+    "date": "2024-02-15",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "17:34:46",
+    "time_end": "17:56:59",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-02-15",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "21:21:12",
+    "time_end": "22:11:06",
+    "minutes": 50.0
+  },
+  {
+    "date": "2024-02-16",
+    "task": "Red Side Story",
+    "task_done": true,
+    "time_start": "22:30:01",
+    "time_end": "23:07:43",
+    "minutes": 38.0
+  },
+  {
+    "date": "2024-02-16",
+    "task": "The Kaiju preservation society",
+    "task_done": true,
+    "time_start": "23:30:07",
+    "time_end": "23:59:59",
+    "minutes": 30.0
+  },
+  {
+    "date": "2024-02-17",
+    "task": "The Kaiju preservation society",
+    "task_done": true,
+    "time_start": "00:00:00",
+    "time_end": "00:07:34",
+    "minutes": 8.0
+  },
+  {
+    "date": "2024-02-17",
+    "task": "The Kaiju preservation society",
+    "task_done": true,
+    "time_start": "09:28:16",
+    "time_end": "10:02:11",
+    "minutes": 34.0
+  },
+  {
+    "date": "2024-02-17",
+    "task": "The Kaiju preservation society",
+    "task_done": true,
+    "time_start": "13:18:31",
+    "time_end": "14:11:51",
+    "minutes": 53.0
+  },
+  {
+    "date": "2024-02-17",
+    "task": "The Kaiju preservation society",
+    "task_done": true,
+    "time_start": "22:19:04",
+    "time_end": "23:38:39",
+    "minutes": 80.0
+  },
+  {
+    "date": "2024-02-17",
+    "task": "The Kaiju preservation society",
+    "task_done": true,
+    "time_start": "23:46:43",
+    "time_end": "23:53:34",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-02-18",
+    "task": "The Kaiju preservation society",
+    "task_done": true,
+    "time_start": "13:20:21",
+    "time_end": "14:07:35",
+    "minutes": 47.0
+  },
+  {
+    "date": "2024-02-18",
+    "task": "The Kaiju preservation society",
+    "task_done": true,
+    "time_start": "19:50:52",
+    "time_end": "20:00:45",
+    "minutes": 10.0
+  },
+  {
+    "date": "2024-02-18",
+    "task": "The Kaiju preservation society",
+    "task_done": true,
+    "time_start": "22:15:55",
+    "time_end": "22:53:00",
+    "minutes": 37.0
+  },
+  {
+    "date": "2024-02-19",
+    "task": "The Kaiju preservation society",
+    "task_done": true,
+    "time_start": "20:59:19",
+    "time_end": "22:08:26",
+    "minutes": 69.0
+  },
+  {
+    "date": "2024-02-20",
+    "task": "The Kaiju preservation society",
+    "task_done": true,
+    "time_start": "20:53:10",
+    "time_end": "21:17:11",
+    "minutes": 24.0
+  },
+  {
+    "date": "2024-02-20",
+    "task": "Nous sommes legion",
+    "task_done": false,
+    "time_start": "21:18:55",
+    "time_end": "21:57:34",
+    "minutes": 39.0
+  },
+  {
+    "date": "2024-02-21",
+    "task": "Nous sommes legion",
+    "task_done": false,
+    "time_start": "17:50:34",
+    "time_end": "18:01:03",
+    "minutes": 10.0
+  },
+  {
+    "date": "2024-02-21",
+    "task": "Nous sommes legion",
+    "task_done": false,
+    "time_start": "21:47:39",
+    "time_end": "22:13:07",
+    "minutes": 25.0
   }
 ]

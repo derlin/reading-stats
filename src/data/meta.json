@@ -199,6 +199,36 @@
     "pages": 296,
     "pubDate": "2022-02-03"
   },
+  "Maybe you should talk to someone": {
+    "GoodreadsID": "37570546",
+    "ISBN": "9781328662",
+    "pages": 415,
+    "pubDate": "2019-04-02"
+  },
+  "Educated": {
+    "GoodreadsID": "59826557",
+    "ISBN": "9780399590",
+    "pages": 336,
+    "pubDate": "2018-02-20"
+  },
+  "Mickey7": {
+    "GoodreadsID": "57693457",
+    "ISBN": "9781250275",
+    "pages": 304,
+    "pubDate": "2022-02-15"
+  },
+  "Antimatter blues": {
+    "GoodreadsID": "60784562",
+    "ISBN": "9781250275",
+    "pages": 304,
+    "pubDate": "2023-03-14"
+  },
+  "Cleopatra and Frankenstein": {
+    "GoodreadsID": "57693262",
+    "ISBN": "9781635576",
+    "pages": 384,
+    "pubDate": "2022-02-15"
+  },
   "Elon Musk": {
     "GoodreadsID": "25541028",
     "ISBN": "9780062301239",
@@ -690,30 +720,6 @@
     "pages": 382,
     "pubDate": "2020-09-03"
   },
-  "Maybe you should talk to someone": {
-    "GoodreadsID": "37570546",
-    "ISBN": "9781328662",
-    "pages": 415,
-    "pubDate": "2019-04-02"
-  },
-  "Educated": {
-    "GoodreadsID": "59826557",
-    "ISBN": "9780399590",
-    "pages": 336,
-    "pubDate": "2018-02-20"
-  },
-  "Mickey7": {
-    "GoodreadsID": "57693457",
-    "ISBN": "9781250275",
-    "pages": 304,
-    "pubDate": "2022-02-15"
-  },
-  "Antimatter blues": {
-    "GoodreadsID": "60784562",
-    "ISBN": "9781250275",
-    "pages": 304,
-    "pubDate": "2023-03-14"
-  },
   "Panne de secteur": {
     "GoodreadsID": "51915344",
     "pages": 224,
@@ -828,6 +834,24 @@
     "ISBN": "9781984823014",
     "pages": 362,
     "pubDate": "2018-08-09"
+  },
+  "The Kangaroo chronicles": {
+    "GoodreadsID": "30235598",
+    "ISBN": "9783548372",
+    "pages": 211,
+    "pubDate": "2009-03-11"
+  },
+  "Red Side Story": {
+    "GoodreadsID": "199353348",
+    "ISBN": "9781641296",
+    "pages": 480,
+    "pubDate": "2024-02-06"
+  },
+  "The Kaiju preservation society": {
+    "GoodreadsID": "57693406",
+    "ISBN": "9780765389",
+    "pages": 264,
+    "pubDate": "2022-03-15"
   },
   "The analyst": {
     "GoodreadsID": "67931",
