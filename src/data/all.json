@@ -21161,18 +21161,754 @@
   },
   {
     "date": "2024-02-21",
-    "task": "Nous sommes legion",
-    "task_done": false,
+    "task": "Nous sommes l\u00e9gion",
+    "task_done": true,
     "time_start": "17:50:34",
     "time_end": "18:01:03",
     "minutes": 10.0
   },
   {
     "date": "2024-02-21",
-    "task": "Nous sommes legion",
-    "task_done": false,
+    "task": "Nous sommes l\u00e9gion",
+    "task_done": true,
     "time_start": "21:47:39",
     "time_end": "22:13:07",
     "minutes": 25.0
+  },
+  {
+    "date": "2024-02-22",
+    "task": "Nous sommes l\u00e9gion",
+    "task_done": true,
+    "time_start": "17:45:49",
+    "time_end": "17:55:02",
+    "minutes": 9.0
+  },
+  {
+    "date": "2024-02-22",
+    "task": "Nous sommes l\u00e9gion",
+    "task_done": true,
+    "time_start": "21:05:24",
+    "time_end": "22:15:04",
+    "minutes": 70.0
+  },
+  {
+    "date": "2024-02-23",
+    "task": "Nous sommes l\u00e9gion",
+    "task_done": true,
+    "time_start": "19:51:53",
+    "time_end": "20:40:48",
+    "minutes": 49.0
+  },
+  {
+    "date": "2024-02-23",
+    "task": "Nous sommes l\u00e9gion",
+    "task_done": true,
+    "time_start": "22:15:37",
+    "time_end": "23:33:59",
+    "minutes": 78.0
+  },
+  {
+    "date": "2024-02-24",
+    "task": "Nous sommes l\u00e9gion",
+    "task_done": true,
+    "time_start": "09:35:43",
+    "time_end": "10:07:14",
+    "minutes": 32.0
+  },
+  {
+    "date": "2024-02-24",
+    "task": "Nous sommes l\u00e9gion",
+    "task_done": true,
+    "time_start": "16:10:32",
+    "time_end": "16:52:08",
+    "minutes": 42.0
+  },
+  {
+    "date": "2024-02-24",
+    "task": "Nous sommes l\u00e9gion",
+    "task_done": true,
+    "time_start": "22:49:36",
+    "time_end": "23:46:02",
+    "minutes": 56.0
+  },
+  {
+    "date": "2024-02-24",
+    "task": "Nous sommes l\u00e9gion",
+    "task_done": true,
+    "time_start": "23:55:06",
+    "time_end": "23:58:20",
+    "minutes": 3.0
+  },
+  {
+    "date": "2024-02-25",
+    "task": "Nous sommes l\u00e9gion",
+    "task_done": true,
+    "time_start": "09:45:50",
+    "time_end": "10:14:47",
+    "minutes": 29.0
+  },
+  {
+    "date": "2024-02-25",
+    "task": "Nous sommes l\u00e9gion",
+    "task_done": true,
+    "time_start": "13:37:28",
+    "time_end": "14:30:39",
+    "minutes": 53.0
+  },
+  {
+    "date": "2024-02-25",
+    "task": "Nous sommes l\u00e9gion",
+    "task_done": true,
+    "time_start": "19:38:35",
+    "time_end": "19:55:25",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-02-25",
+    "task": "Quality Land",
+    "task_done": true,
+    "time_start": "21:46:29",
+    "time_end": "22:11:14",
+    "minutes": 25.0
+  },
+  {
+    "date": "2024-02-26",
+    "task": "Quality Land",
+    "task_done": true,
+    "time_start": "21:10:59",
+    "time_end": "23:03:08",
+    "minutes": 112.0
+  },
+  {
+    "date": "2024-02-27",
+    "task": "Quality Land",
+    "task_done": true,
+    "time_start": "16:44:02",
+    "time_end": "17:16:49",
+    "minutes": 33.0
+  },
+  {
+    "date": "2024-02-27",
+    "task": "Quality Land",
+    "task_done": true,
+    "time_start": "21:11:00",
+    "time_end": "22:15:38",
+    "minutes": 65.0
+  },
+  {
+    "date": "2024-02-28",
+    "task": "Quality Land",
+    "task_done": true,
+    "time_start": "21:12:41",
+    "time_end": "22:01:56",
+    "minutes": 49.0
+  },
+  {
+    "date": "2024-02-29",
+    "task": "Quality Land",
+    "task_done": true,
+    "time_start": "21:25:03",
+    "time_end": "22:18:07",
+    "minutes": 53.0
+  },
+  {
+    "date": "2024-03-01",
+    "task": "Quality Land",
+    "task_done": true,
+    "time_start": "22:53:15",
+    "time_end": "23:03:24",
+    "minutes": 10.0
+  },
+  {
+    "date": "2024-03-02",
+    "task": "Quality Land",
+    "task_done": true,
+    "time_start": "09:04:08",
+    "time_end": "09:41:09",
+    "minutes": 37.0
+  },
+  {
+    "date": "2024-03-02",
+    "task": "Quality Land",
+    "task_done": true,
+    "time_start": "13:41:01",
+    "time_end": "14:03:00",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-03-02",
+    "task": "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre",
+    "task_done": true,
+    "time_start": "19:24:16",
+    "time_end": "19:31:25",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-03-02",
+    "task": "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre",
+    "task_done": true,
+    "time_start": "19:50:53",
+    "time_end": "20:01:07",
+    "minutes": 10.0
+  },
+  {
+    "date": "2024-03-02",
+    "task": "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre",
+    "task_done": true,
+    "time_start": "23:13:37",
+    "time_end": "23:32:46",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-03-03",
+    "task": "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre",
+    "task_done": true,
+    "time_start": "11:27:19",
+    "time_end": "11:32:43",
+    "minutes": 5.0
+  },
+  {
+    "date": "2024-03-03",
+    "task": "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre",
+    "task_done": true,
+    "time_start": "14:32:48",
+    "time_end": "15:34:27",
+    "minutes": 62.0
+  },
+  {
+    "date": "2024-03-03",
+    "task": "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre",
+    "task_done": true,
+    "time_start": "22:17:47",
+    "time_end": "22:32:15",
+    "minutes": 14.0
+  },
+  {
+    "date": "2024-03-04",
+    "task": "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre",
+    "task_done": true,
+    "time_start": "21:04:49",
+    "time_end": "22:34:06",
+    "minutes": 89.0
+  },
+  {
+    "date": "2024-03-05",
+    "task": "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre",
+    "task_done": true,
+    "time_start": "21:05:29",
+    "time_end": "21:45:20",
+    "minutes": 40.0
+  },
+  {
+    "date": "2024-03-05",
+    "task": "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre",
+    "task_done": true,
+    "time_start": "21:57:23",
+    "time_end": "22:17:01",
+    "minutes": 20.0
+  },
+  {
+    "date": "2024-03-06",
+    "task": "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre",
+    "task_done": true,
+    "time_start": "17:46:32",
+    "time_end": "18:00:04",
+    "minutes": 14.0
+  },
+  {
+    "date": "2024-03-06",
+    "task": "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre",
+    "task_done": true,
+    "time_start": "21:08:52",
+    "time_end": "22:00:29",
+    "minutes": 52.0
+  },
+  {
+    "date": "2024-03-07",
+    "task": "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre",
+    "task_done": true,
+    "time_start": "22:04:16",
+    "time_end": "22:49:54",
+    "minutes": 46.0
+  },
+  {
+    "date": "2024-03-08",
+    "task": "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre",
+    "task_done": true,
+    "time_start": "22:42:21",
+    "time_end": "23:03:25",
+    "minutes": 21.0
+  },
+  {
+    "date": "2024-03-09",
+    "task": "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre",
+    "task_done": true,
+    "time_start": "13:45:40",
+    "time_end": "14:05:56",
+    "minutes": 20.0
+  },
+  {
+    "date": "2024-03-09",
+    "task": "Nietzsche et la vie",
+    "task_done": false,
+    "time_start": "16:24:44",
+    "time_end": "17:00:49",
+    "minutes": 36.0
+  },
+  {
+    "date": "2024-03-09",
+    "task": "Lala pipo",
+    "task_done": true,
+    "time_start": "16:55:32",
+    "time_end": "17:28:24",
+    "minutes": 33.0
+  },
+  {
+    "date": "2024-03-09",
+    "task": "Lala pipo",
+    "task_done": true,
+    "time_start": "22:50:01",
+    "time_end": "23:55:39",
+    "minutes": 66.0
+  },
+  {
+    "date": "2024-03-10",
+    "task": "Lala pipo",
+    "task_done": true,
+    "time_start": "12:24:19",
+    "time_end": "12:33:34",
+    "minutes": 9.0
+  },
+  {
+    "date": "2024-03-10",
+    "task": "Lala pipo",
+    "task_done": true,
+    "time_start": "14:24:07",
+    "time_end": "14:29:37",
+    "minutes": 6.0
+  },
+  {
+    "date": "2024-03-10",
+    "task": "Lala pipo",
+    "task_done": true,
+    "time_start": "16:00:50",
+    "time_end": "16:13:10",
+    "minutes": 12.0
+  },
+  {
+    "date": "2024-03-10",
+    "task": "Lala pipo",
+    "task_done": true,
+    "time_start": "18:41:54",
+    "time_end": "18:52:02",
+    "minutes": 10.0
+  },
+  {
+    "date": "2024-03-10",
+    "task": "Lala pipo",
+    "task_done": true,
+    "time_start": "18:52:19",
+    "time_end": "19:16:06",
+    "minutes": 24.0
+  },
+  {
+    "date": "2024-03-10",
+    "task": "Lala pipo",
+    "task_done": true,
+    "time_start": "21:46:32",
+    "time_end": "22:20:23",
+    "minutes": 34.0
+  },
+  {
+    "date": "2024-03-11",
+    "task": "Lala pipo",
+    "task_done": true,
+    "time_start": "15:01:12",
+    "time_end": "15:21:15",
+    "minutes": 20.0
+  },
+  {
+    "date": "2024-03-11",
+    "task": "Lala pipo",
+    "task_done": true,
+    "time_start": "17:21:50",
+    "time_end": "17:29:37",
+    "minutes": 8.0
+  },
+  {
+    "date": "2024-03-11",
+    "task": "Lala pipo",
+    "task_done": true,
+    "time_start": "20:58:51",
+    "time_end": "21:42:21",
+    "minutes": 44.0
+  },
+  {
+    "date": "2024-03-11",
+    "task": "Lala pipo",
+    "task_done": true,
+    "time_start": "21:50:41",
+    "time_end": "22:40:09",
+    "minutes": 49.0
+  },
+  {
+    "date": "2024-03-12",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "08:09:11",
+    "time_end": "08:20:02",
+    "minutes": 11.0
+  },
+  {
+    "date": "2024-03-12",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "09:05:41",
+    "time_end": "10:03:06",
+    "minutes": 57.0
+  },
+  {
+    "date": "2024-03-12",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "10:09:48",
+    "time_end": "10:50:48",
+    "minutes": 41.0
+  },
+  {
+    "date": "2024-03-12",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "22:06:06",
+    "time_end": "22:35:00",
+    "minutes": 29.0
+  },
+  {
+    "date": "2024-03-13",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "22:02:48",
+    "time_end": "22:43:42",
+    "minutes": 41.0
+  },
+  {
+    "date": "2024-03-14",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "11:44:27",
+    "time_end": "11:58:19",
+    "minutes": 14.0
+  },
+  {
+    "date": "2024-03-14",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "13:01:06",
+    "time_end": "13:21:22",
+    "minutes": 20.0
+  },
+  {
+    "date": "2024-03-14",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "16:41:03",
+    "time_end": "17:10:10",
+    "minutes": 29.0
+  },
+  {
+    "date": "2024-03-15",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "14:30:13",
+    "time_end": "15:21:26",
+    "minutes": 51.0
+  },
+  {
+    "date": "2024-03-15",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "15:45:38",
+    "time_end": "16:55:03",
+    "minutes": 69.0
+  },
+  {
+    "date": "2024-03-15",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "17:04:12",
+    "time_end": "17:25:30",
+    "minutes": 21.0
+  },
+  {
+    "date": "2024-03-16",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "13:20:11",
+    "time_end": "13:54:22",
+    "minutes": 34.0
+  },
+  {
+    "date": "2024-03-16",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "23:22:34",
+    "time_end": "23:42:52",
+    "minutes": 20.0
+  },
+  {
+    "date": "2024-03-17",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "22:03:04",
+    "time_end": "22:28:57",
+    "minutes": 26.0
+  },
+  {
+    "date": "2024-03-18",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "17:20:22",
+    "time_end": "17:29:53",
+    "minutes": 10.0
+  },
+  {
+    "date": "2024-03-18",
+    "task": "Embassytown",
+    "task_done": true,
+    "time_start": "21:12:30",
+    "time_end": "21:48:39",
+    "minutes": 36.0
+  },
+  {
+    "date": "2024-03-18",
+    "task": "Frankenstein",
+    "task_done": true,
+    "time_start": "22:02:47",
+    "time_end": "22:15:23",
+    "minutes": 13.0
+  },
+  {
+    "date": "2024-03-19",
+    "task": "Frankenstein",
+    "task_done": true,
+    "time_start": "21:11:58",
+    "time_end": "21:52:59",
+    "minutes": 41.0
+  },
+  {
+    "date": "2024-03-20",
+    "task": "Frankenstein",
+    "task_done": true,
+    "time_start": "17:48:35",
+    "time_end": "18:00:07",
+    "minutes": 12.0
+  },
+  {
+    "date": "2024-03-20",
+    "task": "Frankenstein",
+    "task_done": true,
+    "time_start": "21:14:29",
+    "time_end": "22:06:29",
+    "minutes": 52.0
+  },
+  {
+    "date": "2024-03-21",
+    "task": "Frankenstein",
+    "task_done": true,
+    "time_start": "21:39:34",
+    "time_end": "21:49:46",
+    "minutes": 10.0
+  },
+  {
+    "date": "2024-03-22",
+    "task": "Frankenstein",
+    "task_done": true,
+    "time_start": "23:08:53",
+    "time_end": "23:35:04",
+    "minutes": 26.0
+  },
+  {
+    "date": "2024-03-23",
+    "task": "Frankenstein",
+    "task_done": true,
+    "time_start": "12:35:28",
+    "time_end": "12:49:57",
+    "minutes": 14.0
+  },
+  {
+    "date": "2024-03-23",
+    "task": "Frankenstein",
+    "task_done": true,
+    "time_start": "16:29:15",
+    "time_end": "16:55:18",
+    "minutes": 26.0
+  },
+  {
+    "date": "2024-03-23",
+    "task": "Frankenstein",
+    "task_done": true,
+    "time_start": "22:32:46",
+    "time_end": "23:17:30",
+    "minutes": 45.0
+  },
+  {
+    "date": "2024-03-24",
+    "task": "Frankenstein",
+    "task_done": true,
+    "time_start": "09:45:49",
+    "time_end": "09:56:29",
+    "minutes": 11.0
+  },
+  {
+    "date": "2024-03-24",
+    "task": "Frankenstein",
+    "task_done": true,
+    "time_start": "13:40:19",
+    "time_end": "14:01:39",
+    "minutes": 21.0
+  },
+  {
+    "date": "2024-03-24",
+    "task": "Frankenstein",
+    "task_done": true,
+    "time_start": "18:04:37",
+    "time_end": "19:03:04",
+    "minutes": 58.0
+  },
+  {
+    "date": "2024-03-25",
+    "task": "Frankenstein",
+    "task_done": true,
+    "time_start": "08:39:25",
+    "time_end": "09:03:50",
+    "minutes": 24.0
+  },
+  {
+    "date": "2024-03-25",
+    "task": "Frankenstein",
+    "task_done": true,
+    "time_start": "12:23:55",
+    "time_end": "12:33:48",
+    "minutes": 10.0
+  },
+  {
+    "date": "2024-03-25",
+    "task": "The humans",
+    "task_done": true,
+    "time_start": "13:30:08",
+    "time_end": "14:12:36",
+    "minutes": 42.0
+  },
+  {
+    "date": "2024-03-25",
+    "task": "The humans",
+    "task_done": true,
+    "time_start": "15:37:49",
+    "time_end": "15:59:39",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-03-25",
+    "task": "The humans",
+    "task_done": true,
+    "time_start": "21:46:04",
+    "time_end": "22:22:21",
+    "minutes": 36.0
+  },
+  {
+    "date": "2024-03-25",
+    "task": "The humans",
+    "task_done": true,
+    "time_start": "22:34:00",
+    "time_end": "23:05:23",
+    "minutes": 31.0
+  },
+  {
+    "date": "2024-03-26",
+    "task": "The humans",
+    "task_done": true,
+    "time_start": "11:15:34",
+    "time_end": "11:22:31",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-03-26",
+    "task": "The humans",
+    "task_done": true,
+    "time_start": "11:34:15",
+    "time_end": "12:16:21",
+    "minutes": 42.0
+  },
+  {
+    "date": "2024-03-26",
+    "task": "The humans",
+    "task_done": true,
+    "time_start": "15:17:01",
+    "time_end": "15:23:41",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-03-26",
+    "task": "The humans",
+    "task_done": true,
+    "time_start": "15:31:58",
+    "time_end": "15:51:25",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-03-26",
+    "task": "The humans",
+    "task_done": true,
+    "time_start": "22:41:59",
+    "time_end": "23:33:14",
+    "minutes": 51.0
+  },
+  {
+    "date": "2024-03-27",
+    "task": "The humans",
+    "task_done": true,
+    "time_start": "09:06:43",
+    "time_end": "09:40:41",
+    "minutes": 34.0
+  },
+  {
+    "date": "2024-03-27",
+    "task": "The humans",
+    "task_done": true,
+    "time_start": "13:16:07",
+    "time_end": "13:37:33",
+    "minutes": 21.0
+  },
+  {
+    "date": "2024-03-27",
+    "task": "Piranese",
+    "task_done": false,
+    "time_start": "14:09:06",
+    "time_end": "14:31:04",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-03-27",
+    "task": "Piranese",
+    "task_done": false,
+    "time_start": "14:54:35",
+    "time_end": "15:16:49",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-03-27",
+    "task": "Piranese",
+    "task_done": false,
+    "time_start": "22:24:53",
+    "time_end": "23:07:27",
+    "minutes": 43.0
+  },
+  {
+    "date": "2024-03-27",
+    "task": "Piranese",
+    "task_done": false,
+    "time_start": "23:22:45",
+    "time_end": "23:33:20",
+    "minutes": 11.0
   }
 ]

@@ -1,4 +1,44 @@
 {
+  "Nous sommes l\u00e9gion": {
+    "GoodreadsID": "43428313",
+    "ISBN": "9791028109",
+    "pages": 380,
+    "pubDate": "2016-09-20"
+  },
+  "Quality Land": {
+    "GoodreadsID": "58756095",
+    "ISBN": "9782330153",
+    "pages": 384,
+    "pubDate": "2017-04-01"
+  },
+  "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre": {
+    "GoodreadsID": "100999922",
+    "pubDate": "1984-01-01"
+  },
+  "Lala pipo": {
+    "GoodreadsID": "2009803",
+    "ISBN": "9781934287",
+    "pages": 288,
+    "pubDate": "2005-01-01"
+  },
+  "Embassytown": {
+    "GoodreadsID": "9265453",
+    "ISBN": "9780345524",
+    "pages": 345,
+    "pubDate": "2011-05-17"
+  },
+  "Frankenstein": {
+    "GoodreadsID": "5896222",
+    "ISBN": "9782070415",
+    "pages": 310,
+    "pubDate": "1818-01-01"
+  },
+  "The humans": {
+    "GoodreadsID": "16130537",
+    "ISBN": "9781476727",
+    "pages": 285,
+    "pubDate": "2013-05-09"
+  },
   "Tomorrow, And Tomorrow, And Tomorrow": {
     "GoodreadsID": "58784475",
     "ISBN": "9780593321",
