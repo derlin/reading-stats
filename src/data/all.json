@@ -23538,9 +23538,777 @@
   {
     "date": "2024-06-15",
     "task": "Le pituicyte",
-    "task_done": false,
+    "task_done": true,
     "time_start": "23:09:45",
     "time_end": "23:25:26",
     "minutes": 16.0
+  },
+  {
+    "date": "2024-06-16",
+    "task": "Le pituicyte",
+    "task_done": true,
+    "time_start": "09:25:35",
+    "time_end": "10:27:55",
+    "minutes": 62.0
+  },
+  {
+    "date": "2024-06-16",
+    "task": "Le pituicyte",
+    "task_done": true,
+    "time_start": "19:24:21",
+    "time_end": "19:57:39",
+    "minutes": 33.0
+  },
+  {
+    "date": "2024-06-16",
+    "task": "Le pituicyte",
+    "task_done": true,
+    "time_start": "21:50:36",
+    "time_end": "22:04:26",
+    "minutes": 14.0
+  },
+  {
+    "date": "2024-06-16",
+    "task": "contes \u00e9rotiques d'hiver ",
+    "task_done": false,
+    "time_start": "22:10:16",
+    "time_end": "22:22:35",
+    "minutes": 12.0
+  },
+  {
+    "date": "2024-06-16",
+    "task": "A short stay in hell",
+    "task_done": true,
+    "time_start": "22:22:57",
+    "time_end": "22:25:58",
+    "minutes": 3.0
+  },
+  {
+    "date": "2024-06-17",
+    "task": "A short stay in hell",
+    "task_done": true,
+    "time_start": "17:20:44",
+    "time_end": "17:26:32",
+    "minutes": 6.0
+  },
+  {
+    "date": "2024-06-17",
+    "task": "A short stay in hell",
+    "task_done": true,
+    "time_start": "21:27:24",
+    "time_end": "21:57:59",
+    "minutes": 31.0
+  },
+  {
+    "date": "2024-06-18",
+    "task": "Site reliability engineering",
+    "task_done": false,
+    "time_start": "13:27:00",
+    "time_end": "13:41:49",
+    "minutes": 15.0
+  },
+  {
+    "date": "2024-06-18",
+    "task": "A short stay in hell",
+    "task_done": true,
+    "time_start": "19:50:20",
+    "time_end": "20:05:50",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-06-18",
+    "task": "A short stay in hell",
+    "task_done": true,
+    "time_start": "21:46:39",
+    "time_end": "22:29:27",
+    "minutes": 43.0
+  },
+  {
+    "date": "2024-06-19",
+    "task": "A short stay in hell",
+    "task_done": true,
+    "time_start": "17:48:27",
+    "time_end": "17:53:36",
+    "minutes": 5.0
+  },
+  {
+    "date": "2024-06-19",
+    "task": "A short stay in hell",
+    "task_done": true,
+    "time_start": "21:21:39",
+    "time_end": "22:01:40",
+    "minutes": 40.0
+  },
+  {
+    "date": "2024-06-20",
+    "task": "A short stay in hell",
+    "task_done": true,
+    "time_start": "21:21:11",
+    "time_end": "21:38:47",
+    "minutes": 18.0
+  },
+  {
+    "date": "2024-06-20",
+    "task": "I'm glad my mom died",
+    "task_done": true,
+    "time_start": "21:52:55",
+    "time_end": "22:02:37",
+    "minutes": 10.0
+  },
+  {
+    "date": "2024-06-21",
+    "task": "I'm glad my mom died",
+    "task_done": true,
+    "time_start": "21:51:04",
+    "time_end": "22:49:11",
+    "minutes": 58.0
+  },
+  {
+    "date": "2024-06-22",
+    "task": "I'm glad my mom died",
+    "task_done": true,
+    "time_start": "09:13:20",
+    "time_end": "09:44:13",
+    "minutes": 31.0
+  },
+  {
+    "date": "2024-06-22",
+    "task": "I'm glad my mom died",
+    "task_done": true,
+    "time_start": "13:17:41",
+    "time_end": "14:21:33",
+    "minutes": 64.0
+  },
+  {
+    "date": "2024-06-22",
+    "task": "I'm glad my mom died",
+    "task_done": true,
+    "time_start": "22:49:00",
+    "time_end": "23:52:11",
+    "minutes": 63.0
+  },
+  {
+    "date": "2024-06-23",
+    "task": "I'm glad my mom died",
+    "task_done": true,
+    "time_start": "09:45:36",
+    "time_end": "10:05:38",
+    "minutes": 20.0
+  },
+  {
+    "date": "2024-06-23",
+    "task": "I'm glad my mom died",
+    "task_done": true,
+    "time_start": "13:34:18",
+    "time_end": "14:07:10",
+    "minutes": 33.0
+  },
+  {
+    "date": "2024-06-23",
+    "task": "I'm glad my mom died",
+    "task_done": true,
+    "time_start": "18:27:51",
+    "time_end": "18:58:16",
+    "minutes": 30.0
+  },
+  {
+    "date": "2024-06-23",
+    "task": "I'm glad my mom died",
+    "task_done": true,
+    "time_start": "22:00:27",
+    "time_end": "22:07:24",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-06-24",
+    "task": "I'm glad my mom died",
+    "task_done": true,
+    "time_start": "20:58:57",
+    "time_end": "22:47:49",
+    "minutes": 109.0
+  },
+  {
+    "date": "2024-06-25",
+    "task": "I'm glad my mom died",
+    "task_done": true,
+    "time_start": "21:06:23",
+    "time_end": "22:06:05",
+    "minutes": 60.0
+  },
+  {
+    "date": "2024-06-26",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "17:50:54",
+    "time_end": "18:00:26",
+    "minutes": 10.0
+  },
+  {
+    "date": "2024-06-26",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "20:56:46",
+    "time_end": "21:37:21",
+    "minutes": 41.0
+  },
+  {
+    "date": "2024-06-26",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "21:46:56",
+    "time_end": "22:18:34",
+    "minutes": 32.0
+  },
+  {
+    "date": "2024-06-27",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "18:56:48",
+    "time_end": "19:21:33",
+    "minutes": 25.0
+  },
+  {
+    "date": "2024-06-27",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "19:56:59",
+    "time_end": "20:13:49",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-06-27",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "21:54:59",
+    "time_end": "22:09:04",
+    "minutes": 14.0
+  },
+  {
+    "date": "2024-06-28",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "22:59:43",
+    "time_end": "23:54:24",
+    "minutes": 55.0
+  },
+  {
+    "date": "2024-06-29",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "09:25:58",
+    "time_end": "09:55:58",
+    "minutes": 30.0
+  },
+  {
+    "date": "2024-06-29",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "17:18:16",
+    "time_end": "17:32:34",
+    "minutes": 14.0
+  },
+  {
+    "date": "2024-06-29",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "23:09:21",
+    "time_end": "23:20:12",
+    "minutes": 11.0
+  },
+  {
+    "date": "2024-06-30",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "09:58:17",
+    "time_end": "10:07:43",
+    "minutes": 9.0
+  },
+  {
+    "date": "2024-06-30",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "15:10:03",
+    "time_end": "15:11:49",
+    "minutes": 2.0
+  },
+  {
+    "date": "2024-06-30",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "15:12:18",
+    "time_end": "15:42:29",
+    "minutes": 30.0
+  },
+  {
+    "date": "2024-06-30",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "21:49:13",
+    "time_end": "22:09:58",
+    "minutes": 21.0
+  },
+  {
+    "date": "2024-07-01",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "21:25:09",
+    "time_end": "22:43:41",
+    "minutes": 79.0
+  },
+  {
+    "date": "2024-07-02",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "21:41:50",
+    "time_end": "21:54:51",
+    "minutes": 13.0
+  },
+  {
+    "date": "2024-07-03",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "16:28:42",
+    "time_end": "16:44:15",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-07-03",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "17:49:25",
+    "time_end": "18:00:19",
+    "minutes": 11.0
+  },
+  {
+    "date": "2024-07-03",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "21:12:53",
+    "time_end": "21:59:15",
+    "minutes": 46.0
+  },
+  {
+    "date": "2024-07-04",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "22:02:54",
+    "time_end": "22:27:53",
+    "minutes": 25.0
+  },
+  {
+    "date": "2024-07-05",
+    "task": "The way the future was",
+    "task_done": true,
+    "time_start": "22:39:14",
+    "time_end": "23:19:15",
+    "minutes": 40.0
+  },
+  {
+    "date": "2024-07-05",
+    "task": "Rage",
+    "task_done": true,
+    "time_start": "23:21:04",
+    "time_end": "23:43:02",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-07-06",
+    "task": "Rage",
+    "task_done": true,
+    "time_start": "09:23:00",
+    "time_end": "10:00:42",
+    "minutes": 38.0
+  },
+  {
+    "date": "2024-07-06",
+    "task": "Rage",
+    "task_done": true,
+    "time_start": "13:19:50",
+    "time_end": "13:40:52",
+    "minutes": 21.0
+  },
+  {
+    "date": "2024-07-06",
+    "task": "Rage",
+    "task_done": true,
+    "time_start": "21:04:08",
+    "time_end": "21:25:56",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-07-06",
+    "task": "Rage",
+    "task_done": true,
+    "time_start": "23:31:30",
+    "time_end": "23:54:05",
+    "minutes": 23.0
+  },
+  {
+    "date": "2024-07-07",
+    "task": "Rage",
+    "task_done": true,
+    "time_start": "09:52:35",
+    "time_end": "10:10:28",
+    "minutes": 18.0
+  },
+  {
+    "date": "2024-07-07",
+    "task": "Rage",
+    "task_done": true,
+    "time_start": "13:49:32",
+    "time_end": "13:58:24",
+    "minutes": 9.0
+  },
+  {
+    "date": "2024-07-07",
+    "task": "Rage",
+    "task_done": true,
+    "time_start": "19:34:37",
+    "time_end": "20:07:59",
+    "minutes": 33.0
+  },
+  {
+    "date": "2024-07-07",
+    "task": "Rage",
+    "task_done": true,
+    "time_start": "22:12:35",
+    "time_end": "22:25:38",
+    "minutes": 13.0
+  },
+  {
+    "date": "2024-07-08",
+    "task": "Rage",
+    "task_done": true,
+    "time_start": "22:02:14",
+    "time_end": "22:32:32",
+    "minutes": 30.0
+  },
+  {
+    "date": "2024-07-08",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "22:41:16",
+    "time_end": "22:57:14",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-07-09",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "21:25:08",
+    "time_end": "21:51:11",
+    "minutes": 26.0
+  },
+  {
+    "date": "2024-07-09",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "22:02:06",
+    "time_end": "22:04:40",
+    "minutes": 3.0
+  },
+  {
+    "date": "2024-07-10",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "17:46:50",
+    "time_end": "18:00:05",
+    "minutes": 13.0
+  },
+  {
+    "date": "2024-07-10",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "21:37:25",
+    "time_end": "22:03:12",
+    "minutes": 26.0
+  },
+  {
+    "date": "2024-07-11",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "15:37:36",
+    "time_end": "15:49:30",
+    "minutes": 12.0
+  },
+  {
+    "date": "2024-07-11",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "21:13:51",
+    "time_end": "22:10:03",
+    "minutes": 56.0
+  },
+  {
+    "date": "2024-07-12",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "17:19:06",
+    "time_end": "17:45:07",
+    "minutes": 26.0
+  },
+  {
+    "date": "2024-07-13",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "08:26:42",
+    "time_end": "08:46:54",
+    "minutes": 20.0
+  },
+  {
+    "date": "2024-07-13",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "14:55:57",
+    "time_end": "15:05:20",
+    "minutes": 9.0
+  },
+  {
+    "date": "2024-07-13",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "22:30:22",
+    "time_end": "23:27:33",
+    "minutes": 57.0
+  },
+  {
+    "date": "2024-07-14",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "10:06:44",
+    "time_end": "10:17:48",
+    "minutes": 11.0
+  },
+  {
+    "date": "2024-07-14",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "15:47:09",
+    "time_end": "15:54:40",
+    "minutes": 8.0
+  },
+  {
+    "date": "2024-07-14",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "21:54:59",
+    "time_end": "22:40:15",
+    "minutes": 45.0
+  },
+  {
+    "date": "2024-07-15",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "21:07:04",
+    "time_end": "22:02:30",
+    "minutes": 55.0
+  },
+  {
+    "date": "2024-07-16",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "21:53:43",
+    "time_end": "22:10:52",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-07-17",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "17:47:51",
+    "time_end": "17:59:36",
+    "minutes": 12.0
+  },
+  {
+    "date": "2024-07-17",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "21:08:13",
+    "time_end": "21:57:08",
+    "minutes": 49.0
+  },
+  {
+    "date": "2024-07-18",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "13:56:32",
+    "time_end": "14:22:53",
+    "minutes": 26.0
+  },
+  {
+    "date": "2024-07-18",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "17:17:02",
+    "time_end": "17:50:06",
+    "minutes": 33.0
+  },
+  {
+    "date": "2024-07-18",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "21:18:02",
+    "time_end": "22:11:56",
+    "minutes": 54.0
+  },
+  {
+    "date": "2024-07-19",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "21:50:02",
+    "time_end": "22:36:34",
+    "minutes": 47.0
+  },
+  {
+    "date": "2024-07-19",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "22:49:12",
+    "time_end": "23:09:02",
+    "minutes": 20.0
+  },
+  {
+    "date": "2024-07-20",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "08:26:52",
+    "time_end": "08:30:56",
+    "minutes": 4.0
+  },
+  {
+    "date": "2024-07-20",
+    "task": "Karoo",
+    "task_done": true,
+    "time_start": "08:31:44",
+    "time_end": "09:19:32",
+    "minutes": 48.0
+  },
+  {
+    "date": "2024-07-20",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "14:31:03",
+    "time_end": "15:56:40",
+    "minutes": 86.0
+  },
+  {
+    "date": "2024-07-20",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "22:45:00",
+    "time_end": "22:56:12",
+    "minutes": 11.0
+  },
+  {
+    "date": "2024-07-21",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "11:15:49",
+    "time_end": "12:04:53",
+    "minutes": 49.0
+  },
+  {
+    "date": "2024-07-21",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "19:43:18",
+    "time_end": "20:05:40",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-07-21",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "22:15:29",
+    "time_end": "22:41:40",
+    "minutes": 26.0
+  },
+  {
+    "date": "2024-07-22",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "09:27:30",
+    "time_end": "10:17:05",
+    "minutes": 50.0
+  },
+  {
+    "date": "2024-07-22",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "12:06:33",
+    "time_end": "12:30:45",
+    "minutes": 24.0
+  },
+  {
+    "date": "2024-07-22",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "13:42:53",
+    "time_end": "14:17:38",
+    "minutes": 35.0
+  },
+  {
+    "date": "2024-07-22",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "16:46:48",
+    "time_end": "17:12:51",
+    "minutes": 26.0
+  },
+  {
+    "date": "2024-07-22",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "21:35:01",
+    "time_end": "21:41:32",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-07-23",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "08:24:01",
+    "time_end": "08:48:45",
+    "minutes": 25.0
+  },
+  {
+    "date": "2024-07-23",
+    "task": "Site reliability engineering",
+    "task_done": false,
+    "time_start": "11:45:46",
+    "time_end": "12:40:21",
+    "minutes": 55.0
+  },
+  {
+    "date": "2024-07-23",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "17:16:11",
+    "time_end": "17:50:19",
+    "minutes": 34.0
+  },
+  {
+    "date": "2024-07-23",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "21:56:03",
+    "time_end": "22:02:11",
+    "minutes": 6.0
+  },
+  {
+    "date": "2024-07-24",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "21:31:31",
+    "time_end": "22:16:27",
+    "minutes": 45.0
+  },
+  {
+    "date": "2024-07-25",
+    "task": "One rainy day in may",
+    "task_done": true,
+    "time_start": "21:47:52",
+    "time_end": "22:48:52",
+    "minutes": 61.0
   }
 ]
