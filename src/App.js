@@ -32,8 +32,9 @@ class App extends React.Component {
   }
 
   render() {
-    console.log('### render root');
-    const dateRange = new DateRange(this.state.startDate, this.state.endDate);
+    console.debug('### render root');
+    const thisYear = Header.getRangeFromLabel('This Year');
+    const dateRange = new DateRange(thisYear.start, thisYear.end);
     window.dr = dateRange;
     const data = new Data(dateRange);
 

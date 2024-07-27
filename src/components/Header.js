@@ -125,4 +125,8 @@ export default class Header extends Component {
   togglePicker() {
     this.setState({ opened: !this.state.opened });
   }
+
+  static getRangeFromLabel(label) {
+    return staticRanges.filter(range => range.label === label)[0];
+  }
 }
