@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DateRange, Data, boundaries } from './data/Data';
+import { DateRange, Data } from './data/Data';
 import Header from './components/Header';
 import PlotByDay from './plots/PlotByDay';
 import PlotByMonth from './plots/PlotByMonth';
@@ -13,9 +13,10 @@ import ScrollToTopButton from './components/ScrollToTopButton';
 class App extends React.Component {
   constructor(props) {
     super(props);
+    const thisYear = Header.getRangeFromLabel('This Year');
     this.state = {
-      startDate: boundaries.minDate,
-      endDate: boundaries.maxDate,
+      startDate: thisYear.start,
+      endDate: thisYear.end,
     };
 
     this.selectDates = this.selectDates.bind(this);
