@@ -24962,7 +24962,7 @@
   {
     "date": "2024-08-27",
     "task": "C'est (vraiment?) moi qui d\u00e9cide ",
-    "task_done": false,
+    "task_done": true,
     "time_start": "20:36:21",
     "time_end": "21:45:49",
     "minutes": 69.0
@@ -24978,7 +24978,7 @@
   {
     "date": "2024-08-28",
     "task": "C'est (vraiment?) moi qui d\u00e9cide ",
-    "task_done": false,
+    "task_done": true,
     "time_start": "08:57:11",
     "time_end": "09:13:05",
     "minutes": 16.0
@@ -24986,7 +24986,7 @@
   {
     "date": "2024-08-28",
     "task": "C'est (vraiment?) moi qui d\u00e9cide ",
-    "task_done": false,
+    "task_done": true,
     "time_start": "11:42:39",
     "time_end": "12:02:59",
     "minutes": 20.0
@@ -24994,7 +24994,7 @@
   {
     "date": "2024-08-28",
     "task": "C'est (vraiment?) moi qui d\u00e9cide ",
-    "task_done": false,
+    "task_done": true,
     "time_start": "14:34:20",
     "time_end": "15:15:14",
     "minutes": 41.0
@@ -25002,7 +25002,7 @@
   {
     "date": "2024-08-28",
     "task": "C'est (vraiment?) moi qui d\u00e9cide ",
-    "task_done": false,
+    "task_done": true,
     "time_start": "16:02:33",
     "time_end": "16:21:16",
     "minutes": 19.0
@@ -25074,7 +25074,7 @@
   {
     "date": "2024-08-31",
     "task": "C'est (vraiment?) moi qui d\u00e9cide ",
-    "task_done": false,
+    "task_done": true,
     "time_start": "16:28:38",
     "time_end": "16:50:51",
     "minutes": 22.0
@@ -25114,7 +25114,7 @@
   {
     "date": "2024-09-01",
     "task": "Neuromancien",
-    "task_done": false,
+    "task_done": true,
     "time_start": "19:00:16",
     "time_end": "19:28:00",
     "minutes": 28.0
@@ -25122,9 +25122,697 @@
   {
     "date": "2024-09-01",
     "task": "Neuromancien",
-    "task_done": false,
+    "task_done": true,
     "time_start": "21:46:59",
     "time_end": "22:17:53",
     "minutes": 31.0
+  },
+  {
+    "date": "2024-09-02",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "08:11:12",
+    "time_end": "08:25:59",
+    "minutes": 15.0
+  },
+  {
+    "date": "2024-09-02",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "19:38:29",
+    "time_end": "20:01:51",
+    "minutes": 23.0
+  },
+  {
+    "date": "2024-09-02",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "21:29:58",
+    "time_end": "22:06:25",
+    "minutes": 36.0
+  },
+  {
+    "date": "2024-09-03",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "08:11:02",
+    "time_end": "08:30:02",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-09-03",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "21:15:20",
+    "time_end": "22:05:32",
+    "minutes": 50.0
+  },
+  {
+    "date": "2024-09-04",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "08:23:36",
+    "time_end": "08:44:21",
+    "minutes": 21.0
+  },
+  {
+    "date": "2024-09-04",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "13:53:49",
+    "time_end": "14:12:43",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-09-04",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "19:19:54",
+    "time_end": "19:36:19",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-09-04",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "21:59:37",
+    "time_end": "22:31:55",
+    "minutes": 32.0
+  },
+  {
+    "date": "2024-09-05",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "21:56:35",
+    "time_end": "22:13:09",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-09-06",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "22:30:59",
+    "time_end": "22:44:02",
+    "minutes": 13.0
+  },
+  {
+    "date": "2024-09-07",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "09:22:40",
+    "time_end": "09:55:22",
+    "minutes": 33.0
+  },
+  {
+    "date": "2024-09-07",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "17:06:19",
+    "time_end": "17:45:29",
+    "minutes": 39.0
+  },
+  {
+    "date": "2024-09-07",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "17:56:14",
+    "time_end": "17:58:53",
+    "minutes": 3.0
+  },
+  {
+    "date": "2024-09-07",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "23:15:29",
+    "time_end": "23:30:14",
+    "minutes": 15.0
+  },
+  {
+    "date": "2024-09-08",
+    "task": "C'est (vraiment?) moi qui d\u00e9cide ",
+    "task_done": true,
+    "time_start": "10:01:19",
+    "time_end": "10:39:33",
+    "minutes": 38.0
+  },
+  {
+    "date": "2024-09-08",
+    "task": "C'est (vraiment?) moi qui d\u00e9cide ",
+    "task_done": true,
+    "time_start": "17:28:57",
+    "time_end": "18:01:08",
+    "minutes": 32.0
+  },
+  {
+    "date": "2024-09-08",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "21:49:33",
+    "time_end": "22:08:52",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-09-09",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "07:45:01",
+    "time_end": "08:02:32",
+    "minutes": 18.0
+  },
+  {
+    "date": "2024-09-09",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "08:42:26",
+    "time_end": "08:51:11",
+    "minutes": 9.0
+  },
+  {
+    "date": "2024-09-09",
+    "task": "Neuromancien",
+    "task_done": true,
+    "time_start": "10:06:44",
+    "time_end": "10:25:04",
+    "minutes": 18.0
+  },
+  {
+    "date": "2024-09-10",
+    "task": "The wave",
+    "task_done": true,
+    "time_start": "21:43:25",
+    "time_end": "22:23:10",
+    "minutes": 40.0
+  },
+  {
+    "date": "2024-09-11",
+    "task": "The wave",
+    "task_done": true,
+    "time_start": "21:06:19",
+    "time_end": "21:45:54",
+    "minutes": 40.0
+  },
+  {
+    "date": "2024-09-11",
+    "task": "The wave",
+    "task_done": true,
+    "time_start": "21:54:58",
+    "time_end": "22:02:32",
+    "minutes": 8.0
+  },
+  {
+    "date": "2024-09-12",
+    "task": "The wave",
+    "task_done": true,
+    "time_start": "21:08:15",
+    "time_end": "21:26:42",
+    "minutes": 18.0
+  },
+  {
+    "date": "2024-09-12",
+    "task": "The wave",
+    "task_done": true,
+    "time_start": "21:44:29",
+    "time_end": "22:29:33",
+    "minutes": 45.0
+  },
+  {
+    "date": "2024-09-12",
+    "task": "Tu es libre ! ",
+    "task_done": true,
+    "time_start": "22:40:04",
+    "time_end": "22:54:54",
+    "minutes": 15.0
+  },
+  {
+    "date": "2024-09-13",
+    "task": "Tu es libre ! ",
+    "task_done": true,
+    "time_start": "22:18:34",
+    "time_end": "23:19:11",
+    "minutes": 61.0
+  },
+  {
+    "date": "2024-09-13",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "23:29:27",
+    "time_end": "23:45:52",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-09-14",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "09:23:20",
+    "time_end": "10:01:29",
+    "minutes": 38.0
+  },
+  {
+    "date": "2024-09-14",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "18:18:20",
+    "time_end": "18:29:30",
+    "minutes": 11.0
+  },
+  {
+    "date": "2024-09-14",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "18:32:12",
+    "time_end": "18:38:31",
+    "minutes": 6.0
+  },
+  {
+    "date": "2024-09-14",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "19:38:15",
+    "time_end": "19:57:19",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-09-14",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "22:25:25",
+    "time_end": "22:57:50",
+    "minutes": 32.0
+  },
+  {
+    "date": "2024-09-14",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "23:17:14",
+    "time_end": "23:24:20",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-09-15",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "08:26:49",
+    "time_end": "09:00:57",
+    "minutes": 34.0
+  },
+  {
+    "date": "2024-09-15",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "18:19:49",
+    "time_end": "18:43:27",
+    "minutes": 24.0
+  },
+  {
+    "date": "2024-09-15",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "19:28:48",
+    "time_end": "19:38:51",
+    "minutes": 10.0
+  },
+  {
+    "date": "2024-09-16",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "21:32:05",
+    "time_end": "21:58:50",
+    "minutes": 27.0
+  },
+  {
+    "date": "2024-09-17",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "21:32:32",
+    "time_end": "22:27:26",
+    "minutes": 55.0
+  },
+  {
+    "date": "2024-09-18",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "17:45:20",
+    "time_end": "18:02:49",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-09-18",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "21:18:10",
+    "time_end": "21:34:29",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-09-18",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "21:43:06",
+    "time_end": "21:59:06",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-09-19",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "15:28:37",
+    "time_end": "16:26:25",
+    "minutes": 58.0
+  },
+  {
+    "date": "2024-09-19",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "16:40:36",
+    "time_end": "16:47:02",
+    "minutes": 6.0
+  },
+  {
+    "date": "2024-09-19",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "20:57:12",
+    "time_end": "21:05:23",
+    "minutes": 8.0
+  },
+  {
+    "date": "2024-09-19",
+    "task": "Bel-Ami",
+    "task_done": true,
+    "time_start": "22:37:19",
+    "time_end": "22:59:50",
+    "minutes": 23.0
+  },
+  {
+    "date": "2024-09-20",
+    "task": "The woman warrior",
+    "task_done": false,
+    "time_start": "22:09:46",
+    "time_end": "22:41:11",
+    "minutes": 31.0
+  },
+  {
+    "date": "2024-09-21",
+    "task": "Ma vie de facteur",
+    "task_done": true,
+    "time_start": "08:49:24",
+    "time_end": "09:38:03",
+    "minutes": 49.0
+  },
+  {
+    "date": "2024-09-21",
+    "task": "Ma vie de facteur",
+    "task_done": true,
+    "time_start": "16:58:20",
+    "time_end": "17:13:22",
+    "minutes": 15.0
+  },
+  {
+    "date": "2024-09-21",
+    "task": "C'est (vraiment?) moi qui d\u00e9cide ",
+    "task_done": true,
+    "time_start": "17:16:27",
+    "time_end": "17:31:20",
+    "minutes": 15.0
+  },
+  {
+    "date": "2024-09-21",
+    "task": "Ma vie de facteur",
+    "task_done": true,
+    "time_start": "20:19:10",
+    "time_end": "20:27:34",
+    "minutes": 8.0
+  },
+  {
+    "date": "2024-09-21",
+    "task": "Ma vie de facteur",
+    "task_done": true,
+    "time_start": "21:52:57",
+    "time_end": "22:38:31",
+    "minutes": 46.0
+  },
+  {
+    "date": "2024-09-21",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "22:52:15",
+    "time_end": "23:25:18",
+    "minutes": 33.0
+  },
+  {
+    "date": "2024-09-21",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "23:57:47",
+    "time_end": "23:59:59",
+    "minutes": 2.0
+  },
+  {
+    "date": "2024-09-22",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "00:00:00",
+    "time_end": "00:07:12",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-09-22",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "09:22:58",
+    "time_end": "10:04:06",
+    "minutes": 41.0
+  },
+  {
+    "date": "2024-09-22",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "21:42:24",
+    "time_end": "22:03:33",
+    "minutes": 21.0
+  },
+  {
+    "date": "2024-09-23",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "17:46:37",
+    "time_end": "17:58:59",
+    "minutes": 12.0
+  },
+  {
+    "date": "2024-09-23",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "21:06:49",
+    "time_end": "22:01:14",
+    "minutes": 54.0
+  },
+  {
+    "date": "2024-09-24",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "21:27:52",
+    "time_end": "22:04:33",
+    "minutes": 37.0
+  },
+  {
+    "date": "2024-09-25",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "08:26:37",
+    "time_end": "08:37:59",
+    "minutes": 11.0
+  },
+  {
+    "date": "2024-09-25",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "13:08:53",
+    "time_end": "13:31:25",
+    "minutes": 23.0
+  },
+  {
+    "date": "2024-09-25",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "17:49:37",
+    "time_end": "17:57:56",
+    "minutes": 8.0
+  },
+  {
+    "date": "2024-09-25",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "21:01:18",
+    "time_end": "22:00:54",
+    "minutes": 60.0
+  },
+  {
+    "date": "2024-09-26",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "08:39:35",
+    "time_end": "08:55:44",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-09-26",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "12:59:30",
+    "time_end": "13:10:50",
+    "minutes": 11.0
+  },
+  {
+    "date": "2024-09-26",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "21:49:55",
+    "time_end": "21:52:52",
+    "minutes": 3.0
+  },
+  {
+    "date": "2024-09-26",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "22:05:05",
+    "time_end": "22:23:53",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-09-27",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "17:04:19",
+    "time_end": "17:21:04",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-09-27",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "17:51:39",
+    "time_end": "18:00:42",
+    "minutes": 9.0
+  },
+  {
+    "date": "2024-09-27",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "18:32:24",
+    "time_end": "19:11:37",
+    "minutes": 39.0
+  },
+  {
+    "date": "2024-09-27",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "23:12:03",
+    "time_end": "23:44:48",
+    "minutes": 33.0
+  },
+  {
+    "date": "2024-09-28",
+    "task": "Artemis",
+    "task_done": true,
+    "time_start": "00:05:22",
+    "time_end": "00:17:16",
+    "minutes": 12.0
+  },
+  {
+    "date": "2024-09-28",
+    "task": "Babel",
+    "task_done": false,
+    "time_start": "00:24:48",
+    "time_end": "00:29:53",
+    "minutes": 5.0
+  },
+  {
+    "date": "2024-09-28",
+    "task": "Babel",
+    "task_done": false,
+    "time_start": "09:19:43",
+    "time_end": "10:04:23",
+    "minutes": 45.0
+  },
+  {
+    "date": "2024-09-28",
+    "task": "C'est (vraiment?) moi qui d\u00e9cide ",
+    "task_done": true,
+    "time_start": "14:34:43",
+    "time_end": "15:04:03",
+    "minutes": 29.0
+  },
+  {
+    "date": "2024-09-28",
+    "task": "C'est (vraiment?) moi qui d\u00e9cide ",
+    "task_done": true,
+    "time_start": "19:28:53",
+    "time_end": "19:50:04",
+    "minutes": 21.0
+  },
+  {
+    "date": "2024-09-28",
+    "task": "Babel",
+    "task_done": false,
+    "time_start": "20:03:58",
+    "time_end": "20:32:33",
+    "minutes": 29.0
+  },
+  {
+    "date": "2024-09-28",
+    "task": "Babel",
+    "task_done": false,
+    "time_start": "22:41:18",
+    "time_end": "23:08:04",
+    "minutes": 27.0
+  },
+  {
+    "date": "2024-09-29",
+    "task": "Babel",
+    "task_done": false,
+    "time_start": "09:32:51",
+    "time_end": "10:00:24",
+    "minutes": 28.0
+  },
+  {
+    "date": "2024-09-29",
+    "task": "Babel",
+    "task_done": false,
+    "time_start": "12:09:44",
+    "time_end": "12:31:50",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-09-29",
+    "task": "Babel",
+    "task_done": false,
+    "time_start": "13:36:33",
+    "time_end": "13:43:18",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-09-29",
+    "task": "Babel",
+    "task_done": false,
+    "time_start": "13:56:33",
+    "time_end": "15:04:16",
+    "minutes": 68.0
+  },
+  {
+    "date": "2024-09-29",
+    "task": "Babel",
+    "task_done": false,
+    "time_start": "17:00:42",
+    "time_end": "17:32:59",
+    "minutes": 32.0
+  },
+  {
+    "date": "2024-09-29",
+    "task": "Babel",
+    "task_done": false,
+    "time_start": "21:41:46",
+    "time_end": "23:02:11",
+    "minutes": 80.0
   }
 ]
