@@ -995,6 +995,12 @@
     "pages": 305,
     "pubDate": "2017-11-14"
   },
+  "Babel": {
+    "GoodreadsID": "57945316",
+    "ISBN": "9780063021",
+    "pages": 544,
+    "pubDate": "2022-08-23"
+  },
   "Into the forest": {
     "GoodreadsID": "25177152",
     "ISBN": "9780375714",
@@ -1253,6 +1259,24 @@
     "pages": 113,
     "pubDate": "2021-02-11"
   },
+  "Cat's cradle": {
+    "GoodreadsID": "9608",
+    "ISBN": "9784001149",
+    "pages": 191,
+    "pubDate": "1963-01-01"
+  },
+  "La Conscience de Zeno": {
+    "GoodreadsID": "239587",
+    "ISBN": "9782253933",
+    "pages": 538,
+    "pubDate": "1923-01-01"
+  },
+  "Fourth wing": {
+    "GoodreadsID": "61431922",
+    "ISBN": "9781649374",
+    "pages": 517,
+    "pubDate": "2023-05-02"
+  },
   "Sharp objects": {
     "GoodreadsID": "18045891",
     "ISBN": "9780307341556",
@@ -1261,7 +1285,7 @@
   },
   "The echo chamber": {
     "GoodreadsID": "57638052",
-    "ISBN": "9780857526212",
+    "ISBN": "9781473563",
     "pages": 432,
     "pubDate": "2021-08-05"
   },
