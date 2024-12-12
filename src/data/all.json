@@ -26714,7 +26714,7 @@
   {
     "date": "2024-10-31",
     "task": "Elantris",
-    "task_done": false,
+    "task_done": true,
     "time_start": "17:07:08",
     "time_end": "17:37:36",
     "minutes": 30.0
@@ -26722,7 +26722,7 @@
   {
     "date": "2024-10-31",
     "task": "Elantris",
-    "task_done": false,
+    "task_done": true,
     "time_start": "17:42:54",
     "time_end": "18:23:25",
     "minutes": 41.0
@@ -26730,7 +26730,7 @@
   {
     "date": "2024-10-31",
     "task": "Elantris",
-    "task_done": false,
+    "task_done": true,
     "time_start": "22:14:34",
     "time_end": "23:34:27",
     "minutes": 80.0
@@ -26754,7 +26754,7 @@
   {
     "date": "2024-11-01",
     "task": "Elantris",
-    "task_done": false,
+    "task_done": true,
     "time_start": "13:03:18",
     "time_end": "13:28:20",
     "minutes": 25.0
@@ -26762,7 +26762,7 @@
   {
     "date": "2024-11-01",
     "task": "Elantris",
-    "task_done": false,
+    "task_done": true,
     "time_start": "14:12:52",
     "time_end": "15:40:35",
     "minutes": 88.0
@@ -26770,7 +26770,7 @@
   {
     "date": "2024-11-01",
     "task": "Elantris",
-    "task_done": false,
+    "task_done": true,
     "time_start": "17:51:58",
     "time_end": "18:26:37",
     "minutes": 35.0
@@ -26786,7 +26786,7 @@
   {
     "date": "2024-11-01",
     "task": "Elantris",
-    "task_done": false,
+    "task_done": true,
     "time_start": "19:29:09",
     "time_end": "20:27:17",
     "minutes": 58.0
@@ -26794,9 +26794,1265 @@
   {
     "date": "2024-11-01",
     "task": "Elantris",
-    "task_done": false,
+    "task_done": true,
     "time_start": "21:58:14",
     "time_end": "23:35:28",
     "minutes": 97.0
+  },
+  {
+    "date": "2024-11-02",
+    "task": "Elantris",
+    "task_done": true,
+    "time_start": "09:21:49",
+    "time_end": "10:08:03",
+    "minutes": 46.0
+  },
+  {
+    "date": "2024-11-02",
+    "task": "Elantris",
+    "task_done": true,
+    "time_start": "13:34:05",
+    "time_end": "14:52:45",
+    "minutes": 79.0
+  },
+  {
+    "date": "2024-11-02",
+    "task": "Elantris",
+    "task_done": true,
+    "time_start": "19:26:22",
+    "time_end": "20:19:08",
+    "minutes": 53.0
+  },
+  {
+    "date": "2024-11-02",
+    "task": "Elantris",
+    "task_done": true,
+    "time_start": "21:12:04",
+    "time_end": "23:17:09",
+    "minutes": 125.0
+  },
+  {
+    "date": "2024-11-03",
+    "task": "The companion handbook to sf",
+    "task_done": false,
+    "time_start": "09:41:30",
+    "time_end": "10:06:58",
+    "minutes": 25.0
+  },
+  {
+    "date": "2024-11-03",
+    "task": "Elantris",
+    "task_done": true,
+    "time_start": "11:27:37",
+    "time_end": "11:55:48",
+    "minutes": 28.0
+  },
+  {
+    "date": "2024-11-03",
+    "task": "Elantris",
+    "task_done": true,
+    "time_start": "18:02:16",
+    "time_end": "18:30:13",
+    "minutes": 28.0
+  },
+  {
+    "date": "2024-11-03",
+    "task": "Elantris",
+    "task_done": true,
+    "time_start": "19:45:50",
+    "time_end": "20:25:45",
+    "minutes": 40.0
+  },
+  {
+    "date": "2024-11-03",
+    "task": "Elantris",
+    "task_done": true,
+    "time_start": "21:55:27",
+    "time_end": "23:59:59",
+    "minutes": 125.0
+  },
+  {
+    "date": "2024-11-04",
+    "task": "Elantris",
+    "task_done": true,
+    "time_start": "00:00:00",
+    "time_end": "00:01:45",
+    "minutes": 2.0
+  },
+  {
+    "date": "2024-11-04",
+    "task": "Elantris",
+    "task_done": true,
+    "time_start": "08:57:13",
+    "time_end": "09:24:25",
+    "minutes": 27.0
+  },
+  {
+    "date": "2024-11-04",
+    "task": "Elantris",
+    "task_done": true,
+    "time_start": "12:05:52",
+    "time_end": "12:54:39",
+    "minutes": 49.0
+  },
+  {
+    "date": "2024-11-04",
+    "task": "The companion handbook to sf",
+    "task_done": false,
+    "time_start": "15:56:37",
+    "time_end": "16:16:14",
+    "minutes": 20.0
+  },
+  {
+    "date": "2024-11-04",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "16:17:00",
+    "time_end": "17:11:12",
+    "minutes": 54.0
+  },
+  {
+    "date": "2024-11-04",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "19:19:27",
+    "time_end": "19:57:26",
+    "minutes": 38.0
+  },
+  {
+    "date": "2024-11-04",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "20:18:34",
+    "time_end": "21:03:47",
+    "minutes": 45.0
+  },
+  {
+    "date": "2024-11-04",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "22:01:04",
+    "time_end": "22:54:30",
+    "minutes": 53.0
+  },
+  {
+    "date": "2024-11-05",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "08:19:51",
+    "time_end": "08:53:09",
+    "minutes": 33.0
+  },
+  {
+    "date": "2024-11-05",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "12:33:09",
+    "time_end": "12:54:47",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-11-05",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "14:36:00",
+    "time_end": "15:17:49",
+    "minutes": 42.0
+  },
+  {
+    "date": "2024-11-05",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "16:17:50",
+    "time_end": "16:54:06",
+    "minutes": 36.0
+  },
+  {
+    "date": "2024-11-05",
+    "task": "The companion handbook to sf",
+    "task_done": false,
+    "time_start": "16:54:13",
+    "time_end": "17:30:29",
+    "minutes": 36.0
+  },
+  {
+    "date": "2024-11-05",
+    "task": "The companion handbook to sf",
+    "task_done": false,
+    "time_start": "18:31:02",
+    "time_end": "18:43:41",
+    "minutes": 13.0
+  },
+  {
+    "date": "2024-11-05",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "21:11:46",
+    "time_end": "22:01:38",
+    "minutes": 50.0
+  },
+  {
+    "date": "2024-11-06",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "08:34:18",
+    "time_end": "08:49:20",
+    "minutes": 15.0
+  },
+  {
+    "date": "2024-11-06",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "21:11:54",
+    "time_end": "21:55:25",
+    "minutes": 44.0
+  },
+  {
+    "date": "2024-11-07",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "08:44:46",
+    "time_end": "09:06:57",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-11-07",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "21:14:25",
+    "time_end": "22:09:18",
+    "minutes": 55.0
+  },
+  {
+    "date": "2024-11-08",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "08:29:06",
+    "time_end": "08:51:01",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-11-08",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "18:42:35",
+    "time_end": "19:08:47",
+    "minutes": 26.0
+  },
+  {
+    "date": "2024-11-08",
+    "task": "Blood Over bright haven",
+    "task_done": true,
+    "time_start": "22:00:02",
+    "time_end": "23:09:27",
+    "minutes": 69.0
+  },
+  {
+    "date": "2024-11-09",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "09:18:57",
+    "time_end": "10:08:08",
+    "minutes": 49.0
+  },
+  {
+    "date": "2024-11-09",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "13:35:04",
+    "time_end": "13:59:55",
+    "minutes": 25.0
+  },
+  {
+    "date": "2024-11-09",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "14:05:40",
+    "time_end": "14:23:02",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-11-09",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "15:03:23",
+    "time_end": "16:40:35",
+    "minutes": 97.0
+  },
+  {
+    "date": "2024-11-09",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "18:00:20",
+    "time_end": "18:39:05",
+    "minutes": 39.0
+  },
+  {
+    "date": "2024-11-09",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "23:31:51",
+    "time_end": "23:59:59",
+    "minutes": 28.0
+  },
+  {
+    "date": "2024-11-10",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "00:00:00",
+    "time_end": "00:10:32",
+    "minutes": 11.0
+  },
+  {
+    "date": "2024-11-10",
+    "task": "The companion handbook to sf",
+    "task_done": false,
+    "time_start": "10:10:52",
+    "time_end": "10:58:48",
+    "minutes": 48.0
+  },
+  {
+    "date": "2024-11-10",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "12:06:37",
+    "time_end": "12:33:52",
+    "minutes": 27.0
+  },
+  {
+    "date": "2024-11-10",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "14:12:12",
+    "time_end": "16:00:12",
+    "minutes": 108.0
+  },
+  {
+    "date": "2024-11-10",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "18:28:23",
+    "time_end": "19:31:10",
+    "minutes": 63.0
+  },
+  {
+    "date": "2024-11-10",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "21:39:15",
+    "time_end": "22:00:51",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-11-11",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "08:41:08",
+    "time_end": "08:58:33",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-11-11",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "21:10:28",
+    "time_end": "22:17:50",
+    "minutes": 67.0
+  },
+  {
+    "date": "2024-11-12",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "08:29:09",
+    "time_end": "08:50:10",
+    "minutes": 21.0
+  },
+  {
+    "date": "2024-11-12",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "21:09:25",
+    "time_end": "22:12:50",
+    "minutes": 63.0
+  },
+  {
+    "date": "2024-11-13",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "08:52:57",
+    "time_end": "09:12:56",
+    "minutes": 20.0
+  },
+  {
+    "date": "2024-11-13",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "19:40:16",
+    "time_end": "20:08:40",
+    "minutes": 28.0
+  },
+  {
+    "date": "2024-11-13",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "21:26:33",
+    "time_end": "22:04:44",
+    "minutes": 38.0
+  },
+  {
+    "date": "2024-11-14",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "08:32:59",
+    "time_end": "08:52:22",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-11-14",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "21:29:48",
+    "time_end": "22:00:14",
+    "minutes": 30.0
+  },
+  {
+    "date": "2024-11-15",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "08:51:33",
+    "time_end": "09:10:21",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-11-15",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "22:59:54",
+    "time_end": "23:05:11",
+    "minutes": 5.0
+  },
+  {
+    "date": "2024-11-16",
+    "task": "The companion handbook to sf",
+    "task_done": false,
+    "time_start": "09:43:12",
+    "time_end": "10:06:26",
+    "minutes": 23.0
+  },
+  {
+    "date": "2024-11-16",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "18:01:50",
+    "time_end": "18:28:53",
+    "minutes": 27.0
+  },
+  {
+    "date": "2024-11-16",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "21:50:29",
+    "time_end": "23:42:47",
+    "minutes": 112.0
+  },
+  {
+    "date": "2024-11-17",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "09:02:34",
+    "time_end": "09:32:03",
+    "minutes": 29.0
+  },
+  {
+    "date": "2024-11-17",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "10:27:49",
+    "time_end": "11:27:13",
+    "minutes": 59.0
+  },
+  {
+    "date": "2024-11-17",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "16:32:44",
+    "time_end": "17:03:24",
+    "minutes": 31.0
+  },
+  {
+    "date": "2024-11-17",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "17:13:06",
+    "time_end": "17:29:40",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-11-17",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "19:53:50",
+    "time_end": "20:23:03",
+    "minutes": 29.0
+  },
+  {
+    "date": "2024-11-17",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "21:42:17",
+    "time_end": "22:20:28",
+    "minutes": 38.0
+  },
+  {
+    "date": "2024-11-18",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "08:39:10",
+    "time_end": "09:03:48",
+    "minutes": 25.0
+  },
+  {
+    "date": "2024-11-18",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "21:05:33",
+    "time_end": "22:34:55",
+    "minutes": 89.0
+  },
+  {
+    "date": "2024-11-19",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "08:33:07",
+    "time_end": "08:49:25",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-11-19",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "19:44:54",
+    "time_end": "20:22:47",
+    "minutes": 38.0
+  },
+  {
+    "date": "2024-11-19",
+    "task": "The priory of the orange tree",
+    "task_done": true,
+    "time_start": "21:21:55",
+    "time_end": "21:50:10",
+    "minutes": 28.0
+  },
+  {
+    "date": "2024-11-19",
+    "task": "The nickel boys",
+    "task_done": true,
+    "time_start": "21:53:24",
+    "time_end": "22:06:58",
+    "minutes": 14.0
+  },
+  {
+    "date": "2024-11-20",
+    "task": "The nickel boys",
+    "task_done": true,
+    "time_start": "08:33:43",
+    "time_end": "08:50:33",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-11-20",
+    "task": "The nickel boys",
+    "task_done": true,
+    "time_start": "17:49:47",
+    "time_end": "17:59:27",
+    "minutes": 10.0
+  },
+  {
+    "date": "2024-11-20",
+    "task": "The nickel boys",
+    "task_done": true,
+    "time_start": "20:04:00",
+    "time_end": "20:19:06",
+    "minutes": 15.0
+  },
+  {
+    "date": "2024-11-20",
+    "task": "The nickel boys",
+    "task_done": true,
+    "time_start": "21:12:06",
+    "time_end": "22:26:26",
+    "minutes": 74.0
+  },
+  {
+    "date": "2024-11-21",
+    "task": "The nickel boys",
+    "task_done": true,
+    "time_start": "08:37:49",
+    "time_end": "09:00:19",
+    "minutes": 22.0
+  },
+  {
+    "date": "2024-11-21",
+    "task": "The nickel boys",
+    "task_done": true,
+    "time_start": "14:42:09",
+    "time_end": "15:16:37",
+    "minutes": 34.0
+  },
+  {
+    "date": "2024-11-21",
+    "task": "The nickel boys",
+    "task_done": true,
+    "time_start": "21:24:18",
+    "time_end": "22:08:20",
+    "minutes": 44.0
+  },
+  {
+    "date": "2024-11-22",
+    "task": "The nickel boys",
+    "task_done": true,
+    "time_start": "08:38:48",
+    "time_end": "08:44:25",
+    "minutes": 6.0
+  },
+  {
+    "date": "2024-11-22",
+    "task": "The nickel boys",
+    "task_done": true,
+    "time_start": "09:07:11",
+    "time_end": "09:19:04",
+    "minutes": 12.0
+  },
+  {
+    "date": "2024-11-22",
+    "task": "The nickel boys",
+    "task_done": true,
+    "time_start": "12:59:26",
+    "time_end": "13:15:23",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-11-22",
+    "task": "The nickel boys",
+    "task_done": true,
+    "time_start": "15:31:01",
+    "time_end": "16:01:13",
+    "minutes": 30.0
+  },
+  {
+    "date": "2024-11-22",
+    "task": "The princess bride",
+    "task_done": true,
+    "time_start": "22:14:14",
+    "time_end": "23:05:02",
+    "minutes": 51.0
+  },
+  {
+    "date": "2024-11-23",
+    "task": "The companion handbook to sf",
+    "task_done": false,
+    "time_start": "09:13:11",
+    "time_end": "09:30:16",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-11-23",
+    "task": "The princess bride",
+    "task_done": true,
+    "time_start": "09:30:30",
+    "time_end": "09:59:29",
+    "minutes": 29.0
+  },
+  {
+    "date": "2024-11-23",
+    "task": "The princess bride",
+    "task_done": true,
+    "time_start": "14:03:57",
+    "time_end": "14:56:27",
+    "minutes": 52.0
+  },
+  {
+    "date": "2024-11-23",
+    "task": "The princess bride",
+    "task_done": true,
+    "time_start": "19:59:53",
+    "time_end": "20:31:56",
+    "minutes": 32.0
+  },
+  {
+    "date": "2024-11-23",
+    "task": "The princess bride",
+    "task_done": true,
+    "time_start": "22:36:52",
+    "time_end": "23:41:12",
+    "minutes": 64.0
+  },
+  {
+    "date": "2024-11-24",
+    "task": "The companion handbook to sf",
+    "task_done": false,
+    "time_start": "09:46:23",
+    "time_end": "10:29:45",
+    "minutes": 43.0
+  },
+  {
+    "date": "2024-11-24",
+    "task": "The princess bride",
+    "task_done": true,
+    "time_start": "12:08:17",
+    "time_end": "12:38:30",
+    "minutes": 30.0
+  },
+  {
+    "date": "2024-11-24",
+    "task": "The princess bride",
+    "task_done": true,
+    "time_start": "13:58:57",
+    "time_end": "15:14:11",
+    "minutes": 75.0
+  },
+  {
+    "date": "2024-11-24",
+    "task": "The princess bride",
+    "task_done": true,
+    "time_start": "18:22:13",
+    "time_end": "19:09:14",
+    "minutes": 47.0
+  },
+  {
+    "date": "2024-11-24",
+    "task": "The princess bride",
+    "task_done": true,
+    "time_start": "19:31:27",
+    "time_end": "19:57:45",
+    "minutes": 26.0
+  },
+  {
+    "date": "2024-11-24",
+    "task": "The princess bride",
+    "task_done": true,
+    "time_start": "21:43:13",
+    "time_end": "22:35:47",
+    "minutes": 53.0
+  },
+  {
+    "date": "2024-11-25",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "09:00:52",
+    "time_end": "09:20:52",
+    "minutes": 20.0
+  },
+  {
+    "date": "2024-11-25",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "20:04:22",
+    "time_end": "20:19:27",
+    "minutes": 15.0
+  },
+  {
+    "date": "2024-11-25",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "21:19:07",
+    "time_end": "22:02:41",
+    "minutes": 44.0
+  },
+  {
+    "date": "2024-11-26",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "08:37:30",
+    "time_end": "09:02:33",
+    "minutes": 25.0
+  },
+  {
+    "date": "2024-11-26",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "19:33:46",
+    "time_end": "19:52:15",
+    "minutes": 18.0
+  },
+  {
+    "date": "2024-11-26",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "20:01:50",
+    "time_end": "20:20:58",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-11-26",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "21:01:26",
+    "time_end": "21:43:46",
+    "minutes": 42.0
+  },
+  {
+    "date": "2024-11-27",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "08:59:46",
+    "time_end": "09:27:36",
+    "minutes": 28.0
+  },
+  {
+    "date": "2024-11-27",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "17:06:51",
+    "time_end": "17:13:24",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-11-27",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "17:47:35",
+    "time_end": "17:59:32",
+    "minutes": 12.0
+  },
+  {
+    "date": "2024-11-27",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "19:56:58",
+    "time_end": "20:07:36",
+    "minutes": 11.0
+  },
+  {
+    "date": "2024-11-27",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "21:15:58",
+    "time_end": "22:04:54",
+    "minutes": 49.0
+  },
+  {
+    "date": "2024-11-28",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "09:09:16",
+    "time_end": "09:25:57",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-11-28",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "18:40:23",
+    "time_end": "18:46:37",
+    "minutes": 6.0
+  },
+  {
+    "date": "2024-11-28",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "21:13:47",
+    "time_end": "22:08:05",
+    "minutes": 54.0
+  },
+  {
+    "date": "2024-11-29",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "20:02:49",
+    "time_end": "20:04:15",
+    "minutes": 1.0
+  },
+  {
+    "date": "2024-11-29",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "21:31:39",
+    "time_end": "22:59:09",
+    "minutes": 88.0
+  },
+  {
+    "date": "2024-11-30",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "09:17:24",
+    "time_end": "10:03:11",
+    "minutes": 46.0
+  },
+  {
+    "date": "2024-11-30",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "16:43:53",
+    "time_end": "17:09:27",
+    "minutes": 26.0
+  },
+  {
+    "date": "2024-11-30",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "18:39:53",
+    "time_end": "18:56:19",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-11-30",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "22:04:38",
+    "time_end": "23:13:35",
+    "minutes": 69.0
+  },
+  {
+    "date": "2024-12-01",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "09:54:44",
+    "time_end": "10:46:17",
+    "minutes": 52.0
+  },
+  {
+    "date": "2024-12-01",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "13:59:32",
+    "time_end": "15:04:27",
+    "minutes": 65.0
+  },
+  {
+    "date": "2024-12-01",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "15:33:59",
+    "time_end": "15:47:48",
+    "minutes": 14.0
+  },
+  {
+    "date": "2024-12-01",
+    "task": "Lovecraft ",
+    "task_done": false,
+    "time_start": "15:49:19",
+    "time_end": "16:01:23",
+    "minutes": 12.0
+  },
+  {
+    "date": "2024-12-01",
+    "task": "Lovecraft ",
+    "task_done": false,
+    "time_start": "16:35:39",
+    "time_end": "16:59:57",
+    "minutes": 24.0
+  },
+  {
+    "date": "2024-12-01",
+    "task": "Lovecraft ",
+    "task_done": false,
+    "time_start": "17:19:52",
+    "time_end": "17:37:56",
+    "minutes": 18.0
+  },
+  {
+    "date": "2024-12-01",
+    "task": "Lovecraft ",
+    "task_done": false,
+    "time_start": "18:23:09",
+    "time_end": "18:34:04",
+    "minutes": 11.0
+  },
+  {
+    "date": "2024-12-01",
+    "task": "Lovecraft ",
+    "task_done": false,
+    "time_start": "19:19:45",
+    "time_end": "19:24:35",
+    "minutes": 5.0
+  },
+  {
+    "date": "2024-12-01",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "21:12:29",
+    "time_end": "22:18:12",
+    "minutes": 66.0
+  },
+  {
+    "date": "2024-12-02",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "08:46:56",
+    "time_end": "09:06:46",
+    "minutes": 20.0
+  },
+  {
+    "date": "2024-12-02",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "21:01:34",
+    "time_end": "22:43:13",
+    "minutes": 102.0
+  },
+  {
+    "date": "2024-12-03",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "08:44:53",
+    "time_end": "09:10:27",
+    "minutes": 26.0
+  },
+  {
+    "date": "2024-12-03",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "16:23:07",
+    "time_end": "16:33:09",
+    "minutes": 10.0
+  },
+  {
+    "date": "2024-12-03",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "18:23:49",
+    "time_end": "18:38:14",
+    "minutes": 14.0
+  },
+  {
+    "date": "2024-12-03",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "21:19:34",
+    "time_end": "22:00:59",
+    "minutes": 41.0
+  },
+  {
+    "date": "2024-12-04",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "08:51:40",
+    "time_end": "09:10:28",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-12-04",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "17:47:38",
+    "time_end": "17:59:26",
+    "minutes": 12.0
+  },
+  {
+    "date": "2024-12-04",
+    "task": "The blade itself",
+    "task_done": true,
+    "time_start": "21:05:06",
+    "time_end": "21:34:41",
+    "minutes": 30.0
+  },
+  {
+    "date": "2024-12-04",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "21:36:30",
+    "time_end": "22:30:30",
+    "minutes": 54.0
+  },
+  {
+    "date": "2024-12-05",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "08:47:14",
+    "time_end": "09:15:19",
+    "minutes": 28.0
+  },
+  {
+    "date": "2024-12-05",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "21:08:18",
+    "time_end": "21:54:02",
+    "minutes": 46.0
+  },
+  {
+    "date": "2024-12-05",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "22:03:41",
+    "time_end": "22:18:24",
+    "minutes": 15.0
+  },
+  {
+    "date": "2024-12-06",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "08:45:33",
+    "time_end": "09:00:56",
+    "minutes": 15.0
+  },
+  {
+    "date": "2024-12-06",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "21:59:06",
+    "time_end": "23:10:15",
+    "minutes": 71.0
+  },
+  {
+    "date": "2024-12-06",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "23:26:41",
+    "time_end": "23:46:08",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-12-07",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "08:14:21",
+    "time_end": "08:48:04",
+    "minutes": 34.0
+  },
+  {
+    "date": "2024-12-07",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "15:18:47",
+    "time_end": "16:53:07",
+    "minutes": 94.0
+  },
+  {
+    "date": "2024-12-07",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "18:17:21",
+    "time_end": "18:35:01",
+    "minutes": 18.0
+  },
+  {
+    "date": "2024-12-07",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "22:47:33",
+    "time_end": "23:11:30",
+    "minutes": 24.0
+  },
+  {
+    "date": "2024-12-08",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "10:06:48",
+    "time_end": "10:55:54",
+    "minutes": 49.0
+  },
+  {
+    "date": "2024-12-08",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "13:56:33",
+    "time_end": "14:25:32",
+    "minutes": 29.0
+  },
+  {
+    "date": "2024-12-08",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "15:48:52",
+    "time_end": "16:15:25",
+    "minutes": 27.0
+  },
+  {
+    "date": "2024-12-08",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "22:04:50",
+    "time_end": "22:45:23",
+    "minutes": 41.0
+  },
+  {
+    "date": "2024-12-09",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "08:55:07",
+    "time_end": "09:23:34",
+    "minutes": 28.0
+  },
+  {
+    "date": "2024-12-09",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "11:20:52",
+    "time_end": "12:14:07",
+    "minutes": 53.0
+  },
+  {
+    "date": "2024-12-09",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "19:58:04",
+    "time_end": "20:14:59",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-12-09",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "21:40:13",
+    "time_end": "22:36:48",
+    "minutes": 57.0
+  },
+  {
+    "date": "2024-12-09",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "23:07:05",
+    "time_end": "23:49:23",
+    "minutes": 42.0
+  },
+  {
+    "date": "2024-12-10",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "09:12:51",
+    "time_end": "10:01:07",
+    "minutes": 48.0
+  },
+  {
+    "date": "2024-12-10",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "19:38:04",
+    "time_end": "19:50:33",
+    "minutes": 12.0
+  },
+  {
+    "date": "2024-12-10",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "21:12:40",
+    "time_end": "21:50:24",
+    "minutes": 38.0
+  },
+  {
+    "date": "2024-12-11",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "08:49:05",
+    "time_end": "09:14:56",
+    "minutes": 26.0
+  },
+  {
+    "date": "2024-12-11",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "17:46:32",
+    "time_end": "17:53:03",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-12-11",
+    "task": "Before they are hanged",
+    "task_done": false,
+    "time_start": "21:07:56",
+    "time_end": "22:42:14",
+    "minutes": 94.0
   }
 ]
