@@ -27850,7 +27850,7 @@
   {
     "date": "2024-12-04",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "21:36:30",
     "time_end": "22:30:30",
     "minutes": 54.0
@@ -27858,7 +27858,7 @@
   {
     "date": "2024-12-05",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "08:47:14",
     "time_end": "09:15:19",
     "minutes": 28.0
@@ -27866,7 +27866,7 @@
   {
     "date": "2024-12-05",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "21:08:18",
     "time_end": "21:54:02",
     "minutes": 46.0
@@ -27874,7 +27874,7 @@
   {
     "date": "2024-12-05",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "22:03:41",
     "time_end": "22:18:24",
     "minutes": 15.0
@@ -27882,7 +27882,7 @@
   {
     "date": "2024-12-06",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "08:45:33",
     "time_end": "09:00:56",
     "minutes": 15.0
@@ -27890,7 +27890,7 @@
   {
     "date": "2024-12-06",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "21:59:06",
     "time_end": "23:10:15",
     "minutes": 71.0
@@ -27898,7 +27898,7 @@
   {
     "date": "2024-12-06",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "23:26:41",
     "time_end": "23:46:08",
     "minutes": 19.0
@@ -27906,7 +27906,7 @@
   {
     "date": "2024-12-07",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "08:14:21",
     "time_end": "08:48:04",
     "minutes": 34.0
@@ -27914,7 +27914,7 @@
   {
     "date": "2024-12-07",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "15:18:47",
     "time_end": "16:53:07",
     "minutes": 94.0
@@ -27922,7 +27922,7 @@
   {
     "date": "2024-12-07",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "18:17:21",
     "time_end": "18:35:01",
     "minutes": 18.0
@@ -27930,7 +27930,7 @@
   {
     "date": "2024-12-07",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "22:47:33",
     "time_end": "23:11:30",
     "minutes": 24.0
@@ -27938,7 +27938,7 @@
   {
     "date": "2024-12-08",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "10:06:48",
     "time_end": "10:55:54",
     "minutes": 49.0
@@ -27946,7 +27946,7 @@
   {
     "date": "2024-12-08",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "13:56:33",
     "time_end": "14:25:32",
     "minutes": 29.0
@@ -27954,7 +27954,7 @@
   {
     "date": "2024-12-08",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "15:48:52",
     "time_end": "16:15:25",
     "minutes": 27.0
@@ -27962,7 +27962,7 @@
   {
     "date": "2024-12-08",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "22:04:50",
     "time_end": "22:45:23",
     "minutes": 41.0
@@ -27970,7 +27970,7 @@
   {
     "date": "2024-12-09",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "08:55:07",
     "time_end": "09:23:34",
     "minutes": 28.0
@@ -27978,7 +27978,7 @@
   {
     "date": "2024-12-09",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "11:20:52",
     "time_end": "12:14:07",
     "minutes": 53.0
@@ -27986,7 +27986,7 @@
   {
     "date": "2024-12-09",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "19:58:04",
     "time_end": "20:14:59",
     "minutes": 17.0
@@ -27994,7 +27994,7 @@
   {
     "date": "2024-12-09",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "21:40:13",
     "time_end": "22:36:48",
     "minutes": 57.0
@@ -28002,7 +28002,7 @@
   {
     "date": "2024-12-09",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "23:07:05",
     "time_end": "23:49:23",
     "minutes": 42.0
@@ -28010,7 +28010,7 @@
   {
     "date": "2024-12-10",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "09:12:51",
     "time_end": "10:01:07",
     "minutes": 48.0
@@ -28018,7 +28018,7 @@
   {
     "date": "2024-12-10",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "19:38:04",
     "time_end": "19:50:33",
     "minutes": 12.0
@@ -28026,7 +28026,7 @@
   {
     "date": "2024-12-10",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "21:12:40",
     "time_end": "21:50:24",
     "minutes": 38.0
@@ -28034,7 +28034,7 @@
   {
     "date": "2024-12-11",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "08:49:05",
     "time_end": "09:14:56",
     "minutes": 26.0
@@ -28042,7 +28042,7 @@
   {
     "date": "2024-12-11",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "17:46:32",
     "time_end": "17:53:03",
     "minutes": 7.0
@@ -28050,9 +28050,649 @@
   {
     "date": "2024-12-11",
     "task": "Before they are hanged",
-    "task_done": false,
+    "task_done": true,
     "time_start": "21:07:56",
     "time_end": "22:42:14",
     "minutes": 94.0
+  },
+  {
+    "date": "2024-12-12",
+    "task": "Before they are hanged",
+    "task_done": true,
+    "time_start": "08:41:40",
+    "time_end": "09:00:46",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-12-12",
+    "task": "Before they are hanged",
+    "task_done": true,
+    "time_start": "17:20:25",
+    "time_end": "17:41:41",
+    "minutes": 21.0
+  },
+  {
+    "date": "2024-12-12",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "17:48:17",
+    "time_end": "18:19:41",
+    "minutes": 31.0
+  },
+  {
+    "date": "2024-12-12",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "21:28:18",
+    "time_end": "21:38:21",
+    "minutes": 10.0
+  },
+  {
+    "date": "2024-12-13",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "22:47:09",
+    "time_end": "23:58:49",
+    "minutes": 72.0
+  },
+  {
+    "date": "2024-12-14",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "09:17:46",
+    "time_end": "10:05:20",
+    "minutes": 48.0
+  },
+  {
+    "date": "2024-12-14",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "18:00:01",
+    "time_end": "18:40:03",
+    "minutes": 40.0
+  },
+  {
+    "date": "2024-12-14",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "22:22:35",
+    "time_end": "23:01:23",
+    "minutes": 39.0
+  },
+  {
+    "date": "2024-12-15",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "00:00:03",
+    "time_end": "00:38:45",
+    "minutes": 39.0
+  },
+  {
+    "date": "2024-12-15",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "09:45:14",
+    "time_end": "10:23:47",
+    "minutes": 39.0
+  },
+  {
+    "date": "2024-12-15",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "17:53:43",
+    "time_end": "19:04:38",
+    "minutes": 71.0
+  },
+  {
+    "date": "2024-12-15",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "21:26:53",
+    "time_end": "21:54:07",
+    "minutes": 27.0
+  },
+  {
+    "date": "2024-12-15",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "22:10:02",
+    "time_end": "22:28:23",
+    "minutes": 18.0
+  },
+  {
+    "date": "2024-12-16",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "08:24:33",
+    "time_end": "08:48:59",
+    "minutes": 24.0
+  },
+  {
+    "date": "2024-12-16",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "21:14:19",
+    "time_end": "22:06:44",
+    "minutes": 52.0
+  },
+  {
+    "date": "2024-12-17",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "08:36:20",
+    "time_end": "08:50:13",
+    "minutes": 14.0
+  },
+  {
+    "date": "2024-12-17",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "21:16:04",
+    "time_end": "22:41:27",
+    "minutes": 85.0
+  },
+  {
+    "date": "2024-12-18",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "08:33:16",
+    "time_end": "09:01:06",
+    "minutes": 28.0
+  },
+  {
+    "date": "2024-12-18",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "17:46:03",
+    "time_end": "17:53:01",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-12-18",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "20:56:54",
+    "time_end": "22:15:59",
+    "minutes": 79.0
+  },
+  {
+    "date": "2024-12-19",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "08:34:54",
+    "time_end": "08:51:54",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-12-19",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "13:33:46",
+    "time_end": "13:40:24",
+    "minutes": 7.0
+  },
+  {
+    "date": "2024-12-19",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "21:45:44",
+    "time_end": "22:46:46",
+    "minutes": 61.0
+  },
+  {
+    "date": "2024-12-20",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "08:09:24",
+    "time_end": "08:47:12",
+    "minutes": 38.0
+  },
+  {
+    "date": "2024-12-20",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "11:45:40",
+    "time_end": "12:29:24",
+    "minutes": 44.0
+  },
+  {
+    "date": "2024-12-20",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "13:33:10",
+    "time_end": "14:08:18",
+    "minutes": 35.0
+  },
+  {
+    "date": "2024-12-20",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "15:12:45",
+    "time_end": "15:53:20",
+    "minutes": 41.0
+  },
+  {
+    "date": "2024-12-20",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "20:08:17",
+    "time_end": "20:25:40",
+    "minutes": 17.0
+  },
+  {
+    "date": "2024-12-20",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "22:33:56",
+    "time_end": "23:27:52",
+    "minutes": 54.0
+  },
+  {
+    "date": "2024-12-21",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "09:14:30",
+    "time_end": "10:03:58",
+    "minutes": 49.0
+  },
+  {
+    "date": "2024-12-21",
+    "task": "Last argument of kings",
+    "task_done": true,
+    "time_start": "13:30:56",
+    "time_end": "14:01:58",
+    "minutes": 31.0
+  },
+  {
+    "date": "2024-12-21",
+    "task": "A New life",
+    "task_done": true,
+    "time_start": "14:09:23",
+    "time_end": "14:46:21",
+    "minutes": 37.0
+  },
+  {
+    "date": "2024-12-21",
+    "task": "A New life",
+    "task_done": true,
+    "time_start": "19:48:05",
+    "time_end": "20:20:20",
+    "minutes": 32.0
+  },
+  {
+    "date": "2024-12-21",
+    "task": "A New life",
+    "task_done": true,
+    "time_start": "21:49:56",
+    "time_end": "23:54:18",
+    "minutes": 124.0
+  },
+  {
+    "date": "2024-12-22",
+    "task": "A New life",
+    "task_done": true,
+    "time_start": "09:42:28",
+    "time_end": "10:18:37",
+    "minutes": 36.0
+  },
+  {
+    "date": "2024-12-22",
+    "task": "A New life",
+    "task_done": true,
+    "time_start": "13:20:05",
+    "time_end": "15:11:44",
+    "minutes": 112.0
+  },
+  {
+    "date": "2024-12-22",
+    "task": "A New life",
+    "task_done": true,
+    "time_start": "23:05:32",
+    "time_end": "23:59:59",
+    "minutes": 54.0
+  },
+  {
+    "date": "2024-12-23",
+    "task": "A New life",
+    "task_done": true,
+    "time_start": "00:00:00",
+    "time_end": "00:12:56",
+    "minutes": 13.0
+  },
+  {
+    "date": "2024-12-23",
+    "task": "A New life",
+    "task_done": true,
+    "time_start": "08:50:00",
+    "time_end": "09:20:34",
+    "minutes": 31.0
+  },
+  {
+    "date": "2024-12-23",
+    "task": "A New life",
+    "task_done": true,
+    "time_start": "13:51:27",
+    "time_end": "14:23:25",
+    "minutes": 32.0
+  },
+  {
+    "date": "2024-12-23",
+    "task": "A New life",
+    "task_done": true,
+    "time_start": "21:59:40",
+    "time_end": "23:35:40",
+    "minutes": 96.0
+  },
+  {
+    "date": "2024-12-24",
+    "task": "A New life",
+    "task_done": true,
+    "time_start": "08:57:23",
+    "time_end": "09:46:27",
+    "minutes": 49.0
+  },
+  {
+    "date": "2024-12-24",
+    "task": "Day of the Oprichnik",
+    "task_done": true,
+    "time_start": "23:29:16",
+    "time_end": "23:59:59",
+    "minutes": 31.0
+  },
+  {
+    "date": "2024-12-25",
+    "task": "Day of the Oprichnik",
+    "task_done": true,
+    "time_start": "00:00:00",
+    "time_end": "00:43:09",
+    "minutes": 43.0
+  },
+  {
+    "date": "2024-12-25",
+    "task": "Day of the Oprichnik",
+    "task_done": true,
+    "time_start": "10:01:30",
+    "time_end": "10:40:05",
+    "minutes": 39.0
+  },
+  {
+    "date": "2024-12-25",
+    "task": "Day of the Oprichnik",
+    "task_done": true,
+    "time_start": "15:49:29",
+    "time_end": "16:01:27",
+    "minutes": 12.0
+  },
+  {
+    "date": "2024-12-25",
+    "task": "Day of the Oprichnik",
+    "task_done": true,
+    "time_start": "16:47:44",
+    "time_end": "17:25:59",
+    "minutes": 38.0
+  },
+  {
+    "date": "2024-12-25",
+    "task": "Day of the Oprichnik",
+    "task_done": true,
+    "time_start": "22:19:05",
+    "time_end": "23:07:01",
+    "minutes": 48.0
+  },
+  {
+    "date": "2024-12-25",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "23:35:03",
+    "time_end": "23:45:51",
+    "minutes": 11.0
+  },
+  {
+    "date": "2024-12-26",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "09:01:45",
+    "time_end": "09:43:23",
+    "minutes": 42.0
+  },
+  {
+    "date": "2024-12-26",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "13:46:39",
+    "time_end": "14:03:00",
+    "minutes": 16.0
+  },
+  {
+    "date": "2024-12-26",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "15:23:48",
+    "time_end": "15:26:59",
+    "minutes": 3.0
+  },
+  {
+    "date": "2024-12-26",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "21:46:08",
+    "time_end": "22:05:22",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-12-26",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "22:21:08",
+    "time_end": "23:51:45",
+    "minutes": 91.0
+  },
+  {
+    "date": "2024-12-27",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "09:26:22",
+    "time_end": "09:59:15",
+    "minutes": 33.0
+  },
+  {
+    "date": "2024-12-27",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "10:57:13",
+    "time_end": "11:40:56",
+    "minutes": 44.0
+  },
+  {
+    "date": "2024-12-27",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "17:34:31",
+    "time_end": "17:57:43",
+    "minutes": 23.0
+  },
+  {
+    "date": "2024-12-27",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "19:50:29",
+    "time_end": "20:18:19",
+    "minutes": 28.0
+  },
+  {
+    "date": "2024-12-27",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "21:51:08",
+    "time_end": "23:21:54",
+    "minutes": 91.0
+  },
+  {
+    "date": "2024-12-28",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "09:11:38",
+    "time_end": "10:04:32",
+    "minutes": 53.0
+  },
+  {
+    "date": "2024-12-28",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "13:28:11",
+    "time_end": "13:47:30",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-12-28",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "22:18:02",
+    "time_end": "23:06:28",
+    "minutes": 48.0
+  },
+  {
+    "date": "2024-12-29",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "09:47:49",
+    "time_end": "11:00:46",
+    "minutes": 73.0
+  },
+  {
+    "date": "2024-12-29",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "13:34:05",
+    "time_end": "13:49:17",
+    "minutes": 15.0
+  },
+  {
+    "date": "2024-12-29",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "15:19:47",
+    "time_end": "15:51:59",
+    "minutes": 32.0
+  },
+  {
+    "date": "2024-12-29",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "21:53:27",
+    "time_end": "23:12:23",
+    "minutes": 79.0
+  },
+  {
+    "date": "2024-12-30",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "09:04:04",
+    "time_end": "09:39:41",
+    "minutes": 36.0
+  },
+  {
+    "date": "2024-12-30",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "13:49:59",
+    "time_end": "14:22:04",
+    "minutes": 32.0
+  },
+  {
+    "date": "2024-12-30",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "16:15:44",
+    "time_end": "16:34:29",
+    "minutes": 19.0
+  },
+  {
+    "date": "2024-12-30",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "17:18:21",
+    "time_end": "17:20:02",
+    "minutes": 2.0
+  },
+  {
+    "date": "2024-12-31",
+    "task": "",
+    "task_done": false,
+    "time_start": "",
+    "time_end": "",
+    "minutes": 0.0
+  },
+  {
+    "date": "2025-01-01",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "10:47:43",
+    "time_end": "11:15:53",
+    "minutes": 28.0
+  },
+  {
+    "date": "2025-01-01",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "11:40:08",
+    "time_end": "11:58:40",
+    "minutes": 19.0
+  },
+  {
+    "date": "2025-01-01",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "12:25:47",
+    "time_end": "12:38:11",
+    "minutes": 12.0
+  },
+  {
+    "date": "2025-01-01",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "15:03:45",
+    "time_end": "15:18:30",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-01-01",
+    "task": "The curse of Chalion ",
+    "task_done": true,
+    "time_start": "19:38:14",
+    "time_end": "20:24:03",
+    "minutes": 46.0
+  },
+  {
+    "date": "2025-01-01",
+    "task": "Join me",
+    "task_done": false,
+    "time_start": "23:01:06",
+    "time_end": "23:10:28",
+    "minutes": 9.0
+  },
+  {
+    "date": "2025-01-01",
+    "task": "Join me",
+    "task_done": false,
+    "time_start": "23:17:32",
+    "time_end": "23:59:59",
+    "minutes": 42.0
+  },
+  {
+    "date": "2025-01-02",
+    "task": "Join me",
+    "task_done": false,
+    "time_start": "00:00:00",
+    "time_end": "00:00:01",
+    "minutes": 0.0
+  },
+  {
+    "date": "2025-01-02",
+    "task": "Join me",
+    "task_done": false,
+    "time_start": "09:39:48",
+    "time_end": "10:33:02",
+    "minutes": 53.0
   }
 ]
