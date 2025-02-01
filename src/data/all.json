@@ -28665,34 +28665,682 @@
   },
   {
     "date": "2025-01-01",
-    "task": "Join me",
-    "task_done": false,
+    "task": "Join me!",
+    "task_done": true,
     "time_start": "23:01:06",
     "time_end": "23:10:28",
     "minutes": 9.0
   },
   {
     "date": "2025-01-01",
-    "task": "Join me",
-    "task_done": false,
+    "task": "Join me!",
+    "task_done": true,
     "time_start": "23:17:32",
     "time_end": "23:59:59",
     "minutes": 42.0
   },
   {
     "date": "2025-01-02",
-    "task": "Join me",
-    "task_done": false,
-    "time_start": "00:00:00",
-    "time_end": "00:00:01",
-    "minutes": 0.0
-  },
-  {
-    "date": "2025-01-02",
-    "task": "Join me",
-    "task_done": false,
+    "task": "Join me!",
+    "task_done": true,
     "time_start": "09:39:48",
     "time_end": "10:33:02",
     "minutes": 53.0
+  },
+  {
+    "date": "2025-01-02",
+    "task": "Join me!",
+    "task_done": true,
+    "time_start": "13:48:56",
+    "time_end": "14:41:44",
+    "minutes": 53.0
+  },
+  {
+    "date": "2025-01-02",
+    "task": "Join me!",
+    "task_done": true,
+    "time_start": "21:40:41",
+    "time_end": "22:43:43",
+    "minutes": 63.0
+  },
+  {
+    "date": "2025-01-03",
+    "task": "Join me!",
+    "task_done": true,
+    "time_start": "08:18:34",
+    "time_end": "08:47:35",
+    "minutes": 29.0
+  },
+  {
+    "date": "2025-01-03",
+    "task": "Join me!",
+    "task_done": true,
+    "time_start": "12:05:41",
+    "time_end": "12:22:42",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-01-03",
+    "task": "Join me!",
+    "task_done": true,
+    "time_start": "13:42:36",
+    "time_end": "14:00:16",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-01-03",
+    "task": "Join me!",
+    "task_done": true,
+    "time_start": "14:09:35",
+    "time_end": "14:31:39",
+    "minutes": 22.0
+  },
+  {
+    "date": "2025-01-03",
+    "task": "Join me!",
+    "task_done": true,
+    "time_start": "17:42:19",
+    "time_end": "18:17:54",
+    "minutes": 36.0
+  },
+  {
+    "date": "2025-01-03",
+    "task": "Join me!",
+    "task_done": true,
+    "time_start": "21:52:24",
+    "time_end": "22:08:05",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-01-03",
+    "task": "Join me!",
+    "task_done": true,
+    "time_start": "22:19:31",
+    "time_end": "23:13:15",
+    "minutes": 54.0
+  },
+  {
+    "date": "2025-01-04",
+    "task": "Join me!",
+    "task_done": true,
+    "time_start": "08:11:59",
+    "time_end": "08:47:07",
+    "minutes": 35.0
+  },
+  {
+    "date": "2025-01-04",
+    "task": "Join me!",
+    "task_done": true,
+    "time_start": "11:04:43",
+    "time_end": "11:32:49",
+    "minutes": 28.0
+  },
+  {
+    "date": "2025-01-04",
+    "task": "Join me!",
+    "task_done": true,
+    "time_start": "14:33:00",
+    "time_end": "14:57:04",
+    "minutes": 24.0
+  },
+  {
+    "date": "2025-01-04",
+    "task": "Join me!",
+    "task_done": true,
+    "time_start": "15:26:27",
+    "time_end": "15:37:06",
+    "minutes": 11.0
+  },
+  {
+    "date": "2025-01-04",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "18:06:33",
+    "time_end": "18:13:57",
+    "minutes": 7.0
+  },
+  {
+    "date": "2025-01-04",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "18:21:11",
+    "time_end": "18:52:11",
+    "minutes": 31.0
+  },
+  {
+    "date": "2025-01-04",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "21:37:19",
+    "time_end": "22:00:23",
+    "minutes": 23.0
+  },
+  {
+    "date": "2025-01-05",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "09:03:48",
+    "time_end": "09:44:39",
+    "minutes": 41.0
+  },
+  {
+    "date": "2025-01-05",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "09:51:23",
+    "time_end": "10:12:23",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-01-05",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "10:26:37",
+    "time_end": "10:47:42",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-01-05",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "12:10:28",
+    "time_end": "12:52:17",
+    "minutes": 42.0
+  },
+  {
+    "date": "2025-01-05",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "14:22:30",
+    "time_end": "14:33:19",
+    "minutes": 11.0
+  },
+  {
+    "date": "2025-01-05",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "17:37:35",
+    "time_end": "17:53:28",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-01-05",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "22:26:06",
+    "time_end": "23:09:37",
+    "minutes": 44.0
+  },
+  {
+    "date": "2025-01-06",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "21:53:52",
+    "time_end": "23:19:17",
+    "minutes": 85.0
+  },
+  {
+    "date": "2025-01-07",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "22:22:07",
+    "time_end": "22:52:07",
+    "minutes": 30.0
+  },
+  {
+    "date": "2025-01-08",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "12:26:19",
+    "time_end": "12:55:25",
+    "minutes": 29.0
+  },
+  {
+    "date": "2025-01-08",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "12:57:26",
+    "time_end": "13:02:52",
+    "minutes": 5.0
+  },
+  {
+    "date": "2025-01-08",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "17:25:49",
+    "time_end": "17:41:50",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-01-08",
+    "task": "Martyr! ",
+    "task_done": true,
+    "time_start": "21:21:31",
+    "time_end": "22:02:01",
+    "minutes": 40.0
+  },
+  {
+    "date": "2025-01-08",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "22:24:29",
+    "time_end": "22:38:09",
+    "minutes": 14.0
+  },
+  {
+    "date": "2025-01-09",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "20:50:41",
+    "time_end": "23:59:59",
+    "minutes": 189.0
+  },
+  {
+    "date": "2025-01-10",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "09:03:07",
+    "time_end": "09:13:20",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-01-10",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "21:15:47",
+    "time_end": "22:25:59",
+    "minutes": 70.0
+  },
+  {
+    "date": "2025-01-10",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "22:46:49",
+    "time_end": "23:11:38",
+    "minutes": 25.0
+  },
+  {
+    "date": "2025-01-11",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "20:08:33",
+    "time_end": "20:21:12",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-01-11",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "21:23:32",
+    "time_end": "22:23:36",
+    "minutes": 60.0
+  },
+  {
+    "date": "2025-01-12",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "09:33:45",
+    "time_end": "10:40:41",
+    "minutes": 67.0
+  },
+  {
+    "date": "2025-01-12",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "10:53:29",
+    "time_end": "11:38:34",
+    "minutes": 45.0
+  },
+  {
+    "date": "2025-01-12",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "13:12:30",
+    "time_end": "13:54:05",
+    "minutes": 42.0
+  },
+  {
+    "date": "2025-01-12",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "21:44:28",
+    "time_end": "22:04:02",
+    "minutes": 20.0
+  },
+  {
+    "date": "2025-01-13",
+    "task": "",
+    "task_done": false,
+    "time_start": "",
+    "time_end": "",
+    "minutes": 0.0
+  },
+  {
+    "date": "2025-01-14",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "20:54:49",
+    "time_end": "21:59:46",
+    "minutes": 65.0
+  },
+  {
+    "date": "2025-01-15",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "08:31:29",
+    "time_end": "08:53:16",
+    "minutes": 22.0
+  },
+  {
+    "date": "2025-01-15",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "20:57:24",
+    "time_end": "22:22:51",
+    "minutes": 85.0
+  },
+  {
+    "date": "2025-01-16",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "08:37:31",
+    "time_end": "08:55:41",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-01-16",
+    "task": "Assassin's apprentice ",
+    "task_done": true,
+    "time_start": "17:40:42",
+    "time_end": "18:28:58",
+    "minutes": 48.0
+  },
+  {
+    "date": "2025-01-16",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "21:22:10",
+    "time_end": "22:03:45",
+    "minutes": 42.0
+  },
+  {
+    "date": "2025-01-17",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "08:44:07",
+    "time_end": "08:50:30",
+    "minutes": 6.0
+  },
+  {
+    "date": "2025-01-17",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "22:02:08",
+    "time_end": "23:04:00",
+    "minutes": 62.0
+  },
+  {
+    "date": "2025-01-18",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "09:29:46",
+    "time_end": "10:07:47",
+    "minutes": 38.0
+  },
+  {
+    "date": "2025-01-18",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "14:01:55",
+    "time_end": "14:16:06",
+    "minutes": 14.0
+  },
+  {
+    "date": "2025-01-18",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "14:25:25",
+    "time_end": "14:52:50",
+    "minutes": 27.0
+  },
+  {
+    "date": "2025-01-18",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "22:38:23",
+    "time_end": "23:35:14",
+    "minutes": 57.0
+  },
+  {
+    "date": "2025-01-19",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "09:26:30",
+    "time_end": "10:30:49",
+    "minutes": 64.0
+  },
+  {
+    "date": "2025-01-19",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "15:21:56",
+    "time_end": "15:49:09",
+    "minutes": 27.0
+  },
+  {
+    "date": "2025-01-19",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "21:09:55",
+    "time_end": "21:52:32",
+    "minutes": 43.0
+  },
+  {
+    "date": "2025-01-20",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "20:51:53",
+    "time_end": "22:39:47",
+    "minutes": 108.0
+  },
+  {
+    "date": "2025-01-21",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "08:40:41",
+    "time_end": "08:50:42",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-01-21",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "21:06:16",
+    "time_end": "21:51:00",
+    "minutes": 45.0
+  },
+  {
+    "date": "2025-01-22",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "17:51:46",
+    "time_end": "18:00:35",
+    "minutes": 9.0
+  },
+  {
+    "date": "2025-01-22",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "21:09:01",
+    "time_end": "22:17:09",
+    "minutes": 68.0
+  },
+  {
+    "date": "2025-01-23",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "21:10:11",
+    "time_end": "21:57:08",
+    "minutes": 47.0
+  },
+  {
+    "date": "2025-01-24",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "22:09:29",
+    "time_end": "23:03:26",
+    "minutes": 54.0
+  },
+  {
+    "date": "2025-01-25",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "09:17:19",
+    "time_end": "10:04:53",
+    "minutes": 48.0
+  },
+  {
+    "date": "2025-01-25",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "13:22:45",
+    "time_end": "13:28:37",
+    "minutes": 6.0
+  },
+  {
+    "date": "2025-01-25",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "14:35:18",
+    "time_end": "14:51:55",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-01-25",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "17:59:02",
+    "time_end": "18:42:52",
+    "minutes": 44.0
+  },
+  {
+    "date": "2025-01-25",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "22:43:45",
+    "time_end": "23:27:43",
+    "minutes": 44.0
+  },
+  {
+    "date": "2025-01-26",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "00:03:29",
+    "time_end": "00:11:57",
+    "minutes": 8.0
+  },
+  {
+    "date": "2025-01-26",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "09:30:49",
+    "time_end": "10:28:42",
+    "minutes": 58.0
+  },
+  {
+    "date": "2025-01-26",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "21:34:14",
+    "time_end": "22:02:08",
+    "minutes": 28.0
+  },
+  {
+    "date": "2025-01-27",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "08:32:54",
+    "time_end": "08:46:21",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-01-27",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "21:00:14",
+    "time_end": "22:12:24",
+    "minutes": 72.0
+  },
+  {
+    "date": "2025-01-27",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "22:46:39",
+    "time_end": "23:00:41",
+    "minutes": 14.0
+  },
+  {
+    "date": "2025-01-28",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "08:36:41",
+    "time_end": "08:51:10",
+    "minutes": 14.0
+  },
+  {
+    "date": "2025-01-28",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "21:08:37",
+    "time_end": "22:09:47",
+    "minutes": 61.0
+  },
+  {
+    "date": "2025-01-29",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "08:37:36",
+    "time_end": "08:56:21",
+    "minutes": 19.0
+  },
+  {
+    "date": "2025-01-29",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "17:53:25",
+    "time_end": "17:59:55",
+    "minutes": 6.0
+  },
+  {
+    "date": "2025-01-29",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "21:04:07",
+    "time_end": "21:58:11",
+    "minutes": 54.0
+  },
+  {
+    "date": "2025-01-30",
+    "task": "Royal assassin",
+    "task_done": true,
+    "time_start": "21:22:28",
+    "time_end": "22:24:52",
+    "minutes": 62.0
+  },
+  {
+    "date": "2025-01-31",
+    "task": "Assassin's quest",
+    "task_done": false,
+    "time_start": "08:41:36",
+    "time_end": "08:58:03",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-01-31",
+    "task": "Assassin's quest",
+    "task_done": false,
+    "time_start": "22:04:22",
+    "time_end": "22:43:18",
+    "minutes": 39.0
   }
 ]

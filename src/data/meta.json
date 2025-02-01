@@ -12,7 +12,9 @@
     "pubDate": "2017-04-01"
   },
   "L'insoutenable l\u00e9g\u00e8ret\u00e9 de l'\u00eatre": {
-    "GoodreadsID": "100999922",
+    "GoodreadsID": "54792456",
+    "ISBN": "9782072892",
+    "pages": 480,
     "pubDate": "1984-01-01"
   },
   "Lala pipo": {
@@ -744,6 +746,30 @@
     "ISBN": "9780375714",
     "pages": 880,
     "pubDate": "2015-01-01"
+  },
+  "Join me!": {
+    "GoodreadsID": "38485164",
+    "ISBN": "9780091895",
+    "pages": 400,
+    "pubDate": "2003-05-29"
+  },
+  "Martyr! ": {
+    "GoodreadsID": "139401966",
+    "ISBN": "9780593537",
+    "pages": 352,
+    "pubDate": "2024-01-23"
+  },
+  "Assassin's apprentice ": {
+    "GoodreadsID": "77197",
+    "ISBN": "9780553573",
+    "pages": 435,
+    "pubDate": "1995-05-01"
+  },
+  "Royal assassin": {
+    "GoodreadsID": "22016387",
+    "ISBN": "9780007562",
+    "pages": 648,
+    "pubDate": "1996-03-01"
   },
   "Lessons in chemistry ": {
     "GoodreadsID": "58065033",
