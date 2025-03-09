@@ -29330,7 +29330,7 @@
   {
     "date": "2025-01-31",
     "task": "Assassin's quest",
-    "task_done": false,
+    "task_done": true,
     "time_start": "08:41:36",
     "time_end": "08:58:03",
     "minutes": 16.0
@@ -29338,9 +29338,769 @@
   {
     "date": "2025-01-31",
     "task": "Assassin's quest",
-    "task_done": false,
+    "task_done": true,
     "time_start": "22:04:22",
     "time_end": "22:43:18",
     "minutes": 39.0
+  },
+  {
+    "date": "2025-02-01",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "09:18:04",
+    "time_end": "10:04:47",
+    "minutes": 47.0
+  },
+  {
+    "date": "2025-02-01",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "13:02:11",
+    "time_end": "13:24:05",
+    "minutes": 22.0
+  },
+  {
+    "date": "2025-02-01",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "15:59:32",
+    "time_end": "16:16:38",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-02-01",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "16:33:28",
+    "time_end": "16:43:19",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-02-01",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "16:49:46",
+    "time_end": "17:28:02",
+    "minutes": 38.0
+  },
+  {
+    "date": "2025-02-02",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "13:27:49",
+    "time_end": "13:51:00",
+    "minutes": 23.0
+  },
+  {
+    "date": "2025-02-02",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "14:14:48",
+    "time_end": "14:58:18",
+    "minutes": 44.0
+  },
+  {
+    "date": "2025-02-02",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "19:37:19",
+    "time_end": "20:01:18",
+    "minutes": 24.0
+  },
+  {
+    "date": "2025-02-02",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "21:49:25",
+    "time_end": "21:56:57",
+    "minutes": 8.0
+  },
+  {
+    "date": "2025-02-03",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "08:36:51",
+    "time_end": "08:50:12",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-02-03",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "21:24:04",
+    "time_end": "21:48:10",
+    "minutes": 24.0
+  },
+  {
+    "date": "2025-02-04",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "08:36:23",
+    "time_end": "08:43:45",
+    "minutes": 7.0
+  },
+  {
+    "date": "2025-02-04",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "21:05:46",
+    "time_end": "22:15:10",
+    "minutes": 69.0
+  },
+  {
+    "date": "2025-02-05",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "08:28:02",
+    "time_end": "08:32:20",
+    "minutes": 4.0
+  },
+  {
+    "date": "2025-02-05",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "08:36:55",
+    "time_end": "08:48:46",
+    "minutes": 12.0
+  },
+  {
+    "date": "2025-02-05",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "21:13:52",
+    "time_end": "22:06:27",
+    "minutes": 53.0
+  },
+  {
+    "date": "2025-02-06",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "08:39:12",
+    "time_end": "08:53:57",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-02-06",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "19:25:02",
+    "time_end": "19:52:35",
+    "minutes": 28.0
+  },
+  {
+    "date": "2025-02-06",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "21:16:37",
+    "time_end": "22:11:29",
+    "minutes": 55.0
+  },
+  {
+    "date": "2025-02-07",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "21:51:08",
+    "time_end": "23:30:59",
+    "minutes": 100.0
+  },
+  {
+    "date": "2025-02-08",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "09:17:54",
+    "time_end": "10:04:06",
+    "minutes": 46.0
+  },
+  {
+    "date": "2025-02-08",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "16:39:15",
+    "time_end": "17:10:41",
+    "minutes": 31.0
+  },
+  {
+    "date": "2025-02-08",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "23:04:31",
+    "time_end": "23:58:56",
+    "minutes": 54.0
+  },
+  {
+    "date": "2025-02-09",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "10:14:48",
+    "time_end": "10:30:24",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-02-09",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "14:32:32",
+    "time_end": "15:05:16",
+    "minutes": 33.0
+  },
+  {
+    "date": "2025-02-09",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "21:09:37",
+    "time_end": "22:29:17",
+    "minutes": 80.0
+  },
+  {
+    "date": "2025-02-10",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "08:37:59",
+    "time_end": "08:52:13",
+    "minutes": 14.0
+  },
+  {
+    "date": "2025-02-10",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "21:04:52",
+    "time_end": "21:55:36",
+    "minutes": 51.0
+  },
+  {
+    "date": "2025-02-11",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "08:33:24",
+    "time_end": "08:50:46",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-02-11",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "21:04:47",
+    "time_end": "22:16:29",
+    "minutes": 72.0
+  },
+  {
+    "date": "2025-02-12",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "08:42:12",
+    "time_end": "08:52:32",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-02-12",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "21:09:05",
+    "time_end": "22:47:17",
+    "minutes": 98.0
+  },
+  {
+    "date": "2025-02-13",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "21:32:15",
+    "time_end": "21:50:28",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-02-14",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "08:23:53",
+    "time_end": "08:45:50",
+    "minutes": 22.0
+  },
+  {
+    "date": "2025-02-14",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "22:13:38",
+    "time_end": "23:35:10",
+    "minutes": 82.0
+  },
+  {
+    "date": "2025-02-15",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "09:22:51",
+    "time_end": "10:07:41",
+    "minutes": 45.0
+  },
+  {
+    "date": "2025-02-15",
+    "task": "Assassin's quest",
+    "task_done": true,
+    "time_start": "22:06:08",
+    "time_end": "23:14:32",
+    "minutes": 68.0
+  },
+  {
+    "date": "2025-02-15",
+    "task": "Moi, lucifer",
+    "task_done": true,
+    "time_start": "23:43:48",
+    "time_end": "23:59:59",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-02-16",
+    "task": "Moi, lucifer",
+    "task_done": true,
+    "time_start": "09:43:26",
+    "time_end": "10:28:58",
+    "minutes": 46.0
+  },
+  {
+    "date": "2025-02-16",
+    "task": "Moi, lucifer",
+    "task_done": true,
+    "time_start": "14:01:23",
+    "time_end": "14:45:16",
+    "minutes": 44.0
+  },
+  {
+    "date": "2025-02-16",
+    "task": "Moi, lucifer",
+    "task_done": true,
+    "time_start": "21:21:23",
+    "time_end": "21:54:42",
+    "minutes": 33.0
+  },
+  {
+    "date": "2025-02-17",
+    "task": "Moi, lucifer",
+    "task_done": true,
+    "time_start": "08:37:46",
+    "time_end": "08:53:27",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-02-17",
+    "task": "Moi, lucifer",
+    "task_done": true,
+    "time_start": "21:03:07",
+    "time_end": "22:17:09",
+    "minutes": 74.0
+  },
+  {
+    "date": "2025-02-18",
+    "task": "Moi, lucifer",
+    "task_done": true,
+    "time_start": "08:34:16",
+    "time_end": "08:50:22",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-02-18",
+    "task": "Moi, lucifer",
+    "task_done": true,
+    "time_start": "20:24:20",
+    "time_end": "20:34:25",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-02-18",
+    "task": "Moi, lucifer",
+    "task_done": true,
+    "time_start": "21:13:14",
+    "time_end": "22:15:59",
+    "minutes": 63.0
+  },
+  {
+    "date": "2025-02-19",
+    "task": "Moi, lucifer",
+    "task_done": true,
+    "time_start": "21:10:04",
+    "time_end": "22:17:27",
+    "minutes": 67.0
+  },
+  {
+    "date": "2025-02-20",
+    "task": "Moi, lucifer",
+    "task_done": true,
+    "time_start": "20:50:04",
+    "time_end": "21:30:10",
+    "minutes": 40.0
+  },
+  {
+    "date": "2025-02-20",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "21:52:07",
+    "time_end": "22:27:16",
+    "minutes": 35.0
+  },
+  {
+    "date": "2025-02-21",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "08:10:58",
+    "time_end": "08:25:33",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-02-21",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "19:49:35",
+    "time_end": "20:25:10",
+    "minutes": 36.0
+  },
+  {
+    "date": "2025-02-21",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "21:53:35",
+    "time_end": "22:54:10",
+    "minutes": 61.0
+  },
+  {
+    "date": "2025-02-21",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "23:09:16",
+    "time_end": "23:30:28",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-02-22",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "08:17:05",
+    "time_end": "08:49:52",
+    "minutes": 33.0
+  },
+  {
+    "date": "2025-02-22",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "13:19:27",
+    "time_end": "13:48:58",
+    "minutes": 30.0
+  },
+  {
+    "date": "2025-02-22",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "22:19:41",
+    "time_end": "22:52:47",
+    "minutes": 33.0
+  },
+  {
+    "date": "2025-02-22",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "23:00:59",
+    "time_end": "23:24:45",
+    "minutes": 24.0
+  },
+  {
+    "date": "2025-02-23",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "09:31:50",
+    "time_end": "10:02:40",
+    "minutes": 31.0
+  },
+  {
+    "date": "2025-02-23",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "21:39:15",
+    "time_end": "22:29:42",
+    "minutes": 50.0
+  },
+  {
+    "date": "2025-02-24",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "08:38:44",
+    "time_end": "08:55:59",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-02-24",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "21:08:54",
+    "time_end": "22:17:10",
+    "minutes": 68.0
+  },
+  {
+    "date": "2025-02-25",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "08:33:14",
+    "time_end": "08:47:48",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-02-25",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "20:17:31",
+    "time_end": "20:25:49",
+    "minutes": 8.0
+  },
+  {
+    "date": "2025-02-25",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "21:24:34",
+    "time_end": "22:06:50",
+    "minutes": 42.0
+  },
+  {
+    "date": "2025-02-26",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "08:25:41",
+    "time_end": "08:43:10",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-02-26",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "20:55:28",
+    "time_end": "22:20:59",
+    "minutes": 86.0
+  },
+  {
+    "date": "2025-02-27",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "08:18:58",
+    "time_end": "08:31:58",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-02-27",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "21:26:20",
+    "time_end": "22:33:10",
+    "minutes": 67.0
+  },
+  {
+    "date": "2025-02-28",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "08:27:41",
+    "time_end": "08:42:58",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-02-28",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "22:09:51",
+    "time_end": "22:15:39",
+    "minutes": 6.0
+  },
+  {
+    "date": "2025-02-28",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "22:25:44",
+    "time_end": "23:05:24",
+    "minutes": 40.0
+  },
+  {
+    "date": "2025-03-01",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "09:20:45",
+    "time_end": "10:07:36",
+    "minutes": 47.0
+  },
+  {
+    "date": "2025-03-01",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "19:49:23",
+    "time_end": "20:16:25",
+    "minutes": 27.0
+  },
+  {
+    "date": "2025-03-01",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "22:02:21",
+    "time_end": "23:49:59",
+    "minutes": 108.0
+  },
+  {
+    "date": "2025-03-02",
+    "task": "The other Boleyn girl",
+    "task_done": true,
+    "time_start": "09:48:11",
+    "time_end": "10:29:55",
+    "minutes": 42.0
+  },
+  {
+    "date": "2025-03-02",
+    "task": "\u00c0 un fil",
+    "task_done": true,
+    "time_start": "10:43:13",
+    "time_end": "10:52:45",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-03-02",
+    "task": "\u00c0 un fil",
+    "task_done": true,
+    "time_start": "13:46:47",
+    "time_end": "14:57:57",
+    "minutes": 71.0
+  },
+  {
+    "date": "2025-03-02",
+    "task": "Neverwhere",
+    "task_done": true,
+    "time_start": "17:57:07",
+    "time_end": "18:29:25",
+    "minutes": 32.0
+  },
+  {
+    "date": "2025-03-02",
+    "task": "Neverwhere",
+    "task_done": true,
+    "time_start": "21:37:34",
+    "time_end": "22:37:44",
+    "minutes": 60.0
+  },
+  {
+    "date": "2025-03-03",
+    "task": "Neverwhere",
+    "task_done": true,
+    "time_start": "21:19:46",
+    "time_end": "22:10:25",
+    "minutes": 51.0
+  },
+  {
+    "date": "2025-03-04",
+    "task": "Neverwhere",
+    "task_done": true,
+    "time_start": "19:59:59",
+    "time_end": "20:16:02",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-03-04",
+    "task": "Neverwhere",
+    "task_done": true,
+    "time_start": "21:15:51",
+    "time_end": "21:58:14",
+    "minutes": 42.0
+  },
+  {
+    "date": "2025-03-05",
+    "task": "Neverwhere",
+    "task_done": true,
+    "time_start": "15:30:39",
+    "time_end": "16:00:23",
+    "minutes": 30.0
+  },
+  {
+    "date": "2025-03-05",
+    "task": "Neverwhere",
+    "task_done": true,
+    "time_start": "17:50:11",
+    "time_end": "17:54:32",
+    "minutes": 4.0
+  },
+  {
+    "date": "2025-03-05",
+    "task": "Neverwhere",
+    "task_done": true,
+    "time_start": "20:57:45",
+    "time_end": "22:06:30",
+    "minutes": 69.0
+  },
+  {
+    "date": "2025-03-06",
+    "task": "Neverwhere",
+    "task_done": true,
+    "time_start": "21:29:20",
+    "time_end": "22:40:59",
+    "minutes": 72.0
+  },
+  {
+    "date": "2025-03-07",
+    "task": "Neverwhere",
+    "task_done": true,
+    "time_start": "13:55:30",
+    "time_end": "14:12:41",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-03-07",
+    "task": "Neverwhere",
+    "task_done": true,
+    "time_start": "21:52:52",
+    "time_end": "22:37:10",
+    "minutes": 44.0
+  },
+  {
+    "date": "2025-03-07",
+    "task": "The orphan's master son",
+    "task_done": false,
+    "time_start": "22:52:53",
+    "time_end": "23:43:46",
+    "minutes": 51.0
+  },
+  {
+    "date": "2025-03-08",
+    "task": "The orphan's master son",
+    "task_done": false,
+    "time_start": "09:14:44",
+    "time_end": "10:07:15",
+    "minutes": 53.0
+  },
+  {
+    "date": "2025-03-08",
+    "task": "The orphan's master son",
+    "task_done": false,
+    "time_start": "15:27:10",
+    "time_end": "15:35:59",
+    "minutes": 9.0
+  },
+  {
+    "date": "2025-03-08",
+    "task": "The orphan's master son",
+    "task_done": false,
+    "time_start": "15:58:29",
+    "time_end": "16:55:03",
+    "minutes": 57.0
+  },
+  {
+    "date": "2025-03-08",
+    "task": "The orphan's master son",
+    "task_done": false,
+    "time_start": "21:30:17",
+    "time_end": "21:50:57",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-03-08",
+    "task": "The orphan's master son",
+    "task_done": false,
+    "time_start": "22:18:34",
+    "time_end": "23:04:07",
+    "minutes": 46.0
+  },
+  {
+    "date": "2025-03-08",
+    "task": "The orphan's master son",
+    "task_done": false,
+    "time_start": "23:12:49",
+    "time_end": "23:47:03",
+    "minutes": 34.0
   }
 ]
