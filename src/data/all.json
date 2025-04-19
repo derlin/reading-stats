@@ -30049,58 +30049,1170 @@
   },
   {
     "date": "2025-03-07",
-    "task": "The orphan's master son",
-    "task_done": false,
+    "task": "The orphan master's son",
+    "task_done": true,
     "time_start": "22:52:53",
     "time_end": "23:43:46",
     "minutes": 51.0
   },
   {
     "date": "2025-03-08",
-    "task": "The orphan's master son",
-    "task_done": false,
+    "task": "The orphan master's son",
+    "task_done": true,
     "time_start": "09:14:44",
     "time_end": "10:07:15",
     "minutes": 53.0
   },
   {
     "date": "2025-03-08",
-    "task": "The orphan's master son",
-    "task_done": false,
+    "task": "The orphan master's son",
+    "task_done": true,
     "time_start": "15:27:10",
     "time_end": "15:35:59",
     "minutes": 9.0
   },
   {
     "date": "2025-03-08",
-    "task": "The orphan's master son",
-    "task_done": false,
+    "task": "The orphan master's son",
+    "task_done": true,
     "time_start": "15:58:29",
     "time_end": "16:55:03",
     "minutes": 57.0
   },
   {
     "date": "2025-03-08",
-    "task": "The orphan's master son",
-    "task_done": false,
+    "task": "The orphan master's son",
+    "task_done": true,
     "time_start": "21:30:17",
     "time_end": "21:50:57",
     "minutes": 21.0
   },
   {
     "date": "2025-03-08",
-    "task": "The orphan's master son",
-    "task_done": false,
+    "task": "The orphan master's son",
+    "task_done": true,
     "time_start": "22:18:34",
     "time_end": "23:04:07",
     "minutes": 46.0
   },
   {
     "date": "2025-03-08",
-    "task": "The orphan's master son",
-    "task_done": false,
+    "task": "The orphan master's son",
+    "task_done": true,
     "time_start": "23:12:49",
     "time_end": "23:47:03",
     "minutes": 34.0
+  },
+  {
+    "date": "2025-03-09",
+    "task": "The orphan master's son",
+    "task_done": true,
+    "time_start": "09:31:01",
+    "time_end": "10:51:49",
+    "minutes": 81.0
+  },
+  {
+    "date": "2025-03-09",
+    "task": "The orphan master's son",
+    "task_done": true,
+    "time_start": "13:43:31",
+    "time_end": "15:25:51",
+    "minutes": 102.0
+  },
+  {
+    "date": "2025-03-09",
+    "task": "The orphan master's son",
+    "task_done": true,
+    "time_start": "21:27:33",
+    "time_end": "22:47:33",
+    "minutes": 80.0
+  },
+  {
+    "date": "2025-03-10",
+    "task": "The orphan master's son",
+    "task_done": true,
+    "time_start": "08:33:06",
+    "time_end": "08:38:25",
+    "minutes": 5.0
+  },
+  {
+    "date": "2025-03-10",
+    "task": "The orphan master's son",
+    "task_done": true,
+    "time_start": "21:00:33",
+    "time_end": "22:35:07",
+    "minutes": 95.0
+  },
+  {
+    "date": "2025-03-11",
+    "task": "The orphan master's son",
+    "task_done": true,
+    "time_start": "08:34:15",
+    "time_end": "08:52:22",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-03-11",
+    "task": "The orphan master's son",
+    "task_done": true,
+    "time_start": "14:04:26",
+    "time_end": "14:29:10",
+    "minutes": 25.0
+  },
+  {
+    "date": "2025-03-11",
+    "task": "The orphan master's son",
+    "task_done": true,
+    "time_start": "21:23:57",
+    "time_end": "22:42:33",
+    "minutes": 79.0
+  },
+  {
+    "date": "2025-03-12",
+    "task": "The orphan master's son",
+    "task_done": true,
+    "time_start": "08:28:31",
+    "time_end": "08:47:32",
+    "minutes": 19.0
+  },
+  {
+    "date": "2025-03-12",
+    "task": "The orphan master's son",
+    "task_done": true,
+    "time_start": "17:49:56",
+    "time_end": "17:59:55",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-03-12",
+    "task": "The orphan master's son",
+    "task_done": true,
+    "time_start": "21:04:31",
+    "time_end": "22:37:07",
+    "minutes": 93.0
+  },
+  {
+    "date": "2025-03-13",
+    "task": "Shark heart",
+    "task_done": true,
+    "time_start": "08:15:54",
+    "time_end": "08:51:09",
+    "minutes": 35.0
+  },
+  {
+    "date": "2025-03-13",
+    "task": "Shark heart",
+    "task_done": true,
+    "time_start": "19:07:06",
+    "time_end": "19:45:31",
+    "minutes": 38.0
+  },
+  {
+    "date": "2025-03-13",
+    "task": "Shark heart",
+    "task_done": true,
+    "time_start": "21:22:39",
+    "time_end": "22:20:46",
+    "minutes": 58.0
+  },
+  {
+    "date": "2025-03-14",
+    "task": "Shark heart",
+    "task_done": true,
+    "time_start": "08:29:33",
+    "time_end": "09:37:10",
+    "minutes": 68.0
+  },
+  {
+    "date": "2025-03-14",
+    "task": "Shark heart",
+    "task_done": true,
+    "time_start": "11:35:34",
+    "time_end": "11:39:05",
+    "minutes": 4.0
+  },
+  {
+    "date": "2025-03-14",
+    "task": "Shark heart",
+    "task_done": true,
+    "time_start": "13:33:54",
+    "time_end": "13:52:25",
+    "minutes": 19.0
+  },
+  {
+    "date": "2025-03-14",
+    "task": "Shark heart",
+    "task_done": true,
+    "time_start": "14:25:29",
+    "time_end": "15:17:38",
+    "minutes": 52.0
+  },
+  {
+    "date": "2025-03-14",
+    "task": "Shark heart",
+    "task_done": true,
+    "time_start": "20:15:18",
+    "time_end": "20:33:41",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-03-14",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "20:35:58",
+    "time_end": "20:57:14",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-03-14",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "22:11:15",
+    "time_end": "22:31:41",
+    "minutes": 20.0
+  },
+  {
+    "date": "2025-03-14",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "22:41:39",
+    "time_end": "23:25:54",
+    "minutes": 44.0
+  },
+  {
+    "date": "2025-03-15",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "09:09:37",
+    "time_end": "10:05:42",
+    "minutes": 56.0
+  },
+  {
+    "date": "2025-03-15",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "13:27:53",
+    "time_end": "14:41:13",
+    "minutes": 73.0
+  },
+  {
+    "date": "2025-03-15",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "21:56:36",
+    "time_end": "23:21:59",
+    "minutes": 85.0
+  },
+  {
+    "date": "2025-03-16",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "09:20:27",
+    "time_end": "09:44:56",
+    "minutes": 24.0
+  },
+  {
+    "date": "2025-03-16",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "13:41:50",
+    "time_end": "13:46:26",
+    "minutes": 5.0
+  },
+  {
+    "date": "2025-03-16",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "14:02:30",
+    "time_end": "14:24:23",
+    "minutes": 22.0
+  },
+  {
+    "date": "2025-03-16",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "19:22:51",
+    "time_end": "19:41:26",
+    "minutes": 19.0
+  },
+  {
+    "date": "2025-03-16",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "21:26:56",
+    "time_end": "22:53:27",
+    "minutes": 87.0
+  },
+  {
+    "date": "2025-03-17",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "08:26:55",
+    "time_end": "08:48:05",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-03-17",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "20:56:57",
+    "time_end": "22:29:16",
+    "minutes": 92.0
+  },
+  {
+    "date": "2025-03-18",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "08:30:37",
+    "time_end": "08:43:20",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-03-18",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "21:27:00",
+    "time_end": "22:21:45",
+    "minutes": 55.0
+  },
+  {
+    "date": "2025-03-19",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "08:38:47",
+    "time_end": "08:51:55",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-03-19",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "17:48:45",
+    "time_end": "18:00:56",
+    "minutes": 12.0
+  },
+  {
+    "date": "2025-03-19",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "21:03:04",
+    "time_end": "22:17:43",
+    "minutes": 75.0
+  },
+  {
+    "date": "2025-03-20",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "13:20:12",
+    "time_end": "13:32:19",
+    "minutes": 12.0
+  },
+  {
+    "date": "2025-03-20",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "13:46:59",
+    "time_end": "14:02:26",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-03-20",
+    "task": "The shadow of the wind",
+    "task_done": true,
+    "time_start": "20:32:14",
+    "time_end": "20:37:11",
+    "minutes": 5.0
+  },
+  {
+    "date": "2025-03-20",
+    "task": "Parable of the sower",
+    "task_done": true,
+    "time_start": "20:43:37",
+    "time_end": "21:56:54",
+    "minutes": 73.0
+  },
+  {
+    "date": "2025-03-21",
+    "task": "Parable of the sower",
+    "task_done": true,
+    "time_start": "12:05:16",
+    "time_end": "12:18:26",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-03-21",
+    "task": "Parable of the sower",
+    "task_done": true,
+    "time_start": "13:15:23",
+    "time_end": "13:33:40",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-03-21",
+    "task": "Parable of the sower",
+    "task_done": true,
+    "time_start": "21:42:14",
+    "time_end": "22:55:30",
+    "minutes": 73.0
+  },
+  {
+    "date": "2025-03-22",
+    "task": "Parable of the sower",
+    "task_done": true,
+    "time_start": "08:24:30",
+    "time_end": "08:58:38",
+    "minutes": 34.0
+  },
+  {
+    "date": "2025-03-22",
+    "task": "Parable of the sower",
+    "task_done": true,
+    "time_start": "13:21:39",
+    "time_end": "14:39:14",
+    "minutes": 78.0
+  },
+  {
+    "date": "2025-03-22",
+    "task": "Parable of the sower",
+    "task_done": true,
+    "time_start": "23:51:43",
+    "time_end": "23:59:59",
+    "minutes": 8.0
+  },
+  {
+    "date": "2025-03-23",
+    "task": "Parable of the sower",
+    "task_done": true,
+    "time_start": "00:00:00",
+    "time_end": "00:48:03",
+    "minutes": 48.0
+  },
+  {
+    "date": "2025-03-23",
+    "task": "Parable of the sower",
+    "task_done": true,
+    "time_start": "09:50:39",
+    "time_end": "10:42:07",
+    "minutes": 51.0
+  },
+  {
+    "date": "2025-03-23",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "13:42:18",
+    "time_end": "14:42:23",
+    "minutes": 60.0
+  },
+  {
+    "date": "2025-03-23",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "21:30:24",
+    "time_end": "23:38:52",
+    "minutes": 128.0
+  },
+  {
+    "date": "2025-03-24",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "08:48:27",
+    "time_end": "09:36:26",
+    "minutes": 48.0
+  },
+  {
+    "date": "2025-03-24",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "21:09:50",
+    "time_end": "21:17:04",
+    "minutes": 7.0
+  },
+  {
+    "date": "2025-03-24",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "21:51:17",
+    "time_end": "22:56:10",
+    "minutes": 65.0
+  },
+  {
+    "date": "2025-03-25",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "08:42:48",
+    "time_end": "09:02:11",
+    "minutes": 19.0
+  },
+  {
+    "date": "2025-03-25",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "09:21:29",
+    "time_end": "09:36:46",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-03-25",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "11:27:04",
+    "time_end": "11:34:54",
+    "minutes": 8.0
+  },
+  {
+    "date": "2025-03-25",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "13:26:35",
+    "time_end": "14:07:16",
+    "minutes": 41.0
+  },
+  {
+    "date": "2025-03-25",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "22:00:16",
+    "time_end": "23:09:45",
+    "minutes": 69.0
+  },
+  {
+    "date": "2025-03-26",
+    "task": "The Cambridge companion to fantasy",
+    "task_done": false,
+    "time_start": "08:50:08",
+    "time_end": "09:19:41",
+    "minutes": 30.0
+  },
+  {
+    "date": "2025-03-26",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "09:26:29",
+    "time_end": "09:36:46",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-03-26",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "13:29:48",
+    "time_end": "14:01:18",
+    "minutes": 32.0
+  },
+  {
+    "date": "2025-03-26",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "17:50:21",
+    "time_end": "17:58:03",
+    "minutes": 8.0
+  },
+  {
+    "date": "2025-03-26",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "21:13:01",
+    "time_end": "22:46:14",
+    "minutes": 93.0
+  },
+  {
+    "date": "2025-03-27",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "08:13:16",
+    "time_end": "08:48:57",
+    "minutes": 36.0
+  },
+  {
+    "date": "2025-03-27",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "16:05:22",
+    "time_end": "16:25:57",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-03-27",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "20:24:03",
+    "time_end": "20:39:50",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-03-27",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "21:55:54",
+    "time_end": "23:46:59",
+    "minutes": 111.0
+  },
+  {
+    "date": "2025-03-28",
+    "task": "The Cambridge companion to fantasy",
+    "task_done": false,
+    "time_start": "08:39:14",
+    "time_end": "09:00:26",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-03-28",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "09:01:03",
+    "time_end": "09:22:28",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-03-28",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "13:35:56",
+    "time_end": "14:11:29",
+    "minutes": 36.0
+  },
+  {
+    "date": "2025-03-28",
+    "task": "The alienist",
+    "task_done": true,
+    "time_start": "14:20:54",
+    "time_end": "14:55:02",
+    "minutes": 34.0
+  },
+  {
+    "date": "2025-03-28",
+    "task": "James",
+    "task_done": true,
+    "time_start": "15:26:26",
+    "time_end": "15:40:41",
+    "minutes": 14.0
+  },
+  {
+    "date": "2025-03-28",
+    "task": "James",
+    "task_done": true,
+    "time_start": "21:45:50",
+    "time_end": "22:25:44",
+    "minutes": 40.0
+  },
+  {
+    "date": "2025-03-28",
+    "task": "James",
+    "task_done": true,
+    "time_start": "22:33:50",
+    "time_end": "23:04:46",
+    "minutes": 31.0
+  },
+  {
+    "date": "2025-03-29",
+    "task": "James",
+    "task_done": true,
+    "time_start": "09:06:28",
+    "time_end": "10:03:13",
+    "minutes": 57.0
+  },
+  {
+    "date": "2025-03-29",
+    "task": "James",
+    "task_done": true,
+    "time_start": "13:48:59",
+    "time_end": "14:23:51",
+    "minutes": 35.0
+  },
+  {
+    "date": "2025-03-29",
+    "task": "James",
+    "task_done": true,
+    "time_start": "21:43:56",
+    "time_end": "22:57:55",
+    "minutes": 74.0
+  },
+  {
+    "date": "2025-03-29",
+    "task": "James",
+    "task_done": true,
+    "time_start": "23:08:01",
+    "time_end": "23:34:05",
+    "minutes": 26.0
+  },
+  {
+    "date": "2025-03-30",
+    "task": "James",
+    "task_done": true,
+    "time_start": "09:49:41",
+    "time_end": "10:16:51",
+    "minutes": 27.0
+  },
+  {
+    "date": "2025-03-30",
+    "task": "James",
+    "task_done": true,
+    "time_start": "19:39:45",
+    "time_end": "19:46:27",
+    "minutes": 7.0
+  },
+  {
+    "date": "2025-03-30",
+    "task": "Stella et l'Am\u00e9rique ",
+    "task_done": true,
+    "time_start": "21:22:04",
+    "time_end": "22:10:31",
+    "minutes": 48.0
+  },
+  {
+    "date": "2025-03-31",
+    "task": "Stella et l'Am\u00e9rique ",
+    "task_done": true,
+    "time_start": "21:11:28",
+    "time_end": "22:12:56",
+    "minutes": 61.0
+  },
+  {
+    "date": "2025-04-01",
+    "task": "Stella et l'Am\u00e9rique ",
+    "task_done": true,
+    "time_start": "19:56:47",
+    "time_end": "20:25:55",
+    "minutes": 29.0
+  },
+  {
+    "date": "2025-04-01",
+    "task": "Stella et l'Am\u00e9rique ",
+    "task_done": true,
+    "time_start": "21:27:35",
+    "time_end": "22:12:22",
+    "minutes": 45.0
+  },
+  {
+    "date": "2025-04-02",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "08:01:27",
+    "time_end": "08:40:30",
+    "minutes": 39.0
+  },
+  {
+    "date": "2025-04-02",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "17:48:38",
+    "time_end": "18:00:22",
+    "minutes": 12.0
+  },
+  {
+    "date": "2025-04-02",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "21:04:55",
+    "time_end": "22:22:45",
+    "minutes": 78.0
+  },
+  {
+    "date": "2025-04-03",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "08:35:04",
+    "time_end": "08:50:10",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-04-03",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "21:20:48",
+    "time_end": "22:13:02",
+    "minutes": 52.0
+  },
+  {
+    "date": "2025-04-04",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "13:14:12",
+    "time_end": "13:57:24",
+    "minutes": 43.0
+  },
+  {
+    "date": "2025-04-04",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "14:12:17",
+    "time_end": "15:38:03",
+    "minutes": 86.0
+  },
+  {
+    "date": "2025-04-04",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "15:49:10",
+    "time_end": "16:07:23",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-04-04",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "18:46:01",
+    "time_end": "18:56:21",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-04-04",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "18:59:57",
+    "time_end": "19:14:04",
+    "minutes": 14.0
+  },
+  {
+    "date": "2025-04-04",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "21:21:51",
+    "time_end": "22:10:03",
+    "minutes": 48.0
+  },
+  {
+    "date": "2025-04-05",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "16:21:59",
+    "time_end": "16:47:24",
+    "minutes": 25.0
+  },
+  {
+    "date": "2025-04-05",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "17:03:22",
+    "time_end": "17:23:55",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-04-05",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "18:11:41",
+    "time_end": "18:57:06",
+    "minutes": 45.0
+  },
+  {
+    "date": "2025-04-05",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "19:12:07",
+    "time_end": "19:16:31",
+    "minutes": 4.0
+  },
+  {
+    "date": "2025-04-05",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "22:55:49",
+    "time_end": "23:13:27",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-04-06",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "08:19:42",
+    "time_end": "09:04:41",
+    "minutes": 45.0
+  },
+  {
+    "date": "2025-04-06",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "13:23:03",
+    "time_end": "14:14:15",
+    "minutes": 51.0
+  },
+  {
+    "date": "2025-04-06",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "21:23:23",
+    "time_end": "22:06:13",
+    "minutes": 43.0
+  },
+  {
+    "date": "2025-04-07",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "21:11:08",
+    "time_end": "22:21:24",
+    "minutes": 70.0
+  },
+  {
+    "date": "2025-04-08",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "07:28:19",
+    "time_end": "07:48:27",
+    "minutes": 20.0
+  },
+  {
+    "date": "2025-04-08",
+    "task": "Le monde selon Garp",
+    "task_done": true,
+    "time_start": "17:56:20",
+    "time_end": "19:23:44",
+    "minutes": 87.0
+  },
+  {
+    "date": "2025-04-08",
+    "task": "Kalloca\u00efne",
+    "task_done": true,
+    "time_start": "21:17:37",
+    "time_end": "21:57:59",
+    "minutes": 40.0
+  },
+  {
+    "date": "2025-04-09",
+    "task": "Kalloca\u00efne",
+    "task_done": true,
+    "time_start": "17:46:06",
+    "time_end": "17:59:20",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-04-09",
+    "task": "Kalloca\u00efne",
+    "task_done": true,
+    "time_start": "21:21:12",
+    "time_end": "22:21:58",
+    "minutes": 61.0
+  },
+  {
+    "date": "2025-04-10",
+    "task": "Kalloca\u00efne",
+    "task_done": true,
+    "time_start": "21:02:04",
+    "time_end": "22:25:06",
+    "minutes": 83.0
+  },
+  {
+    "date": "2025-04-11",
+    "task": "Kalloca\u00efne",
+    "task_done": true,
+    "time_start": "08:20:24",
+    "time_end": "08:40:20",
+    "minutes": 20.0
+  },
+  {
+    "date": "2025-04-11",
+    "task": "Kalloca\u00efne",
+    "task_done": true,
+    "time_start": "13:27:22",
+    "time_end": "13:48:55",
+    "minutes": 22.0
+  },
+  {
+    "date": "2025-04-11",
+    "task": "Kalloca\u00efne",
+    "task_done": true,
+    "time_start": "22:42:41",
+    "time_end": "22:55:21",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-04-11",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "23:05:53",
+    "time_end": "23:26:47",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-04-12",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "09:50:51",
+    "time_end": "09:51:37",
+    "minutes": 1.0
+  },
+  {
+    "date": "2025-04-12",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "09:57:41",
+    "time_end": "10:07:18",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-04-12",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "10:59:45",
+    "time_end": "11:41:09",
+    "minutes": 41.0
+  },
+  {
+    "date": "2025-04-12",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "17:39:22",
+    "time_end": "18:27:51",
+    "minutes": 48.0
+  },
+  {
+    "date": "2025-04-12",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "21:55:38",
+    "time_end": "23:26:03",
+    "minutes": 90.0
+  },
+  {
+    "date": "2025-04-13",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "08:23:26",
+    "time_end": "09:01:30",
+    "minutes": 38.0
+  },
+  {
+    "date": "2025-04-13",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "19:08:10",
+    "time_end": "20:05:43",
+    "minutes": 58.0
+  },
+  {
+    "date": "2025-04-13",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "21:38:08",
+    "time_end": "22:09:18",
+    "minutes": 31.0
+  },
+  {
+    "date": "2025-04-14",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "21:17:08",
+    "time_end": "22:19:37",
+    "minutes": 62.0
+  },
+  {
+    "date": "2025-04-15",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "15:30:45",
+    "time_end": "15:50:19",
+    "minutes": 20.0
+  },
+  {
+    "date": "2025-04-15",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "21:20:40",
+    "time_end": "22:14:17",
+    "minutes": 54.0
+  },
+  {
+    "date": "2025-04-16",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "17:49:58",
+    "time_end": "17:58:23",
+    "minutes": 8.0
+  },
+  {
+    "date": "2025-04-16",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "21:11:15",
+    "time_end": "22:18:07",
+    "minutes": 67.0
+  },
+  {
+    "date": "2025-04-17",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "08:24:59",
+    "time_end": "08:40:06",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-04-17",
+    "task": "Legend",
+    "task_done": true,
+    "time_start": "15:36:23",
+    "time_end": "15:37:28",
+    "minutes": 1.0
+  },
+  {
+    "date": "2025-04-17",
+    "task": "In the flesh",
+    "task_done": true,
+    "time_start": "15:40:12",
+    "time_end": "16:05:12",
+    "minutes": 25.0
+  },
+  {
+    "date": "2025-04-17",
+    "task": "In the flesh",
+    "task_done": true,
+    "time_start": "18:11:41",
+    "time_end": "18:20:51",
+    "minutes": 9.0
+  },
+  {
+    "date": "2025-04-17",
+    "task": "In the flesh",
+    "task_done": true,
+    "time_start": "22:05:14",
+    "time_end": "22:37:21",
+    "minutes": 32.0
+  },
+  {
+    "date": "2025-04-17",
+    "task": "In the flesh",
+    "task_done": true,
+    "time_start": "22:54:27",
+    "time_end": "23:07:24",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-04-17",
+    "task": "In the flesh",
+    "task_done": true,
+    "time_start": "23:25:20",
+    "time_end": "23:49:22",
+    "minutes": 24.0
+  },
+  {
+    "date": "2025-04-18",
+    "task": "In the flesh",
+    "task_done": true,
+    "time_start": "10:29:52",
+    "time_end": "11:12:37",
+    "minutes": 43.0
+  },
+  {
+    "date": "2025-04-18",
+    "task": "In the flesh",
+    "task_done": true,
+    "time_start": "17:40:55",
+    "time_end": "17:53:22",
+    "minutes": 12.0
+  },
+  {
+    "date": "2025-04-18",
+    "task": "In the flesh",
+    "task_done": true,
+    "time_start": "19:34:19",
+    "time_end": "20:19:26",
+    "minutes": 45.0
+  },
+  {
+    "date": "2025-04-18",
+    "task": "In the flesh",
+    "task_done": true,
+    "time_start": "22:51:51",
+    "time_end": "23:26:44",
+    "minutes": 35.0
   }
 ]
