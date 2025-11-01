@@ -33818,7 +33818,7 @@
   {
     "date": "2025-08-22",
     "task": "Therapy",
-    "task_done": false,
+    "task_done": true,
     "time_start": "22:35:53",
     "time_end": "23:59:59",
     "minutes": 84.0
@@ -33826,7 +33826,7 @@
   {
     "date": "2025-08-23",
     "task": "Therapy",
-    "task_done": false,
+    "task_done": true,
     "time_start": "00:00:00",
     "time_end": "00:08:04",
     "minutes": 8.0
@@ -33834,7 +33834,7 @@
   {
     "date": "2025-08-23",
     "task": "Therapy",
-    "task_done": false,
+    "task_done": true,
     "time_start": "08:14:02",
     "time_end": "08:48:27",
     "minutes": 34.0
@@ -33842,7 +33842,7 @@
   {
     "date": "2025-08-23",
     "task": "Therapy",
-    "task_done": false,
+    "task_done": true,
     "time_start": "13:22:29",
     "time_end": "13:44:38",
     "minutes": 22.0
@@ -33850,7 +33850,7 @@
   {
     "date": "2025-08-23",
     "task": "Therapy",
-    "task_done": false,
+    "task_done": true,
     "time_start": "17:53:09",
     "time_end": "18:03:55",
     "minutes": 11.0
@@ -33858,7 +33858,7 @@
   {
     "date": "2025-08-23",
     "task": "Therapy",
-    "task_done": false,
+    "task_done": true,
     "time_start": "18:13:51",
     "time_end": "18:34:33",
     "minutes": 21.0
@@ -33866,7 +33866,7 @@
   {
     "date": "2025-08-23",
     "task": "Therapy",
-    "task_done": false,
+    "task_done": true,
     "time_start": "23:13:39",
     "time_end": "23:36:46",
     "minutes": 23.0
@@ -33874,7 +33874,7 @@
   {
     "date": "2025-08-24",
     "task": "Therapy",
-    "task_done": false,
+    "task_done": true,
     "time_start": "09:50:52",
     "time_end": "10:16:08",
     "minutes": 25.0
@@ -33882,7 +33882,7 @@
   {
     "date": "2025-08-24",
     "task": "Therapy",
-    "task_done": false,
+    "task_done": true,
     "time_start": "13:36:09",
     "time_end": "14:23:51",
     "minutes": 48.0
@@ -33890,7 +33890,7 @@
   {
     "date": "2025-08-24",
     "task": "Therapy",
-    "task_done": false,
+    "task_done": true,
     "time_start": "21:11:07",
     "time_end": "21:39:53",
     "minutes": 29.0
@@ -33898,7 +33898,7 @@
   {
     "date": "2025-08-24",
     "task": "Therapy",
-    "task_done": false,
+    "task_done": true,
     "time_start": "21:58:59",
     "time_end": "22:31:15",
     "minutes": 32.0
@@ -33906,9 +33906,1265 @@
   {
     "date": "2025-08-25",
     "task": "Therapy",
-    "task_done": false,
+    "task_done": true,
     "time_start": "21:03:53",
     "time_end": "22:32:46",
     "minutes": 89.0
+  },
+  {
+    "date": "2025-08-26",
+    "task": "",
+    "task_done": false,
+    "time_start": "",
+    "time_end": "",
+    "minutes": 0.0
+  },
+  {
+    "date": "2025-08-27",
+    "task": "Therapy",
+    "task_done": true,
+    "time_start": "20:57:22",
+    "time_end": "22:54:36",
+    "minutes": 117.0
+  },
+  {
+    "date": "2025-08-28",
+    "task": "Therapy",
+    "task_done": true,
+    "time_start": "21:03:24",
+    "time_end": "21:15:29",
+    "minutes": 12.0
+  },
+  {
+    "date": "2025-08-28",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "21:24:15",
+    "time_end": "23:08:02",
+    "minutes": 104.0
+  },
+  {
+    "date": "2025-08-29",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "22:02:50",
+    "time_end": "22:25:58",
+    "minutes": 23.0
+  },
+  {
+    "date": "2025-08-29",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "23:02:24",
+    "time_end": "23:19:18",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-08-30",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "09:12:33",
+    "time_end": "10:09:30",
+    "minutes": 57.0
+  },
+  {
+    "date": "2025-08-30",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "21:35:07",
+    "time_end": "22:20:25",
+    "minutes": 45.0
+  },
+  {
+    "date": "2025-08-30",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "22:37:44",
+    "time_end": "22:48:06",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-08-31",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "09:03:27",
+    "time_end": "09:37:22",
+    "minutes": 34.0
+  },
+  {
+    "date": "2025-08-31",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "09:45:07",
+    "time_end": "10:30:09",
+    "minutes": 45.0
+  },
+  {
+    "date": "2025-08-31",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "16:59:10",
+    "time_end": "17:19:21",
+    "minutes": 20.0
+  },
+  {
+    "date": "2025-08-31",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "17:44:04",
+    "time_end": "18:06:19",
+    "minutes": 22.0
+  },
+  {
+    "date": "2025-08-31",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "21:27:14",
+    "time_end": "21:52:19",
+    "minutes": 25.0
+  },
+  {
+    "date": "2025-08-31",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "22:13:29",
+    "time_end": "22:37:21",
+    "minutes": 24.0
+  },
+  {
+    "date": "2025-09-01",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "21:10:50",
+    "time_end": "21:37:19",
+    "minutes": 26.0
+  },
+  {
+    "date": "2025-09-01",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "21:44:45",
+    "time_end": "22:11:05",
+    "minutes": 26.0
+  },
+  {
+    "date": "2025-09-02",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "21:30:03",
+    "time_end": "21:43:15",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-09-03",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "21:01:11",
+    "time_end": "22:05:13",
+    "minutes": 64.0
+  },
+  {
+    "date": "2025-09-04",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "21:11:06",
+    "time_end": "21:50:33",
+    "minutes": 39.0
+  },
+  {
+    "date": "2025-09-04",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "22:00:06",
+    "time_end": "22:17:23",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-09-05",
+    "task": "Fourth of July creek",
+    "task_done": true,
+    "time_start": "21:47:21",
+    "time_end": "22:00:57",
+    "minutes": 14.0
+  },
+  {
+    "date": "2025-09-05",
+    "task": "La th\u00e9ologie exp\u00e9rimentale ",
+    "task_done": true,
+    "time_start": "22:33:05",
+    "time_end": "23:01:06",
+    "minutes": 28.0
+  },
+  {
+    "date": "2025-09-06",
+    "task": "La th\u00e9ologie exp\u00e9rimentale ",
+    "task_done": true,
+    "time_start": "10:12:30",
+    "time_end": "11:23:57",
+    "minutes": 71.0
+  },
+  {
+    "date": "2025-09-06",
+    "task": "Take it easy ",
+    "task_done": true,
+    "time_start": "17:54:39",
+    "time_end": "18:22:22",
+    "minutes": 28.0
+  },
+  {
+    "date": "2025-09-06",
+    "task": "Take it easy ",
+    "task_done": true,
+    "time_start": "18:39:11",
+    "time_end": "18:54:55",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-09-06",
+    "task": "Take it easy ",
+    "task_done": true,
+    "time_start": "19:08:40",
+    "time_end": "19:29:39",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-09-06",
+    "task": "Take it easy ",
+    "task_done": true,
+    "time_start": "22:03:47",
+    "time_end": "22:22:07",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-09-06",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "22:52:46",
+    "time_end": "23:15:31",
+    "minutes": 23.0
+  },
+  {
+    "date": "2025-09-07",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "09:15:41",
+    "time_end": "09:46:35",
+    "minutes": 31.0
+  },
+  {
+    "date": "2025-09-07",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "19:14:35",
+    "time_end": "19:34:44",
+    "minutes": 20.0
+  },
+  {
+    "date": "2025-09-07",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "21:27:11",
+    "time_end": "22:30:37",
+    "minutes": 63.0
+  },
+  {
+    "date": "2025-09-08",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "21:06:51",
+    "time_end": "21:48:21",
+    "minutes": 42.0
+  },
+  {
+    "date": "2025-09-08",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "22:06:28",
+    "time_end": "22:21:50",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-09-09",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "21:06:42",
+    "time_end": "21:50:08",
+    "minutes": 43.0
+  },
+  {
+    "date": "2025-09-09",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "21:58:27",
+    "time_end": "22:06:25",
+    "minutes": 8.0
+  },
+  {
+    "date": "2025-09-10",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "21:14:19",
+    "time_end": "21:45:05",
+    "minutes": 31.0
+  },
+  {
+    "date": "2025-09-10",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "22:03:09",
+    "time_end": "22:27:01",
+    "minutes": 24.0
+  },
+  {
+    "date": "2025-09-11",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "07:27:11",
+    "time_end": "08:00:40",
+    "minutes": 33.0
+  },
+  {
+    "date": "2025-09-11",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "08:39:43",
+    "time_end": "08:43:52",
+    "minutes": 4.0
+  },
+  {
+    "date": "2025-09-11",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "18:05:57",
+    "time_end": "18:25:06",
+    "minutes": 19.0
+  },
+  {
+    "date": "2025-09-11",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "18:31:07",
+    "time_end": "18:40:21",
+    "minutes": 9.0
+  },
+  {
+    "date": "2025-09-11",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "18:58:26",
+    "time_end": "19:17:51",
+    "minutes": 19.0
+  },
+  {
+    "date": "2025-09-11",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "22:05:16",
+    "time_end": "22:31:03",
+    "minutes": 26.0
+  },
+  {
+    "date": "2025-09-12",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "22:39:31",
+    "time_end": "22:57:33",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-09-12",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "23:09:27",
+    "time_end": "23:35:42",
+    "minutes": 26.0
+  },
+  {
+    "date": "2025-09-13",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "09:11:58",
+    "time_end": "10:05:10",
+    "minutes": 53.0
+  },
+  {
+    "date": "2025-09-13",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "21:53:00",
+    "time_end": "22:24:54",
+    "minutes": 32.0
+  },
+  {
+    "date": "2025-09-13",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "23:33:20",
+    "time_end": "23:58:59",
+    "minutes": 26.0
+  },
+  {
+    "date": "2025-09-14",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "09:35:10",
+    "time_end": "10:15:58",
+    "minutes": 41.0
+  },
+  {
+    "date": "2025-09-14",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "16:36:28",
+    "time_end": "17:11:21",
+    "minutes": 35.0
+  },
+  {
+    "date": "2025-09-14",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "21:07:48",
+    "time_end": "21:31:34",
+    "minutes": 24.0
+  },
+  {
+    "date": "2025-09-14",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "21:45:39",
+    "time_end": "22:40:52",
+    "minutes": 55.0
+  },
+  {
+    "date": "2025-09-15",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "21:22:54",
+    "time_end": "22:24:45",
+    "minutes": 62.0
+  },
+  {
+    "date": "2025-09-16",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "21:20:17",
+    "time_end": "22:16:56",
+    "minutes": 57.0
+  },
+  {
+    "date": "2025-09-17",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "21:18:25",
+    "time_end": "22:16:53",
+    "minutes": 58.0
+  },
+  {
+    "date": "2025-09-18",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "21:22:06",
+    "time_end": "22:00:24",
+    "minutes": 38.0
+  },
+  {
+    "date": "2025-09-18",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "22:08:25",
+    "time_end": "22:31:13",
+    "minutes": 23.0
+  },
+  {
+    "date": "2025-09-19",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "22:21:07",
+    "time_end": "23:25:55",
+    "minutes": 65.0
+  },
+  {
+    "date": "2025-09-20",
+    "task": "Confiteor ",
+    "task_done": true,
+    "time_start": "09:04:58",
+    "time_end": "09:32:14",
+    "minutes": 27.0
+  },
+  {
+    "date": "2025-09-20",
+    "task": "What I loved",
+    "task_done": true,
+    "time_start": "09:40:03",
+    "time_end": "10:10:59",
+    "minutes": 31.0
+  },
+  {
+    "date": "2025-09-20",
+    "task": "What I loved",
+    "task_done": true,
+    "time_start": "13:35:42",
+    "time_end": "13:55:52",
+    "minutes": 20.0
+  },
+  {
+    "date": "2025-09-20",
+    "task": "What I loved",
+    "task_done": true,
+    "time_start": "21:41:02",
+    "time_end": "22:35:48",
+    "minutes": 55.0
+  },
+  {
+    "date": "2025-09-20",
+    "task": "What I loved",
+    "task_done": true,
+    "time_start": "22:45:18",
+    "time_end": "22:59:37",
+    "minutes": 14.0
+  },
+  {
+    "date": "2025-09-20",
+    "task": "What I loved",
+    "task_done": true,
+    "time_start": "23:11:49",
+    "time_end": "23:45:43",
+    "minutes": 34.0
+  },
+  {
+    "date": "2025-09-21",
+    "task": "What I loved",
+    "task_done": true,
+    "time_start": "09:51:32",
+    "time_end": "10:33:03",
+    "minutes": 42.0
+  },
+  {
+    "date": "2025-09-21",
+    "task": "What I loved",
+    "task_done": true,
+    "time_start": "21:13:34",
+    "time_end": "22:57:41",
+    "minutes": 104.0
+  },
+  {
+    "date": "2025-09-22",
+    "task": "What I loved",
+    "task_done": true,
+    "time_start": "21:14:36",
+    "time_end": "22:20:44",
+    "minutes": 66.0
+  },
+  {
+    "date": "2025-09-23",
+    "task": "What I loved",
+    "task_done": true,
+    "time_start": "21:08:37",
+    "time_end": "22:22:42",
+    "minutes": 74.0
+  },
+  {
+    "date": "2025-09-24",
+    "task": "What I loved",
+    "task_done": true,
+    "time_start": "21:18:08",
+    "time_end": "22:47:27",
+    "minutes": 89.0
+  },
+  {
+    "date": "2025-09-25",
+    "task": "What I loved",
+    "task_done": true,
+    "time_start": "21:29:08",
+    "time_end": "21:52:46",
+    "minutes": 24.0
+  },
+  {
+    "date": "2025-09-25",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "22:16:27",
+    "time_end": "22:32:05",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-09-26",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "22:22:43",
+    "time_end": "23:23:14",
+    "minutes": 61.0
+  },
+  {
+    "date": "2025-09-27",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "09:36:33",
+    "time_end": "10:08:47",
+    "minutes": 32.0
+  },
+  {
+    "date": "2025-09-27",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "13:20:16",
+    "time_end": "13:29:23",
+    "minutes": 9.0
+  },
+  {
+    "date": "2025-09-27",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "16:26:25",
+    "time_end": "16:43:05",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-09-27",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "17:17:23",
+    "time_end": "17:30:05",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-09-27",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "23:46:57",
+    "time_end": "23:59:59",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-09-28",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "00:00:00",
+    "time_end": "00:02:25",
+    "minutes": 2.0
+  },
+  {
+    "date": "2025-09-28",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "21:45:21",
+    "time_end": "22:13:13",
+    "minutes": 28.0
+  },
+  {
+    "date": "2025-09-29",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "21:11:11",
+    "time_end": "22:18:47",
+    "minutes": 68.0
+  },
+  {
+    "date": "2025-09-30",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "22:20:29",
+    "time_end": "23:16:11",
+    "minutes": 56.0
+  },
+  {
+    "date": "2025-10-01",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "14:51:07",
+    "time_end": "15:45:51",
+    "minutes": 55.0
+  },
+  {
+    "date": "2025-10-01",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "17:58:17",
+    "time_end": "19:25:41",
+    "minutes": 87.0
+  },
+  {
+    "date": "2025-10-01",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "20:37:30",
+    "time_end": "20:40:15",
+    "minutes": 3.0
+  },
+  {
+    "date": "2025-10-01",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "21:07:06",
+    "time_end": "21:57:10",
+    "minutes": 50.0
+  },
+  {
+    "date": "2025-10-01",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "22:11:39",
+    "time_end": "22:48:27",
+    "minutes": 37.0
+  },
+  {
+    "date": "2025-10-02",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "06:46:40",
+    "time_end": "07:30:11",
+    "minutes": 44.0
+  },
+  {
+    "date": "2025-10-02",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "08:53:42",
+    "time_end": "09:23:13",
+    "minutes": 30.0
+  },
+  {
+    "date": "2025-10-02",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "23:40:07",
+    "time_end": "23:50:27",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-10-03",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "22:30:23",
+    "time_end": "22:45:47",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-10-04",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "22:45:23",
+    "time_end": "22:55:57",
+    "minutes": 11.0
+  },
+  {
+    "date": "2025-10-05",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "22:15:33",
+    "time_end": "22:46:54",
+    "minutes": 31.0
+  },
+  {
+    "date": "2025-10-06",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "11:37:34",
+    "time_end": "11:53:43",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-10-06",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "23:14:50",
+    "time_end": "23:38:51",
+    "minutes": 24.0
+  },
+  {
+    "date": "2025-10-07",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "00:29:02",
+    "time_end": "00:46:36",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-10-07",
+    "task": "No longer human ",
+    "task_done": true,
+    "time_start": "13:06:39",
+    "time_end": "13:33:08",
+    "minutes": 26.0
+  },
+  {
+    "date": "2025-10-07",
+    "task": "No longer human ",
+    "task_done": true,
+    "time_start": "18:10:58",
+    "time_end": "18:35:32",
+    "minutes": 25.0
+  },
+  {
+    "date": "2025-10-07",
+    "task": "Katabasis",
+    "task_done": true,
+    "time_start": "19:48:00",
+    "time_end": "19:57:15",
+    "minutes": 9.0
+  },
+  {
+    "date": "2025-10-07",
+    "task": "No longer human ",
+    "task_done": true,
+    "time_start": "22:46:10",
+    "time_end": "22:58:40",
+    "minutes": 12.0
+  },
+  {
+    "date": "2025-10-08",
+    "task": "No longer human ",
+    "task_done": true,
+    "time_start": "09:06:27",
+    "time_end": "09:17:00",
+    "minutes": 11.0
+  },
+  {
+    "date": "2025-10-08",
+    "task": "No longer human ",
+    "task_done": true,
+    "time_start": "10:25:24",
+    "time_end": "10:54:20",
+    "minutes": 29.0
+  },
+  {
+    "date": "2025-10-08",
+    "task": "No longer human ",
+    "task_done": true,
+    "time_start": "11:06:26",
+    "time_end": "11:12:46",
+    "minutes": 6.0
+  },
+  {
+    "date": "2025-10-08",
+    "task": "No longer human ",
+    "task_done": true,
+    "time_start": "22:20:03",
+    "time_end": "22:59:16",
+    "minutes": 39.0
+  },
+  {
+    "date": "2025-10-09",
+    "task": "No longer human ",
+    "task_done": true,
+    "time_start": "09:21:49",
+    "time_end": "09:29:07",
+    "minutes": 7.0
+  },
+  {
+    "date": "2025-10-09",
+    "task": "No longer human ",
+    "task_done": true,
+    "time_start": "12:14:21",
+    "time_end": "12:23:29",
+    "minutes": 9.0
+  },
+  {
+    "date": "2025-10-09",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "22:51:51",
+    "time_end": "23:34:25",
+    "minutes": 43.0
+  },
+  {
+    "date": "2025-10-10",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "11:58:54",
+    "time_end": "12:35:22",
+    "minutes": 36.0
+  },
+  {
+    "date": "2025-10-10",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "15:16:45",
+    "time_end": "15:45:04",
+    "minutes": 28.0
+  },
+  {
+    "date": "2025-10-10",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "16:00:28",
+    "time_end": "16:12:31",
+    "minutes": 12.0
+  },
+  {
+    "date": "2025-10-10",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "22:26:18",
+    "time_end": "22:39:02",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-10-11",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "22:30:46",
+    "time_end": "22:58:17",
+    "minutes": 28.0
+  },
+  {
+    "date": "2025-10-12",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "22:12:59",
+    "time_end": "22:53:35",
+    "minutes": 41.0
+  },
+  {
+    "date": "2025-10-13",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "18:17:05",
+    "time_end": "18:25:07",
+    "minutes": 8.0
+  },
+  {
+    "date": "2025-10-13",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "21:18:41",
+    "time_end": "22:17:55",
+    "minutes": 59.0
+  },
+  {
+    "date": "2025-10-14",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "09:52:26",
+    "time_end": "10:25:16",
+    "minutes": 33.0
+  },
+  {
+    "date": "2025-10-14",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "22:02:30",
+    "time_end": "22:43:59",
+    "minutes": 41.0
+  },
+  {
+    "date": "2025-10-15",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "19:00:08",
+    "time_end": "19:35:16",
+    "minutes": 35.0
+  },
+  {
+    "date": "2025-10-15",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "23:21:39",
+    "time_end": "23:59:59",
+    "minutes": 38.0
+  },
+  {
+    "date": "2025-10-16",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "00:00:00",
+    "time_end": "00:06:25",
+    "minutes": 6.0
+  },
+  {
+    "date": "2025-10-16",
+    "task": "Never let me go",
+    "task_done": true,
+    "time_start": "10:27:52",
+    "time_end": "10:44:29",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-10-16",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "12:05:39",
+    "time_end": "12:54:19",
+    "minutes": 49.0
+  },
+  {
+    "date": "2025-10-16",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "13:05:38",
+    "time_end": "13:23:28",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-10-16",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "21:46:08",
+    "time_end": "22:15:22",
+    "minutes": 29.0
+  },
+  {
+    "date": "2025-10-17",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "08:04:01",
+    "time_end": "08:46:59",
+    "minutes": 43.0
+  },
+  {
+    "date": "2025-10-17",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "22:01:30",
+    "time_end": "22:13:52",
+    "minutes": 12.0
+  },
+  {
+    "date": "2025-10-17",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "22:22:29",
+    "time_end": "22:25:26",
+    "minutes": 3.0
+  },
+  {
+    "date": "2025-10-18",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "08:15:17",
+    "time_end": "08:40:24",
+    "minutes": 25.0
+  },
+  {
+    "date": "2025-10-18",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "22:24:47",
+    "time_end": "22:34:34",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-10-19",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "09:51:07",
+    "time_end": "10:34:42",
+    "minutes": 44.0
+  },
+  {
+    "date": "2025-10-19",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "21:19:57",
+    "time_end": "22:23:23",
+    "minutes": 63.0
+  },
+  {
+    "date": "2025-10-20",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "21:24:03",
+    "time_end": "22:21:25",
+    "minutes": 57.0
+  },
+  {
+    "date": "2025-10-21",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "19:49:51",
+    "time_end": "20:14:39",
+    "minutes": 25.0
+  },
+  {
+    "date": "2025-10-21",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "21:30:02",
+    "time_end": "22:23:42",
+    "minutes": 54.0
+  },
+  {
+    "date": "2025-10-22",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "21:46:11",
+    "time_end": "22:20:55",
+    "minutes": 35.0
+  },
+  {
+    "date": "2025-10-23",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "21:41:40",
+    "time_end": "22:41:27",
+    "minutes": 60.0
+  },
+  {
+    "date": "2025-10-24",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "22:01:19",
+    "time_end": "22:52:57",
+    "minutes": 52.0
+  },
+  {
+    "date": "2025-10-25",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "09:26:37",
+    "time_end": "10:16:12",
+    "minutes": 50.0
+  },
+  {
+    "date": "2025-10-25",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "17:52:11",
+    "time_end": "18:51:44",
+    "minutes": 60.0
+  },
+  {
+    "date": "2025-10-25",
+    "task": "Bury our bones in the midnight soil",
+    "task_done": true,
+    "time_start": "20:00:56",
+    "time_end": "20:10:25",
+    "minutes": 9.0
+  },
+  {
+    "date": "2025-10-25",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "21:44:19",
+    "time_end": "23:48:31",
+    "minutes": 124.0
+  },
+  {
+    "date": "2025-10-26",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "09:57:14",
+    "time_end": "10:18:22",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-10-26",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "14:11:22",
+    "time_end": "14:31:06",
+    "minutes": 20.0
+  },
+  {
+    "date": "2025-10-26",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "14:48:51",
+    "time_end": "14:57:26",
+    "minutes": 9.0
+  },
+  {
+    "date": "2025-10-26",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "18:49:13",
+    "time_end": "18:56:16",
+    "minutes": 7.0
+  },
+  {
+    "date": "2025-10-26",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "19:26:21",
+    "time_end": "19:56:19",
+    "minutes": 30.0
+  },
+  {
+    "date": "2025-10-26",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "21:24:30",
+    "time_end": "22:52:42",
+    "minutes": 88.0
+  },
+  {
+    "date": "2025-10-27",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "20:04:25",
+    "time_end": "20:15:57",
+    "minutes": 12.0
+  },
+  {
+    "date": "2025-10-27",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "21:26:42",
+    "time_end": "22:22:14",
+    "minutes": 56.0
+  },
+  {
+    "date": "2025-10-28",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "19:41:52",
+    "time_end": "19:53:56",
+    "minutes": 12.0
+  },
+  {
+    "date": "2025-10-28",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "21:30:29",
+    "time_end": "22:05:42",
+    "minutes": 35.0
+  },
+  {
+    "date": "2025-10-29",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "19:19:12",
+    "time_end": "19:40:05",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-10-29",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "20:04:42",
+    "time_end": "20:10:31",
+    "minutes": 6.0
+  },
+  {
+    "date": "2025-10-29",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "21:29:04",
+    "time_end": "22:07:05",
+    "minutes": 38.0
+  },
+  {
+    "date": "2025-10-30",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "21:34:02",
+    "time_end": "22:34:18",
+    "minutes": 60.0
+  },
+  {
+    "date": "2025-10-31",
+    "task": "The bookseller of florence",
+    "task_done": false,
+    "time_start": "22:07:20",
+    "time_end": "23:22:09",
+    "minutes": 75.0
+  },
+  {
+    "date": "2025-10-31",
+    "task": "People of the book",
+    "task_done": true,
+    "time_start": "23:25:59",
+    "time_end": "23:59:59",
+    "minutes": 34.0
   }
 ]
