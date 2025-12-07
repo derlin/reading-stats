@@ -35154,7 +35154,7 @@
   {
     "date": "2025-10-31",
     "task": "The bookseller of florence",
-    "task_done": false,
+    "task_done": true,
     "time_start": "22:07:20",
     "time_end": "23:22:09",
     "minutes": 75.0
@@ -35166,5 +35166,797 @@
     "time_start": "23:25:59",
     "time_end": "23:59:59",
     "minutes": 34.0
+  },
+  {
+    "date": "2025-11-01",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "14:20:20",
+    "time_end": "15:23:14",
+    "minutes": 63.0
+  },
+  {
+    "date": "2025-11-01",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "19:14:53",
+    "time_end": "19:43:37",
+    "minutes": 29.0
+  },
+  {
+    "date": "2025-11-01",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "22:08:11",
+    "time_end": "23:05:55",
+    "minutes": 58.0
+  },
+  {
+    "date": "2025-11-01",
+    "task": "Poor souls",
+    "task_done": true,
+    "time_start": "23:21:02",
+    "time_end": "23:31:23",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-11-02",
+    "task": "Poor souls",
+    "task_done": true,
+    "time_start": "09:20:43",
+    "time_end": "09:35:24",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-11-02",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "10:59:34",
+    "time_end": "11:38:09",
+    "minutes": 39.0
+  },
+  {
+    "date": "2025-11-02",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "17:41:08",
+    "time_end": "18:29:23",
+    "minutes": 48.0
+  },
+  {
+    "date": "2025-11-02",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "21:38:44",
+    "time_end": "22:04:41",
+    "minutes": 26.0
+  },
+  {
+    "date": "2025-11-02",
+    "task": "Poor souls",
+    "task_done": true,
+    "time_start": "22:23:31",
+    "time_end": "23:05:14",
+    "minutes": 42.0
+  },
+  {
+    "date": "2025-11-03",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "20:06:45",
+    "time_end": "20:22:12",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-11-03",
+    "task": "Poor souls",
+    "task_done": true,
+    "time_start": "21:04:09",
+    "time_end": "21:36:09",
+    "minutes": 32.0
+  },
+  {
+    "date": "2025-11-03",
+    "task": "Poor souls",
+    "task_done": true,
+    "time_start": "21:44:02",
+    "time_end": "22:19:33",
+    "minutes": 36.0
+  },
+  {
+    "date": "2025-11-04",
+    "task": "Poor souls",
+    "task_done": true,
+    "time_start": "21:18:12",
+    "time_end": "22:18:06",
+    "minutes": 60.0
+  },
+  {
+    "date": "2025-11-05",
+    "task": "Poor souls",
+    "task_done": true,
+    "time_start": "08:03:43",
+    "time_end": "08:22:09",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-11-05",
+    "task": "Poor souls",
+    "task_done": true,
+    "time_start": "18:53:23",
+    "time_end": "19:16:19",
+    "minutes": 23.0
+  },
+  {
+    "date": "2025-11-05",
+    "task": "Poor souls",
+    "task_done": true,
+    "time_start": "21:45:55",
+    "time_end": "22:46:26",
+    "minutes": 61.0
+  },
+  {
+    "date": "2025-11-06",
+    "task": "Poor souls",
+    "task_done": true,
+    "time_start": "22:01:21",
+    "time_end": "22:21:39",
+    "minutes": 20.0
+  },
+  {
+    "date": "2025-11-07",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "22:07:22",
+    "time_end": "22:35:41",
+    "minutes": 28.0
+  },
+  {
+    "date": "2025-11-07",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "22:44:00",
+    "time_end": "23:15:31",
+    "minutes": 32.0
+  },
+  {
+    "date": "2025-11-08",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "10:54:45",
+    "time_end": "11:31:52",
+    "minutes": 37.0
+  },
+  {
+    "date": "2025-11-08",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "23:20:05",
+    "time_end": "23:27:24",
+    "minutes": 7.0
+  },
+  {
+    "date": "2025-11-08",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "23:46:36",
+    "time_end": "23:59:59",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-11-09",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "00:00:00",
+    "time_end": "00:19:06",
+    "minutes": 19.0
+  },
+  {
+    "date": "2025-11-09",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "10:01:10",
+    "time_end": "10:12:11",
+    "minutes": 11.0
+  },
+  {
+    "date": "2025-11-09",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "10:26:44",
+    "time_end": "10:32:49",
+    "minutes": 6.0
+  },
+  {
+    "date": "2025-11-09",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "15:35:11",
+    "time_end": "16:30:54",
+    "minutes": 56.0
+  },
+  {
+    "date": "2025-11-09",
+    "task": "Poor souls",
+    "task_done": true,
+    "time_start": "21:31:21",
+    "time_end": "21:57:10",
+    "minutes": 26.0
+  },
+  {
+    "date": "2025-11-09",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "22:25:12",
+    "time_end": "22:42:42",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-11-10",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "15:29:26",
+    "time_end": "15:42:09",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-11-10",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "21:19:37",
+    "time_end": "22:01:01",
+    "minutes": 41.0
+  },
+  {
+    "date": "2025-11-11",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "14:04:50",
+    "time_end": "14:18:04",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-11-11",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "15:42:38",
+    "time_end": "16:06:46",
+    "minutes": 24.0
+  },
+  {
+    "date": "2025-11-11",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "16:13:16",
+    "time_end": "16:59:21",
+    "minutes": 46.0
+  },
+  {
+    "date": "2025-11-11",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "21:16:53",
+    "time_end": "22:28:11",
+    "minutes": 71.0
+  },
+  {
+    "date": "2025-11-12",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "21:18:43",
+    "time_end": "21:41:48",
+    "minutes": 23.0
+  },
+  {
+    "date": "2025-11-12",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "21:47:56",
+    "time_end": "22:56:04",
+    "minutes": 68.0
+  },
+  {
+    "date": "2025-11-13",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "21:28:47",
+    "time_end": "22:03:47",
+    "minutes": 35.0
+  },
+  {
+    "date": "2025-11-13",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "22:18:07",
+    "time_end": "22:32:19",
+    "minutes": 14.0
+  },
+  {
+    "date": "2025-11-14",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "22:30:35",
+    "time_end": "23:00:55",
+    "minutes": 30.0
+  },
+  {
+    "date": "2025-11-14",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "23:15:26",
+    "time_end": "23:32:45",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-11-15",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "10:56:08",
+    "time_end": "11:37:57",
+    "minutes": 42.0
+  },
+  {
+    "date": "2025-11-15",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "16:31:48",
+    "time_end": "16:53:27",
+    "minutes": 22.0
+  },
+  {
+    "date": "2025-11-15",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "22:15:58",
+    "time_end": "22:57:43",
+    "minutes": 42.0
+  },
+  {
+    "date": "2025-11-15",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "22:57:46",
+    "time_end": "23:43:58",
+    "minutes": 46.0
+  },
+  {
+    "date": "2025-11-16",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "11:41:25",
+    "time_end": "11:51:50",
+    "minutes": 10.0
+  },
+  {
+    "date": "2025-11-16",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "12:00:31",
+    "time_end": "12:17:40",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-11-16",
+    "task": "The bookseller of florence",
+    "task_done": true,
+    "time_start": "13:17:18",
+    "time_end": "13:35:41",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-11-16",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "16:14:32",
+    "time_end": "16:58:00",
+    "minutes": 43.0
+  },
+  {
+    "date": "2025-11-16",
+    "task": "Apprends-moi \u00e0 danser",
+    "task_done": true,
+    "time_start": "21:44:12",
+    "time_end": "23:07:49",
+    "minutes": 84.0
+  },
+  {
+    "date": "2025-11-17",
+    "task": "Apprends-moi \u00e0 danser",
+    "task_done": true,
+    "time_start": "21:19:10",
+    "time_end": "22:04:46",
+    "minutes": 46.0
+  },
+  {
+    "date": "2025-11-17",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "22:04:49",
+    "time_end": "22:28:37",
+    "minutes": 24.0
+  },
+  {
+    "date": "2025-11-18",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "20:57:59",
+    "time_end": "21:15:32",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-11-18",
+    "task": "Apprends-moi \u00e0 danser",
+    "task_done": true,
+    "time_start": "21:22:33",
+    "time_end": "21:48:17",
+    "minutes": 26.0
+  },
+  {
+    "date": "2025-11-18",
+    "task": "Apprends-moi \u00e0 danser",
+    "task_done": true,
+    "time_start": "21:54:49",
+    "time_end": "22:12:13",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-11-18",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "22:18:07",
+    "time_end": "22:33:48",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-11-19",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "21:12:15",
+    "time_end": "21:25:17",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-11-19",
+    "task": "Les grandes plaidoiries des t\u00e9nors du barreau",
+    "task_done": true,
+    "time_start": "21:26:09",
+    "time_end": "21:51:10",
+    "minutes": 25.0
+  },
+  {
+    "date": "2025-11-19",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "21:51:11",
+    "time_end": "22:23:09",
+    "minutes": 32.0
+  },
+  {
+    "date": "2025-11-20",
+    "task": "Les grandes plaidoiries des t\u00e9nors du barreau",
+    "task_done": true,
+    "time_start": "21:35:12",
+    "time_end": "21:53:50",
+    "minutes": 19.0
+  },
+  {
+    "date": "2025-11-20",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "21:54:52",
+    "time_end": "22:40:37",
+    "minutes": 46.0
+  },
+  {
+    "date": "2025-11-21",
+    "task": "Les grandes plaidoiries des t\u00e9nors du barreau",
+    "task_done": true,
+    "time_start": "22:05:28",
+    "time_end": "23:04:55",
+    "minutes": 59.0
+  },
+  {
+    "date": "2025-11-21",
+    "task": "Les grandes plaidoiries des t\u00e9nors du barreau",
+    "task_done": true,
+    "time_start": "23:11:01",
+    "time_end": "23:16:49",
+    "minutes": 6.0
+  },
+  {
+    "date": "2025-11-22",
+    "task": "Les grandes plaidoiries des t\u00e9nors du barreau",
+    "task_done": true,
+    "time_start": "18:31:27",
+    "time_end": "19:00:26",
+    "minutes": 29.0
+  },
+  {
+    "date": "2025-11-22",
+    "task": "Les grandes plaidoiries des t\u00e9nors du barreau",
+    "task_done": true,
+    "time_start": "23:16:16",
+    "time_end": "23:49:49",
+    "minutes": 34.0
+  },
+  {
+    "date": "2025-11-23",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "00:31:02",
+    "time_end": "00:52:37",
+    "minutes": 22.0
+  },
+  {
+    "date": "2025-11-23",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "14:10:32",
+    "time_end": "14:57:34",
+    "minutes": 47.0
+  },
+  {
+    "date": "2025-11-23",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "15:09:58",
+    "time_end": "15:23:51",
+    "minutes": 14.0
+  },
+  {
+    "date": "2025-11-23",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "16:11:05",
+    "time_end": "16:33:43",
+    "minutes": 23.0
+  },
+  {
+    "date": "2025-11-23",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "21:35:43",
+    "time_end": "22:40:53",
+    "minutes": 65.0
+  },
+  {
+    "date": "2025-11-24",
+    "task": "The lies of Locke lamora",
+    "task_done": true,
+    "time_start": "21:19:02",
+    "time_end": "21:33:36",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-11-24",
+    "task": "Les grandes plaidoiries des t\u00e9nors du barreau",
+    "task_done": true,
+    "time_start": "21:48:24",
+    "time_end": "22:23:45",
+    "minutes": 35.0
+  },
+  {
+    "date": "2025-11-24",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "22:25:18",
+    "time_end": "22:43:23",
+    "minutes": 18.0
+  },
+  {
+    "date": "2025-11-25",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "21:35:22",
+    "time_end": "22:29:30",
+    "minutes": 54.0
+  },
+  {
+    "date": "2025-11-26",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "21:39:29",
+    "time_end": "22:32:16",
+    "minutes": 53.0
+  },
+  {
+    "date": "2025-11-27",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "21:31:08",
+    "time_end": "21:50:03",
+    "minutes": 19.0
+  },
+  {
+    "date": "2025-11-27",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "21:58:41",
+    "time_end": "22:30:18",
+    "minutes": 32.0
+  },
+  {
+    "date": "2025-11-28",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "17:01:48",
+    "time_end": "17:26:28",
+    "minutes": 25.0
+  },
+  {
+    "date": "2025-11-28",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "22:32:10",
+    "time_end": "22:51:36",
+    "minutes": 19.0
+  },
+  {
+    "date": "2025-11-29",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "16:05:03",
+    "time_end": "16:27:53",
+    "minutes": 23.0
+  },
+  {
+    "date": "2025-11-29",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "16:33:36",
+    "time_end": "17:25:06",
+    "minutes": 52.0
+  },
+  {
+    "date": "2025-11-29",
+    "task": "Les grandes plaidoiries des t\u00e9nors du barreau",
+    "task_done": true,
+    "time_start": "22:01:55",
+    "time_end": "22:40:57",
+    "minutes": 39.0
+  },
+  {
+    "date": "2025-11-29",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "22:42:06",
+    "time_end": "23:39:41",
+    "minutes": 58.0
+  },
+  {
+    "date": "2025-11-30",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "14:41:56",
+    "time_end": "14:57:17",
+    "minutes": 15.0
+  },
+  {
+    "date": "2025-11-30",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "18:53:09",
+    "time_end": "19:19:13",
+    "minutes": 26.0
+  },
+  {
+    "date": "2025-11-30",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "21:25:58",
+    "time_end": "21:43:26",
+    "minutes": 17.0
+  },
+  {
+    "date": "2025-11-30",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "22:05:51",
+    "time_end": "22:20:15",
+    "minutes": 14.0
+  },
+  {
+    "date": "2025-12-01",
+    "task": "The double",
+    "task_done": true,
+    "time_start": "21:21:53",
+    "time_end": "22:03:58",
+    "minutes": 42.0
+  },
+  {
+    "date": "2025-12-01",
+    "task": "Les trois coeurs du poulpe",
+    "task_done": true,
+    "time_start": "22:12:53",
+    "time_end": "22:37:46",
+    "minutes": 25.0
+  },
+  {
+    "date": "2025-12-02",
+    "task": "Les trois coeurs du poulpe",
+    "task_done": true,
+    "time_start": "21:21:49",
+    "time_end": "22:13:46",
+    "minutes": 52.0
+  },
+  {
+    "date": "2025-12-03",
+    "task": "Les trois coeurs du poulpe",
+    "task_done": true,
+    "time_start": "21:48:53",
+    "time_end": "22:49:00",
+    "minutes": 60.0
+  },
+  {
+    "date": "2025-12-04",
+    "task": "Les trois coeurs du poulpe",
+    "task_done": true,
+    "time_start": "21:24:14",
+    "time_end": "22:27:30",
+    "minutes": 63.0
+  },
+  {
+    "date": "2025-12-05",
+    "task": "Les trois coeurs du poulpe",
+    "task_done": true,
+    "time_start": "17:05:58",
+    "time_end": "17:26:40",
+    "minutes": 21.0
+  },
+  {
+    "date": "2025-12-06",
+    "task": "Les trois coeurs du poulpe",
+    "task_done": true,
+    "time_start": "09:53:24",
+    "time_end": "10:07:14",
+    "minutes": 14.0
+  },
+  {
+    "date": "2025-12-06",
+    "task": "Several people are typing ",
+    "task_done": true,
+    "time_start": "13:14:46",
+    "time_end": "13:48:14",
+    "minutes": 33.0
+  },
+  {
+    "date": "2025-12-06",
+    "task": "Several people are typing ",
+    "task_done": true,
+    "time_start": "14:11:17",
+    "time_end": "14:46:02",
+    "minutes": 35.0
+  },
+  {
+    "date": "2025-12-06",
+    "task": "Several people are typing ",
+    "task_done": true,
+    "time_start": "14:54:47",
+    "time_end": "15:10:27",
+    "minutes": 16.0
+  },
+  {
+    "date": "2025-12-06",
+    "task": "Several people are typing ",
+    "task_done": true,
+    "time_start": "19:57:23",
+    "time_end": "20:10:34",
+    "minutes": 13.0
+  },
+  {
+    "date": "2025-12-06",
+    "task": "Several people are typing ",
+    "task_done": true,
+    "time_start": "21:49:53",
+    "time_end": "22:34:31",
+    "minutes": 45.0
+  },
+  {
+    "date": "2025-12-06",
+    "task": "La vie des choses",
+    "task_done": false,
+    "time_start": "23:09:32",
+    "time_end": "23:34:46",
+    "minutes": 25.0
   }
 ]
