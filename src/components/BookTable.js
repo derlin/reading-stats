@@ -37,6 +37,7 @@ export default class BookTable extends React.Component {
 
     const headers = [
       { name: 'Books', col: 'task' },
+      { name: 'Authors', col: 'author' },
       { name: 'Hours', col: 'minutes' },
       { name: 'Start Date', col: 'day_start' },
       { name: 'Days', col: 'days' },
@@ -66,6 +67,7 @@ export default class BookTable extends React.Component {
                   className={isTaskFinished(row.task, this.props.dateRange) ? '' : 'partial'}
                 >
                   <td>{taskWithMaybeLink(row.task, row.grId)}</td>
+                  <td>{row.author}</td>
                   <td className="mono right">{formatDuration(row.minutes)}</td>
                   <td>{row.day_start}</td>
                   <td>{row.days}</td>
