@@ -5,6 +5,7 @@ import Header from './components/Header';
 import PlotByDay from './plots/PlotByDay';
 import PlotByMonth from './plots/PlotByMonth';
 import PlotByWeekday from './plots/PlotByWeekday';
+import PlotByTitle from './plots/PlotByTitle';
 import BookTable from './components/BookTable';
 import GlobalStats from './components/GlobalStats';
 import './App.scss';
@@ -43,6 +44,8 @@ class App extends React.Component {
         <Header dateRange={dateRange} selectDates={this.selectDates} />
         <h2>Overview</h2>
         <GlobalStats data={data} dateRange={dateRange} />
+        <h2>Books finished</h2>
+        <PlotByTitle data={data} dateRange={dateRange} />
         <h2>Reading per day</h2>
         <PlotByDay data={data} dateRange={dateRange} />
         <h2>Reading per month</h2>
