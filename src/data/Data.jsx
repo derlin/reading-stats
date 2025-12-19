@@ -77,7 +77,7 @@ const df_tasks = books
 const df_months = books
   .addColumn(
     'month',
-    books['date'].apply(x => x.substr(0, 7))
+    books['date'].apply(x => x.substr(0, 7)),
   )
   .groupby(['month'])
   .apply(row => {
@@ -108,7 +108,7 @@ function df_weekdays(books) {
   const df_weekdays = books
     .addColumn(
       'weekday',
-      books['date'].dt.dayOfWeek().apply(x => (x + 6) % 7)
+      books['date'].dt.dayOfWeek().apply(x => (x + 6) % 7),
     ) // 0 is Sunday
     .groupby(['weekday'])
     .apply(row => {
@@ -210,18 +210,18 @@ export class Data {
       'day_start',
       'day_end',
       dateRange.start_str,
-      dateRange.end_str
+      dateRange.end_str,
     );
 
     this.df_months = _filterDataByDate(
       df_months,
       'month',
       dateRange.start_str.substr(0, 7),
-      dateRange.end_str.substr(0, 7)
+      dateRange.end_str.substr(0, 7),
     );
 
     this.df_weekdays = df_weekdays(
-      _filterDataByDate(books, 'date', dateRange.start_str, dateRange.end_str)
+      _filterDataByDate(books, 'date', dateRange.start_str, dateRange.end_str),
     );
   }
 }

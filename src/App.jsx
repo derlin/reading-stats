@@ -27,7 +27,7 @@ class App extends React.Component {
         startDate: event.startDate,
         endDate: event.endDate,
       },
-      () => console.log('new state', this.state)
+      () => console.log('new state', this.state),
     );
   }
 

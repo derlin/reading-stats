@@ -113,7 +113,7 @@ export default class Header extends Component {
       .filter(
         range =>
           format(range.start, DATE_FORMAT) === dr.start_str &&
-          format(range.end, DATE_FORMAT) === dr.end_str
+          format(range.end, DATE_FORMAT) === dr.end_str,
       )
       .map(range => range.label)?.[0];
   }

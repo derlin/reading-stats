@@ -21,27 +21,10 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "pretty": "prettier --write './**/*.{js,jsx,json}'"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "fmt": "prettier --write './**/*.{js,jsx,json}'",
+    "fmt-check": "prettier --check './**/*.{js,jsx,json}'"
   },
   "devDependencies": {
-    "prettier": "^2.6.2"
+    "prettier": "^3.7.4"
   }
 }
