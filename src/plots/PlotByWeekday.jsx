@@ -2,6 +2,7 @@ import Plot from 'react-plotly.js';
 
 import { defaultMargins } from './common';
 import PlotEmpty from './PlotyEmpty';
+import InfoPopover from '../components/InfoPopover';
 
 const style = { maxWidth: '700px' };
 const id = 'plot_weekday';
@@ -10,9 +11,13 @@ export default function PlotByWeekday({ data }) {
   if (data.isEmpty()) return <PlotEmpty divId={id} style={style} />; // shouldn't happen, but you never know
 
   const df = data.df_weekdays;
+  const captionText = `Discover which days of the week are my busiest for reading.
+    This chart breaks down the total reading time by weekday.
+    Hover over a bar to see more detailed stats, like the average, minimum, and maximum time spent reading on that day of the week.`;
 
   return (
-    <>
+    <div className="plot-container" style={{ position: 'relative' }}>
+      <InfoPopover text={captionText} />
       <Plot
         divId={id}
         data={[
@@ -35,12 +40,6 @@ export default function PlotByWeekday({ data }) {
         }}
         useResizeHandler={true}
       />
-      <div className="seo-only">
-        <figcaption>
-          This chart shows the amount of reading per weekday. On hover, you can see more details,
-          such as the min, max and average during this weekday.
-        </figcaption>
-      </div>
-    </>
+    </div>
   );
 }

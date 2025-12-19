@@ -4,6 +4,7 @@ import * as dfd from 'danfojs';
 import { defaultMargins } from './common';
 import { isTaskFinished } from '../data/Data';
 import PlotEmpty from './PlotyEmpty';
+import InfoPopover from '../components/InfoPopover';
 
 const style = {};
 const colors = ['#da492f', '#0eab70', '#2077b4'];
@@ -24,9 +25,13 @@ export default function PlotByDay({ data, dateRange }) {
 
   const { rows, maxTrack } = createData(df);
   const trackColors = Array.from({ length: maxTrack + 1 }, () => colorCycler(colors));
+  const captionText = `This timeline visualizes my journey through different books. Each colored bar represents a single book,
+    charting its reading period from start to finish. Unfinished books are not shown, and books finished outside the time range are shown in gray.
+    Hover over any bar to see the book's title, author, and how many days it took to read.`;
 
   return (
-    <>
+    <div className="plot-container" style={{ position: 'relative' }}>
+      <InfoPopover text={captionText} />
       <Plot
         divId={id}
         data={rows.map((task, i) => {
@@ -72,14 +77,7 @@ export default function PlotByDay({ data, dateRange }) {
         }}
         useResizeHandler={true}
       />
-      <div className="seo-only">
-        <figcaption>
-          This chart shows books read over time. Each colored bar represents a book, with its length
-          indicating the duration from start to finish. Hover over a bar to see details about the
-          book. Books unfinished during the selected timeframe are shown in gray.
-        </figcaption>
-      </div>
-    </>
+    </div>
   );
 }
 

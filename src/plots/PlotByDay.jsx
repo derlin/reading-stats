@@ -9,6 +9,8 @@ import { defaultMargins } from './common';
 import { taskWithMaybeLink, isTaskFinished } from '../data/Data';
 import PlotEmpty from './PlotyEmpty';
 
+import InfoPopover from '../components/InfoPopover';
+
 const colors = ['#ffebe2', '#fdfdf7']; // LightSalmon at 0.2 opacity, beige at 0.2 opacity
 const unfinishedColor = '#FFFFFFAA'; // should not be full opaque, as it is drawn above the trace
 const id = 'plot_day';
@@ -42,8 +44,13 @@ export default class PlotByDay extends Component {
 
     this.fakeState = { shapes, annotations, visible: true };
 
+    const captionText = `Explore my daily reading habits with this chart, which tracks the total minutes read each day.
+      Click any point on the line to see exactly which books I read on a specific day.
+      You can also toggle the annotations to see the book titles displayed directly on the chart.`;
+
     return (
-      <div>
+      <div className="plot-container" style={{ position: 'relative' }}>
+        <InfoPopover text={captionText} />
         <p
           id="byday_details"
           ref={elt => {
@@ -84,13 +91,6 @@ export default class PlotByDay extends Component {
           onClick={this.onPointClicked}
           useResizeHandler={true}
         />
-        <div className="seo-only">
-          <figcaption>
-            This chart shows the amount of reading done each day, in minutes. Toggable annotations
-            show the book title for each reading session. By click on a point, you can see details
-            about what I was reading that day.
-          </figcaption>
-        </div>
       </div>
     );
   }

@@ -2,6 +2,7 @@ import Plot from 'react-plotly.js';
 
 import { defaultMargins } from './common';
 import PlotEmpty from './PlotyEmpty';
+import InfoPopover from '../components/InfoPopover';
 
 const id = 'plot_month';
 
@@ -9,9 +10,13 @@ export default function PlotByMonth({ data }) {
   if (data.isEmpty()) return <PlotEmpty divId={id} />; // shouldn't happen, but you never know
 
   const df = data.df_months;
+  const captionText = `This bar chart provides a monthly overview of my reading time.
+    Each bar represents a month's total reading in minutes. Hover over any bar to discover more detailed statistics,
+    including the daily average, minimum, and maximum reading times for that month.`;
 
   return (
-    <>
+    <div className="plot-container" style={{ position: 'relative' }}>
+      <InfoPopover text={captionText} />
       <Plot
         divId={id}
         revision={Math.random()}
@@ -34,12 +39,6 @@ export default function PlotByMonth({ data }) {
         }}
         useResizeHandler={true}
       />
-      <div className="seo-only">
-        <figcaption>
-          This chart shows the amount of reading per month. On hover, you can see more details, such
-          as the min, max and average during this month.
-        </figcaption>
-      </div>
-    </>
+    </div>
   );
 }
