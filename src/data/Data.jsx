@@ -1,6 +1,9 @@
 import * as dfd from 'danfojs';
 import { set, format } from 'date-fns';
 
+import allJson from './all.json';
+import metaJson from './meta.json';
+
 const WEEKDAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 export const UNKNOWN_PAGE = 0;
 
@@ -29,8 +32,8 @@ Object.defineProperties(dfd.NDframe.prototype, {
 
 // -----------------------
 
-const books = new dfd.DataFrame(require('./all.json'));
-const meta = require('./meta.json');
+const books = new dfd.DataFrame(allJson);
+const meta = metaJson;
 
 // -- reading per days (minutes and tasks)
 

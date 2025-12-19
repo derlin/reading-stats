@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { DateRange, Data } from './data/Data';
 import Header from './components/Header';
 import PlotByDay from './plots/PlotByDay';

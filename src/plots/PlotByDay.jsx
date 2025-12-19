@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import Plot from 'react-plotly.js';
 import Plotly from 'plotly.js/dist/plotly';
 import { renderToString } from 'react-dom/server';
@@ -15,7 +15,7 @@ const id = 'plot_day';
 
 const defaultDetailsText = `<i>Click a point to see details</i>`;
 
-export default class PlotByDay extends React.Component {
+export default class PlotByDay extends Component {
   constructor(props) {
     super(props);
 

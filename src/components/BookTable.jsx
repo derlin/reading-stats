@@ -1,4 +1,3 @@
-import React from 'react';
 import * as dfd from 'danfojs';
 
 import { isTaskFinished, taskWithMaybeLink, UNKNOWN_PAGE } from '../data/Data';

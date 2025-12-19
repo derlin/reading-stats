@@ -1,26 +1,26 @@
 {
   "name": "reading-stats-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://readlog.derlin.ch",
   "private": true,
   "dependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
     "danfojs": "^1.2.0",
+    "date-fns": "2.30.0",
     "plotly.js": "^3.3.1",
     "react": "^19.2.3",
-    "date-fns": "2.30.0",
     "react-date-range": "^1.4.0",
     "react-dom": "^19.2.3",
     "react-plotly.js": "^2.6.0",
-    "react-scripts": "^5.0.1",
     "sass": "^1.97.0",
     "styled-components": "^6.1.19",
+    "vite": "^7.3.0",
+    "vite-plugin-sitemap": "^0.8.2",
     "web-vitals": "^5.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts --max_old_space_size=4096 build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "vite",
+    "build": "vite build",
     "pretty": "prettier --write './**/*.{js,jsx,json}'"
   },
   "eslintConfig": {
