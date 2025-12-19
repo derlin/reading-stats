@@ -20,7 +20,6 @@ function* colorCycler(colors) {
 export default function PlotByDay({ data, dateRange }) {
   if (data.isEmpty()) return <PlotEmpty divId={id} style={style} />; // shouldn't happen, but you never know
 
-  console.log(data.df_tasks);
   const df = data.df_tasks;
 
   const { rows, maxTrack } = createData(df);
