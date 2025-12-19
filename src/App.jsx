@@ -38,7 +38,7 @@ class App extends React.Component {
     const data = new Data(dateRange);
 
     return (
-      <div>
+      <>
         <Header dateRange={dateRange} selectDates={this.selectDates} />
         <h2>Overview</h2>
         <GlobalStats data={data} dateRange={dateRange} />
@@ -53,7 +53,7 @@ class App extends React.Component {
         <h2>Books read</h2>
         <BookTable data={data} dateRange={dateRange} />
         <ScrollToTopButton />
-      </div>
+      </>
     );
   }
 }

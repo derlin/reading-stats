@@ -11,27 +11,35 @@ export default function PlotByMonth({ data }) {
   const df = data.df_months;
 
   return (
-    <Plot
-      divId={id}
-      revision={Math.random()}
-      data={[
-        {
-          type: 'bar',
-          x: df.get('month'),
-          y: df.get('minutes'),
-          hovertext: df.get('details'),
-          text: df.get('hours'),
-          //marker: { color: '#7562e5' }, // #6567ff
-        },
-      ]}
-      style={{}} // remove defaults
-      layout={{
-        xaxis: { type: 'category' }, // show all dates
-        yaxis: { title: 'minutes', fixedrange: true },
-        autosize: true, // this + useResizeHandler makes it responsive
-        margin: { ...defaultMargins, ...{ b: 80 } }, // the x labels may be vertical
-      }}
-      useResizeHandler={true}
-    />
+    <>
+      <Plot
+        divId={id}
+        revision={Math.random()}
+        data={[
+          {
+            type: 'bar',
+            x: df.get('month'),
+            y: df.get('minutes'),
+            hovertext: df.get('details'),
+            text: df.get('hours'),
+            //marker: { color: '#7562e5' }, // #6567ff
+          },
+        ]}
+        style={{}} // remove defaults
+        layout={{
+          xaxis: { type: 'category' }, // show all dates
+          yaxis: { title: 'minutes', fixedrange: true },
+          autosize: true, // this + useResizeHandler makes it responsive
+          margin: { ...defaultMargins, ...{ b: 80 } }, // the x labels may be vertical
+        }}
+        useResizeHandler={true}
+      />
+      <div className="seo-only">
+        <figcaption>
+          This chart shows the amount of reading per month. On hover, you can see more details, such
+          as the min, max and average during this month.
+        </figcaption>
+      </div>
+    </>
   );
 }

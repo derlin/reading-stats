@@ -10,6 +10,7 @@
       name="description"
       content="Visualizing years in books. Follow Derlin's reading journey through data-driven timelines, book stats, and trends."
     />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!-- SEO -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="%PUBLIC_URL%/" />
@@ -24,7 +25,7 @@
     <meta property="twitter:title" content="Derlin's Readlog" />
     <meta property="twitter:image" content="%PUBLIC_URL%/preview.png" />
 
-    <!-- fonts -->
+    <!-- fonts and base styles -->
     <style>
       /* from http://fonts.cdnfonts.com/css/trebuchet-ms-2 (http only) */
       @font-face {
@@ -41,22 +42,19 @@
         src: local('Trebuchet MS'),
           url('https://fonts.cdnfonts.com/s/12558/Trebuchet-MS-Italic.woff') format('woff');
       }
-    </style>
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %BASE_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Reading Stats</title>
+      .seo-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+    </style>
     <!--
     Use polifill.io to request new JS features.
     Currently used: Array.prototype.at
@@ -65,23 +63,29 @@
     <script type="module" src="/src/index.jsx"></script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <section class="seo-only">
+      <h1>Derlin's Personal Reading Statistics</h1>
+      <p>
+        This page displays my personal reading statistics, tracking books I have read over the
+        years. It provides a detailed overview of my reading habits, including pace, formats, and
+        yearly comparisons.
+      </p>
+      <p>
+        The visualizations below include graphs showing my reading activity per day, per month, and
+        per weekday, helping to identify patterns in my reading schedule. There is also a chart
+        dedicated to the books I have finished within the selected period, offering insights into
+        the types and lengths of books I prefer.
+      </p>
+      <p>
+        Finally, a comprehensive table lists all the books read, with details on their titles,
+        authors, and other relevant information, providing a complete log of my reading journey.
+      </p>
+    </section>
+    <noscript>You need to enable JavaScript to run this app!</noscript>
     <div id="root">
-      <!-- this div will be replaced as soon as React first renders -->
-      <!-- original image: https://thumbs.gfycat.com/InnocentFlusteredAquaticleech-size_restricted.gif -->
       <div style="display: flex; justify-content: center; align-items: center; height: 100vh">
         <img src="%PUBLIC_URL%/loading.gif" />
       </div>
     </div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

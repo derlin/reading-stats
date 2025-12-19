@@ -84,6 +84,13 @@ export default class PlotByDay extends Component {
           onClick={this.onPointClicked}
           useResizeHandler={true}
         />
+        <div className="seo-only">
+          <figcaption>
+            This chart shows the amount of reading done each day, in minutes. Toggable annotations
+            show the book title for each reading session. By click on a point, you can see details
+            about what I was reading that day.
+          </figcaption>
+        </div>
       </div>
     );
   }
