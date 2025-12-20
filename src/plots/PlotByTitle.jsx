@@ -72,7 +72,7 @@ export default function PlotByDay({ data, dateRange }) {
           showlegend: false,
           autosize: true,
           margin: defaultMargins,
-          height: 300 * (maxTrack + 1),
+          height: 200 * (maxTrack + 1),
           barmode: 'overlay', // Critical: stops Plotly from grouping them side-by-side
         }}
         useResizeHandler={true}

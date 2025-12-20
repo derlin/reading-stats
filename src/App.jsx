@@ -42,10 +42,10 @@ class App extends React.Component {
         <Header dateRange={dateRange} selectDates={this.selectDates} />
         <h2>Overview</h2>
         <GlobalStats data={data} dateRange={dateRange} />
-        <h2>Reading per day</h2>
-        <PlotByDay data={data} dateRange={dateRange} />
         <h2>Finished books</h2>
         <PlotByTitle data={data} dateRange={dateRange} />
+        <h2>Reading per day</h2>
+        <PlotByDay data={data} dateRange={dateRange} />
         <h2>Reading per month</h2>
         <PlotByMonth data={data} />
         <h2>Reading per weekday</h2>
