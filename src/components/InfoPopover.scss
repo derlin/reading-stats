@@ -2,9 +2,10 @@
 
 .info-popover-container {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -35px; /* so it doesn't overlap with the plotly button bar */
+  right: 40px;
   z-index: 10;
+  background-color: white;
 
   .info-button {
     background: $background;
