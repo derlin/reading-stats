@@ -1,4 +1,4 @@
-@import '../_global.scss';
+@use '../_global' as *;
 
 .info-popover-container {
   position: absolute;

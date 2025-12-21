@@ -23,6 +23,12 @@ const GlobalStats = ({ data, dateRange }) => {
   const days_missed = minutes_serie.apply(n => +(n === 0)).sum();
   const days_sub = minutes_serie.apply(n => +(n > 0 && n < 10)).sum();
 
+  const audiobooks_count = data.df_audio.shape[0];
+  const audiobook_minutes = audiobooks_count > 0 ? data.df_audio['minutes'].sum() : 0;
+  const audiobook_duration = formatDuration(
+    intervalToDuration({ start: 0, end: audiobook_minutes * 60 * 1000 }),
+  );
+
   return (
     <div>
       <p>
@@ -37,6 +43,12 @@ const GlobalStats = ({ data, dateRange }) => {
         I missed {fni(days_missed)} days (no reading at all), and read less than ten minutes{' '}
         {fni(days_sub)} times.
       </p>
+      {audiobooks_count > 0 && (
+        <p>
+          I also listened to {fni(audiobooks_count)} audiobooks for a total duration of{' '}
+          {fni(audiobook_minutes)} minutes, which is equivalent to <b>{audiobook_duration}</b>.
+        </p>
+      )}
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { set, format } from 'date-fns';
 
 import allJson from './all.json';
 import metaJson from './meta.json';
+import allAudio from './audiobooks.json';
 
 const WEEKDAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 export const UNKNOWN_PAGE = 0;
@@ -133,6 +134,9 @@ function df_weekdays(books) {
   return df_weekdays.addColumn('weekday', weekdayText);
 }
 
+// -- audiobooks
+const df_audio = new dfd.DataFrame(allAudio);
+
 console.log('constants loaded');
 
 // ----------------- private utilities
@@ -223,6 +227,8 @@ export class Data {
     this.df_weekdays = df_weekdays(
       _filterDataByDate(books, 'date', dateRange.start_str, dateRange.end_str),
     );
+
+    this.df_audio = _filterDataByDate(df_audio, 'date', dateRange.start_str, dateRange.end_str);
   }
 }
 
