@@ -50,7 +50,7 @@ class App extends React.Component {
         <PlotByMonth data={data} />
         <h2>Reading per weekday</h2>
         <PlotByWeekday data={data} />
-        <h2>Books read</h2>
+        <h2>(Audio)books read</h2>
         <BookTable data={data} dateRange={dateRange} />
         <ScrollToTopButton />
       </>

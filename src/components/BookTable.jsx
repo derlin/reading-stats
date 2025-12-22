@@ -1,6 +1,6 @@
 import * as dfd from 'danfojs';
 
-import { isTaskFinished, taskWithMaybeLink, UNKNOWN_PAGE } from '../data/Data';
+import { isAudiobook, isTaskFinished, taskWithMaybeLink, UNKNOWN_PAGE } from '../data/Data';
 import './BookTable.scss';
 
 function formatDuration(minutes) {
@@ -13,7 +13,7 @@ export default class BookTable extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      sortBy: 'day_start',
+      sortBy: 'day_end',
       sortAscending: false,
     };
 
@@ -21,7 +21,7 @@ export default class BookTable extends React.Component {
   }
 
   render() {
-    let df = this.props.data.df_tasks;
+    let df = this.props.data.df_tasks_all;
     if (df.isEmpty()) return <p>No book finished in this interval</p>;
 
     if (this.state.sortBy && df.size() > 1) {
@@ -38,14 +38,14 @@ export default class BookTable extends React.Component {
       { name: 'Books', col: 'task' },
       { name: 'Authors', col: 'author' },
       { name: 'Hours', col: 'minutes' },
-      { name: 'Start Date', col: 'day_start' },
+      { name: 'End Date', col: 'day_end' },
       { name: 'Days', col: 'days' },
       { name: 'Pages', col: 'pages' },
     ];
 
     return (
       <div className="bookTable">
-        <p className={this.getSortClass('day_start')} onClick={() => this.sortBy('day_start')}>
+        <p className={this.getSortClass('day_end')} onClick={() => this.sortBy('day_end')}>
           ⏰ {/* handle to sort by read date (only on mobile) */}
         </p>
         <table>
@@ -63,12 +63,18 @@ export default class BookTable extends React.Component {
               return (
                 <tr
                   key={row.task}
-                  className={isTaskFinished(row.task, this.props.dateRange) ? '' : 'partial'}
+                  className={
+                    isAudiobook(row.task)
+                      ? 'audio'
+                      : isTaskFinished(row.task, this.props.dateRange)
+                        ? ''
+                        : 'partial'
+                  }
                 >
                   <td>{taskWithMaybeLink(row.task, row.grId)}</td>
                   <td>{row.author}</td>
                   <td className="mono right">{formatDuration(row.minutes)}</td>
-                  <td>{row.day_start}</td>
+                  <td>{row.day_end}</td>
                   <td>{row.days}</td>
                   <td className="mono">{row.pages === UNKNOWN_PAGE ? '?' : row.pages}</td>
                 </tr>

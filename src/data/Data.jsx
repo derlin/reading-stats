@@ -51,7 +51,7 @@ const df_byday = books
 
 // -- books read (title, minutes, date start/end)
 
-const df_tasks = books
+const df_tasks_paper = books
   .iloc({ rows: books['task_done'] }) // the placeholder task '' is not "done"
   .groupby(['task'])
   .apply(row => {
@@ -135,22 +135,45 @@ function df_weekdays(books) {
 }
 
 // -- audiobooks
-const df_audio = new dfd.DataFrame(allAudio);
+const df_audio = new dfd.DataFrame(allAudio).setIndex({ column: 'title' }).sortValues('date');
+
+function prepareAudioForTasks() {
+  let audio = df_audio.rename({
+    date: 'day_end',
+    title: 'task',
+    GoodreadsID: 'grId',
+  });
+
+  df_tasks_paper.columns
+    .filter(col => !audio.columns.includes(col))
+    .forEach(col => {
+      audio.addColumn(col, Array(audio.shape[0]).fill(null), { inplace: true });
+    });
+  audio = audio.loc({ columns: df_tasks_paper.columns });
+  return audio;
+}
+
+const df_tasks = dfd
+  .concat({
+    dfList: [df_tasks_paper, prepareAudioForTasks()],
+    axis: 0,
+  })
+  .setIndex({ column: 'task' });
 
 console.log('constants loaded');
 
 // ----------------- private utilities
 
 function _filterDataByDate(df, column, from_date, to_date) {
-  if (from_date) df = df.loc({ rows: df[column].apply(x => x >= from_date) });
-  if (to_date) df = df.loc({ rows: df[column].apply(x => x <= to_date) });
-
-  return df;
+  return _filterDataByDateRange(df, column, column, from_date, to_date);
 }
 
 function _filterDataByDateRange(df, start_column, end_column, from_date, to_date) {
-  if (from_date) df = df.loc({ rows: df[end_column].apply(x => x >= from_date) });
-  if (to_date) df = df.loc({ rows: df[start_column].apply(x => x <= to_date) });
+  df = df.loc({ rows: df[start_column].apply(x => !x || x <= to_date) });
+  df = df.loc({
+    // audiobooks don't have start_date, so the end_date needs to be in the range
+    rows: df[end_column].apply(x => x >= from_date && x <= to_date),
+  });
 
   return df;
 }
@@ -158,7 +181,7 @@ function _filterDataByDateRange(df, start_column, end_column, from_date, to_date
 // ----------------- exported utilities
 
 export function taskWithMaybeLink(task) {
-  const goodreadsId = meta[task]?.GoodreadsID;
+  const goodreadsId = df_tasks.at(task, 'grId');
   if (goodreadsId) {
     return (
       <a
@@ -174,10 +197,14 @@ export function taskWithMaybeLink(task) {
 }
 
 export function isTaskFinished(task, dateRange) {
-  return (
-    df_tasks.at(task, 'day_start') >= dateRange.start_str &&
-    df_tasks.at(task, 'day_end') <= dateRange.end_str
-  );
+  // audiobooks do not have a day_start
+  const start = df_tasks.at(task, 'day_start');
+  const end = df_tasks.at(task, 'day_end');
+  return (!start || start >= dateRange.start_str) && end <= dateRange.end_str;
+}
+
+export function isAudiobook(task) {
+  return df_audio.index.includes(task);
 }
 
 // ----------------- DateRange helper
@@ -209,13 +236,18 @@ export class Data {
       return this.df_byday.isEmpty();
     };
 
-    this.df_tasks = _filterDataByDateRange(
+    console.log(df_tasks['The Minders']);
+    this.df_tasks_all = _filterDataByDateRange(
       df_tasks,
       'day_start',
       'day_end',
       dateRange.start_str,
       dateRange.end_str,
     );
+
+    this.df_tasks = this.df_tasks_all.loc({
+      rows: this.df_tasks_all['day_start'].apply(x => !!x),
+    });
 
     this.df_months = _filterDataByDate(
       df_months,
@@ -234,6 +266,9 @@ export class Data {
 
 export let boundaries = {
   minDate: new Date(books['date'].values.at(0)),
-  maxDate: new Date(books['date'].values.at(-1)),
+  maxDate: Math.max(
+    new Date(books['date'].values.at(-1)),
+    new Date(df_audio['date'].values.at(-1)),
+  ),
   years: books['date'].dt.year().unique().values,
 };
