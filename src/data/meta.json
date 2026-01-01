@@ -869,6 +869,7 @@
   },
   "Jonathan strange & Mr norrell": {
     "author": "Susanna Clarke",
+    "duration": 1950,
     "GoodreadsID": "214161672",
     "pages": 864,
     "pubDate": "2004-09-08"
@@ -2058,5 +2059,53 @@
     "ISBN": "9781844885961",
     "pages": 384,
     "pubDate": "2023-03-03"
+  },
+  "Demon copperhead": {
+    "author": "Barbara Kingsolver",
+    "GoodreadsID": "212362352",
+    "ISBN": "9780571376",
+    "pages": 644,
+    "pubDate": "2022-10-18"
+  },
+  "Soie": {
+    "author": "Alessandro Baricco",
+    "GoodreadsID": "120531",
+    "ISBN": "9782070419654",
+    "pages": 142,
+    "pubDate": "1996-01-01"
+  },
+  "L'oncle placide": {
+    "author": "J. Girardin",
+    "GoodreadsID": "219620257",
+    "pages": 300,
+    "pubDate": "1876-01-01"
+  },
+  "My year of rest and relaxation": {
+    "author": "Ottessa Moshfegh",
+    "GoodreadsID": "44279110",
+    "ISBN": "9780525522",
+    "pages": 289,
+    "pubDate": "2018-07-10"
+  },
+  "Le mensonge suffit ": {
+    "author": "Christopher Bouix",
+    "GoodreadsID": "221740432",
+    "ISBN": "9791030707",
+    "pages": 184,
+    "pubDate": "2025-04-24"
+  },
+  "Universality ": {
+    "author": "Natasha Brown",
+    "GoodreadsID": "221031209",
+    "ISBN": "9780571389",
+    "pages": 161,
+    "pubDate": "2025-03-04"
+  },
+  "On bullshit": {
+    "author": "Harry G. Frankfurt",
+    "GoodreadsID": "385",
+    "ISBN": "9780691122",
+    "pages": 67,
+    "pubDate": "2005-01-01"
   }
 }
