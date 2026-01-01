@@ -63,7 +63,9 @@ const df_tasks_paper = books
       day_start: [dates.at(0)],
       day_end: [dates.at(-1)],
       days: [
-        Math.ceil(Math.abs(new Date(dates.at(-1)) - new Date(dates.at(0))) / (24 * 60 * 60 * 1000)),
+        Math.ceil(
+          Math.abs(new Date(dates.at(-1)) - new Date(dates.at(0))) / (24 * 60 * 60 * 1000),
+        ) + 1,
       ],
       author: [m.author],
       pages: [m?.pages ?? UNKNOWN_PAGE],
