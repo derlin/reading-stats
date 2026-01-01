@@ -42,8 +42,7 @@ $sort-icon-color-active: #282bf1;
   }
 
   tr.audio {
-    td:nth-child(5),
-    td:nth-child(6) {
+    td:nth-child(5) {
       background: #ffc1071a;
 
       &::before {

@@ -135,7 +135,7 @@ function df_weekdays(books) {
 }
 
 // -- audiobooks
-const df_audio = new dfd.DataFrame(allAudio).setIndex({ column: 'title' }).sortValues('date');
+const df_audio = new dfd.DataFrame(allAudio).setIndex({ column: 'title' }).sortValues('day_end');
 
 function prepareAudioForTasks() {
   let audio = df_audio.rename({
@@ -260,7 +260,7 @@ export class Data {
       _filterDataByDate(books, 'date', dateRange.start_str, dateRange.end_str),
     );
 
-    this.df_audio = _filterDataByDate(df_audio, 'date', dateRange.start_str, dateRange.end_str);
+    this.df_audio = _filterDataByDate(df_audio, 'day_end', dateRange.start_str, dateRange.end_str);
   }
 }
 
@@ -268,7 +268,7 @@ export let boundaries = {
   minDate: new Date(books['date'].values.at(0)),
   maxDate: Math.max(
     new Date(books['date'].values.at(-1)),
-    new Date(df_audio['date'].values.at(-1)),
+    new Date(df_audio['day_end'].values.at(-1)),
   ),
   years: books['date'].dt.year().unique().values,
 };
