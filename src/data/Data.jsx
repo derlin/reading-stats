@@ -268,9 +268,8 @@ export class Data {
 
 export let boundaries = {
   minDate: new Date(books['date'].values.at(0)),
-  maxDate: Math.max(
-    new Date(books['date'].values.at(-1)),
-    new Date(df_audio['day_end'].values.at(-1)),
+  maxDate: new Date(
+    Math.max(new Date(books['date'].values.at(-1)), new Date(df_audio['day_end'].values.at(-1))),
   ),
   years: books['date'].dt.year().unique().values,
 };
