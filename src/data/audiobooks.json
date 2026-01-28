@@ -70,5 +70,29 @@
     "minutes": 675,
     "pages": 448,
     "GoodreadsID": "56851600"
+  },
+  {
+    "title": "The Rosie Effect",
+    "author": "Graeme Simsion",
+    "day_end": "2026-01-02",
+    "minutes": 539,
+    "pages": 368,
+    "GoodreadsID": "23492671"
+  },
+  {
+    "title": "Daisy Jones & The Six",
+    "author": "Taylor Jenkins Reid",
+    "day_end": "2026-01-17",
+    "minutes": 543,
+    "pages": 368,
+    "GoodreadsID": "40597810"
+  },
+  {
+    "title": "Trust",
+    "author": "Hernan Diaz",
+    "day_end": "2026-01-06",
+    "minutes": 621,
+    "pages": 416,
+    "GoodreadsID": "123018721"
   }
 ]
