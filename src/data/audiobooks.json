@@ -94,5 +94,29 @@
     "minutes": 621,
     "pages": 416,
     "GoodreadsID": "123018721"
+  },
+  {
+    "title": "The Rosie Result",
+    "author": "Graeme Simsion",
+    "day_end": "2026-02-01",
+    "minutes": 496,
+    "pages": 376,
+    "GoodreadsID": "41018628"
+  },
+  {
+    "title": "Nobody's Fool",
+    "author": "Richard Russo",
+    "day_end": "2026-02-20",
+    "minutes": 666,
+    "pages": 549,
+    "GoodreadsID": "659388"
+  },
+  {
+    "title": "Dungeon Crawler Carl",
+    "author": "Matt Dinniman",
+    "day_end": "2026-03-10",
+    "minutes": 811,
+    "pages": 14,
+    "GoodreadsID": "57127342"
   }
 ]
