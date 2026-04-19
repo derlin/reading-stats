@@ -38350,5 +38350,533 @@
     "time_start": "21:21:24",
     "time_end": "22:17:38",
     "minutes": 56.0
+  },
+  {
+    "date": "2026-03-25",
+    "task": "More stories about spaceships and cancer",
+    "task_done": true,
+    "time_start": "21:08:57",
+    "time_end": "22:09:20",
+    "minutes": 60.0
+  },
+  {
+    "date": "2026-03-26",
+    "task": "More stories about spaceships and cancer",
+    "task_done": true,
+    "time_start": "16:38:00",
+    "time_end": "17:03:29",
+    "minutes": 25.0
+  },
+  {
+    "date": "2026-03-26",
+    "task": "More stories about spaceships and cancer",
+    "task_done": true,
+    "time_start": "21:29:47",
+    "time_end": "22:12:52",
+    "minutes": 43.0
+  },
+  {
+    "date": "2026-03-27",
+    "task": "More stories about spaceships and cancer",
+    "task_done": true,
+    "time_start": "17:08:44",
+    "time_end": "17:37:09",
+    "minutes": 28.0
+  },
+  {
+    "date": "2026-03-27",
+    "task": "More stories about spaceships and cancer",
+    "task_done": true,
+    "time_start": "21:49:27",
+    "time_end": "22:52:34",
+    "minutes": 63.0
+  },
+  {
+    "date": "2026-03-27",
+    "task": "Cursed bunny",
+    "task_done": true,
+    "time_start": "23:19:26",
+    "time_end": "23:40:59",
+    "minutes": 22.0
+  },
+  {
+    "date": "2026-03-28",
+    "task": "Cursed bunny",
+    "task_done": true,
+    "time_start": "09:06:36",
+    "time_end": "10:03:32",
+    "minutes": 57.0
+  },
+  {
+    "date": "2026-03-28",
+    "task": "Cursed bunny",
+    "task_done": true,
+    "time_start": "12:53:31",
+    "time_end": "13:10:34",
+    "minutes": 17.0
+  },
+  {
+    "date": "2026-03-28",
+    "task": "Cursed bunny",
+    "task_done": true,
+    "time_start": "18:02:52",
+    "time_end": "18:14:34",
+    "minutes": 12.0
+  },
+  {
+    "date": "2026-03-29",
+    "task": "Cursed bunny",
+    "task_done": true,
+    "time_start": "00:19:54",
+    "time_end": "00:31:19",
+    "minutes": 11.0
+  },
+  {
+    "date": "2026-03-29",
+    "task": "Cursed bunny",
+    "task_done": true,
+    "time_start": "10:10:00",
+    "time_end": "10:24:08",
+    "minutes": 14.0
+  },
+  {
+    "date": "2026-03-29",
+    "task": "The correspondent",
+    "task_done": true,
+    "time_start": "14:02:45",
+    "time_end": "14:35:30",
+    "minutes": 33.0
+  },
+  {
+    "date": "2026-03-29",
+    "task": "The correspondent",
+    "task_done": true,
+    "time_start": "15:02:00",
+    "time_end": "15:23:12",
+    "minutes": 21.0
+  },
+  {
+    "date": "2026-03-29",
+    "task": "The correspondent",
+    "task_done": true,
+    "time_start": "15:47:37",
+    "time_end": "17:11:36",
+    "minutes": 84.0
+  },
+  {
+    "date": "2026-03-29",
+    "task": "The correspondent",
+    "task_done": true,
+    "time_start": "21:33:57",
+    "time_end": "22:00:59",
+    "minutes": 27.0
+  },
+  {
+    "date": "2026-03-30",
+    "task": "The correspondent",
+    "task_done": true,
+    "time_start": "21:11:12",
+    "time_end": "22:40:40",
+    "minutes": 89.0
+  },
+  {
+    "date": "2026-03-31",
+    "task": "The correspondent",
+    "task_done": true,
+    "time_start": "21:15:49",
+    "time_end": "22:13:22",
+    "minutes": 58.0
+  },
+  {
+    "date": "2026-04-01",
+    "task": "Cursed bunny",
+    "task_done": true,
+    "time_start": "21:32:40",
+    "time_end": "22:21:42",
+    "minutes": 49.0
+  },
+  {
+    "date": "2026-04-02",
+    "task": "Cursed bunny",
+    "task_done": true,
+    "time_start": "21:38:54",
+    "time_end": "22:47:53",
+    "minutes": 69.0
+  },
+  {
+    "date": "2026-04-03",
+    "task": "Cursed bunny",
+    "task_done": true,
+    "time_start": "22:11:23",
+    "time_end": "22:58:32",
+    "minutes": 47.0
+  },
+  {
+    "date": "2026-04-03",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "23:16:54",
+    "time_end": "23:27:48",
+    "minutes": 11.0
+  },
+  {
+    "date": "2026-04-04",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "09:35:42",
+    "time_end": "10:08:56",
+    "minutes": 33.0
+  },
+  {
+    "date": "2026-04-04",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "16:25:10",
+    "time_end": "16:31:20",
+    "minutes": 6.0
+  },
+  {
+    "date": "2026-04-04",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "16:53:09",
+    "time_end": "17:01:15",
+    "minutes": 8.0
+  },
+  {
+    "date": "2026-04-04",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "22:12:43",
+    "time_end": "23:35:03",
+    "minutes": 82.0
+  },
+  {
+    "date": "2026-04-05",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "09:38:46",
+    "time_end": "09:43:15",
+    "minutes": 4.0
+  },
+  {
+    "date": "2026-04-05",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "15:02:32",
+    "time_end": "15:42:39",
+    "minutes": 40.0
+  },
+  {
+    "date": "2026-04-05",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "22:52:50",
+    "time_end": "23:58:20",
+    "minutes": 66.0
+  },
+  {
+    "date": "2026-04-06",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "13:31:44",
+    "time_end": "13:57:11",
+    "minutes": 25.0
+  },
+  {
+    "date": "2026-04-06",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "15:44:09",
+    "time_end": "16:36:10",
+    "minutes": 52.0
+  },
+  {
+    "date": "2026-04-06",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "21:36:42",
+    "time_end": "22:36:40",
+    "minutes": 60.0
+  },
+  {
+    "date": "2026-04-07",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "21:28:06",
+    "time_end": "22:46:39",
+    "minutes": 79.0
+  },
+  {
+    "date": "2026-04-08",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "21:56:24",
+    "time_end": "22:37:10",
+    "minutes": 41.0
+  },
+  {
+    "date": "2026-04-09",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "21:21:53",
+    "time_end": "21:53:42",
+    "minutes": 32.0
+  },
+  {
+    "date": "2026-04-09",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "21:59:19",
+    "time_end": "22:20:10",
+    "minutes": 21.0
+  },
+  {
+    "date": "2026-04-10",
+    "task": "The long way to a small angry planet",
+    "task_done": true,
+    "time_start": "21:58:40",
+    "time_end": "22:40:33",
+    "minutes": 42.0
+  },
+  {
+    "date": "2026-04-10",
+    "task": "Brave(ish)",
+    "task_done": true,
+    "time_start": "23:17:16",
+    "time_end": "23:45:00",
+    "minutes": 28.0
+  },
+  {
+    "date": "2026-04-11",
+    "task": "Brave(ish)",
+    "task_done": true,
+    "time_start": "09:35:12",
+    "time_end": "10:11:50",
+    "minutes": 37.0
+  },
+  {
+    "date": "2026-04-11",
+    "task": "Brave(ish)",
+    "task_done": true,
+    "time_start": "11:27:57",
+    "time_end": "12:16:20",
+    "minutes": 48.0
+  },
+  {
+    "date": "2026-04-11",
+    "task": "Brave(ish)",
+    "task_done": true,
+    "time_start": "18:16:36",
+    "time_end": "19:02:00",
+    "minutes": 45.0
+  },
+  {
+    "date": "2026-04-11",
+    "task": "Brave(ish)",
+    "task_done": true,
+    "time_start": "22:32:13",
+    "time_end": "23:40:43",
+    "minutes": 68.0
+  },
+  {
+    "date": "2026-04-12",
+    "task": "Brave(ish)",
+    "task_done": true,
+    "time_start": "09:05:47",
+    "time_end": "09:24:44",
+    "minutes": 19.0
+  },
+  {
+    "date": "2026-04-12",
+    "task": "Brave(ish)",
+    "task_done": true,
+    "time_start": "09:41:53",
+    "time_end": "10:07:14",
+    "minutes": 25.0
+  },
+  {
+    "date": "2026-04-12",
+    "task": "Brave(ish)",
+    "task_done": true,
+    "time_start": "14:02:04",
+    "time_end": "14:24:09",
+    "minutes": 22.0
+  },
+  {
+    "date": "2026-04-12",
+    "task": "A closed and common orbit",
+    "task_done": true,
+    "time_start": "21:44:38",
+    "time_end": "22:43:54",
+    "minutes": 59.0
+  },
+  {
+    "date": "2026-04-13",
+    "task": "A closed and common orbit",
+    "task_done": true,
+    "time_start": "21:44:01",
+    "time_end": "22:19:11",
+    "minutes": 35.0
+  },
+  {
+    "date": "2026-04-14",
+    "task": "A closed and common orbit",
+    "task_done": true,
+    "time_start": "21:24:09",
+    "time_end": "22:28:09",
+    "minutes": 64.0
+  },
+  {
+    "date": "2026-04-15",
+    "task": "A closed and common orbit",
+    "task_done": true,
+    "time_start": "21:53:09",
+    "time_end": "22:54:46",
+    "minutes": 62.0
+  },
+  {
+    "date": "2026-04-16",
+    "task": "The coming of the book",
+    "task_done": false,
+    "time_start": "11:35:21",
+    "time_end": "11:53:13",
+    "minutes": 18.0
+  },
+  {
+    "date": "2026-04-16",
+    "task": "The coming of the book",
+    "task_done": false,
+    "time_start": "13:27:18",
+    "time_end": "14:18:46",
+    "minutes": 51.0
+  },
+  {
+    "date": "2026-04-16",
+    "task": "A closed and common orbit",
+    "task_done": true,
+    "time_start": "14:31:25",
+    "time_end": "14:46:37",
+    "minutes": 15.0
+  },
+  {
+    "date": "2026-04-16",
+    "task": "A closed and common orbit",
+    "task_done": true,
+    "time_start": "14:51:34",
+    "time_end": "15:15:05",
+    "minutes": 24.0
+  },
+  {
+    "date": "2026-04-16",
+    "task": "The coming of the book",
+    "task_done": false,
+    "time_start": "17:13:06",
+    "time_end": "18:15:08",
+    "minutes": 62.0
+  },
+  {
+    "date": "2026-04-16",
+    "task": "A closed and common orbit",
+    "task_done": true,
+    "time_start": "22:11:46",
+    "time_end": "22:42:14",
+    "minutes": 30.0
+  },
+  {
+    "date": "2026-04-17",
+    "task": "The coming of the book",
+    "task_done": false,
+    "time_start": "11:40:36",
+    "time_end": "12:02:38",
+    "minutes": 22.0
+  },
+  {
+    "date": "2026-04-17",
+    "task": "A closed and common orbit",
+    "task_done": true,
+    "time_start": "12:04:48",
+    "time_end": "12:29:52",
+    "minutes": 25.0
+  },
+  {
+    "date": "2026-04-17",
+    "task": "A closed and common orbit",
+    "task_done": true,
+    "time_start": "13:44:33",
+    "time_end": "14:21:07",
+    "minutes": 37.0
+  },
+  {
+    "date": "2026-04-17",
+    "task": "The coming of the book",
+    "task_done": false,
+    "time_start": "18:02:25",
+    "time_end": "18:32:31",
+    "minutes": 30.0
+  },
+  {
+    "date": "2026-04-17",
+    "task": "A closed and common orbit",
+    "task_done": true,
+    "time_start": "19:30:56",
+    "time_end": "19:36:13",
+    "minutes": 5.0
+  },
+  {
+    "date": "2026-04-17",
+    "task": "A closed and common orbit",
+    "task_done": true,
+    "time_start": "20:05:11",
+    "time_end": "20:29:44",
+    "minutes": 25.0
+  },
+  {
+    "date": "2026-04-17",
+    "task": "A closed and common orbit",
+    "task_done": true,
+    "time_start": "22:42:08",
+    "time_end": "23:05:59",
+    "minutes": 24.0
+  },
+  {
+    "date": "2026-04-18",
+    "task": "The coming of the book",
+    "task_done": false,
+    "time_start": "12:16:37",
+    "time_end": "12:40:30",
+    "minutes": 24.0
+  },
+  {
+    "date": "2026-04-18",
+    "task": "A closed and common orbit",
+    "task_done": true,
+    "time_start": "13:58:31",
+    "time_end": "14:41:45",
+    "minutes": 43.0
+  },
+  {
+    "date": "2026-04-18",
+    "task": "The coming of the book",
+    "task_done": false,
+    "time_start": "17:15:07",
+    "time_end": "17:41:43",
+    "minutes": 27.0
+  },
+  {
+    "date": "2026-04-18",
+    "task": "Record of a spaceborn few",
+    "task_done": false,
+    "time_start": "17:52:06",
+    "time_end": "18:45:24",
+    "minutes": 53.0
+  },
+  {
+    "date": "2026-04-18",
+    "task": "Record of a spaceborn few",
+    "task_done": false,
+    "time_start": "23:19:04",
+    "time_end": "23:41:05",
+    "minutes": 22.0
   }
 ]
