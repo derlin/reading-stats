@@ -38866,7 +38866,7 @@
   {
     "date": "2026-04-18",
     "task": "Record of a spaceborn few",
-    "task_done": false,
+    "task_done": true,
     "time_start": "17:52:06",
     "time_end": "18:45:24",
     "minutes": 53.0
@@ -38874,9 +38874,553 @@
   {
     "date": "2026-04-18",
     "task": "Record of a spaceborn few",
-    "task_done": false,
+    "task_done": true,
+    "time_start": "17:52:06",
+    "time_end": "18:45:24",
+    "minutes": 53.0
+  },
+  {
+    "date": "2026-04-18",
+    "task": "Record of a spaceborn few",
+    "task_done": true,
     "time_start": "23:19:04",
     "time_end": "23:41:05",
     "minutes": 22.0
+  },
+  {
+    "date": "2026-04-18",
+    "task": "Record of a spaceborn few",
+    "task_done": true,
+    "time_start": "23:19:04",
+    "time_end": "23:41:05",
+    "minutes": 22.0
+  },
+  {
+    "date": "2026-04-19",
+    "task": "Record of a spaceborn few",
+    "task_done": true,
+    "time_start": "10:57:23",
+    "time_end": "11:25:03",
+    "minutes": 28.0
+  },
+  {
+    "date": "2026-04-19",
+    "task": "The coming of the book",
+    "task_done": false,
+    "time_start": "11:40:04",
+    "time_end": "11:56:06",
+    "minutes": 16.0
+  },
+  {
+    "date": "2026-04-19",
+    "task": "Record of a spaceborn few",
+    "task_done": true,
+    "time_start": "15:00:52",
+    "time_end": "15:21:15",
+    "minutes": 20.0
+  },
+  {
+    "date": "2026-04-19",
+    "task": "Record of a spaceborn few",
+    "task_done": true,
+    "time_start": "21:26:21",
+    "time_end": "22:35:31",
+    "minutes": 69.0
+  },
+  {
+    "date": "2026-04-20",
+    "task": "The coming of the book",
+    "task_done": false,
+    "time_start": "19:41:13",
+    "time_end": "20:06:12",
+    "minutes": 25.0
+  },
+  {
+    "date": "2026-04-20",
+    "task": "Record of a spaceborn few",
+    "task_done": true,
+    "time_start": "21:22:46",
+    "time_end": "22:34:45",
+    "minutes": 72.0
+  },
+  {
+    "date": "2026-04-21",
+    "task": "Record of a spaceborn few",
+    "task_done": true,
+    "time_start": "21:20:33",
+    "time_end": "22:26:41",
+    "minutes": 66.0
+  },
+  {
+    "date": "2026-04-22",
+    "task": "Record of a spaceborn few",
+    "task_done": true,
+    "time_start": "21:26:17",
+    "time_end": "22:23:19",
+    "minutes": 57.0
+  },
+  {
+    "date": "2026-04-23",
+    "task": "Record of a spaceborn few",
+    "task_done": true,
+    "time_start": "21:30:42",
+    "time_end": "22:16:41",
+    "minutes": 46.0
+  },
+  {
+    "date": "2026-04-24",
+    "task": "The left hand of darkness",
+    "task_done": true,
+    "time_start": "19:58:25",
+    "time_end": "20:36:52",
+    "minutes": 38.0
+  },
+  {
+    "date": "2026-04-24",
+    "task": "The left hand of darkness",
+    "task_done": true,
+    "time_start": "22:07:48",
+    "time_end": "23:39:33",
+    "minutes": 92.0
+  },
+  {
+    "date": "2026-04-25",
+    "task": "The left hand of darkness",
+    "task_done": true,
+    "time_start": "10:06:12",
+    "time_end": "11:08:15",
+    "minutes": 62.0
+  },
+  {
+    "date": "2026-04-25",
+    "task": "The left hand of darkness",
+    "task_done": true,
+    "time_start": "12:59:41",
+    "time_end": "13:19:56",
+    "minutes": 20.0
+  },
+  {
+    "date": "2026-04-25",
+    "task": "The left hand of darkness",
+    "task_done": true,
+    "time_start": "16:17:12",
+    "time_end": "17:02:25",
+    "minutes": 45.0
+  },
+  {
+    "date": "2026-04-25",
+    "task": "The left hand of darkness",
+    "task_done": true,
+    "time_start": "18:07:29",
+    "time_end": "18:16:01",
+    "minutes": 9.0
+  },
+  {
+    "date": "2026-04-25",
+    "task": "The left hand of darkness",
+    "task_done": true,
+    "time_start": "21:49:19",
+    "time_end": "22:57:45",
+    "minutes": 68.0
+  },
+  {
+    "date": "2026-04-26",
+    "task": "The left hand of darkness",
+    "task_done": true,
+    "time_start": "09:19:40",
+    "time_end": "09:41:53",
+    "minutes": 22.0
+  },
+  {
+    "date": "2026-04-26",
+    "task": "The left hand of darkness",
+    "task_done": true,
+    "time_start": "13:25:40",
+    "time_end": "14:01:39",
+    "minutes": 36.0
+  },
+  {
+    "date": "2026-04-26",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "17:30:04",
+    "time_end": "17:44:48",
+    "minutes": 15.0
+  },
+  {
+    "date": "2026-04-26",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "21:35:12",
+    "time_end": "22:26:52",
+    "minutes": 52.0
+  },
+  {
+    "date": "2026-04-27",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "21:16:52",
+    "time_end": "22:39:46",
+    "minutes": 83.0
+  },
+  {
+    "date": "2026-04-28",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "13:36:20",
+    "time_end": "14:10:11",
+    "minutes": 34.0
+  },
+  {
+    "date": "2026-04-28",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "15:02:17",
+    "time_end": "16:06:07",
+    "minutes": 64.0
+  },
+  {
+    "date": "2026-04-28",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "16:13:56",
+    "time_end": "16:46:44",
+    "minutes": 33.0
+  },
+  {
+    "date": "2026-04-28",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "20:40:21",
+    "time_end": "21:37:23",
+    "minutes": 57.0
+  },
+  {
+    "date": "2026-04-28",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "21:47:42",
+    "time_end": "22:37:59",
+    "minutes": 50.0
+  },
+  {
+    "date": "2026-04-29",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "21:51:20",
+    "time_end": "23:15:15",
+    "minutes": 84.0
+  },
+  {
+    "date": "2026-04-30",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "21:16:33",
+    "time_end": "21:53:56",
+    "minutes": 37.0
+  },
+  {
+    "date": "2026-04-30",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "22:41:10",
+    "time_end": "23:13:15",
+    "minutes": 32.0
+  },
+  {
+    "date": "2026-05-01",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "12:30:59",
+    "time_end": "12:50:40",
+    "minutes": 20.0
+  },
+  {
+    "date": "2026-05-01",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "13:54:09",
+    "time_end": "14:25:22",
+    "minutes": 31.0
+  },
+  {
+    "date": "2026-05-01",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "14:32:06",
+    "time_end": "15:03:25",
+    "minutes": 31.0
+  },
+  {
+    "date": "2026-05-01",
+    "task": "Velocity weapon",
+    "task_done": true,
+    "time_start": "15:53:09",
+    "time_end": "16:44:56",
+    "minutes": 52.0
+  },
+  {
+    "date": "2026-05-01",
+    "task": "The sympathizer ",
+    "task_done": true,
+    "time_start": "21:50:14",
+    "time_end": "23:59:59",
+    "minutes": 130.0
+  },
+  {
+    "date": "2026-05-02",
+    "task": "The sympathizer ",
+    "task_done": true,
+    "time_start": "09:12:22",
+    "time_end": "10:06:17",
+    "minutes": 54.0
+  },
+  {
+    "date": "2026-05-02",
+    "task": "The sympathizer ",
+    "task_done": true,
+    "time_start": "13:45:26",
+    "time_end": "14:55:39",
+    "minutes": 70.0
+  },
+  {
+    "date": "2026-05-02",
+    "task": "The sympathizer ",
+    "task_done": true,
+    "time_start": "21:50:23",
+    "time_end": "23:56:20",
+    "minutes": 126.0
+  },
+  {
+    "date": "2026-05-03",
+    "task": "The sympathizer ",
+    "task_done": true,
+    "time_start": "20:08:13",
+    "time_end": "20:25:29",
+    "minutes": 17.0
+  },
+  {
+    "date": "2026-05-03",
+    "task": "The sympathizer ",
+    "task_done": true,
+    "time_start": "21:35:44",
+    "time_end": "22:48:58",
+    "minutes": 73.0
+  },
+  {
+    "date": "2026-05-04",
+    "task": "The sympathizer ",
+    "task_done": true,
+    "time_start": "21:28:17",
+    "time_end": "22:41:04",
+    "minutes": 73.0
+  },
+  {
+    "date": "2026-05-05",
+    "task": "The sympathizer ",
+    "task_done": true,
+    "time_start": "21:30:18",
+    "time_end": "22:34:39",
+    "minutes": 64.0
+  },
+  {
+    "date": "2026-05-06",
+    "task": "The sympathizer ",
+    "task_done": true,
+    "time_start": "19:49:24",
+    "time_end": "20:12:06",
+    "minutes": 23.0
+  },
+  {
+    "date": "2026-05-06",
+    "task": "The sympathizer ",
+    "task_done": true,
+    "time_start": "21:25:36",
+    "time_end": "21:53:55",
+    "minutes": 28.0
+  },
+  {
+    "date": "2026-05-06",
+    "task": "Meet the newmans",
+    "task_done": true,
+    "time_start": "22:01:24",
+    "time_end": "22:34:10",
+    "minutes": 33.0
+  },
+  {
+    "date": "2026-05-07",
+    "task": "Meet the newmans",
+    "task_done": true,
+    "time_start": "21:16:57",
+    "time_end": "22:23:37",
+    "minutes": 67.0
+  },
+  {
+    "date": "2026-05-08",
+    "task": "Meet the newmans",
+    "task_done": true,
+    "time_start": "23:09:54",
+    "time_end": "23:28:21",
+    "minutes": 18.0
+  },
+  {
+    "date": "2026-05-09",
+    "task": "Meet the newmans",
+    "task_done": true,
+    "time_start": "08:24:10",
+    "time_end": "08:46:12",
+    "minutes": 22.0
+  },
+  {
+    "date": "2026-05-09",
+    "task": "Meet the newmans",
+    "task_done": true,
+    "time_start": "11:26:09",
+    "time_end": "11:47:36",
+    "minutes": 21.0
+  },
+  {
+    "date": "2026-05-09",
+    "task": "Meet the newmans",
+    "task_done": true,
+    "time_start": "12:09:05",
+    "time_end": "12:17:13",
+    "minutes": 8.0
+  },
+  {
+    "date": "2026-05-09",
+    "task": "Meet the newmans",
+    "task_done": true,
+    "time_start": "16:17:03",
+    "time_end": "16:51:03",
+    "minutes": 34.0
+  },
+  {
+    "date": "2026-05-09",
+    "task": "All my friends are superheroes",
+    "task_done": true,
+    "time_start": "16:51:26",
+    "time_end": "17:28:41",
+    "minutes": 37.0
+  },
+  {
+    "date": "2026-05-09",
+    "task": "All my friends are superheroes",
+    "task_done": true,
+    "time_start": "18:14:47",
+    "time_end": "18:42:20",
+    "minutes": 28.0
+  },
+  {
+    "date": "2026-05-09",
+    "task": "Meet the newmans",
+    "task_done": true,
+    "time_start": "21:31:19",
+    "time_end": "22:45:55",
+    "minutes": 75.0
+  },
+  {
+    "date": "2026-05-09",
+    "task": "Meet the newmans",
+    "task_done": true,
+    "time_start": "22:53:39",
+    "time_end": "23:41:52",
+    "minutes": 48.0
+  },
+  {
+    "date": "2026-05-10",
+    "task": "Meet the newmans",
+    "task_done": true,
+    "time_start": "09:13:30",
+    "time_end": "10:07:40",
+    "minutes": 54.0
+  },
+  {
+    "date": "2026-05-10",
+    "task": "Cloud 9",
+    "task_done": true,
+    "time_start": "12:37:09",
+    "time_end": "13:01:29",
+    "minutes": 24.0
+  },
+  {
+    "date": "2026-05-10",
+    "task": "Cloud 9",
+    "task_done": true,
+    "time_start": "14:01:29",
+    "time_end": "14:44:41",
+    "minutes": 43.0
+  },
+  {
+    "date": "2026-05-10",
+    "task": "Cloud 9",
+    "task_done": true,
+    "time_start": "14:54:33",
+    "time_end": "15:15:02",
+    "minutes": 20.0
+  },
+  {
+    "date": "2026-05-10",
+    "task": "L'invention de Morel",
+    "task_done": false,
+    "time_start": "15:38:06",
+    "time_end": "16:00:10",
+    "minutes": 22.0
+  },
+  {
+    "date": "2026-05-10",
+    "task": "L'invention de Morel",
+    "task_done": false,
+    "time_start": "19:46:52",
+    "time_end": "19:50:59",
+    "minutes": 4.0
+  },
+  {
+    "date": "2026-05-10",
+    "task": "Meet the newmans",
+    "task_done": true,
+    "time_start": "19:51:02",
+    "time_end": "20:00:58",
+    "minutes": 10.0
+  },
+  {
+    "date": "2026-05-10",
+    "task": "Meet the newmans",
+    "task_done": true,
+    "time_start": "21:45:45",
+    "time_end": "22:51:17",
+    "minutes": 66.0
+  },
+  {
+    "date": "2026-05-11",
+    "task": "Meet the newmans",
+    "task_done": true,
+    "time_start": "21:18:36",
+    "time_end": "22:32:21",
+    "minutes": 74.0
+  },
+  {
+    "date": "2026-05-12",
+    "task": "Meet the newmans",
+    "task_done": true,
+    "time_start": "19:54:02",
+    "time_end": "20:06:11",
+    "minutes": 12.0
+  },
+  {
+    "date": "2026-05-12",
+    "task": "The Galaxy, and the ground within",
+    "task_done": false,
+    "time_start": "21:34:02",
+    "time_end": "22:37:11",
+    "minutes": 63.0
+  },
+  {
+    "date": "2026-05-13",
+    "task": "The Galaxy, and the ground within",
+    "task_done": false,
+    "time_start": "21:23:30",
+    "time_end": "22:55:42",
+    "minutes": 92.0
   }
 ]
