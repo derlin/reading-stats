@@ -162,9 +162,9 @@
   },
   "The left hand of darkness": {
     "author": "Ursula K. Le Guin",
+    "pages": 366,
     "GoodreadsID": "118028",
     "ISBN": "9780441478",
-    "pages": 366,
     "pubDate": "1969-01-01"
   },
   "Velocity weapon": {
@@ -201,6 +201,20 @@
     "ISBN": "9781559360",
     "pages": 88,
     "pubDate": "1979-01-01"
+  },
+  "L'invention de Morel": {
+    "author": "Adolfo Bioy Casares",
+    "pages": 128,
+    "GoodreadsID": "48528557",
+    "ISBN": "9782264072",
+    "pubDate": "1940-01-01"
+  },
+  "The Galaxy, and the ground within": {
+    "author": "Becky Chambers",
+    "GoodreadsID": "57562102",
+    "ISBN": "9781473647",
+    "pages": 324,
+    "pubDate": "2021-02-19"
   },
   "The scarecrow": {
     "author": "Michael Connelly",
@@ -1781,6 +1795,54 @@
     "ISBN": "9782366580549",
     "pages": 263,
     "pubDate": "2013-09-01"
+  },
+  "The third policeman": {
+    "author": "Flann O'Brien",
+    "pages": 206,
+    "GoodreadsID": "587369",
+    "ISBN": "9780007247",
+    "pubDate": "1967-01-01"
+  },
+  "Way station": {
+    "author": "Clifford D. Simak",
+    "pages": 236,
+    "GoodreadsID": "26118726",
+    "ISBN": "9781504013",
+    "pubDate": "1963-06-01"
+  },
+  "The fifth science": {
+    "author": "Exurb1a",
+    "pages": 247,
+    "GoodreadsID": "41580260",
+    "pubDate": "2018-08-24"
+  },
+  "Mr. Penumbra's 24-hour bookstore": {
+    "author": "Robin Sloan",
+    "pages": 384,
+    "GoodreadsID": "59937257",
+    "ISBN": "9781250870292",
+    "pubDate": "2012-09-26"
+  },
+  "Firmin": {
+    "author": "Sam Savage",
+    "pages": 192,
+    "GoodreadsID": "6406646",
+    "ISBN": "9780753826515",
+    "pubDate": "2006-01-01"
+  },
+  "Des meurtres qui font du bien": {
+    "author": "Karsten Dusse",
+    "pages": 400,
+    "GoodreadsID": "62929429",
+    "ISBN": "9782749172491",
+    "pubDate": "2019-06-07"
+  },
+  "The paper menagerie and other stories": {
+    "author": "Ken Liu",
+    "pages": 450,
+    "GoodreadsID": "24885533",
+    "ISBN": "9781481442541",
+    "pubDate": "2026-03-08"
   },
   "Neuromancien": {
     "author": "William Gibson",
