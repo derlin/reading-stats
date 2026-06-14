@@ -57,11 +57,16 @@
         border-width: 0;
       }
     </style>
-    <!--
-    Use polifill.io to request new JS features.
-    Currently used: Array.prototype.at
-    -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.111.0&features=Array.prototype.at"></script>
+    <script>
+    if (!Array.prototype.at) {
+      Array.prototype.at = function(index) {
+        index = Math.trunc(index) || 0;
+        if (index < 0) index += this.length;
+        if (index >= this.length) return undefined;
+        return this[index];
+      };
+    }
+    </script>
     <script type="module" src="/src/index.jsx"></script>
   </head>
   <body>
