@@ -39922,7 +39922,7 @@
   {
     "date": "2026-06-06",
     "task": "Des meurtres pour l\u00e2cher prise",
-    "task_done": false,
+    "task_done": true,
     "time_start": "21:55:19",
     "time_end": "22:24:28",
     "minutes": 29.0
@@ -39962,7 +39962,7 @@
   {
     "date": "2026-06-07",
     "task": "Des meurtres pour l\u00e2cher prise",
-    "task_done": false,
+    "task_done": true,
     "time_start": "20:21:18",
     "time_end": "20:31:42",
     "minutes": 10.0
@@ -39970,7 +39970,7 @@
   {
     "date": "2026-06-07",
     "task": "Des meurtres pour l\u00e2cher prise",
-    "task_done": false,
+    "task_done": true,
     "time_start": "22:09:57",
     "time_end": "22:34:55",
     "minutes": 25.0
@@ -40002,7 +40002,7 @@
   {
     "date": "2026-06-09",
     "task": "Des meurtres pour l\u00e2cher prise",
-    "task_done": false,
+    "task_done": true,
     "time_start": "22:00:35",
     "time_end": "22:21:23",
     "minutes": 21.0
@@ -40066,7 +40066,7 @@
   {
     "date": "2026-06-13",
     "task": "Black water",
-    "task_done": false,
+    "task_done": true,
     "time_start": "22:36:52",
     "time_end": "23:09:33",
     "minutes": 33.0
@@ -40074,9 +40074,529 @@
   {
     "date": "2026-06-13",
     "task": "Des meurtres pour l\u00e2cher prise",
-    "task_done": false,
+    "task_done": true,
     "time_start": "23:16:17",
     "time_end": "23:32:34",
     "minutes": 16.0
+  },
+  {
+    "date": "2026-06-14",
+    "task": "Black water",
+    "task_done": true,
+    "time_start": "14:35:55",
+    "time_end": "15:12:52",
+    "minutes": 37.0
+  },
+  {
+    "date": "2026-06-14",
+    "task": "Black water",
+    "task_done": true,
+    "time_start": "21:25:32",
+    "time_end": "22:20:59",
+    "minutes": 55.0
+  },
+  {
+    "date": "2026-06-14",
+    "task": "Des meurtres pour l\u00e2cher prise",
+    "task_done": true,
+    "time_start": "22:29:48",
+    "time_end": "22:40:28",
+    "minutes": 11.0
+  },
+  {
+    "date": "2026-06-15",
+    "task": "Des meurtres pour l\u00e2cher prise",
+    "task_done": true,
+    "time_start": "21:36:38",
+    "time_end": "22:38:46",
+    "minutes": 62.0
+  },
+  {
+    "date": "2026-06-16",
+    "task": "Des meurtres pour l\u00e2cher prise",
+    "task_done": true,
+    "time_start": "21:31:31",
+    "time_end": "22:39:58",
+    "minutes": 68.0
+  },
+  {
+    "date": "2026-06-17",
+    "task": "Des meurtres pour l\u00e2cher prise",
+    "task_done": true,
+    "time_start": "22:05:40",
+    "time_end": "22:49:59",
+    "minutes": 44.0
+  },
+  {
+    "date": "2026-06-18",
+    "task": "Des meurtres pour l\u00e2cher prise",
+    "task_done": true,
+    "time_start": "21:31:31",
+    "time_end": "22:33:09",
+    "minutes": 62.0
+  },
+  {
+    "date": "2026-06-19",
+    "task": "The dinner",
+    "task_done": true,
+    "time_start": "19:23:16",
+    "time_end": "19:58:09",
+    "minutes": 35.0
+  },
+  {
+    "date": "2026-06-19",
+    "task": "The dinner",
+    "task_done": true,
+    "time_start": "21:37:23",
+    "time_end": "22:00:04",
+    "minutes": 23.0
+  },
+  {
+    "date": "2026-06-19",
+    "task": "The dinner",
+    "task_done": true,
+    "time_start": "23:58:20",
+    "time_end": "23:59:59",
+    "minutes": 2.0
+  },
+  {
+    "date": "2026-06-20",
+    "task": "The dinner",
+    "task_done": true,
+    "time_start": "00:00:00",
+    "time_end": "00:14:07",
+    "minutes": 14.0
+  },
+  {
+    "date": "2026-06-20",
+    "task": "The dinner",
+    "task_done": true,
+    "time_start": "09:37:53",
+    "time_end": "10:05:21",
+    "minutes": 27.0
+  },
+  {
+    "date": "2026-06-20",
+    "task": "The dinner",
+    "task_done": true,
+    "time_start": "13:18:59",
+    "time_end": "13:35:00",
+    "minutes": 16.0
+  },
+  {
+    "date": "2026-06-20",
+    "task": "The dinner",
+    "task_done": true,
+    "time_start": "16:18:59",
+    "time_end": "16:50:23",
+    "minutes": 31.0
+  },
+  {
+    "date": "2026-06-20",
+    "task": "The dinner",
+    "task_done": true,
+    "time_start": "22:54:40",
+    "time_end": "23:14:46",
+    "minutes": 20.0
+  },
+  {
+    "date": "2026-06-21",
+    "task": "The dinner",
+    "task_done": true,
+    "time_start": "13:56:52",
+    "time_end": "14:57:48",
+    "minutes": 61.0
+  },
+  {
+    "date": "2026-06-21",
+    "task": "The dinner",
+    "task_done": true,
+    "time_start": "21:38:20",
+    "time_end": "22:15:44",
+    "minutes": 37.0
+  },
+  {
+    "date": "2026-06-22",
+    "task": "Momenticon",
+    "task_done": true,
+    "time_start": "19:37:46",
+    "time_end": "20:02:35",
+    "minutes": 25.0
+  },
+  {
+    "date": "2026-06-22",
+    "task": "Momenticon",
+    "task_done": true,
+    "time_start": "21:19:10",
+    "time_end": "22:17:49",
+    "minutes": 59.0
+  },
+  {
+    "date": "2026-06-23",
+    "task": "Momenticon",
+    "task_done": true,
+    "time_start": "21:28:20",
+    "time_end": "22:43:43",
+    "minutes": 75.0
+  },
+  {
+    "date": "2026-06-24",
+    "task": "Momenticon",
+    "task_done": true,
+    "time_start": "21:10:29",
+    "time_end": "22:31:24",
+    "minutes": 81.0
+  },
+  {
+    "date": "2026-06-25",
+    "task": "Momenticon",
+    "task_done": true,
+    "time_start": "07:11:21",
+    "time_end": "07:24:00",
+    "minutes": 13.0
+  },
+  {
+    "date": "2026-06-25",
+    "task": "Momenticon",
+    "task_done": true,
+    "time_start": "07:31:35",
+    "time_end": "07:53:01",
+    "minutes": 21.0
+  },
+  {
+    "date": "2026-06-25",
+    "task": "Momenticon",
+    "task_done": true,
+    "time_start": "08:14:19",
+    "time_end": "08:29:06",
+    "minutes": 15.0
+  },
+  {
+    "date": "2026-06-25",
+    "task": "Momenticon",
+    "task_done": true,
+    "time_start": "19:12:35",
+    "time_end": "19:45:10",
+    "minutes": 33.0
+  },
+  {
+    "date": "2026-06-25",
+    "task": "Momenticon",
+    "task_done": true,
+    "time_start": "20:29:48",
+    "time_end": "20:55:58",
+    "minutes": 26.0
+  },
+  {
+    "date": "2026-06-25",
+    "task": "Momenticon",
+    "task_done": true,
+    "time_start": "21:54:21",
+    "time_end": "22:23:21",
+    "minutes": 29.0
+  },
+  {
+    "date": "2026-06-26",
+    "task": "Momenticon",
+    "task_done": true,
+    "time_start": "21:44:38",
+    "time_end": "23:09:35",
+    "minutes": 85.0
+  },
+  {
+    "date": "2026-06-27",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "13:40:08",
+    "time_end": "14:03:04",
+    "minutes": 23.0
+  },
+  {
+    "date": "2026-06-27",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "17:27:27",
+    "time_end": "17:49:49",
+    "minutes": 22.0
+  },
+  {
+    "date": "2026-06-27",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "22:33:38",
+    "time_end": "22:59:48",
+    "minutes": 26.0
+  },
+  {
+    "date": "2026-06-28",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "17:49:11",
+    "time_end": "18:06:51",
+    "minutes": 18.0
+  },
+  {
+    "date": "2026-06-28",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "21:50:57",
+    "time_end": "22:24:22",
+    "minutes": 33.0
+  },
+  {
+    "date": "2026-06-28",
+    "task": "Cucul",
+    "task_done": true,
+    "time_start": "22:36:36",
+    "time_end": "22:51:43",
+    "minutes": 15.0
+  },
+  {
+    "date": "2026-06-29",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "20:00:00",
+    "time_end": "20:22:25",
+    "minutes": 22.0
+  },
+  {
+    "date": "2026-06-29",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "21:27:59",
+    "time_end": "21:59:29",
+    "minutes": 32.0
+  },
+  {
+    "date": "2026-06-29",
+    "task": "Cucul",
+    "task_done": true,
+    "time_start": "21:59:45",
+    "time_end": "22:34:57",
+    "minutes": 35.0
+  },
+  {
+    "date": "2026-06-30",
+    "task": "Cucul",
+    "task_done": true,
+    "time_start": "21:36:38",
+    "time_end": "22:13:18",
+    "minutes": 37.0
+  },
+  {
+    "date": "2026-07-01",
+    "task": "Cucul",
+    "task_done": true,
+    "time_start": "21:44:57",
+    "time_end": "22:42:20",
+    "minutes": 57.0
+  },
+  {
+    "date": "2026-07-02",
+    "task": "Cucul",
+    "task_done": true,
+    "time_start": "21:30:33",
+    "time_end": "22:22:54",
+    "minutes": 52.0
+  },
+  {
+    "date": "2026-07-03",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "20:30:48",
+    "time_end": "20:46:23",
+    "minutes": 16.0
+  },
+  {
+    "date": "2026-07-03",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "22:12:36",
+    "time_end": "23:06:24",
+    "minutes": 54.0
+  },
+  {
+    "date": "2026-07-03",
+    "task": "Cucul",
+    "task_done": true,
+    "time_start": "23:17:37",
+    "time_end": "23:35:16",
+    "minutes": 18.0
+  },
+  {
+    "date": "2026-07-04",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "13:56:39",
+    "time_end": "14:14:15",
+    "minutes": 18.0
+  },
+  {
+    "date": "2026-07-04",
+    "task": "Cucul",
+    "task_done": true,
+    "time_start": "14:47:03",
+    "time_end": "15:02:17",
+    "minutes": 15.0
+  },
+  {
+    "date": "2026-07-04",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "22:27:01",
+    "time_end": "23:05:26",
+    "minutes": 38.0
+  },
+  {
+    "date": "2026-07-05",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "08:47:25",
+    "time_end": "09:15:55",
+    "minutes": 28.0
+  },
+  {
+    "date": "2026-07-05",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "14:18:46",
+    "time_end": "15:03:04",
+    "minutes": 44.0
+  },
+  {
+    "date": "2026-07-05",
+    "task": "Discontent",
+    "task_done": true,
+    "time_start": "18:56:42",
+    "time_end": "18:59:45",
+    "minutes": 3.0
+  },
+  {
+    "date": "2026-07-05",
+    "task": "Discontent",
+    "task_done": true,
+    "time_start": "21:45:50",
+    "time_end": "22:35:36",
+    "minutes": 50.0
+  },
+  {
+    "date": "2026-07-06",
+    "task": "Discontent",
+    "task_done": true,
+    "time_start": "21:24:00",
+    "time_end": "22:25:51",
+    "minutes": 62.0
+  },
+  {
+    "date": "2026-07-07",
+    "task": "Discontent",
+    "task_done": true,
+    "time_start": "19:13:25",
+    "time_end": "19:49:39",
+    "minutes": 36.0
+  },
+  {
+    "date": "2026-07-07",
+    "task": "Discontent",
+    "task_done": true,
+    "time_start": "21:02:25",
+    "time_end": "22:28:42",
+    "minutes": 86.0
+  },
+  {
+    "date": "2026-07-08",
+    "task": "Blindsight",
+    "task_done": false,
+    "time_start": "18:44:50",
+    "time_end": "18:56:40",
+    "minutes": 12.0
+  },
+  {
+    "date": "2026-07-08",
+    "task": "Blindsight",
+    "task_done": false,
+    "time_start": "21:35:18",
+    "time_end": "22:35:03",
+    "minutes": 60.0
+  },
+  {
+    "date": "2026-07-09",
+    "task": "Blindsight",
+    "task_done": false,
+    "time_start": "21:23:30",
+    "time_end": "21:38:34",
+    "minutes": 15.0
+  },
+  {
+    "date": "2026-07-09",
+    "task": "Blindsight",
+    "task_done": false,
+    "time_start": "21:57:22",
+    "time_end": "22:32:32",
+    "minutes": 35.0
+  },
+  {
+    "date": "2026-07-10",
+    "task": "Blindsight",
+    "task_done": false,
+    "time_start": "22:22:06",
+    "time_end": "22:55:15",
+    "minutes": 33.0
+  },
+  {
+    "date": "2026-07-10",
+    "task": "Blindsight",
+    "task_done": false,
+    "time_start": "23:04:05",
+    "time_end": "23:16:08",
+    "minutes": 12.0
+  },
+  {
+    "date": "2026-07-11",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "08:59:29",
+    "time_end": "09:26:14",
+    "minutes": 27.0
+  },
+  {
+    "date": "2026-07-11",
+    "task": "Blindsight",
+    "task_done": false,
+    "time_start": "13:55:33",
+    "time_end": "14:21:33",
+    "minutes": 26.0
+  },
+  {
+    "date": "2026-07-11",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "14:22:45",
+    "time_end": "14:38:07",
+    "minutes": 15.0
+  },
+  {
+    "date": "2026-07-11",
+    "task": "Bullshit jobs",
+    "task_done": true,
+    "time_start": "15:35:27",
+    "time_end": "16:00:57",
+    "minutes": 26.0
+  },
+  {
+    "date": "2026-07-11",
+    "task": "Blindsight",
+    "task_done": false,
+    "time_start": "16:57:37",
+    "time_end": "17:37:41",
+    "minutes": 40.0
+  },
+  {
+    "date": "2026-07-11",
+    "task": "Blindsight",
+    "task_done": false,
+    "time_start": "23:21:57",
+    "time_end": "23:51:31",
+    "minutes": 30.0
   }
 ]

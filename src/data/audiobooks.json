@@ -1,5 +1,69 @@
 [
   {
+    "title": "The Gate of the Feral Gods",
+    "author": "Matt Dinniman",
+    "day_end": "2026-06-20",
+    "minutes": 1083,
+    "pages": 592,
+    "GoodreadsID": "57905101"
+  },
+  {
+    "title": "The Dungeon Anarchist's Cookbook",
+    "author": "Matt Dinniman",
+    "day_end": "2026-04-26",
+    "minutes": 1014,
+    "pages": 532,
+    "GoodreadsID": "211721809"
+  },
+  {
+    "title": "Carl's Doomsday Scenario",
+    "author": "Matt Dinniman",
+    "day_end": "2026-04-03",
+    "minutes": 688,
+    "pages": 386,
+    "GoodreadsID": "56377548"
+  },
+  {
+    "title": "Dungeon Crawler Carl",
+    "author": "Matt Dinniman",
+    "day_end": "2026-03-10",
+    "minutes": 811,
+    "pages": 14,
+    "GoodreadsID": "57127342"
+  },
+  {
+    "title": "None of This Is True",
+    "author": "Lisa Jewell",
+    "day_end": "2026-07-02",
+    "minutes": 614,
+    "pages": 390,
+    "GoodreadsID": "62334530"
+  },
+  {
+    "title": "You Killed Me First",
+    "author": "John Marrs",
+    "day_end": "2026-06-27",
+    "minutes": 585,
+    "pages": 385,
+    "GoodreadsID": "212375021"
+  },
+  {
+    "title": "The Rosie Result",
+    "author": "Graeme Simsion",
+    "day_end": "2026-02-01",
+    "minutes": 496,
+    "pages": 376,
+    "GoodreadsID": "41018628"
+  },
+  {
+    "title": "The Rosie Effect",
+    "author": "Graeme Simsion",
+    "day_end": "2026-01-02",
+    "minutes": 539,
+    "pages": 368,
+    "GoodreadsID": "23492671"
+  },
+  {
     "title": "The Rosie Project",
     "author": "Graeme Simsion",
     "day_end": "2025-12-17",
@@ -14,14 +78,6 @@
     "minutes": 581,
     "pages": 329,
     "GoodreadsID": "60556912"
-  },
-  {
-    "title": "The Hunting Party",
-    "author": "Lucy Foley",
-    "day_end": "2025-11-19",
-    "minutes": 604,
-    "pages": 406,
-    "GoodreadsID": "37642030"
   },
   {
     "title": "Atmosphere",
@@ -48,14 +104,6 @@
     "GoodreadsID": "218572920"
   },
   {
-    "title": "Jonathan Strange & Mr Norrell",
-    "author": "Susanna Clarke",
-    "day_end": "2025-07-19",
-    "minutes": 1950,
-    "pages": 864,
-    "GoodreadsID": "214161672"
-  },
-  {
     "title": "The House In The Cerulean Sea",
     "author": "T.J. Klune",
     "day_end": "2025-05-19",
@@ -64,20 +112,12 @@
     "GoodreadsID": "53271469"
   },
   {
-    "title": "The Minders",
-    "author": "John Marrs",
-    "day_end": "2025-10-08",
-    "minutes": 675,
-    "pages": 448,
-    "GoodreadsID": "56851600"
-  },
-  {
-    "title": "The Rosie Effect",
-    "author": "Graeme Simsion",
-    "day_end": "2026-01-02",
-    "minutes": 539,
-    "pages": 368,
-    "GoodreadsID": "23492671"
+    "title": "The Hunting Party",
+    "author": "Lucy Foley",
+    "day_end": "2025-11-19",
+    "minutes": 604,
+    "pages": 406,
+    "GoodreadsID": "37642030"
   },
   {
     "title": "Daisy Jones & The Six",
@@ -96,12 +136,20 @@
     "GoodreadsID": "123018721"
   },
   {
-    "title": "The Rosie Result",
-    "author": "Graeme Simsion",
-    "day_end": "2026-02-01",
-    "minutes": 496,
-    "pages": 376,
-    "GoodreadsID": "41018628"
+    "title": "The Minders",
+    "author": "John Marrs",
+    "day_end": "2025-10-08",
+    "minutes": 675,
+    "pages": 448,
+    "GoodreadsID": "56851600"
+  },
+  {
+    "title": "Jonathan Strange & Mr Norrell",
+    "author": "Susanna Clarke",
+    "day_end": "2025-07-19",
+    "minutes": 1950,
+    "pages": 864,
+    "GoodreadsID": "214161672"
   },
   {
     "title": "Nobody's Fool",
@@ -112,27 +160,19 @@
     "GoodreadsID": "659388"
   },
   {
-    "title": "Dungeon Crawler Carl",
-    "author": "Matt Dinniman",
-    "day_end": "2026-03-10",
-    "minutes": 811,
-    "pages": 14,
-    "GoodreadsID": "57127342"
+    "title": "Yesteryear",
+    "author": "Caro Claire Burke",
+    "day_end": "2026-07-06",
+    "minutes": 827,
+    "pages": 400,
+    "GoodreadsID": "238226942"
   },
   {
-    "title": "Carl's Doomsday Scenario",
-    "author": "Matt Dinniman",
-    "day_end": "2026-04-03",
-    "minutes": 688,
-    "pages": 386,
-    "GoodreadsID": "56377548"
-  },
-  {
-    "title": "The Dungeon Anarchist's Cookbook",
-    "author": "Matt Dinniman",
-    "day_end": "2026-04-26",
-    "minutes": 1014,
-    "pages": 532,
-    "GoodreadsID": "211721809"
+    "title": "Lady Tremaine",
+    "author": "Rachel Hochhauser",
+    "day_end": "2026-07-12",
+    "minutes": 762,
+    "pages": 339,
+    "GoodreadsID": "231126977"
   }
 ]
