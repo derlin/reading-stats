@@ -4,7 +4,7 @@ import { isAudiobook, isTaskFinished, taskWithMaybeLink, UNKNOWN_PAGE } from '..
 import './BookTable.scss';
 
 function formatDuration(minutes) {
-  const h = Math.ceil(minutes / 60);
+  const h = Math.floor(minutes / 60);
   const m = minutes % 60;
   return `${h}:${m < 10 ? '0' + m : m}`;
 }
