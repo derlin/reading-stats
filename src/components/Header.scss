@@ -1,0 +1,79 @@
+@use '../styles/tokens' as *;
+
+.top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  // Opaque, so content scrolling underneath doesn't show through, and a heavy
+  // rule underneath rather than a shadow — flat ink on paper (D11).
+  background: $color-paper;
+  border-bottom: $border;
+
+  &__inner {
+    @include title-font;
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 8px 20pt;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 7px 10px;
+  }
+
+  &__range {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 10pt;
+  }
+
+  &__arrow {
+    // The one glyph carrying the "from → to" relation; it has to stay legible
+    // when the two inputs wrap onto separate lines, so it never collapses.
+    flex: none;
+  }
+
+  &__presets {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 7px 10px;
+  }
+}
+
+.date-input {
+  @include title-font;
+  font-size: 1em;
+  padding: $button-pad;
+  background: $color-paper;
+  color: $color-ink;
+  border: $border;
+  border-radius: 0; // iOS rounds date inputs by default
+
+  &:focus-visible {
+    outline: none;
+    color: $color-paper;
+    background: $color-ink;
+  }
+
+  // Safari/Chrome render the picker glyph in the UA accent; force it to ink.
+  &::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: grayscale(1);
+  }
+}
+
+@include small-screen {
+  .top-bar__inner {
+    padding: 8px 10pt;
+  }
+
+  // At this width the two inputs plus the arrow already fill the row, so the
+  // presets get their own line rather than wrapping mid-group.
+  .top-bar__range {
+    margin-right: 0;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+}

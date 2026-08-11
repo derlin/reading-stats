@@ -1,0 +1,347 @@
+@use 'sass:color';
+@use '../styles/tokens' as *;
+
+// Every colour here now derives from the one palette (D11 item 1). The
+// pre-rewrite table carried three strays: a blue sort arrow (#282bf1), an
+// amber audiobook tint (#ffc107) and a grey hover — none of which belonged to
+// any system on the page.
+$rule: rgba($color-ink, 0.12);
+$hover: rgba($color-ink, 0.05);
+$sort-idle: rgba($color-ink, 0.35);
+
+$sort-icon-disabled: '↕';
+$sort-icon-up: '↑';
+$sort-icon-down: '↓';
+
+.bookTable {
+  max-width: $content-width;
+  margin: 0 auto;
+
+  table {
+    width: 100%;
+    margin: 10px auto;
+    padding: 5px 10px;
+    border-spacing: 0;
+    text-align: left;
+  }
+
+  td,
+  th {
+    border-bottom: 0.1rem solid $rule;
+    padding: 0.8rem;
+  }
+
+  th {
+    @include title-font;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none; // repeated header clicks otherwise select the label text
+  }
+
+  // The hover tint marks the book row under the pointer, and a detail row is
+  // not a book: lighting it up on its own would offer it as something separately
+  // selectable when it is really the tail of the row above. Its audiobook tint
+  // is a different matter and does carry over (see `tr.audio` below), because
+  // that one is identity rather than pointer feedback.
+  tr:hover:not(.bookTable__detailRow) {
+    background: $hover;
+  }
+
+  tr.partial {
+    opacity: 0.5;
+  }
+
+  // Audiobooks: salmon row tint plus a speaker glyph against the title. The
+  // old rule hung the glyph off the Days cell, because audiobooks came from a
+  // separate file back then and had no day span to show there; under the D7
+  // payload they are ordinary books with sessions, so it belongs on the title.
+  //
+  // It then hung off `td:first-child::before` until the expandable rows landed,
+  // and those made the cell the wrong anchor twice over: a cell pseudo-element
+  // paints ahead of everything in the cell, so it would sit in front of the
+  // expand chevron and knock the audio rows out of the column the chevrons line
+  // up in, and the detail row's single spanning cell is a first child too and
+  // would have grown a second speaker of its own. So the glyph is now an
+  // element of its own, emitted between the chevron and the title (see
+  // BookTable.tsx). Not a `::before` on the title element either: the title is
+  // usually a permanently underlined link and the underline is drawn across the
+  // whole inline box, straight through the icon.
+  tr.audio {
+    background: $color-accent-light;
+
+    &:hover:not(.bookTable__detailRow) {
+      background: color.adjust($color-accent-light, $lightness: -4%);
+    }
+  }
+
+  &__audio {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23e91e63%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M11%205%206%209H2v6h4l5%204z%22%2F%3E%3Cpath%20d%3D%22M19.07%204.93a10%2010%200%200%201%200%2014.14M15.54%208.46a5%205%200%200%201%200%207.07%22%2F%3E%3C%2Fsvg%3E');
+  }
+
+  /* -- title cell */
+
+  // One visual language per behaviour. The pre-rewrite table gave the DNF
+  // badge and the provider links the same bordered chip, so an interactive
+  // link and a static status label were indistinguishable — the chips read as
+  // decoration and nobody clicked them. Now: underlined text is a link,
+  // bordered chips are labels, and nothing is both.
+  //
+  // The title link and provider chips themselves live in BookLink.scss now —
+  // shared with the reading-per-day chart's click detail, which names a book
+  // the same way.
+
+  &__badge {
+    @include title-font;
+    font-size: 0.7em;
+    line-height: 1;
+    padding: 2px 4px;
+    margin-left: 5px;
+    border: 1px solid $color-ink;
+    white-space: nowrap;
+    color: $color-paper;
+    background: $color-ink;
+  }
+
+  /* -- expandable row detail */
+
+  // The columns the table sheds at narrow widths are not gone, they are folded
+  // into a row that opens underneath the book. Nothing is shed on the desktop
+  // layout, so both the chevron and the row it opens are switched off here and
+  // only turned on inside the shedding block below. That also means a window
+  // widened while a row is open corrects itself: the detail simply stops being
+  // displayed, and the component never has to watch the viewport to find out.
+
+  &__expand {
+    display: none;
+    // Flush left, and with no padding on that side, so the chevrons line up in
+    // a column down the edge of the title cell whatever the row holds. The
+    // touch target is bought vertically and to the right instead, where the
+    // title column — 44% of an already narrow viewport — can spare it; the
+    // negative margins keep that padding from making every row taller.
+    //
+    // It does not have to reach a thumb-sized target on its own any more, since
+    // the whole row now opens the detail. It is sized to be *seen*: at 0.85em of
+    // an already reduced mobile font it was a mark you had to look for, and it
+    // is the one thing telling the reader there is anything to open.
+    padding: 8px 10px 8px 0;
+    margin: -8px 0;
+    border: none;
+    background: none;
+    color: $color-ink;
+    font-size: 1.15em;
+    line-height: 1;
+    cursor: pointer;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+
+  &__detailRow {
+    display: none;
+  }
+
+  &__detail {
+    margin: 0;
+  }
+
+  &__detailItem {
+    display: flex;
+    gap: 0.6rem;
+    padding: 0.15rem 0;
+
+    dt {
+      @include title-font;
+      // A fixed measure rather than the label's own width, so the values line
+      // up in a column of their own — the same reason the figures are
+      // right-aligned in the table.
+      flex: 0 0 5.5em;
+    }
+
+    dd {
+      // Same split as the table itself: the labels are prose, the values are
+      // figures and keep the monospace face they had in their cells.
+      font-family: $mono-font-family;
+      margin: 0;
+    }
+  }
+
+  // Hours is the odd one out: the table only sheds it at `extra-small-screen`,
+  // while End Date, Days and Rating go a breakpoint earlier. So its line stays
+  // out of the detail until the column it stands in for has actually left,
+  // rather than repeating a value that is still on screen two columns over. It
+  // is settled here instead of in the component because which columns fit is a
+  // question about widths, and every width is declared in this file.
+  &__detailItem--hours {
+    display: none;
+  }
+
+  /* -- sort arrows */
+
+  .sortHandle::after {
+    content: $sort-icon-disabled;
+    display: inline-block;
+    width: 1em;
+    text-align: center;
+    padding-left: 2pt;
+    color: $sort-idle;
+  }
+
+  .sortHandle.sorted::after {
+    color: $color-accent;
+  }
+
+  .sortHandle.sorted.up::after {
+    content: $sort-icon-up;
+  }
+
+  .sortHandle.sorted.down::after {
+    content: $sort-icon-down;
+  }
+
+  /* -- mobile sort control (replaces the ⏰ emoji handle) */
+
+  &__mobileSort {
+    @include title-font;
+    display: none;
+    align-items: center;
+    gap: 6px;
+    padding: 0 20pt;
+
+    select,
+    .bookTable__direction {
+      @include title-font;
+      font-size: 1em;
+      padding: $button-pad;
+      color: $color-ink;
+      background: $color-paper;
+      border: $border;
+      border-radius: 0;
+      cursor: pointer;
+    }
+  }
+
+  /* -- general cell helpers */
+
+  // Two faces, split by what the column is for. Monospace is the site's
+  // identity, but it runs ~15-20% wider per character than a proportional
+  // face, and in a table that width comes straight out of the columns that
+  // hold sentences: titles and author names wrapped early and the dates
+  // wrapped mid-value. So mono stays where its alignment does real work — the
+  // figures — and the prose columns take the site's other face at its
+  // ordinary case (the title font is only uppercase via the mixin, which
+  // would be unreadable on a book title).
+  .text {
+    font-family: $title-font-family;
+  }
+
+  .mono {
+    font-family: $mono-font-family;
+    // A date or a duration is one atomic value; it must never break across
+    // lines. Only .text columns are allowed to wrap.
+    white-space: nowrap;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  /* -- shed columns on narrow screens */
+
+  @include small-screen {
+    &__mobileSort {
+      display: flex;
+    }
+
+    // This is the width where columns start disappearing, so this is where the
+    // control that brings them back appears.
+    &__expand {
+      display: inline-block;
+    }
+
+    // The whole row opens the detail at these widths. The cursor is for the
+    // narrow-desktop case only — a phone has no pointer to change — and it is
+    // scoped to tbody so the sortable headers keep their own meaning.
+    tbody tr:not(.bookTable__detailRow) {
+      cursor: pointer;
+    }
+
+    &__detailRow {
+      display: table-row;
+    }
+
+    // End Date, Days and Rating. Five columns overflow the viewport at this
+    // width, so Rating sheds with the others rather than at the narrower
+    // breakpoint — it stays reachable through the sort control above and, for
+    // its value rather than its order, through the row's detail.
+    th:nth-of-type(4),
+    td:nth-of-type(4),
+    th:nth-of-type(5),
+    td:nth-of-type(5),
+    th:nth-of-type(7),
+    td:nth-of-type(7) {
+      display: none;
+    }
+
+    // Auto layout sizes the table to its content's minimum width, which even
+    // after shedding three columns is wider than a phone (473px against a
+    // 412px viewport). The overflow was the whole page's, not the table's:
+    // it let the document pan sideways, which drags the sticky header and
+    // pushes the fixed scroll-to-top button off screen. Fixed layout makes
+    // the widths ours to declare, so the table can never be the wider thing.
+    // Percentages are of the remaining columns, so they re-normalise on their
+    // own when Hours sheds at the narrower breakpoint.
+    table {
+      table-layout: fixed;
+      font-size: 0.9rem;
+    }
+
+    td,
+    th {
+      padding: 0.5rem 0.4rem;
+      overflow-wrap: break-word; // long titles must wrap, not spill
+    }
+
+    th {
+      white-space: normal; // the labels are short; let them wrap if they must
+    }
+
+    th:nth-of-type(1),
+    td:nth-of-type(1) {
+      width: 44%;
+    }
+
+    th:nth-of-type(2),
+    td:nth-of-type(2) {
+      width: 26%;
+    }
+
+    th:nth-of-type(3),
+    td:nth-of-type(3),
+    th:nth-of-type(6),
+    td:nth-of-type(6) {
+      width: 15%;
+    }
+  }
+
+  @include extra-small-screen {
+    th:nth-of-type(3),
+    td:nth-of-type(3) {
+      display: none;
+    }
+
+    // Hours has just left the table, so its line joins the detail.
+    &__detailItem--hours {
+      display: flex;
+    }
+  }
+}

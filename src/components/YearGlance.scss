@@ -1,0 +1,50 @@
+@use '../styles/tokens' as *;
+
+// Flat ink-on-paper squares, same treatment as .btn — inverts on hover/focus,
+// no radius, no shadow except the .btn :active press.
+.year-glance {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 8px 10px;
+  max-width: $content-width;
+  margin: 3em auto;
+  padding: 0 20pt;
+}
+
+.year-glance__item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  min-width: 5em;
+  padding: 5px 10px;
+  background: $color-paper;
+  color: $color-ink;
+  border: $border;
+  font-family: $mono-font-family;
+  font-size: 0.85em;
+  line-height: 1.3;
+
+  &:active {
+    box-shadow: 0 2px 3px 0 rgb(35 57 66 / 61%);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: $color-paper;
+      background: $color-ink;
+    }
+  }
+
+  &--ongoing {
+    border-color: #c9bab6;
+  }
+}
+
+.year-glance__year {
+  @include title-font;
+  font-size: 1.3em;
+  letter-spacing: -1px;
+}

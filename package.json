@@ -1,0 +1,38 @@
+{
+  "name": "reading-stats-app",
+  "version": "0.1.0",
+  "homepage": "https://readlog.derlin.ch",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "plotly.js-cartesian-dist": "^3.7.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-plotly.js": "^2.6.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --write ."
+  },
+  "overrides": {
+    "plotly.js": "npm:plotly.js-cartesian-dist@^3.7.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.7",
+    "@types/node": "^24.13.3",
+    "@types/plotly.js": "^3.0.13",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@types/react-plotly.js": "^2.6.4",
+    "@vitejs/plugin-react": "^6.0.5",
+    "sass": "^1.102.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.1",
+    "vite-plugin-sitemap": "^0.8.2"
+  }
+}

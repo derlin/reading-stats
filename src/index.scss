@@ -1,0 +1,93 @@
+@use './styles/fonts';
+@use './styles/tokens' as *;
+@use './components/charts/charts.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: $color-paper;
+  color: $color-ink;
+  font-family: $mono-font-family;
+}
+
+a {
+  color: $color-secondary;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: $color-secondary-hover;
+  }
+
+  &:visited {
+    color: $color-secondary-visited;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @include title-font;
+  letter-spacing: -3px; // override from title-font, matching h1-h4 emphasis
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  max-width: $content-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2 {
+  border-bottom: $border;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  max-width: $content-width;
+  margin: 0 auto 10pt;
+  padding: 0 20pt;
+  line-height: 1.5rem;
+}
+
+code {
+  font-family: $mono-font-family;
+  color: $color-accent;
+}
+
+.btn {
+  @include title-font;
+  cursor: pointer;
+  padding: $button-pad;
+  background: $color-paper;
+  border: $border;
+  font-size: 1em;
+
+  &.focus {
+    color: $color-paper;
+    background: $color-ink;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: $color-paper;
+      background: $color-ink;
+    }
+  }
+
+  &:active {
+    box-shadow: 0 2px 3px 0 rgb(35 57 66 / 61%);
+  }
+}

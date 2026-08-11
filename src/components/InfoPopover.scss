@@ -1,0 +1,58 @@
+@use '../styles/tokens' as *;
+
+.info-popover {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+
+  &__button {
+    display: block;
+    padding: 0;
+    border: none;
+    background: none;
+    color: $color-ink;
+    cursor: pointer;
+
+    svg {
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+
+  &__content {
+    // Reset out of the heading: the panel is body copy sitting inside an
+    // uppercase, -3px-tracked, centred h2.
+    font-family: $mono-font-family;
+    font-size: 0.85rem;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 1.4rem;
+    text-align: left;
+
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    z-index: 800;
+    display: block;
+    width: 250px;
+    padding: 0.8rem;
+    background: $color-paper;
+    border: $border; // flat and ruled — no radius, no shadow (D11)
+  }
+
+  @include small-screen {
+    &__content {
+      // Anchored right would overflow the viewport at this width; pin it to
+      // the content column's padding instead.
+      width: min(250px, calc(100vw - 40pt));
+    }
+  }
+}
