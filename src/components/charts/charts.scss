@@ -1,0 +1,63 @@
+@use '../../styles/tokens' as *;
+
+.plot-container {
+  position: relative;
+  max-width: $content-width;
+  margin: 0 auto 20px;
+}
+
+// Key for the two heatmap ramps (B5). Flat swatches with a hairline ink
+// border — the same treatment as the table's rules — rather than Plotly's own
+// gradient colorbar, which is a library default of exactly the kind D11 bars.
+.heatmap-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px 6px;
+  margin: 0 auto 10px;
+  padding: 0 20pt;
+  max-width: $content-width;
+  font-family: $mono-font-family;
+  font-size: 0.75rem;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+  }
+
+  // Fixed width, not the label's: a swatch that sized itself to its caption
+  // made "missed" twice the width of "90+", which reads as if the wider one
+  // meant more.
+  &__swatch {
+    display: block;
+    width: 32px;
+    height: 12px;
+    border: 1px solid $color-ink;
+  }
+
+  &__label,
+  &__end {
+    white-space: nowrap;
+  }
+
+  // The end captions sit next to the swatch row, not under it.
+  &__end {
+    align-self: flex-start;
+    line-height: 12px;
+  }
+}
+
+.plot-detail {
+  max-width: $content-width;
+  margin: 0 auto 10px;
+  padding: 0 20pt;
+  min-height: 1.5rem;
+  font-family: $mono-font-family;
+
+  i {
+    color: $color-accent;
+  }
+}

@@ -1,0 +1,15 @@
+@use './styles/tokens' as *;
+
+.page {
+  // Body copy stays left-aligned: D11 logs the old centred paragraphs as a
+  // defect (on mobile every paragraph was four or five lines ragged on both
+  // edges). Headings centre themselves in index.scss.
+  padding-bottom: 60px;
+}
+
+.section {
+  // Charts, the table and the prose all resolve to the same column, so the
+  // heading rules line up with everything below them (D11 item 2).
+  max-width: $content-width;
+  margin: 0 auto;
+}

@@ -1,0 +1,31 @@
+@use '../styles/tokens' as *;
+
+.scroll-to-top {
+  @include title-font;
+  position: fixed;
+  // Bottom-right rather than the old centre-bottom: over a centred page, the
+  // centred button sat on top of the content it was floating above (D11).
+  right: 20px;
+  bottom: 20px;
+  z-index: 800;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 1.2em;
+  line-height: 1;
+  cursor: pointer;
+
+  // Same flat, sharp-cornered, inverting treatment as `.btn` — no radius, no
+  // shadow, one palette.
+  color: $color-ink;
+  background: $color-paper;
+  border: $border;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $color-paper;
+      background: $color-ink;
+    }
+  }
+}

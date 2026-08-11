@@ -1,0 +1,24 @@
+@use '../styles/tokens' as *;
+
+.section__heading {
+  // The heading already carries `max-width: $content-width; margin: auto` from
+  // index.scss, so anchoring to it anchors to the content column — which is
+  // the whole point of moving the ⓘ here.
+  position: relative;
+
+  .info-popover {
+    position: absolute;
+    right: 0;
+    // Sit on the rule's baseline rather than the text's, so the icon lines up
+    // with the end of the 2px rule regardless of heading length.
+    bottom: 8px;
+  }
+
+  @include small-screen {
+    // The content column is padded at this width; keep the icon inside it
+    // rather than flush against the screen edge.
+    .info-popover {
+      right: 10pt;
+    }
+  }
+}

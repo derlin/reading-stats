@@ -1,0 +1,64 @@
+// Design tokens (D11, B3): the one palette and one content width everything
+// aligns to — headings, buttons, table, charts, and the top bar. Not a
+// reinvention: paper/ink/salmon are D11's own values, already the site's
+// instinct per BRIEF.md §8; content width and breakpoints carry over
+// unchanged from the pre-rewrite _global.scss.
+
+// -- palette
+
+$color-paper: #fdfdf7; // warm paper ground
+$color-ink: #000; // black ink — text, rules, borders
+
+$color-accent-light: #ffebe2; // salmon, low end of the accent range
+$color-accent: #e91e63; // salmon-pink, high end — code, chart accents
+
+// Secondary: kept as the existing link blue rather than introduced fresh.
+$color-secondary: #1f77b4;
+$color-secondary-hover: #1d5a86;
+$color-secondary-visited: #164a70; // a darker shade of the same hue, not a separate purple
+
+// -- layout
+
+$content-width: 1000px; // the one width: rules, charts, table, top bar all align to this
+$small-screen: 700px;
+$extra-small-screen: 400px;
+
+// -- type
+
+$title-font-family: 'Trebuchet MS', sans-serif;
+// Self-hosted (see styles/_fonts.scss) — the fallbacks now only cover the
+// window before the woff2 lands, not whatever the visitor's OS happens to own.
+// Keep this in sync with `chartFontFamily` in charts/chartTheme.ts, which has
+// to repeat the stack as a string because Plotly is configured from TS.
+$mono-font-family: 'DejaVu Sans Mono', Menlo, Consolas, 'Courier New', monospace;
+
+// -- misc
+
+$border: 2px solid $color-ink;
+$button-pad: 3px 8px;
+
+// -- mixins
+
+@mixin title-font {
+  font-family: $title-font-family;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+@mixin extra-small-screen {
+  @media (max-width: #{$extra-small-screen}) {
+    @content;
+  }
+}
+
+@mixin small-screen {
+  @media (max-width: #{$small-screen}) {
+    @content;
+  }
+}
+
+@mixin large-screen {
+  @media (min-width: #{$small-screen}) {
+    @content;
+  }
+}

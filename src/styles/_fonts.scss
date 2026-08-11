@@ -1,0 +1,46 @@
+// The site's monospace face, shipped rather than borrowed.
+//
+// The old stack (`source-code-pro, Menlo, Monaco, Consolas, ...`) never
+// resolved to its first choice — Source Code Pro is installed nowhere by
+// default — so every visitor saw a different font: Menlo on macOS, Consolas on
+// Windows, whatever Android calls monospace on a phone. Monospace is this
+// site's identity, so it can't be left to the visitor's OS.
+//
+// DejaVu Sans Mono is that identity's actual origin: Menlo is Apple's build of
+// Bitstream Vera Sans Mono extended with DejaVu glyphs, and DejaVu is the open
+// continuation of the same design. So this locks in the letterforms the site
+// was already being designed against on a Mac, under a license that permits
+// redistribution (see LICENSE.txt beside the woff2 files, which the Bitstream
+// terms require us to ship).
+//
+// Subset to Latin-1, Latin Extended-A, Latin Extended Additional (one title is
+// Vietnamese), General Punctuation and the arrows: 101KB of full DejaVu
+// becomes 25KB per face. Regenerate with `node other/build-fonts.mjs` if the
+// data ever needs a wider range. Bold-italic is deliberately absent — nothing
+// nests <b> inside <i> — and would be synthesised if that ever changed.
+
+@font-face {
+  font-family: 'DejaVu Sans Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/DejaVuSansMono.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'DejaVu Sans Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../assets/fonts/DejaVuSansMono-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'DejaVu Sans Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  // DejaVu ships an oblique, not a true italic — the same relationship Menlo
+  // has to its own slanted face, so this matches what the design assumed.
+  src: url('../assets/fonts/DejaVuSansMono-Oblique.woff2') format('woff2');
+}

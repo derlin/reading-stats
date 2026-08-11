@@ -1,0 +1,55 @@
+@use '../styles/tokens' as *;
+
+// One visual language per behaviour (D11 item 1), shared by anything that
+// names a book: underlined text is a link, nothing else looks like one.
+// Moved out of BookTable.scss so the reading-per-day chart's click detail can
+// depend on it without depending on the table.
+
+.bookLink__title--link {
+  color: $color-ink;
+  // Hover is not an affordance on a phone, so the underline is permanent.
+  // Kept thin and offset rather than the browser default, which collides
+  // with the descenders at this size.
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+
+  &:visited {
+    color: $color-ink;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+.bookLink__links {
+  white-space: nowrap;
+}
+
+.bookLink__link {
+  @include title-font;
+  display: inline-block;
+  font-size: 0.7em;
+  line-height: 1;
+  // Padding is for the touch target, not for a box — there is no border
+  // here, so it reads as a word rather than a button.
+  padding: 2px 4px;
+  margin-left: 3px;
+  color: $color-ink;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+
+  &:visited {
+    color: $color-ink;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
