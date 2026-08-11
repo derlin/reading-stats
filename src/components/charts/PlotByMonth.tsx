@@ -7,13 +7,29 @@ import { baseLayout, rule, chartColors } from './chartTheme';
 
 const id = 'plot_month';
 
+const MINUTES_PER_HOUR = 60;
+
+/**
+ * Nice whole-hour tick steps. The axis is in hours rather than minutes because
+ * four-digit minute labels ("4000") pushed the axis title into the ticks; hours
+ * are at most two digits over any realistic range. The step is picked here
+ * rather than left to Plotly's autoticks, which would happily label a short
+ * range in half-hours.
+ */
+const HOUR_STEPS = [1, 2, 5, 10, 20, 50, 100, 200, 500];
+
+function hourTickStep(maxHours: number): number {
+  return HOUR_STEPS.find(step => maxHours / step <= 8) ?? HOUR_STEPS[HOUR_STEPS.length - 1];
+}
+
 export default function PlotByMonth({ byMonth }: { byMonth: MonthAggregate[] }) {
   if (byMonth.length === 0) return <PlotEmpty divId={id} />;
 
   const trace: Data = {
     type: 'bar',
     x: byMonth.map(m => m.month),
-    y: byMonth.map(m => m.minutes),
+    // Hours, matching the axis; the bar label still spells out hours+minutes.
+    y: byMonth.map(m => m.minutes / MINUTES_PER_HOUR),
     text: byMonth.map(m => formatDuration(m.minutes)),
     textposition: 'outside',
     marker: { color: chartColors.accent },
@@ -34,15 +50,25 @@ export default function PlotByMonth({ byMonth }: { byMonth: MonthAggregate[] }) 
       '<extra></extra>',
   };
 
+  const maxHours = Math.max(...byMonth.map(m => m.minutes)) / MINUTES_PER_HOUR;
+
   const layout: Partial<Layout> = {
     ...baseLayout(),
     xaxis: { ...rule(), type: 'category' },
-    yaxis: { ...rule(), title: { text: 'minutes' }, fixedrange: true },
+    yaxis: {
+      ...rule(),
+      title: { text: 'hours' },
+      fixedrange: true,
+      dtick: hourTickStep(maxHours),
+      // Grows the left margin to fit ticks *and* title, instead of trusting the
+      // fixed margin to be wide enough for whatever the range produces.
+      automargin: true,
+    },
     margin: { ...baseLayout().margin, b: 80 },
   };
 
   return (
-    <div className="plot-container">
+    <div className="plot-container plot-container--interactive">
       <Plot divId={id} data={[trace]} layout={layout} style={{}} useResizeHandler={true} />
     </div>
   );

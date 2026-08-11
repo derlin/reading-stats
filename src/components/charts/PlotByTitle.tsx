@@ -92,7 +92,7 @@ export default function PlotByTitle({ byBook, epoch }: { byBook: BookAggregate[]
   };
 
   return (
-    <div className="plot-container">
+    <div className="plot-container plot-container--interactive">
       <Plot divId={id} data={data} layout={layout} style={{}} useResizeHandler={true} />
     </div>
   );

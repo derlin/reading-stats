@@ -37,7 +37,8 @@ to see the book's title, author, and how many days it took to read.`;
 
 const INFO_BY_DAY = `Daily reading habits: total minutes read each day. Click anywhere on the chart
 to see exactly which books I read that day, and for how long. The shaded bands behind the line show which book was
-being read; only some are labelled, so the titles stay legible at any zoom level.`;
+being read; only some are labelled, so the titles stay legible at any zoom level. Drag across the
+chart to zoom into any stretch of it, and double-click to zoom back out.`;
 
 const INFO_BY_MONTH = `A monthly overview of my reading time. Each bar is a month's total in minutes.
 Hover over any bar for more detail, including the daily average, minimum and maximum for that month.`;

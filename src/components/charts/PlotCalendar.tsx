@@ -188,7 +188,7 @@ export default function PlotCalendar({
   };
 
   return (
-    <div className="plot-container">
+    <div className="plot-container plot-container--interactive">
       <Plot
         divId={id}
         data={[trace as Data]}

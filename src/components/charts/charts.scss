@@ -6,6 +6,17 @@
   margin: 0 auto 20px;
 }
 
+// Charts whose axes are draggable/zoomable. Plotly swallows touch drags over
+// the plot area to pan and zoom, so on a phone — where the chart spans the full
+// width — there is nothing left to scroll the page with. This keeps a strip of
+// page to the left of the plot for exactly that. Charts with both axes
+// `fixedrange` don't need it (and shouldn't pay for it).
+.plot-container--interactive {
+  @include small-screen {
+    padding-left: 1em;
+  }
+}
+
 // Key for the two heatmap ramps (B5). Flat swatches with a hairline ink
 // border — the same treatment as the table's rules — rather than Plotly's own
 // gradient colorbar, which is a library default of exactly the kind D11 bars.

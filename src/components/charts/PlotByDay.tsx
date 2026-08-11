@@ -190,6 +190,13 @@ export default function PlotByDay({
     xaxis: { ...rule() },
     yaxis: { ...rule(), title: { text: 'minutes' }, fixedrange: true },
     margin: { ...baseLayout().margin, t: 60 },
+    // Keeps a zoom across re-renders: clicking a day sets the detail state,
+    // which re-renders, and Plotly.react would otherwise snap the x axis back
+    // to autorange because the layout it gets carries no explicit range. Keyed
+    // to the visible span so picking a new date range *does* reset the zoom —
+    // which is what the axis ticks would say anyway. Double-click still
+    // autoscales, since that goes through Plotly's own UI state.
+    uirevision: `${+byDay[0].date}-${+byDay[byDay.length - 1].date}`,
   };
 
   const onClick = (event: Readonly<PlotMouseEvent>) => {
@@ -216,7 +223,7 @@ export default function PlotByDay({
   };
 
   return (
-    <div className="plot-container">
+    <div className="plot-container plot-container--interactive">
       <p className="plot-detail">
         {detailDay ? <DayDetail day={detailDay} /> : 'Click any day to see details'}
       </p>
