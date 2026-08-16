@@ -62,8 +62,9 @@ export default function GlobalStats({ summary, range }: GlobalStatsProps) {
       {summary.audiobookCount > 0 && (
         <>
           <p>
-            I also listened to audiobooks for <Num value={summary.audiobookMinutes} /> minutes,
-            which is equivalent to <b>{formatElapsedMinutes(summary.audiobookMinutes)}</b>.
+            I also listened to <Num value={summary.audiobookCount} /> audiobooks for{' '}
+            <Num value={summary.audiobookMinutes} /> minutes, which is equivalent to{' '}
+            <b>{formatElapsedMinutes(summary.audiobookMinutes)}</b>.
           </p>
           <p>
             This makes a total of{' '}

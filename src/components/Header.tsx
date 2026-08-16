@@ -1,11 +1,5 @@
 // The global date-range control.
 //
-// Replaces the pre-rewrite `react-date-range` calendar popover, which was
-// dropped in B1 along with date-fns: it shipped its own default theme CSS,
-// which is exactly the library-default look D11 rules out, and overriding it
-// wholesale cost more than the control is worth. Two native date inputs do
-// the same job, need no dependency, and get a real picker on mobile for free.
-//
 // The bar is sticky rather than fixed so it reserves its own height instead of
 // needing a spacer, and is constrained to the content width — D11 item 2, and
 // the fix for the "top bar left-aligned while the page is centred" defect.
