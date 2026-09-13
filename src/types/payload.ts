@@ -33,6 +33,17 @@ export interface Book {
    * precision.
    */
   date_read: string | null;
+  /**
+   * Absolute URL of the book's cover, or null when MyBooks holds none — rare
+   * among finished books, so the grid's title-rectangle placeholder is an edge
+   * case rather than a common state.
+   *
+   * Almost all of these are Goodreads covers on `m.media-amazon.com`, which
+   * accepts a `._SX<width>_` segment in the filename; `lib/covers.ts` uses
+   * that to avoid shipping a 43kB image into a 120px tile. There is no ISBN in
+   * the payload, so there is no second source to fall back to when one fails.
+   */
+  cover_image: string | null;
   links: Record<string, BookLink>;
 }
 

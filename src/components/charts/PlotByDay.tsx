@@ -10,7 +10,7 @@ import type {
 import Plot from '../../lib/plotly';
 import PlotEmpty from './PlotEmpty';
 import type { DayAggregate, EnrichedSession } from '../../data/useFilteredData';
-import { formatDuration, formatMediumDate } from '../../lib/format';
+import { bookTitle, formatDuration, formatMediumDate } from '../../lib/format';
 import { BookMention } from '../BookLink';
 import type { Book } from '../../types/payload';
 import { baseLayout, rule, chartColors } from './chartTheme';
@@ -46,7 +46,7 @@ function groupSpans(sessions: EnrichedSession[]): BookSpan[] {
       const offsets = sess.map(s => s.dayOffset);
       const dates = sess.map(s => s.date.getTime());
       return {
-        title: sess[0].book.title || '(untitled)',
+        title: bookTitle(sess[0].book),
         dayStart: Math.min(...offsets),
         dayEnd: Math.max(...offsets),
         startDate: new Date(Math.min(...dates)),

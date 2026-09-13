@@ -20,6 +20,7 @@ import Section from './components/Section';
 import GlobalStats from './components/GlobalStats';
 import YearGlance from './components/YearGlance';
 import BookTable from './components/BookTable';
+import BookGrid from './components/BookGrid';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import PlotByTitle from './components/charts/PlotByTitle';
 import PlotByDay from './components/charts/PlotByDay';
@@ -53,6 +54,12 @@ const INFO_CALENDAR = `Every day in the selected range, one cell per day, shaded
 Unlike the time-of-day heatmap further down, the colour scale here is shared by every cell, so days
 are directly comparable. Days I read nothing are marked separately — there are few enough of them to be worth
 spotting. Drag across the chart to zoom into any stretch of it, and double-click to zoom back out.`;
+
+const INFO_SHELF = `Every book I finished in the selected range, newest first, grouped by the year it
+was finished. The bar under each cover is my rating: longer and louder is better, and a book I gave
+a perfect five gets a star. The scale starts at 2 rather than 0, since almost everything I read
+lands between 2 and 5 — so the shortest bars are the books at or below a 2, and an entirely empty
+bar is a 0. Use the buttons to keep only the books above a rating.`;
 
 export default function App() {
   const { range, boundaries, presets, selectedPreset, setRange } = useDateRange(payload);
@@ -96,6 +103,10 @@ export default function App() {
 
         <Section title="Time of day" info={INFO_TIME_OF_DAY}>
           <PlotTimeOfDay byHourWeekday={byHourWeekday} />
+        </Section>
+
+        <Section title="Covers" info={INFO_SHELF}>
+          <BookGrid byBook={finishedBooks} epoch={epoch} range={range} />
         </Section>
 
         <Section title="(Audio)books read">

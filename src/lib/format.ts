@@ -7,8 +7,24 @@
 // in useFilteredData — the payload's dates are calendar days, not instants,
 // and reading them in local time shifts them by a day west of UTC.
 
+import type { Book } from '../types/payload';
+
 const MINUTES_PER_HOUR = 60;
 const HOURS_PER_DAY = 24;
+
+/** A book's title, or a stand-in: the payload allows an empty one. */
+export function bookTitle(book: Book): string {
+  return book.title || '(untitled)';
+}
+
+/**
+ * Ratings are continuous, not stars (D10), so they render as the number
+ * itself. `0` is a real rating and must not read as "unrated", which is why
+ * this tests for null rather than falsiness.
+ */
+export function formatRating(rating: number | null): string {
+  return rating === null ? '?' : rating.toFixed(1);
+}
 
 /** 12'345 — thousands separated by an apostrophe, as the old site did. */
 export function formatCount(value: number): string {

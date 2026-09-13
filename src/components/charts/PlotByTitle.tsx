@@ -2,6 +2,7 @@ import type { Data, Layout } from 'plotly.js';
 import Plot from '../../lib/plotly';
 import PlotEmpty from './PlotEmpty';
 import type { BookAggregate } from '../../data/useFilteredData';
+import { bookTitle } from '../../lib/format';
 import { baseLayout, rule, chartColors } from './chartTheme';
 
 const id = 'plot_title';
@@ -51,7 +52,7 @@ export default function PlotByTitle({ byBook, epoch }: { byBook: BookAggregate[]
     const start = dateOf(book.dayStart);
     // +1 day so a book finished within a single calendar day still renders a visible bar.
     const durationMs = (book.dayEnd - book.dayStart + 1) * MS_PER_DAY;
-    const title = book.book.title || '(untitled)';
+    const title = bookTitle(book.book);
     const label = title.length < 30 ? title : `${title.slice(0, 30)}...`;
     const author = book.book.author ?? 'unknown author';
     const shade = book.partial

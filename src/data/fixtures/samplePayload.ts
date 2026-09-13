@@ -20,6 +20,10 @@ export const samplePayload: Payload = {
       dnf: false,
       rating: 4.2,
       finished: true,
+      // A Goodreads cover on the CDN that accepts `._SX<width>_` sizing, so
+      // `sizedCoverUrl` has something to actually rewrite.
+      cover_image:
+        'https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1401432508i/4099.jpg',
       date_read: '2020-05-19',
       links: { goodreads: { id: '4099', url: 'https://www.goodreads.com/book/show/4099' } },
     },
@@ -32,6 +36,10 @@ export const samplePayload: Payload = {
       dnf: true,
       rating: 1.2,
       finished: true,
+      // Already carries a size segment, which must be replaced rather than
+      // appended to.
+      cover_image:
+        'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348171128i/12345._SX318_.jpg',
       date_read: '2020-05-22',
       links: {},
     },
@@ -47,6 +55,8 @@ export const samplePayload: Payload = {
       dnf: false,
       rating: 4,
       finished: true,
+      // Not on either Goodreads host, so it has to pass through unsized.
+      cover_image: 'https://example.org/covers/an-audiobook.png',
       date_read: '2020-05-29',
       links: { storygraph: { id: 'abc', url: 'https://app.thestorygraph.com/books/abc' } },
     },
@@ -59,6 +69,7 @@ export const samplePayload: Payload = {
       dnf: false,
       rating: null,
       finished: false,
+      cover_image: null,
       date_read: null,
       links: {},
     },
@@ -71,6 +82,7 @@ export const samplePayload: Payload = {
       dnf: false,
       rating: null,
       finished: false,
+      cover_image: null,
       date_read: null,
       links: {},
     },
@@ -87,6 +99,8 @@ export const samplePayload: Payload = {
       dnf: false,
       rating: 0,
       finished: true,
+      // No cover: the grid stands the title up in a rectangle instead.
+      cover_image: null,
       date_read: '2021-03-14',
       links: {},
     },

@@ -4,6 +4,7 @@
 // per-day chart's click detail can name a book the same way rather than
 // inventing a second one.
 
+import { bookTitle } from '../lib/format';
 import type { Book, BookLink as BookLinkType } from '../types/payload';
 import './BookLink.scss';
 
@@ -15,7 +16,17 @@ const PROVIDER_LABELS: Record<string, string> = {
   storygraph: 'SG',
 };
 
-function providerLabel(provider: string): string {
+// The same providers spelled out, for the one place with room for it: the
+// detail dialog, where the chips are the only links.
+const PROVIDER_NAMES: Record<string, string> = {
+  goodreads: 'Goodreads',
+  storygraph: 'StoryGraph',
+};
+
+function providerLabel(provider: string, full: boolean): string {
+  if (full) {
+    return PROVIDER_NAMES[provider] ?? provider[0].toUpperCase() + provider.slice(1);
+  }
   return PROVIDER_LABELS[provider] ?? provider.slice(0, 2).toUpperCase();
 }
 
@@ -47,14 +58,18 @@ export function BookTitle({ title, link }: { title: string; link: BookLinkType |
 export function ProviderLinks({
   links,
   exclude,
+  full = false,
 }: {
   links: Record<string, BookLinkType>;
-  exclude: string | undefined;
+  /** A provider the title already links to, and which is not repeated as a chip. */
+  exclude?: string;
+  /** Spell the providers out instead of using their two-letter shorthand. */
+  full?: boolean;
 }) {
   const entries = Object.entries(links).filter(([provider]) => provider !== exclude);
   if (entries.length === 0) return null;
   return (
-    <span className="bookLink__links">
+    <span className={`bookLink__links${full ? ' bookLink__links--full' : ''}`}>
       {entries.map(([provider, link]) => (
         <a
           key={provider}
@@ -64,7 +79,7 @@ export function ProviderLinks({
           rel="noreferrer"
           title={provider}
         >
-          {providerLabel(provider)}
+          {providerLabel(provider, full)}
         </a>
       ))}
     </span>
@@ -74,7 +89,7 @@ export function ProviderLinks({
 /** A book named in running text: quoted linked title, plus whatever links didn't become the title's own. */
 export function BookMention({ book }: { book: Book }) {
   const primary = primaryProvider(book.links);
-  const title = book.title || '(untitled)';
+  const title = bookTitle(book);
   return (
     <>
       "<BookTitle title={title} link={primary ? book.links[primary] : undefined} />"

@@ -1,0 +1,230 @@
+@use '../styles/tokens' as *;
+
+$rule: rgba($color-ink, 0.12);
+
+.bookGrid {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 20pt;
+
+  /* -- rating filter */
+
+  &__filter {
+    @include title-font;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 7px 10px;
+    margin-bottom: 10px;
+  }
+
+  /* -- scrolling panel */
+
+  // The grid is capped rather than left to run: a few hundred covers at nine
+  // across is thousands of pixels of page that everything below it has to be
+  // scrolled past. A cap turns that into a panel the reader can skim or
+  // ignore, and costs nothing at the ranges that already fit.
+  //
+  // Sized in `vh` so it is always a comfortable fraction of the window rather
+  // than a fixed number of rows, with a `px` floor for very short windows
+  // where 70vh would be a single row.
+  &__scroll {
+    max-height: max(70vh, 420px);
+    overflow-y: auto;
+    // A little room between the tiles and the bar, so it never lands on a
+    // tile's star.
+    padding-right: 8px;
+
+    // macOS hides its overlay scrollbars until something is scrolled, which
+    // leaves a capped panel looking exactly like an uncapped one that simply
+    // ran out of books. Styling the scrollbar opts the element out of overlay
+    // mode, so the bar is there from the first paint and is itself the thing
+    // saying there is more below.
+    //
+    // Chrome and Safari take the `-webkit-` pseudo-elements; Firefox takes the
+    // standard properties. Chrome ignores the pseudo-elements as soon as
+    // `scrollbar-width` or `scrollbar-color` is set on the same element, hence
+    // the `@supports` fence — true only where the pseudo-elements do nothing.
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba($color-ink, 0.08);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $color-ink;
+      border-radius: 0; // square, like every other edge on the page
+    }
+
+    @supports not selector(::-webkit-scrollbar) {
+      scrollbar-width: thin;
+      scrollbar-color: $color-ink rgba($color-ink, 0.08);
+    }
+  }
+
+  /* -- year heading */
+
+  // An h3 rather than another Section: these are subdivisions inside one
+  // section. It has to break the h1-h4 block in index.scss, which centres
+  // headings and caps them at the content width — this one is already inside
+  // that column and belongs on its left edge, above the tiles it labels.
+  &__year {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    max-width: none;
+    margin: 24px 0 10px;
+    padding-bottom: 4px;
+    text-align: left;
+    font-size: 1.2em;
+    letter-spacing: -1px;
+    border-bottom: 1px solid $rule;
+    // Holds the year in view while its own tiles are being scrolled through.
+    // Opaque, or the tiles would show through it on the way past.
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: $color-paper;
+
+    // The first heading is already against the top of the panel.
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__count {
+    @include title-font;
+    font-size: 0.7em;
+    letter-spacing: 0;
+    color: rgba($color-ink, 0.55);
+  }
+
+  /* -- tiles */
+
+  &__tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+    // A partly filled last row must not stretch its track and grow the tiles
+    // in it to a different size from every other row.
+    align-content: start;
+    gap: 14px 12px;
+  }
+
+  &__tile {
+    position: relative;
+    display: block;
+    // It is a <button>, so the UA's own button styling has to go before
+    // anything else here applies.
+    padding: 0;
+    border: none;
+    background: none;
+    text-align: inherit;
+    font: inherit;
+    cursor: pointer;
+    // Inherited ink for the placeholder title's sake; the DNF and star marks
+    // have colours of their own.
+    color: $color-ink;
+    // Keeps offscreen rows out of layout and paint, which is what makes a
+    // panel of several hundred tiles scroll at all. The intrinsic size is the
+    // 2:3 cover plus the rating bar, so the scrollbar doesn't jump as rows
+    // are realised.
+    content-visibility: auto;
+    contain-intrinsic-size: auto 155px;
+
+    @media (hover: hover) {
+      &:hover .bookCover {
+        border-color: $color-accent;
+      }
+    }
+
+    &:focus-visible {
+      outline: $border;
+      outline-offset: 3px;
+    }
+  }
+
+  &__tile--partial {
+    opacity: 0.5;
+  }
+
+  /* -- rating bar */
+
+  &__rating {
+    display: block;
+    height: 8px;
+    margin-top: 4px;
+    background: $rule;
+  }
+
+  &__ratingFill {
+    display: block;
+    height: 100%;
+    // Width and background are set per book from `lib/rating.ts`, so the two
+    // channels are derived from one number in one place.
+  }
+
+  /* -- corner marks */
+
+  // All three sit on the cover rather than beside it, so they cost the tile no
+  // height and the rating bars stay on one baseline across the row. Each needs
+  // a ground of its own to survive landing on whatever colour a cover happens
+  // to have in that corner.
+
+  &__star {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 22px;
+    color: $color-accent;
+    background: $color-paper;
+    border: 1px solid $color-ink;
+    border-radius: 50%;
+  }
+
+  // Paint from `.dnfBadge`; only the corner is the grid's.
+  &__dnf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  // Bottom-left rather than top-left so it never collides with a DNF chip.
+  &__audio {
+    @include audio-glyph;
+    position: absolute;
+    left: 3px;
+    bottom: 15px; // clears the rating bar and its 4px gap
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    // The glyph is drawn in accent with no fill, so on a dark cover it would
+    // disappear.
+    background-color: $color-paper;
+    border-radius: 50%;
+    padding: 1px;
+  }
+
+  @include small-screen {
+    padding: 0 10pt;
+
+    &__tiles {
+      // Four across on a phone rather than three: the covers stay recognisable
+      // well below 92px, and a year of eighty books is a long enough scroll
+      // already.
+      grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+      gap: 12px 8px;
+    }
+
+    &__tile {
+      contain-intrinsic-size: auto 140px;
+    }
+  }
+}

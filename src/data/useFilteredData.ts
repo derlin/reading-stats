@@ -158,7 +158,8 @@ function dayOffsetOf(date: Date, epoch: Date): number {
   return Math.round((calendarDay - epoch.getTime()) / MS_PER_DAY);
 }
 
-function dateFromOffset(offset: number, epoch: Date): Date {
+/** The calendar day a `Sessions.date` offset points at. */
+export function dateFromOffset(offset: number, epoch: Date): Date {
   return new Date(epoch.getTime() + offset * MS_PER_DAY);
 }
 

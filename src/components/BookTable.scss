@@ -38,13 +38,15 @@ $sort-icon-down: '↓';
     user-select: none; // repeated header clicks otherwise select the label text
   }
 
-  // The hover tint marks the book row under the pointer, and a detail row is
-  // not a book: lighting it up on its own would offer it as something separately
-  // selectable when it is really the tail of the row above. Its audiobook tint
-  // is a different matter and does carry over (see `tr.audio` below), because
-  // that one is identity rather than pointer feedback.
-  tr:hover:not(.bookTable__detailRow) {
-    background: $hover;
+  // Every row opens its dialog, at every width.
+  tbody tr {
+    cursor: pointer;
+
+    // Pointer feedback. The audiobook tint is identity rather than feedback,
+    // so it keeps a hover of its own (see `tr.audio` below).
+    &:hover {
+      background: $hover;
+    }
   }
 
   tr.partial {
@@ -52,84 +54,42 @@ $sort-icon-down: '↓';
   }
 
   // Audiobooks: salmon row tint plus a speaker glyph against the title. The
-  // old rule hung the glyph off the Days cell, because audiobooks came from a
-  // separate file back then and had no day span to show there; under the D7
-  // payload they are ordinary books with sessions, so it belongs on the title.
-  //
-  // It then hung off `td:first-child::before` until the expandable rows landed,
-  // and those made the cell the wrong anchor twice over: a cell pseudo-element
-  // paints ahead of everything in the cell, so it would sit in front of the
-  // expand chevron and knock the audio rows out of the column the chevrons line
-  // up in, and the detail row's single spanning cell is a first child too and
-  // would have grown a second speaker of its own. So the glyph is now an
-  // element of its own, emitted between the chevron and the title (see
-  // BookTable.tsx). Not a `::before` on the title element either: the title is
-  // usually a permanently underlined link and the underline is drawn across the
-  // whole inline box, straight through the icon.
+  // glyph is an element of its own, emitted between the chevron and the title
+  // (BookTable.tsx), rather than a pseudo-element: one on the cell paints
+  // ahead of the chevron and knocks the audio rows out of the column the
+  // chevrons line up in, and one on the title is struck through by the link's
+  // underline, which is drawn across the whole inline box.
   tr.audio {
     background: $color-accent-light;
 
-    &:hover:not(.bookTable__detailRow) {
+    &:hover {
       background: color.adjust($color-accent-light, $lightness: -4%);
     }
   }
 
   &__audio {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin-right: 6px;
-    vertical-align: middle;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23e91e63%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M11%205%206%209H2v6h4l5%204z%22%2F%3E%3Cpath%20d%3D%22M19.07%204.93a10%2010%200%200%201%200%2014.14M15.54%208.46a5%205%200%200%201%200%207.07%22%2F%3E%3C%2Fsvg%3E');
+    @include audio-glyph-inline;
   }
 
-  /* -- title cell */
+  /* -- detail control */
 
-  // One visual language per behaviour. The pre-rewrite table gave the DNF
-  // badge and the provider links the same bordered chip, so an interactive
-  // link and a static status label were indistinguishable — the chips read as
-  // decoration and nobody clicked them. Now: underlined text is a link,
-  // bordered chips are labels, and nothing is both.
-  //
-  // The title link and provider chips themselves live in BookLink.scss now —
-  // shared with the reading-per-day chart's click detail, which names a book
-  // the same way.
-
-  &__badge {
-    @include title-font;
-    font-size: 0.7em;
-    line-height: 1;
-    padding: 2px 4px;
-    margin-left: 5px;
-    border: 1px solid $color-ink;
-    white-space: nowrap;
-    color: $color-paper;
-    background: $color-ink;
-  }
-
-  /* -- expandable row detail */
-
-  // The columns the table sheds at narrow widths are not gone, they are folded
-  // into a row that opens underneath the book. Nothing is shed on the desktop
-  // layout, so both the chevron and the row it opens are switched off here and
-  // only turned on inside the shedding block below. That also means a window
-  // widened while a row is open corrects itself: the detail simply stops being
-  // displayed, and the component never has to watch the viewport to find out.
+  // The columns the table sheds at narrow widths are not gone, they are in the
+  // dialog a row click opens (BookDialog.tsx). That dialog carries every value
+  // at every width, so the control stays on at every width too — the widest
+  // table still has no room for a cover.
 
   &__expand {
-    display: none;
+    display: inline-block;
     // Flush left, and with no padding on that side, so the chevrons line up in
     // a column down the edge of the title cell whatever the row holds. The
     // touch target is bought vertically and to the right instead, where the
     // title column — 44% of an already narrow viewport — can spare it; the
     // negative margins keep that padding from making every row taller.
     //
-    // It does not have to reach a thumb-sized target on its own any more, since
-    // the whole row now opens the detail. It is sized to be *seen*: at 0.85em of
-    // an already reduced mobile font it was a mark you had to look for, and it
-    // is the one thing telling the reader there is anything to open.
+    // It does not have to reach a thumb-sized target on its own, since the
+    // whole row opens the detail. It is sized to be *seen*: at 0.85em of an
+    // already reduced mobile font it was a mark you had to look for, and it is
+    // the one thing telling the reader there is anything to open.
     padding: 8px 10px 8px 0;
     margin: -8px 0;
     border: none;
@@ -144,45 +104,6 @@ $sort-icon-down: '↓';
         color: $color-accent;
       }
     }
-  }
-
-  &__detailRow {
-    display: none;
-  }
-
-  &__detail {
-    margin: 0;
-  }
-
-  &__detailItem {
-    display: flex;
-    gap: 0.6rem;
-    padding: 0.15rem 0;
-
-    dt {
-      @include title-font;
-      // A fixed measure rather than the label's own width, so the values line
-      // up in a column of their own — the same reason the figures are
-      // right-aligned in the table.
-      flex: 0 0 5.5em;
-    }
-
-    dd {
-      // Same split as the table itself: the labels are prose, the values are
-      // figures and keep the monospace face they had in their cells.
-      font-family: $mono-font-family;
-      margin: 0;
-    }
-  }
-
-  // Hours is the odd one out: the table only sheds it at `extra-small-screen`,
-  // while End Date, Days and Rating go a breakpoint earlier. So its line stays
-  // out of the detail until the column it stands in for has actually left,
-  // rather than repeating a value that is still on screen two columns over. It
-  // is settled here instead of in the component because which columns fit is a
-  // question about widths, and every width is declared in this file.
-  &__detailItem--hours {
-    display: none;
   }
 
   /* -- sort arrows */
@@ -262,23 +183,6 @@ $sort-icon-down: '↓';
       display: flex;
     }
 
-    // This is the width where columns start disappearing, so this is where the
-    // control that brings them back appears.
-    &__expand {
-      display: inline-block;
-    }
-
-    // The whole row opens the detail at these widths. The cursor is for the
-    // narrow-desktop case only — a phone has no pointer to change — and it is
-    // scoped to tbody so the sortable headers keep their own meaning.
-    tbody tr:not(.bookTable__detailRow) {
-      cursor: pointer;
-    }
-
-    &__detailRow {
-      display: table-row;
-    }
-
     // End Date, Days and Rating. Five columns overflow the viewport at this
     // width, so Rating sheds with the others rather than at the narrower
     // breakpoint — it stays reachable through the sort control above and, for
@@ -337,11 +241,6 @@ $sort-icon-down: '↓';
     th:nth-of-type(3),
     td:nth-of-type(3) {
       display: none;
-    }
-
-    // Hours has just left the table, so its line joins the detail.
-    &__detailItem--hours {
-      display: flex;
     }
   }
 }

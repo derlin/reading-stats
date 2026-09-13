@@ -1,0 +1,91 @@
+@use '../styles/tokens' as *;
+
+.bookCover {
+  width: 100%;
+  // Covers are not all the same shape, and a grid of ragged bottoms would put
+  // the rating bars on a ragged baseline too. 2:3 is the usual trade paperback
+  // proportion, so most covers are barely cropped by it.
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  // Lets the placeholder title size itself from the tile's width (see `1cqi`
+  // below) rather than from a breakpoint.
+  container-type: inline-size;
+  border: 1px solid rgba($color-ink, 0.15);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  // A sweep across the placeholder while the image is in flight. A loop rather
+  // than a one-shot fade: the tiles are `content-visibility: auto`
+  // (BookGrid.scss), so scrolling a row back into view replays whatever
+  // animation is on it — on a fade that meant a cover re-fading every time you
+  // scrolled up, on a loop a restart is invisible.
+  &--loading {
+    background-color: rgba($color-ink, 0.06);
+    background-image: linear-gradient(90deg, transparent, rgba($color-ink, 0.09), transparent);
+    background-size: 200% 100%;
+    animation: coverShimmer 1.2s ease-in-out infinite;
+
+    img {
+      visibility: hidden;
+    }
+  }
+
+  // Not a decoration that can simply be dropped: it is the only thing telling a
+  // cover still arriving from one that is never coming. Reduced motion gets the
+  // same two tints, pulsed rather than swept.
+  @media (prefers-reduced-motion: reduce) {
+    &--loading {
+      background-image: none;
+      animation: coverPulse 1.6s ease-in-out infinite;
+    }
+  }
+
+  &--fake {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    background: $color-accent-light;
+  }
+
+  &__title {
+    font-family: $title-font-family;
+    font-size: calc(var(--cover-font-scale) * 1cqi);
+    line-height: 1.2;
+    text-align: center;
+    // Titles have no spaces to break at when they are one long word, and a
+    // placeholder that spills out of its rectangle is worse than a hyphenless
+    // break mid-word.
+    overflow-wrap: anywhere;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@keyframes coverShimmer {
+  from {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes coverPulse {
+  0%,
+  100% {
+    background-color: rgba($color-ink, 0.06);
+  }
+
+  50% {
+    background-color: rgba($color-ink, 0.12);
+  }
+}
