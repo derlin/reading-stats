@@ -10,15 +10,11 @@
 
     dt {
       @include title-font;
-      // A fixed measure rather than the label's own width, so the values line
-      // up in a column of their own — the same reason the figures are
-      // right-aligned in the table.
-      flex: 0 0 5.5em;
+      flex: 0 0 5.5em; // fixed, so the values line up in a column
     }
 
     dd {
-      // Same split as the table itself: the labels are prose, the values are
-      // figures and keep the monospace face they had in their cells.
+      // Same split as the table: labels are prose, values are figures.
       font-family: $mono-font-family;
       margin: 0;
     }

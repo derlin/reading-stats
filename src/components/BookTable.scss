@@ -1,10 +1,8 @@
 @use 'sass:color';
 @use '../styles/tokens' as *;
 
-// Every colour here now derives from the one palette (D11 item 1). The
-// pre-rewrite table carried three strays: a blue sort arrow (#282bf1), an
-// amber audiobook tint (#ffc107) and a grey hover — none of which belonged to
-// any system on the page.
+// All derived from the one palette (D11 item 1); the pre-rewrite table had a
+// stray blue, amber and grey.
 $rule: rgba($color-ink, 0.12);
 $hover: rgba($color-ink, 0.05);
 $sort-idle: rgba($color-ink, 0.35);
@@ -42,8 +40,7 @@ $sort-icon-down: '↓';
   tbody tr {
     cursor: pointer;
 
-    // Pointer feedback. The audiobook tint is identity rather than feedback,
-    // so it keeps a hover of its own (see `tr.audio` below).
+    // The audiobook tint is identity, not feedback, so it keeps its own hover.
     &:hover {
       background: $hover;
     }
@@ -53,12 +50,9 @@ $sort-icon-down: '↓';
     opacity: 0.5;
   }
 
-  // Audiobooks: salmon row tint plus a speaker glyph against the title. The
-  // glyph is an element of its own, emitted between the chevron and the title
-  // (BookTable.tsx), rather than a pseudo-element: one on the cell paints
-  // ahead of the chevron and knocks the audio rows out of the column the
-  // chevrons line up in, and one on the title is struck through by the link's
-  // underline, which is drawn across the whole inline box.
+  // The speaker is a real element (BookTable.tsx), not a pseudo-element: on the
+  // cell it paints ahead of the chevron and breaks their column, and on the
+  // title the link's underline strikes through it.
   tr.audio {
     background: $color-accent-light;
 
@@ -73,23 +67,14 @@ $sort-icon-down: '↓';
 
   /* -- detail control */
 
-  // The columns the table sheds at narrow widths are not gone, they are in the
-  // dialog a row click opens (BookDialog.tsx). That dialog carries every value
-  // at every width, so the control stays on at every width too — the widest
-  // table still has no room for a cover.
-
+  // Shed columns live in the dialog a row click opens (BookDialog.tsx), which
+  // carries every value at every width — so the control stays on at every width.
   &__expand {
     display: inline-block;
-    // Flush left, and with no padding on that side, so the chevrons line up in
-    // a column down the edge of the title cell whatever the row holds. The
-    // touch target is bought vertically and to the right instead, where the
-    // title column — 44% of an already narrow viewport — can spare it; the
-    // negative margins keep that padding from making every row taller.
-    //
-    // It does not have to reach a thumb-sized target on its own, since the
-    // whole row opens the detail. It is sized to be *seen*: at 0.85em of an
-    // already reduced mobile font it was a mark you had to look for, and it is
-    // the one thing telling the reader there is anything to open.
+    // No left padding, so the chevrons line up down the edge of the title cell;
+    // the target is bought vertically and right instead, and the negative
+    // margins keep that from making every row taller. Sized to be seen rather
+    // than to be a thumb target — the whole row opens the detail anyway.
     padding: 8px 10px 8px 0;
     margin: -8px 0;
     border: none;
@@ -153,23 +138,17 @@ $sort-icon-down: '↓';
 
   /* -- general cell helpers */
 
-  // Two faces, split by what the column is for. Monospace is the site's
-  // identity, but it runs ~15-20% wider per character than a proportional
-  // face, and in a table that width comes straight out of the columns that
-  // hold sentences: titles and author names wrapped early and the dates
-  // wrapped mid-value. So mono stays where its alignment does real work — the
-  // figures — and the prose columns take the site's other face at its
-  // ordinary case (the title font is only uppercase via the mixin, which
-  // would be unreadable on a book title).
+  // Mono runs ~15-20% wider per character, and in a table that comes out of the
+  // columns holding sentences. So it stays where its alignment earns it — the
+  // figures — and prose takes the title face, at ordinary case (not the mixin,
+  // which uppercases).
   .text {
     font-family: $title-font-family;
   }
 
   .mono {
     font-family: $mono-font-family;
-    // A date or a duration is one atomic value; it must never break across
-    // lines. Only .text columns are allowed to wrap.
-    white-space: nowrap;
+    white-space: nowrap; // a date or duration is one atomic value
   }
 
   .right {
@@ -183,10 +162,8 @@ $sort-icon-down: '↓';
       display: flex;
     }
 
-    // End Date, Days and Rating. Five columns overflow the viewport at this
-    // width, so Rating sheds with the others rather than at the narrower
-    // breakpoint — it stays reachable through the sort control above and, for
-    // its value rather than its order, through the row's detail.
+    // End Date, Days and Rating. Five columns overflow a phone, and all three
+    // stay reachable through the sort control and the row's detail.
     th:nth-of-type(4),
     td:nth-of-type(4),
     th:nth-of-type(5),
@@ -196,14 +173,10 @@ $sort-icon-down: '↓';
       display: none;
     }
 
-    // Auto layout sizes the table to its content's minimum width, which even
-    // after shedding three columns is wider than a phone (473px against a
-    // 412px viewport). The overflow was the whole page's, not the table's:
-    // it let the document pan sideways, which drags the sticky header and
-    // pushes the fixed scroll-to-top button off screen. Fixed layout makes
-    // the widths ours to declare, so the table can never be the wider thing.
-    // Percentages are of the remaining columns, so they re-normalise on their
-    // own when Hours sheds at the narrower breakpoint.
+    // Auto layout sizes to content, which even three columns down is wider than
+    // a phone (473px against 412px) — and that overflow is the document's, so it
+    // pans sideways and drags the sticky header off screen. Fixed layout makes
+    // the widths ours. The percentages re-normalise when Hours sheds below.
     table {
       table-layout: fixed;
       font-size: 0.9rem;

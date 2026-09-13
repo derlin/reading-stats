@@ -1,23 +1,12 @@
-// The site's monospace face, shipped rather than borrowed.
+// The site's monospace face, shipped rather than left to the visitor's OS —
+// the old stack resolved to Menlo, Consolas or whatever Android calls monospace
+// depending on who was looking. DejaVu because Menlo derives from the same
+// Bitstream Vera design, so it keeps the letterforms the site was drawn against,
+// and its license permits redistribution (LICENSE.txt beside the woff2 files).
 //
-// The old stack (`source-code-pro, Menlo, Monaco, Consolas, ...`) never
-// resolved to its first choice — Source Code Pro is installed nowhere by
-// default — so every visitor saw a different font: Menlo on macOS, Consolas on
-// Windows, whatever Android calls monospace on a phone. Monospace is this
-// site's identity, so it can't be left to the visitor's OS.
-//
-// DejaVu Sans Mono is that identity's actual origin: Menlo is Apple's build of
-// Bitstream Vera Sans Mono extended with DejaVu glyphs, and DejaVu is the open
-// continuation of the same design. So this locks in the letterforms the site
-// was already being designed against on a Mac, under a license that permits
-// redistribution (see LICENSE.txt beside the woff2 files, which the Bitstream
-// terms require us to ship).
-//
-// Subset to Latin-1, Latin Extended-A, Latin Extended Additional (one title is
-// Vietnamese), General Punctuation and the arrows: 101KB of full DejaVu
-// becomes 25KB per face. Regenerate with `node other/build-fonts.mjs` if the
-// data ever needs a wider range. Bold-italic is deliberately absent — nothing
-// nests <b> inside <i> — and would be synthesised if that ever changed.
+// Subset to Latin-1/Ext-A/Ext-Additional, punctuation and arrows: 101KB down to
+// 25KB a face. Regenerate with `node other/build-fonts.mjs`. No bold-italic —
+// nothing nests <b> in <i>; it would be synthesised.
 
 @font-face {
   font-family: 'DejaVu Sans Mono';
@@ -40,7 +29,6 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  // DejaVu ships an oblique, not a true italic — the same relationship Menlo
-  // has to its own slanted face, so this matches what the design assumed.
+  // An oblique, not a true italic — as Menlo is to its own slanted face.
   src: url('../assets/fonts/DejaVuSansMono-Oblique.woff2') format('woff2');
 }

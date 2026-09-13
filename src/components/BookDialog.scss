@@ -1,13 +1,9 @@
 @use '../styles/tokens' as *;
 
-// A native <dialog>, so the modal behaviour is the browser's (see
-// BookDialog.tsx). What is styled here is only the look: flat ink on paper,
-// the same 2px rule the buttons and the top bar use, square corners.
+// A native <dialog> (BookDialog.tsx); only the look is ours.
 
 .bookDialog {
-  // The UA already positions a modal dialog; this is here because the close
-  // button is absolutely positioned against it.
-  position: fixed;
+  position: fixed; // not for placement — the close button anchors to it
   padding: 20px;
   max-width: 540px;
   width: calc(100% - 32px);
@@ -16,8 +12,7 @@
   border: $border;
 
   &::backdrop {
-    // Ink at low opacity rather than a blur: the page behind stays legible as
-    // the thing the dialog came out of.
+    // Not a blur: the page stays legible as the thing the dialog came out of.
     background: rgba(0, 0, 0, 0.45);
   }
 
@@ -27,9 +22,7 @@
     align-items: flex-start;
   }
 
-  // The cover is the reason a tile was clicked, so it gets real size here —
-  // roughly twice the tile's. `flex: none` because a long title in the column
-  // beside it must not squeeze the picture.
+  // Roughly twice the tile's; `flex: none` so a long title can't squeeze it.
   .bookCover {
     flex: none;
     width: 200px;
@@ -41,8 +34,7 @@
   }
 
   &__title {
-    // The page's h1-h4 rules centre headings and cap them at the content
-    // width; inside a dialog both are wrong.
+    // Undo the global h1-h4 centring and content-width cap.
     max-width: none;
     margin: 0 0 4px;
     padding: 0;
@@ -53,7 +45,7 @@
   }
 
   &__author {
-    // Same override, for the same reason: `p` is centred and padded globally.
+    // Same, for the global `p`.
     max-width: none;
     margin: 0 0 10px;
     padding: 0;
@@ -66,8 +58,7 @@
     @include audio-glyph-inline;
   }
 
-  // Named links, not the 0.7em chips the table uses: these are the only links
-  // in the dialog and there is room for them to read as words.
+  // Named links, not the table's 0.7em chips: there is room to read as words.
   .bookLink__links--full {
     display: inline-flex;
     flex-wrap: wrap;
@@ -107,7 +98,7 @@
   @include small-screen {
     padding: 16px;
 
-    // Stacked, with the cover no longer taking half the width of a phone.
+    // Stacked, so the cover isn't half a phone wide.
     &__body {
       flex-direction: column;
       align-items: center;

@@ -2,14 +2,11 @@
 
 .bookCover {
   width: 100%;
-  // Covers are not all the same shape, and a grid of ragged bottoms would put
-  // the rating bars on a ragged baseline too. 2:3 is the usual trade paperback
-  // proportion, so most covers are barely cropped by it.
+  // One shape, or the rating bars land on a ragged baseline. 2:3 is the usual
+  // trade paperback, so most covers are barely cropped.
   aspect-ratio: 2 / 3;
   overflow: hidden;
-  // Lets the placeholder title size itself from the tile's width (see `1cqi`
-  // below) rather than from a breakpoint.
-  container-type: inline-size;
+  container-type: inline-size; // for the placeholder's `1cqi` below
   border: 1px solid rgba($color-ink, 0.15);
 
   img {
@@ -19,11 +16,9 @@
     display: block;
   }
 
-  // A sweep across the placeholder while the image is in flight. A loop rather
-  // than a one-shot fade: the tiles are `content-visibility: auto`
-  // (BookGrid.scss), so scrolling a row back into view replays whatever
-  // animation is on it — on a fade that meant a cover re-fading every time you
-  // scrolled up, on a loop a restart is invisible.
+  // A loop, not a one-shot fade: `content-visibility: auto` (BookGrid.scss)
+  // replays the animation every time a row scrolls back into view, and a
+  // restart is invisible on a loop.
   &--loading {
     background-color: rgba($color-ink, 0.06);
     background-image: linear-gradient(90deg, transparent, rgba($color-ink, 0.09), transparent);
@@ -35,9 +30,8 @@
     }
   }
 
-  // Not a decoration that can simply be dropped: it is the only thing telling a
-  // cover still arriving from one that is never coming. Reduced motion gets the
-  // same two tints, pulsed rather than swept.
+  // Pulsed rather than dropped: it is the only thing telling a cover still
+  // arriving from one that is never coming.
   @media (prefers-reduced-motion: reduce) {
     &--loading {
       background-image: none;
@@ -58,10 +52,7 @@
     font-size: calc(var(--cover-font-scale) * 1cqi);
     line-height: 1.2;
     text-align: center;
-    // Titles have no spaces to break at when they are one long word, and a
-    // placeholder that spills out of its rectangle is worse than a hyphenless
-    // break mid-word.
-    overflow-wrap: anywhere;
+    overflow-wrap: anywhere; // one-word titles must break rather than spill
     display: -webkit-box;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;

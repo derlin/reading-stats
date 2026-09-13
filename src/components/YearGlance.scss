@@ -1,7 +1,6 @@
 @use '../styles/tokens' as *;
 
-// Flat ink-on-paper squares, same treatment as .btn — inverts on hover/focus,
-// no radius, no shadow except the .btn :active press.
+// Same flat, inverting treatment as .btn.
 .year-glance {
   display: flex;
   flex-flow: row wrap;

@@ -1,8 +1,6 @@
-// Design tokens (D11, B3): the one palette and one content width everything
-// aligns to — headings, buttons, table, charts, and the top bar. Not a
-// reinvention: paper/ink/salmon are D11's own values, already the site's
-// instinct per BRIEF.md §8; content width and breakpoints carry over
-// unchanged from the pre-rewrite _global.scss.
+// The one palette and content width everything aligns to (D11, B3). Paper, ink
+// and salmon are D11's own values; the width and breakpoints carry over from the
+// pre-rewrite _global.scss.
 
 // -- palette
 
@@ -26,10 +24,9 @@ $extra-small-screen: 400px;
 // -- type
 
 $title-font-family: 'Trebuchet MS', sans-serif;
-// Self-hosted (see styles/_fonts.scss) — the fallbacks now only cover the
-// window before the woff2 lands, not whatever the visitor's OS happens to own.
-// Keep this in sync with `chartFontFamily` in charts/chartTheme.ts, which has
-// to repeat the stack as a string because Plotly is configured from TS.
+// Self-hosted (styles/_fonts.scss), so the fallbacks only cover the window
+// before the woff2 lands. Keep in sync with `chartFontFamily` in chartTheme.ts,
+// which must repeat the stack as a string for Plotly.
 $mono-font-family: 'DejaVu Sans Mono', Menlo, Consolas, 'Courier New', monospace;
 
 // -- misc
@@ -63,9 +60,8 @@ $button-pad: 3px 8px;
   }
 }
 
-// The audiobook speaker, shared by the table's title cell, the dialog and the
-// grid's tiles. A mixin rather than a class because the grid places it
-// absolutely on a cover while the other two sit inline in a line of text.
+// The audiobook speaker. A mixin, not a class, because the grid places it
+// absolutely on a cover while the table and dialog sit it inline.
 @mixin audio-glyph {
   background-size: contain;
   background-repeat: no-repeat;

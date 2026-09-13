@@ -4,8 +4,7 @@
   position: sticky;
   top: 0;
   z-index: 900;
-  // Opaque, so content scrolling underneath doesn't show through, and a heavy
-  // rule underneath rather than a shadow — flat ink on paper (D11).
+  // Opaque, and ruled rather than shadowed — flat ink on paper (D11).
   background: $color-paper;
   border-bottom: $border;
 
@@ -29,9 +28,7 @@
   }
 
   &__arrow {
-    // The one glyph carrying the "from → to" relation; it has to stay legible
-    // when the two inputs wrap onto separate lines, so it never collapses.
-    flex: none;
+    flex: none; // stays legible when the two inputs wrap onto separate lines
   }
 
   &__presets {
@@ -69,8 +66,7 @@
     padding: 8px 10pt;
   }
 
-  // At this width the two inputs plus the arrow already fill the row, so the
-  // presets get their own line rather than wrapping mid-group.
+  // The inputs already fill the row, so the presets get a line of their own.
   .top-bar__range {
     margin-right: 0;
     flex-basis: 100%;

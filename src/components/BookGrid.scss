@@ -1,6 +1,7 @@
 @use '../styles/tokens' as *;
 
 $rule: rgba($color-ink, 0.12);
+$panel-inset: 8px; // leaves page either side of the scroll panel
 
 .bookGrid {
   max-width: $content-width;
@@ -20,36 +21,22 @@ $rule: rgba($color-ink, 0.12);
 
   /* -- scrolling panel */
 
-  // The grid is capped rather than left to run: a few hundred covers at nine
-  // across is thousands of pixels of page that everything below it has to be
-  // scrolled past. A cap turns that into a panel the reader can skim or
-  // ignore, and costs nothing at the ranges that already fit.
-  //
-  // Sized in `vh` so it is always a comfortable fraction of the window rather
-  // than a fixed number of rows, with a `px` floor for very short windows
-  // where 70vh would be a single row.
+  // Capped so a few hundred covers can't bury everything below them. A px
+  // floor because 70vh is one row on a short window.
   &__scroll {
     max-height: max(70vh, 420px);
     overflow-y: auto;
-    // A little room between the tiles and the bar, so it never lands on a
-    // tile's star.
-    padding-right: 8px;
 
-    // macOS hides its overlay scrollbars until something is scrolled, which
-    // leaves a capped panel looking exactly like an uncapped one that simply
-    // ran out of books. Styling the scrollbar opts the element out of overlay
-    // mode, so the bar is there from the first paint and is itself the thing
-    // saying there is more below.
-    //
-    // Chrome and Safari take the `-webkit-` pseudo-elements; Firefox takes the
-    // standard properties. Chrome ignores the pseudo-elements as soon as
-    // `scrollbar-width` or `scrollbar-color` is set on the same element, hence
-    // the `@supports` fence — true only where the pseudo-elements do nothing.
     // The only element that scrolls on its own, so the visible edge is what
     // tells a thumb whether it is on the panel or on the page.
     margin: 0 $panel-inset;
     border: 1px solid rgba($color-ink, 0.18);
     padding: 10px;
+
+    // Styling the bar opts out of macOS overlay scrollbars, which stay hidden
+    // until scrolled — so a capped panel looked like one that ran out of books.
+    // @supports fences the Firefox fallback: setting scrollbar-width makes
+    // Chrome drop the pseudo-elements.
     &::-webkit-scrollbar {
       width: 10px;
     }
@@ -71,10 +58,8 @@ $rule: rgba($color-ink, 0.12);
 
   /* -- year heading */
 
-  // An h3 rather than another Section: these are subdivisions inside one
-  // section. It has to break the h1-h4 block in index.scss, which centres
-  // headings and caps them at the content width — this one is already inside
-  // that column and belongs on its left edge, above the tiles it labels.
+  // A subdivision inside one Section, so it overrides the centred, capped
+  // h1-h4 block in index.scss.
   &__year {
     display: flex;
     align-items: baseline;
@@ -86,14 +71,12 @@ $rule: rgba($color-ink, 0.12);
     font-size: 1.2em;
     letter-spacing: -1px;
     border-bottom: 1px solid $rule;
-    // Holds the year in view while its own tiles are being scrolled through.
-    // Opaque, or the tiles would show through it on the way past.
+    // Opaque, or tiles show through it on the way past.
     position: sticky;
     top: 0;
     z-index: 1;
     background: $color-paper;
 
-    // The first heading is already against the top of the panel.
     &:first-child {
       margin-top: 0;
     }
@@ -111,30 +94,24 @@ $rule: rgba($color-ink, 0.12);
   &__tiles {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
-    // A partly filled last row must not stretch its track and grow the tiles
-    // in it to a different size from every other row.
-    align-content: start;
+    align-content: start; // or a partly filled last row grows its tiles
     gap: 14px 12px;
   }
 
   &__tile {
     position: relative;
     display: block;
-    // It is a <button>, so the UA's own button styling has to go before
-    // anything else here applies.
+    // Reset the UA button styling.
     padding: 0;
     border: none;
     background: none;
     text-align: inherit;
     font: inherit;
     cursor: pointer;
-    // Inherited ink for the placeholder title's sake; the DNF and star marks
-    // have colours of their own.
-    color: $color-ink;
-    // Keeps offscreen rows out of layout and paint, which is what makes a
-    // panel of several hundred tiles scroll at all. The intrinsic size is the
-    // 2:3 cover plus the rating bar, so the scrollbar doesn't jump as rows
-    // are realised.
+    color: $color-ink; // for the placeholder title; the marks have their own
+    // Keeps offscreen rows out of layout and paint, which is what makes a panel
+    // of several hundred tiles scroll. The size is the 2:3 cover plus the
+    // rating bar, so the scrollbar doesn't jump as rows are realised.
     content-visibility: auto;
     contain-intrinsic-size: auto 155px;
 
@@ -166,16 +143,14 @@ $rule: rgba($color-ink, 0.12);
   &__ratingFill {
     display: block;
     height: 100%;
-    // Width and background are set per book from `lib/rating.ts`, so the two
-    // channels are derived from one number in one place.
+    // Width and background come from lib/rating.ts, per book.
   }
 
   /* -- corner marks */
 
-  // All three sit on the cover rather than beside it, so they cost the tile no
-  // height and the rating bars stay on one baseline across the row. Each needs
-  // a ground of its own to survive landing on whatever colour a cover happens
-  // to have in that corner.
+  // All three sit on the cover so they cost the tile no height and the rating
+  // bars stay on one baseline. Each needs a ground of its own to survive
+  // whatever colour the cover has in that corner.
 
   &__star {
     position: absolute;
@@ -210,9 +185,7 @@ $rule: rgba($color-ink, 0.12);
     z-index: 1;
     width: 16px;
     height: 16px;
-    // The glyph is drawn in accent with no fill, so on a dark cover it would
-    // disappear.
-    background-color: $color-paper;
+    background-color: $color-paper; // no fill, so it vanishes on a dark cover
     border-radius: 50%;
     padding: 1px;
   }
@@ -224,6 +197,7 @@ $rule: rgba($color-ink, 0.12);
     &__scroll {
       margin: 0 14px;
     }
+
     &__tiles {
       // Four across, not three: a year of eighty books is a long enough scroll
       // already. 68 because the panel's chrome takes ~40px off the row.
