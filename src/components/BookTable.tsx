@@ -34,14 +34,7 @@ const COLUMNS: Column[] = [
   { key: 'rating', name: 'Rating' },
 ];
 
-/**
- * The row already holds things that own their clicks — the title link and the
- * provider chips — and they have to keep them rather than opening the dialog.
- * That is tested for here, on the row, rather than by stopping propagation
- * inside each one: the links are generated from an open Record of providers
- * (D7), so the set of anchors in a cell is not fixed, and a rule that lives on
- * the row cannot be forgotten by whatever gets added to a cell later.
- */
+/** Links inside the row keep their own click/Enter instead of opening the dialog. */
 function clickedRowControl(target: EventTarget): boolean {
   return target instanceof Element && target.closest('a') !== null;
 }
@@ -78,41 +71,11 @@ function compare(a: BookAggregate, b: BookAggregate, key: SortKey, ascending: bo
     : (Number(left) - Number(right)) * direction;
 }
 
-/**
- * Title, DNF badge, and whatever providers the title didn't take — preceded by
- * the button that opens the book's details.
- *
- * The button is the first child of the cell on every row, including
- * audiobooks, so the buttons form a straight column down the left edge of the
- * table. That is why the audiobook speaker is emitted here as an element
- * rather than left as the `td:first-child::before` it used to be: a
- * pseudo-element on the cell would always paint ahead of the button and push
- * exactly the audio rows out of line (see BookTable.scss).
- */
-function TitleCell({ book, onOpen }: { book: Book; onOpen: () => void }) {
+function TitleCell({ book }: { book: Book }) {
   const primary = primaryProvider(book.links);
   const title = bookTitle(book);
   return (
     <td className="text">
-      {/*
-        The row as a whole is what a pointer or a thumb hits (see
-        `clickedRowControl`), but the control is a real button all the same: a
-        click handler on a <tr> is not focusable and announces nothing, so
-        without this the details would be unreachable by keyboard and invisible
-        to a screen reader. The row click is the enhancement, this is the
-        control — which is also why the row needs no role or tabindex of its own.
-      */}
-      <button
-        type="button"
-        className="bookTable__expand"
-        aria-haspopup="dialog"
-        aria-label={`Show details for ${title}`}
-        onClick={onOpen}
-      >
-        {/* A text glyph rather than an inline SVG: the table already speaks in
-            them (the sort arrows, the mobile direction toggle). */}
-        ▸
-      </button>
       {book.format === 'audio' && <span className="bookTable__audio" aria-hidden="true" />}
       <BookTitle title={title} link={primary ? book.links[primary] : undefined} />
       {book.dnf && <DnfBadge className="dnfBadge--inline" />}
@@ -205,12 +168,22 @@ export default function BookTable({ byBook, epoch }: BookTableProps) {
               <tr
                 key={row.bookIndex}
                 className={rowClass}
+                // No role="button": that would pull the row out of the table tree.
+                tabIndex={0}
+                aria-haspopup="dialog"
+                aria-label={`Show details for ${bookTitle(row.book)}`}
                 onClick={event => {
                   if (clickedRowControl(event.target)) return;
                   setOpened(row);
                 }}
+                onKeyDown={event => {
+                  if (event.key !== 'Enter' && event.key !== ' ') return;
+                  if (clickedRowControl(event.target)) return;
+                  event.preventDefault(); // Space would scroll the page
+                  setOpened(row);
+                }}
               >
-                <TitleCell book={row.book} onOpen={() => setOpened(row)} />
+                <TitleCell book={row.book} />
                 <td className="text">{row.book.author ?? '?'}</td>
                 <td className="mono right">{facts.hours}</td>
                 <td className="mono">{facts.endDate}</td>

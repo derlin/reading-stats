@@ -36,13 +36,17 @@ $sort-icon-down: '↓';
     user-select: none; // repeated header clicks otherwise select the label text
   }
 
-  // Every row opens its dialog, at every width.
   tbody tr {
     cursor: pointer;
 
-    // The audiobook tint is identity, not feedback, so it keeps its own hover.
     &:hover {
       background: $hover;
+    }
+
+    // Inset, or the outline lands on the rules of the neighbouring rows.
+    &:focus-visible {
+      outline: $border;
+      outline-offset: -2px;
     }
   }
 
@@ -50,9 +54,6 @@ $sort-icon-down: '↓';
     opacity: 0.5;
   }
 
-  // The speaker is a real element (BookTable.tsx), not a pseudo-element: on the
-  // cell it paints ahead of the chevron and breaks their column, and on the
-  // title the link's underline strikes through it.
   tr.audio {
     background: $color-accent-light;
 
@@ -63,32 +64,6 @@ $sort-icon-down: '↓';
 
   &__audio {
     @include audio-glyph-inline;
-  }
-
-  /* -- detail control */
-
-  // Shed columns live in the dialog a row click opens (BookDialog.tsx), which
-  // carries every value at every width — so the control stays on at every width.
-  &__expand {
-    display: inline-block;
-    // No left padding, so the chevrons line up down the edge of the title cell;
-    // the target is bought vertically and right instead, and the negative
-    // margins keep that from making every row taller. Sized to be seen rather
-    // than to be a thumb target — the whole row opens the detail anyway.
-    padding: 8px 10px 8px 0;
-    margin: -8px 0;
-    border: none;
-    background: none;
-    color: $color-ink;
-    font-size: 1.15em;
-    line-height: 1;
-    cursor: pointer;
-
-    @media (hover: hover) {
-      &:hover {
-        color: $color-accent;
-      }
-    }
   }
 
   /* -- sort arrows */

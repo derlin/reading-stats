@@ -31,7 +31,8 @@ $panel-inset: 8px; // leaves page either side of the scroll panel
     // tells a thumb whether it is on the panel or on the page.
     margin: 0 $panel-inset;
     border: 1px solid rgba($color-ink, 0.18);
-    padding: 10px;
+    // No top padding: the sticky year header sticks below it and tiles show through.
+    padding: 0 10px 10px;
 
     // Styling the bar opts out of macOS overlay scrollbars, which stay hidden
     // until scrolled — so a capped panel looked like one that ran out of books.
@@ -65,8 +66,8 @@ $panel-inset: 8px; // leaves page either side of the scroll panel
     align-items: baseline;
     gap: 10px;
     max-width: none;
-    margin: 24px 0 10px;
-    padding-bottom: 4px;
+    margin: 16px 0 10px;
+    padding: 8px 0 4px;
     text-align: left;
     font-size: 1.2em;
     letter-spacing: -1px;
