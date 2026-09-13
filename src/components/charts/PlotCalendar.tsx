@@ -19,6 +19,7 @@ import type { Data, Layout, PlotData } from 'plotly.js';
 import Plot from '../../lib/plotly';
 import PlotEmpty from './PlotEmpty';
 import HeatmapLegend from './HeatmapLegend';
+import { useTouchDrag } from './useTouchDrag';
 import { formatDateOnly, type DateRange, type DayAggregate } from '../../data/useFilteredData';
 import { formatDuration } from '../../lib/format';
 import {
@@ -127,6 +128,7 @@ export default function PlotCalendar({
   range: DateRange;
 }) {
   const grid = useMemo(() => buildGrid(byDay, range), [byDay, range]);
+  const drag = useTouchDrag();
 
   if (byDay.length === 0) return <PlotEmpty divId={id} />;
 
@@ -184,15 +186,16 @@ export default function PlotCalendar({
     // Same row height as the time-of-day heatmap above, from the same helper,
     // so the two charts' weekday rows stay in step if either is retuned.
     height: weekdayChartHeight(MARGIN_TOP, MARGIN_BOTTOM),
-    dragmode: 'zoom',
+    dragmode: drag.dragmode,
   };
 
   return (
-    <div className="plot-container plot-container--interactive">
+    <div className="plot-container">
       <Plot
         divId={id}
         data={[trace as Data]}
         layout={layout}
+        config={drag.config}
         style={{ width: '100%' }}
         useResizeHandler={true}
       />

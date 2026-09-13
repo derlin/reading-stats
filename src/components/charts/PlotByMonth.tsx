@@ -4,6 +4,7 @@ import PlotEmpty from './PlotEmpty';
 import type { MonthAggregate } from '../../data/useFilteredData';
 import { formatDuration } from '../../lib/format';
 import { baseLayout, rule, chartColors } from './chartTheme';
+import { useTouchDrag } from './useTouchDrag';
 
 const id = 'plot_month';
 
@@ -23,6 +24,8 @@ function hourTickStep(maxHours: number): number {
 }
 
 export default function PlotByMonth({ byMonth }: { byMonth: MonthAggregate[] }) {
+  const drag = useTouchDrag();
+
   if (byMonth.length === 0) return <PlotEmpty divId={id} />;
 
   const trace: Data = {
@@ -54,6 +57,7 @@ export default function PlotByMonth({ byMonth }: { byMonth: MonthAggregate[] }) 
 
   const layout: Partial<Layout> = {
     ...baseLayout(),
+    dragmode: drag.dragmode,
     xaxis: { ...rule(), type: 'category' },
     yaxis: {
       ...rule(),
@@ -68,8 +72,15 @@ export default function PlotByMonth({ byMonth }: { byMonth: MonthAggregate[] }) 
   };
 
   return (
-    <div className="plot-container plot-container--interactive">
-      <Plot divId={id} data={[trace]} layout={layout} style={{}} useResizeHandler={true} />
+    <div className="plot-container">
+      <Plot
+        divId={id}
+        data={[trace]}
+        layout={layout}
+        config={drag.config}
+        style={{}}
+        useResizeHandler={true}
+      />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import PlotEmpty from './PlotEmpty';
 import type { BookAggregate } from '../../data/useFilteredData';
 import { bookTitle } from '../../lib/format';
 import { baseLayout, rule, chartColors } from './chartTheme';
+import { useTouchDrag } from './useTouchDrag';
 
 const id = 'plot_title';
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
@@ -41,6 +42,8 @@ function packTracks(byBook: BookAggregate[]): { packed: PackedBook[]; maxTrack: 
 }
 
 export default function PlotByTitle({ byBook, epoch }: { byBook: BookAggregate[]; epoch: Date }) {
+  const drag = useTouchDrag();
+
   if (byBook.length === 0) return <PlotEmpty divId={id} />;
 
   const { packed, maxTrack } = packTracks(byBook);
@@ -84,6 +87,7 @@ export default function PlotByTitle({ byBook, epoch }: { byBook: BookAggregate[]
 
   const layout: Partial<Layout> = {
     ...baseLayout(),
+    dragmode: drag.dragmode,
     xaxis: { ...rule(), type: 'date', tickformat: '%Y-%m-%d' },
     yaxis: { showticklabels: false, showline: false, zeroline: false, fixedrange: true },
     showlegend: false,
@@ -93,8 +97,15 @@ export default function PlotByTitle({ byBook, epoch }: { byBook: BookAggregate[]
   };
 
   return (
-    <div className="plot-container plot-container--interactive">
-      <Plot divId={id} data={data} layout={layout} style={{}} useResizeHandler={true} />
+    <div className="plot-container">
+      <Plot
+        divId={id}
+        data={data}
+        layout={layout}
+        config={drag.config}
+        style={{}}
+        useResizeHandler={true}
+      />
     </div>
   );
 }

@@ -117,6 +117,7 @@ export function noDataLayout(): Partial<Layout> {
   const axis = { visible: true, showticklabels: false, showline: false, zeroline: false };
   return {
     ...baseLayout(),
+    dragmode: false, // nothing to drag, and on touch it would eat scrolls
     datarevision: Math.random(), // forces a full redraw, vs just a data update
     xaxis: axis,
     yaxis: axis,

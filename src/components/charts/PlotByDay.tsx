@@ -14,6 +14,7 @@ import { bookTitle, formatDuration, formatMediumDate } from '../../lib/format';
 import { BookMention } from '../BookLink';
 import type { Book } from '../../types/payload';
 import { baseLayout, rule, chartColors } from './chartTheme';
+import { useTouchDrag } from './useTouchDrag';
 
 const id = 'plot_day';
 // Alternating book-shading, already in the D11 palette (BRIEF.md §8: the old
@@ -154,6 +155,7 @@ export default function PlotByDay({
   sessions: EnrichedSession[];
 }) {
   const [detailDay, setDetailDay] = useState<DayAggregate | null>(null);
+  const drag = useTouchDrag();
   // The handler is attached below by hand, so it outlives the render that
   // created it; reading the days from a ref keeps it describing the currently
   // selected range instead of whatever was selected when the chart mounted.
@@ -187,6 +189,7 @@ export default function PlotByDay({
     // few pixels on a spiky line and no markers to aim at, that made the click
     // interaction all but unreachable.
     hovermode: 'x',
+    dragmode: drag.dragmode,
     xaxis: { ...rule() },
     yaxis: { ...rule(), title: { text: 'minutes' }, fixedrange: true },
     margin: { ...baseLayout().margin, t: 60 },
@@ -223,7 +226,7 @@ export default function PlotByDay({
   };
 
   return (
-    <div className="plot-container plot-container--interactive">
+    <div className="plot-container">
       <p className="plot-detail">
         {detailDay ? <DayDetail day={detailDay} /> : 'Click any day to see details'}
       </p>
@@ -231,6 +234,7 @@ export default function PlotByDay({
         divId={id}
         data={[trace]}
         layout={layout}
+        config={drag.config}
         style={{ width: '100%' }}
         useResizeHandler={true}
         onInitialized={bindClick}

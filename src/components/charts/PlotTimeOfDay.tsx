@@ -80,7 +80,10 @@ export default function PlotTimeOfDay({ byHourWeekday }: { byHourWeekday: HourWe
   const layout: Partial<Layout> = {
     ...baseLayout(),
     // Zoom is off: at 24×7 there is nothing to zoom into, and drag-to-zoom on
-    // a grid this coarse is only ever an accident.
+    // a grid this coarse is only ever an accident. `fixedrange` alone isn't
+    // enough on touch — Plotly preventDefaults the drag whatever the axes say,
+    // so this swallowed scrolls it then did nothing with.
+    dragmode: false,
     xaxis: { ...rule(), type: 'category', title: { text: 'hour of day' }, fixedrange: true },
     yaxis: { ...rule(), type: 'category', fixedrange: true },
     margin: { ...baseLayout().margin, l: 100, t: MARGIN_TOP, b: MARGIN_BOTTOM },

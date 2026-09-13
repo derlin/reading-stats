@@ -45,6 +45,11 @@ $rule: rgba($color-ink, 0.12);
     // standard properties. Chrome ignores the pseudo-elements as soon as
     // `scrollbar-width` or `scrollbar-color` is set on the same element, hence
     // the `@supports` fence — true only where the pseudo-elements do nothing.
+    // The only element that scrolls on its own, so the visible edge is what
+    // tells a thumb whether it is on the panel or on the page.
+    margin: 0 $panel-inset;
+    border: 1px solid rgba($color-ink, 0.18);
+    padding: 10px;
     &::-webkit-scrollbar {
       width: 10px;
     }
@@ -215,16 +220,19 @@ $rule: rgba($color-ink, 0.12);
   @include small-screen {
     padding: 0 10pt;
 
+    // ~27px a side with the section's own 10pt, enough to scroll the page from.
+    &__scroll {
+      margin: 0 14px;
+    }
     &__tiles {
-      // Four across on a phone rather than three: the covers stay recognisable
-      // well below 92px, and a year of eighty books is a long enough scroll
-      // already.
-      grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+      // Four across, not three: a year of eighty books is a long enough scroll
+      // already. 68 because the panel's chrome takes ~40px off the row.
+      grid-template-columns: repeat(auto-fill, minmax(68px, 1fr));
       gap: 12px 8px;
     }
 
     &__tile {
-      contain-intrinsic-size: auto 140px;
+      contain-intrinsic-size: auto 125px;
     }
   }
 }
