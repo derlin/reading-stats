@@ -176,7 +176,7 @@ export default function BookGrid({ byBook, epoch, range }: BookGridProps) {
               <h3 className="bookGrid__year">
                 {group.year}
                 <span className="bookGrid__count">
-                  <code>{formatCount(group.books.length)}</code> books
+                  <code>{formatCount(group.books.filter(row => !row.book.dnf).length)}</code> books
                 </span>
               </h3>
               <div className="bookGrid__tiles">

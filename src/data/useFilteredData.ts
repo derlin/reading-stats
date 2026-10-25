@@ -78,6 +78,8 @@ export interface Summary {
   daysUnderTen: number;
   audiobookCount: number;
   audiobookMinutes: number;
+  /** DNF books in range, all formats. They count in none of the totals above. */
+  dnfCount: number;
   /** Finished books in range counted by format, for the overview's format-mix sentence (D10). `unknown` covers a null format. */
   formatMix: FormatMix;
 }
@@ -414,6 +416,7 @@ function computeSummary(
     daysUnderTen,
     audiobookCount: audiobooks.length,
     audiobookMinutes,
+    dnfCount: finishedBooks.length - counted.length,
     formatMix,
   };
 }

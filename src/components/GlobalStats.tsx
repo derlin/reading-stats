@@ -45,7 +45,13 @@ export default function GlobalStats({ summary, range }: GlobalStatsProps) {
         <b>
           <Num value={print + ebook} /> books{' '}
         </b>
-        (<Num value={print} /> in print format, <Num value={ebook} /> in digital format).
+        (<Num value={print} /> in print format, <Num value={ebook} /> in digital format)
+        {summary.dnfCount > 0 && (
+          <>
+            , plus <Num value={summary.dnfCount} /> DNFed
+          </>
+        )}
+        .
       </p>
       <p>
         I read{' '}

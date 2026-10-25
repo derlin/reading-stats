@@ -173,11 +173,11 @@ $panel-inset: 8px; // leaves page either side of the scroll panel
   &__dnf {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 1;
   }
 
-  // Bottom-left rather than top-left so it never collides with a DNF chip.
+  // Bottom-left, clear of the DNF chip.
   &__audio {
     @include audio-glyph;
     position: absolute;
