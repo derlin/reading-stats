@@ -391,10 +391,12 @@ function computeSummary(
   // Counted per book, not per session: most audiobooks have no sessions at all
   // (their time isn't tracked), and the ones that do would otherwise have their
   // `duration` added once per session.
-  const audiobooks = finishedBooks.filter(b => b.book.format === 'audio');
+  // DNF books show in the grid and the table, but count as no finished book.
+  const counted = finishedBooks.filter(b => !b.book.dnf);
+  const audiobooks = counted.filter(b => b.book.format === 'audio');
   const audiobookMinutes = sum(audiobooks.map(b => bookMinutes(b.book, b.minutes)));
 
-  const formatMix = finishedBooks.reduce<FormatMix>(
+  const formatMix = counted.reduce<FormatMix>(
     (acc, b) => {
       acc[b.book.format ?? 'unknown']++;
       return acc;
@@ -406,8 +408,8 @@ function computeSummary(
     // Stays session-derived so the per-day and per-month charts agree with it;
     // untimed audiobooks contribute no minutes here by construction.
     totalMinutes: sum(rangeSessions.map(s => s.minutes)),
-    totalBooksFinished: finishedBooks.length,
-    totalPages: sum(finishedBooks.map(b => b.book.pages ?? 0)),
+    totalBooksFinished: counted.length,
+    totalPages: sum(counted.map(b => b.book.pages ?? 0)),
     daysMissed,
     daysUnderTen,
     audiobookCount: audiobooks.length,
@@ -472,7 +474,7 @@ export function computeYearlyStats(payload: Payload, allSessions: EnrichedSessio
 
   const sessionBookIndices = new Set(allSessions.map(s => s.bookIndex));
   payload.books.forEach((book, bookIndex) => {
-    if (!book.finished || book.date_read === null) return;
+    if (!book.finished || book.dnf || book.date_read === null) return;
     const stat = yearStat(parseDateRead(book.date_read).getUTCFullYear());
     if (book.format !== 'audio') {
       stat.books++;
