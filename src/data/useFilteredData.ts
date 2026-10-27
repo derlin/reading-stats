@@ -394,9 +394,12 @@ function computeSummary(
   // (their time isn't tracked), and the ones that do would otherwise have their
   // `duration` added once per session.
   // DNF books show in the grid and the table, but count as no finished book.
+  // A DNF audiobook's duration is the time listened, so its minutes count.
   const counted = finishedBooks.filter(b => !b.book.dnf);
   const audiobooks = counted.filter(b => b.book.format === 'audio');
-  const audiobookMinutes = sum(audiobooks.map(b => bookMinutes(b.book, b.minutes)));
+  const audiobookMinutes = sum(
+    finishedBooks.filter(b => b.book.format === 'audio').map(b => bookMinutes(b.book, b.minutes)),
+  );
 
   const formatMix = counted.reduce<FormatMix>(
     (acc, b) => {
@@ -477,13 +480,13 @@ export function computeYearlyStats(payload: Payload, allSessions: EnrichedSessio
 
   const sessionBookIndices = new Set(allSessions.map(s => s.bookIndex));
   payload.books.forEach((book, bookIndex) => {
-    if (!book.finished || book.dnf || book.date_read === null) return;
+    if (!book.finished || book.date_read === null) return;
     const stat = yearStat(parseDateRead(book.date_read).getUTCFullYear());
     if (book.format !== 'audio') {
-      stat.books++;
+      if (!book.dnf) stat.books++;
       return;
     }
-    stat.audio++;
+    if (!book.dnf) stat.audio++;
     if (!sessionBookIndices.has(bookIndex)) stat.minutes += bookMinutes(book, 0);
   });
 
