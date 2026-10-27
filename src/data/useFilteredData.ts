@@ -78,6 +78,8 @@ export interface Summary {
   daysUnderTen: number;
   audiobookCount: number;
   audiobookMinutes: number;
+  /** DNF books in range, all formats. They count in none of the totals above. */
+  dnfCount: number;
   /** Finished books in range counted by format, for the overview's format-mix sentence (D10). `unknown` covers a null format. */
   formatMix: FormatMix;
 }
@@ -391,10 +393,15 @@ function computeSummary(
   // Counted per book, not per session: most audiobooks have no sessions at all
   // (their time isn't tracked), and the ones that do would otherwise have their
   // `duration` added once per session.
-  const audiobooks = finishedBooks.filter(b => b.book.format === 'audio');
-  const audiobookMinutes = sum(audiobooks.map(b => bookMinutes(b.book, b.minutes)));
+  // DNF books show in the grid and the table, but count as no finished book.
+  // A DNF audiobook's duration is the time listened, so its minutes count.
+  const counted = finishedBooks.filter(b => !b.book.dnf);
+  const audiobooks = counted.filter(b => b.book.format === 'audio');
+  const audiobookMinutes = sum(
+    finishedBooks.filter(b => b.book.format === 'audio').map(b => bookMinutes(b.book, b.minutes)),
+  );
 
-  const formatMix = finishedBooks.reduce<FormatMix>(
+  const formatMix = counted.reduce<FormatMix>(
     (acc, b) => {
       acc[b.book.format ?? 'unknown']++;
       return acc;
@@ -406,12 +413,13 @@ function computeSummary(
     // Stays session-derived so the per-day and per-month charts agree with it;
     // untimed audiobooks contribute no minutes here by construction.
     totalMinutes: sum(rangeSessions.map(s => s.minutes)),
-    totalBooksFinished: finishedBooks.length,
-    totalPages: sum(finishedBooks.map(b => b.book.pages ?? 0)),
+    totalBooksFinished: counted.length,
+    totalPages: sum(counted.map(b => b.book.pages ?? 0)),
     daysMissed,
     daysUnderTen,
     audiobookCount: audiobooks.length,
     audiobookMinutes,
+    dnfCount: finishedBooks.length - counted.length,
     formatMix,
   };
 }
@@ -475,10 +483,10 @@ export function computeYearlyStats(payload: Payload, allSessions: EnrichedSessio
     if (!book.finished || book.date_read === null) return;
     const stat = yearStat(parseDateRead(book.date_read).getUTCFullYear());
     if (book.format !== 'audio') {
-      stat.books++;
+      if (!book.dnf) stat.books++;
       return;
     }
-    stat.audio++;
+    if (!book.dnf) stat.audio++;
     if (!sessionBookIndices.has(bookIndex)) stat.minutes += bookMinutes(book, 0);
   });
 
