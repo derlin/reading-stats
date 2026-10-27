@@ -19,4 +19,6 @@ if (res.status !== 200) throw new Error(`${SOURCE}: HTTP ${res.status}\n${text.s
 
 const { epoch, books, sessions } = validatePayload(JSON.parse(text));
 writeFileSync(OUT, text);
-console.log(`payload.json: epoch ${epoch}, ${books.length} books, ${sessions.date.length} sessions`);
+console.log(
+  `payload.json: epoch ${epoch}, ${books.length} books, ${sessions.date.length} sessions`,
+);
