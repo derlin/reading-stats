@@ -49,12 +49,7 @@ jobs:
           CF_ACCESS_CLIENT_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
           CF_ACCESS_CLIENT_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
         run: |
-          curl --fail-with-body -sS -o "$RUNNER_TEMP/payload.json" \
-            -H "CF-Access-Client-Id: $CF_ACCESS_CLIENT_ID" \
-            -H "CF-Access-Client-Secret: $CF_ACCESS_CLIENT_SECRET" \
-            https://booktrack.derlin.ch/api/public/readlog.json
-          node scripts/validate-payload.ts "$RUNNER_TEMP/payload.json"
-          cp "$RUNNER_TEMP/payload.json" src/data/payload.json
+          npm run fetch-payload
           git add src/data/payload.json
           if git diff --cached --quiet; then
             echo "payload unchanged"
